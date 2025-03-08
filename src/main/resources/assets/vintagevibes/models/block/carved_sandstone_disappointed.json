@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/sandstone_top",
+    "side": "vintagevibes:block/carved_sandstone_disappointed"
+  }
+}

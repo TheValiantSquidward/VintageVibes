@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "vintagevibes:block/gem/garnet_tiles"
+  }
+}

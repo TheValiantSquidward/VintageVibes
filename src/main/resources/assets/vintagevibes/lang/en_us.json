@@ -1,0 +1,92 @@
+{
+
+  "creativetab.vintage_vibes_tab" : "Vintage Vibes",
+
+  "item.vintagevibes.garnet" : "Garnet",
+  "item.vintagevibes.peridot" : "Peridot",
+  "item.vintagevibes.topaz" : "Topaz",
+
+  "item.vintagevibes.rough_garnet" : "Rough Garnet",
+  "item.vintagevibes.rough_peridot" : "Rough Peridot",
+  "item.vintagevibes.rough_topaz" : "Rough Topaz",
+
+  "block.vintagevibes.garnet_block" : "Block of Garnet",
+  "block.vintagevibes.peridot_block" : "Block of Peridot",
+  "block.vintagevibes.topaz_block" : "Block of Topaz",
+
+  "block.vintagevibes.rough_garnet_block" : "Block of Rough Garnet",
+  "block.vintagevibes.rough_peridot_block" : "Block of Rough Peridot",
+  "block.vintagevibes.rough_topaz_block" : "Block of Rough Topaz",
+
+  "block.vintagevibes.garnet_tiles" : "Garnet Tiles",
+  "block.vintagevibes.peridot_tiles" : "Peridot Tiles",
+  "block.vintagevibes.topaz_tiles" : "Topaz Tiles",
+
+  "block.vintagevibes.carved_sandstone_concerned" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_concerned.desc" : "Concerned",
+
+  "block.vintagevibes.carved_sandstone_disappointed" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_disappointed.desc" : "Disappointed",
+
+  "block.vintagevibes.carved_sandstone_fisheye" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_fisheye.desc" : "Fisheye",
+
+  "block.vintagevibes.carved_sandstone_grin" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_grin.desc" : "Grin",
+
+  "block.vintagevibes.carved_sandstone_joyous" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_joyous.desc" : "Joyous",
+
+  "block.vintagevibes.carved_sandstone_lazybones" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_lazybones.desc" : "Lazybones",
+
+  "block.vintagevibes.red_carved_sandstone_bold_and_brash" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_bold_and_brash.desc" : "Bold and Brash",
+
+  "block.vintagevibes.red_carved_sandstone_closed" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_closed.desc" : "Closed",
+
+  "block.vintagevibes.red_carved_sandstone_excited" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_excited.desc" : "Excited",
+
+  "block.vintagevibes.red_carved_sandstone_frown" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_frown.desc" : "Frown",
+
+  "block.vintagevibes.carved_sandstone_nose" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_nose.desc" : "Nose",
+
+  "block.vintagevibes.carved_sandstone_open" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_open.desc" : "Open",
+
+  "block.vintagevibes.red_carved_sandstone_happy" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_happy.desc" : "Happy",
+
+  "block.vintagevibes.red_carved_sandstone_lips" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_lips.desc" : "Lips",
+
+  "block.vintagevibes.red_carved_sandstone_sad" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_sad.desc" : "Sad",
+
+  "block.vintagevibes.red_carved_sandstone_touch" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_touch.desc" : "Touch",
+
+  "block.vintagevibes.orange_hibiscus" : "Orange Hibiscus",
+  "block.vintagevibes.pink_hibiscus" : "Pink Hibiscus",
+  "block.vintagevibes.purple_hibiscus" : "Purple Hibiscus",
+  "block.vintagevibes.white_hibiscus" : "White Hibiscus",
+
+  "block.vintagevibes.orange_hibiscus_carpet" : "Orange Hibiscus Carpet",
+  "block.vintagevibes.pink_hibiscus_carpet" : "Pink Hibiscus Carpet",
+  "block.vintagevibes.purple_hibiscus_carpet" : "Purple Hibiscus Carpet",
+  "block.vintagevibes.white_hibiscus_carpet" : "White Hibiscus Carpet",
+
+  "block.vintagevibes.black_calla" : "Black Calla Lily",
+  "block.vintagevibes.orange_calla" : "Orange Calla Lily",
+  "block.vintagevibes.white_calla" : "White Calla Lily",
+  "block.vintagevibes.yellow_calla" : "Yellow Calla Lily",
+
+  "block.vintagevibes.bird_of_paradise" : "Bird of Paradise",
+
+  "block.vintagevibes.laceleaf" : "Laceleaf",
+  "block.vintagevibes.tall_laceleaf" : "Tall Laceleaf"
+}
