@@ -1,6 +1,7 @@
 package net.thevaliantsquidward.vintagevibes.item;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,6 +27,9 @@ public class ModItems {
             ("rough_peridot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ROUGH_TOPAZ = ITEMS.register
             ("rough_topaz", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PINEAPPLE_SLICE = ITEMS.register
+            ("pineapple_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
 
 
     public static void register(IEventBus eventBus) {

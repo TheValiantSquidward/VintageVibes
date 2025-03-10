@@ -28,6 +28,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON)));
+
     public static final RegistryObject<Block> ROUGH_GARNET_BLOCK = registerBlock("rough_garnet_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ROUGH_PERIDOT_BLOCK = registerBlock("rough_peridot_block",

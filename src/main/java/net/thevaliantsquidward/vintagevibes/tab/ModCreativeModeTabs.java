@@ -78,6 +78,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_SAD.get());
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_TOUCH.get());
 
+                        pOutput.accept(ModItems.PINEAPPLE_SLICE.get());
+                        pOutput.accept(ModBlocks.PINEAPPLE.get());
                     })
                     .build());
 
