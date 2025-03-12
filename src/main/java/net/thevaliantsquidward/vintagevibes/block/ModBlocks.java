@@ -21,30 +21,110 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
             VintageVibes.MOD_ID);
 
+    //gem blocks
+    public static final RegistryObject<Block> AMBER_BLOCK = registerBlock("amber_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AQUAMARINE_BLOCK = registerBlock("aquamarine_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ENSTATITE_BLOCK = registerBlock("enstatite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> GARNET_BLOCK = registerBlock("garnet_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JADE_BLOCK = registerBlock("jade_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> KUNZITE_BLOCK = registerBlock("kunzite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LARIMAR_BLOCK = registerBlock("larimar_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MILKY_QUARTZ_BLOCK = registerBlock("milky_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOONSTONE_BLOCK = registerBlock("moonstone_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ONYX_BLOCK = registerBlock("onyx_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlock("peridot_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROSE_QUARTZ_BLOCK = registerBlock("rose_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SMOKY_QUARTZ_BLOCK = registerBlock("smoky_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> TAAFFEITE_BLOCK = registerBlock("taaffeite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON)));
-
+    //rough gem blocks
+    public static final RegistryObject<Block> ROUGH_AMBER_BLOCK = registerBlock("rough_amber_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_AQUAMARINE_BLOCK = registerBlock("rough_aquamarine_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_ENSTATITE_BLOCK = registerBlock("rough_enstatite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ROUGH_GARNET_BLOCK = registerBlock("rough_garnet_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_JADE_BLOCK = registerBlock("rough_jade_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_KUNZITE_BLOCK = registerBlock("rough_kunzite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_LARIMAR_BLOCK = registerBlock("rough_larimar_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_MILKY_QUARTZ_BLOCK = registerBlock("rough_milky_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_MOONSTONE_BLOCK = registerBlock("rough_moonstone_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_ONYX_BLOCK = registerBlock("rough_onyx_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ROUGH_PERIDOT_BLOCK = registerBlock("rough_peridot_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_ROSE_QUARTZ_BLOCK = registerBlock("rough_rose_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_SAPPHIRE_BLOCK = registerBlock("rough_sapphire_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_SMOKY_QUARTZ_BLOCK = registerBlock("rough_smoky_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROUGH_TAAFFEITE_BLOCK = registerBlock("rough_taaffeite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> ROUGH_TOPAZ_BLOCK = registerBlock("rough_topaz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
 
+    //gem tiles
+    public static final RegistryObject<Block> AQUAMARINE_TILES = registerBlock("aquamarine_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AMBER_TILES = registerBlock("amber_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ENSTATITE_TILES = registerBlock("enstatite_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> GARNET_TILES = registerBlock("garnet_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JADE_TILES = registerBlock("jade_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> KUNZITE_TILES = registerBlock("kunzite_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LARIMAR_TILES = registerBlock("larimar_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MILKY_QUARTZ_TILES = registerBlock("milky_quartz_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOONSTONE_TILES = registerBlock("moonstone_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ONYX_TILES = registerBlock("onyx_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> PERIDOT_TILES = registerBlock("peridot_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROSE_QUARTZ_TILES = registerBlock("rose_quartz_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SAPPHIRE_TILES = registerBlock("sapphire_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SMOKY_QUARTZ_TILES = registerBlock("smoky_quartz_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> TAAFFEITE_TILES = registerBlock("taaffeite_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> TOPAZ_TILES = registerBlock("topaz_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON)));
 
     public static final RegistryObject<Block> CARVED_SANDSTONE_CONCERNED = registerSandstoneBlock("carved_sandstone_concerned",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).requiresCorrectToolForDrops()));

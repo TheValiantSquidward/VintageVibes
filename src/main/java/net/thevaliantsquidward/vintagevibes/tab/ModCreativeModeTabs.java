@@ -15,30 +15,75 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VintageVibes.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> RAINBOW_REEF_TAB = CREATIVE_MODE_TABS.register("rainbow_reef_tab",
+    public static final RegistryObject<CreativeModeTab> VINTAGE_VIBES_TAB = CREATIVE_MODE_TABS.register("vintage_vibes_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PINK_HIBISCUS.get()))
                     .title(Component.translatable("creativetab.vintage_vibes_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
+                        //gem items
                         pOutput.accept(ModItems.GARNET.get());
                         pOutput.accept(ModItems.PERIDOT.get());
                         pOutput.accept(ModItems.TOPAZ.get());
 
+                        //rough gem items
                         pOutput.accept(ModItems.ROUGH_GARNET.get());
                         pOutput.accept(ModItems.ROUGH_PERIDOT.get());
                         pOutput.accept(ModItems.ROUGH_TOPAZ.get());
 
+                        //gem blocks
+                        pOutput.accept(ModBlocks.AQUAMARINE_BLOCK.get());
+                        pOutput.accept(ModBlocks.AMBER_BLOCK.get());
+                        pOutput.accept(ModBlocks.ENSTATITE_BLOCK.get());
                         pOutput.accept(ModBlocks.GARNET_BLOCK.get());
+                        pOutput.accept(ModBlocks.JADE_BLOCK.get());
+                        pOutput.accept(ModBlocks.KUNZITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.LARIMAR_BLOCK.get());
+                        pOutput.accept(ModBlocks.MILKY_QUARTZ_BLOCK.get());
+                        pOutput.accept(ModBlocks.MOONSTONE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ONYX_BLOCK.get());
                         pOutput.accept(ModBlocks.PERIDOT_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_BLOCK.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.SMOKY_QUARTZ_BLOCK.get());
+                        pOutput.accept(ModBlocks.TAAFFEITE_BLOCK.get());
                         pOutput.accept(ModBlocks.TOPAZ_BLOCK.get());
 
+                        //rough gem blocks
+                        pOutput.accept(ModBlocks.ROUGH_AQUAMARINE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_AMBER_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_ENSTATITE_BLOCK.get());
                         pOutput.accept(ModBlocks.ROUGH_GARNET_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_JADE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_KUNZITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_LARIMAR_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_MILKY_QUARTZ_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_MOONSTONE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_ONYX_BLOCK.get());
                         pOutput.accept(ModBlocks.ROUGH_PERIDOT_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_ROSE_QUARTZ_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_SMOKY_QUARTZ_BLOCK.get());
+                        pOutput.accept(ModBlocks.ROUGH_TAAFFEITE_BLOCK.get());
                         pOutput.accept(ModBlocks.ROUGH_TOPAZ_BLOCK.get());
 
+                        //gem tiles
+                        pOutput.accept(ModBlocks.AQUAMARINE_TILES.get());
+                        pOutput.accept(ModBlocks.AMBER_TILES.get());
+                        pOutput.accept(ModBlocks.ENSTATITE_TILES.get());
                         pOutput.accept(ModBlocks.GARNET_TILES.get());
+                        pOutput.accept(ModBlocks.JADE_TILES.get());
+                        pOutput.accept(ModBlocks.KUNZITE_TILES.get());
+                        pOutput.accept(ModBlocks.LARIMAR_TILES.get());
+                        pOutput.accept(ModBlocks.MILKY_QUARTZ_TILES.get());
+                        pOutput.accept(ModBlocks.MOONSTONE_TILES.get());
+                        pOutput.accept(ModBlocks.ONYX_TILES.get());
                         pOutput.accept(ModBlocks.PERIDOT_TILES.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_TILES.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_TILES.get());
+                        pOutput.accept(ModBlocks.SMOKY_QUARTZ_TILES.get());
+                        pOutput.accept(ModBlocks.TAAFFEITE_TILES.get());
                         pOutput.accept(ModBlocks.TOPAZ_TILES.get());
+
 
                         pOutput.accept(ModBlocks.ORANGE_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PINK_HIBISCUS.get());
