@@ -213,6 +213,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> BIRD_OF_PARADISE = registerBlock("bird_of_paradise",
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
 
+
     public static final RegistryObject<Block> ORANGE_HIBISCUS_CARPET = registerBlock("orange_hibiscus_carpet",
             () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
     public static final RegistryObject<Block> PINK_HIBISCUS_CARPET = registerBlock("pink_hibiscus_carpet",
@@ -221,6 +222,23 @@ public class ModBlocks {
             () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
     public static final RegistryObject<Block> WHITE_HIBISCUS_CARPET = registerBlock("white_hibiscus_carpet",
             () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
+
+
+    public static final RegistryObject<Block> ORANGE_BROMELIA = registerBlock("orange_bromelia",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_ORANGE_BROMELIA = registerBlockWithoutBlockItem("potted_orange_bromelia",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.ORANGE_BROMELIA, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+    public static final RegistryObject<Block> PINK_BROMELIA = registerBlock("pink_bromelia",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_PINK_BROMELIA = registerBlockWithoutBlockItem("potted_pink_bromelia",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.PINK_BROMELIA, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+    public static final RegistryObject<Block> YELLOW_BROMELIA = registerBlock("yellow_bromelia",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_YELLOW_BROMELIA = registerBlockWithoutBlockItem("potted_yellow_bromelia",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.YELLOW_BROMELIA, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
 
     public static final RegistryObject<Block> LACELEAF = registerBlock("laceleaf",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
