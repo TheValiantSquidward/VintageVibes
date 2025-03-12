@@ -131,6 +131,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.YELLOW_BROMELIA.get());
 
                         pOutput.accept(ModBlocks.BIRD_OF_PARADISE.get());
+                        pOutput.accept(ModBlocks.CANNA_LILY.get());
 
                         pOutput.accept(ModBlocks.LACELEAF.get());
                         pOutput.accept(ModBlocks.TALL_LACELEAF.get());

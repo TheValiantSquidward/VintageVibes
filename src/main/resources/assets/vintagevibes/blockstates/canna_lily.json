@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "vintagevibes:block/canna_lily_bottom"
+    },
+    "half=upper": {
+      "model": "vintagevibes:block/canna_lily_top"
+    }
+  }
+}
