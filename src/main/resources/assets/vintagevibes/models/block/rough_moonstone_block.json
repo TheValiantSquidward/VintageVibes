@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "vintagevibes:block/gem/rough_moonstone__block"
+    "all": "vintagevibes:block/gem/rough_moonstone_block"
   }
 }

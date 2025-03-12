@@ -21,13 +21,39 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         //gem items
+                        pOutput.accept(ModItems.AQUAMARINE.get());
+                        pOutput.accept(ModItems.AMBER.get());
+                        pOutput.accept(ModItems.ENSTATITE.get());
                         pOutput.accept(ModItems.GARNET.get());
+                        pOutput.accept(ModItems.JADE.get());
+                        pOutput.accept(ModItems.KUNZITE.get());
+                        pOutput.accept(ModItems.LARIMAR.get());
+                        pOutput.accept(ModItems.MILKY_QUARTZ.get());
+                        pOutput.accept(ModItems.MOONSTONE.get());
+                        pOutput.accept(ModItems.ONYX.get());
                         pOutput.accept(ModItems.PERIDOT.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ.get());
+                        pOutput.accept(ModItems.SAPPHIRE.get());
+                        pOutput.accept(ModItems.SMOKY_QUARTZ.get());
+                        pOutput.accept(ModItems.TAAFFEITE.get());
                         pOutput.accept(ModItems.TOPAZ.get());
 
                         //rough gem items
+                        pOutput.accept(ModItems.ROUGH_AQUAMARINE.get());
+                        pOutput.accept(ModItems.ROUGH_AMBER.get());
+                        pOutput.accept(ModItems.ROUGH_ENSTATITE.get());
                         pOutput.accept(ModItems.ROUGH_GARNET.get());
+                        pOutput.accept(ModItems.ROUGH_JADE.get());
+                        pOutput.accept(ModItems.ROUGH_KUNZITE.get());
+                        pOutput.accept(ModItems.ROUGH_LARIMAR.get());
+                        pOutput.accept(ModItems.ROUGH_MILKY_QUARTZ.get());
+                        pOutput.accept(ModItems.ROUGH_MOONSTONE.get());
+                        pOutput.accept(ModItems.ROUGH_ONYX.get());
                         pOutput.accept(ModItems.ROUGH_PERIDOT.get());
+                        pOutput.accept(ModItems.ROUGH_ROSE_QUARTZ.get());
+                        pOutput.accept(ModItems.ROUGH_SAPPHIRE.get());
+                        pOutput.accept(ModItems.ROUGH_SMOKY_QUARTZ.get());
+                        pOutput.accept(ModItems.ROUGH_TAAFFEITE.get());
                         pOutput.accept(ModItems.ROUGH_TOPAZ.get());
 
                         //gem blocks

@@ -1,6 +1,6 @@
 {
   "parent" : "item/generated",
   "textures" : {
-    "layer0" : "vintagevibes:item/gem/rose_quartz"
+    "layer0" : "vintagevibes:item/gem/smoky_quartz"
   }
 }
