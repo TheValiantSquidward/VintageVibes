@@ -130,6 +130,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_BROMELIA.get());
                         pOutput.accept(ModBlocks.YELLOW_BROMELIA.get());
 
+                        pOutput.accept(ModBlocks.ORANGE_ORCHID.get());
+                        pOutput.accept(ModBlocks.PINK_ORCHID.get());
+                        pOutput.accept(ModBlocks.YELLOW_ORCHID.get());
+
                         pOutput.accept(ModBlocks.BIRD_OF_PARADISE.get());
                         pOutput.accept(ModBlocks.CANNA_LILY.get());
 

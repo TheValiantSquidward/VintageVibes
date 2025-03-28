@@ -64,6 +64,10 @@ public class VintageVibes
         addToFlowerPot(ModBlocks.YELLOW_BROMELIA, ModBlocks.POTTED_YELLOW_BROMELIA);
         addToFlowerPot(ModBlocks.PINK_BROMELIA, ModBlocks.POTTED_PINK_BROMELIA);
 
+        addToFlowerPot(ModBlocks.ORANGE_ORCHID, ModBlocks.POTTED_ORANGE_ORCHID);
+        addToFlowerPot(ModBlocks.PINK_ORCHID, ModBlocks.POTTED_PINK_ORCHID);
+        addToFlowerPot(ModBlocks.YELLOW_ORCHID, ModBlocks.POTTED_YELLOW_ORCHID);
+
         addToFlowerPot(ModBlocks.LACELEAF, ModBlocks.POTTED_LACELEAF);
 
     }
