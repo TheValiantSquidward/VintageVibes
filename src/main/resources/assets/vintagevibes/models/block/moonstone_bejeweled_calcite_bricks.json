@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "vintagevibes:block/calcite_bricks/moonstone_calcite_bricks"
+  }
+}

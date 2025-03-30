@@ -159,6 +159,42 @@ public class ModBlocks {
     public static final RegistryObject<Block> STARRY_TOPAZ_CALCITE_TILES = registerBlock("starry_topaz_calcite_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
 
+    //calcite bricks
+    public static final RegistryObject<Block> CALCITE_BRICKS = registerBlock("calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AMBER_BEJEWELED_CALCITE_BRICKS = registerBlock("amber_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AQUAMARINE_BEJEWELED_CALCITE_BRICKS = registerBlock("aquamarine_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ENSTATITE_BEJEWELED_CALCITE_BRICKS = registerBlock("enstatite_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> GARNET_BEJEWELED_CALCITE_BRICKS = registerBlock("garnet_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JADE_BEJEWELED_CALCITE_BRICKS = registerBlock("jade_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> KUNZITE_BEJEWELED_CALCITE_BRICKS = registerBlock("kunzite_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LARIMAR_BEJEWELED_CALCITE_BRICKS = registerBlock("larimar_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MILKY_QUARTZ_BEJEWELED_CALCITE_BRICKS = registerBlock("milky_quartz_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> MOONSTONE_BEJEWELED_CALCITE_BRICKS = registerBlock("moonstone_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ONYX_BEJEWELED_CALCITE_BRICKS = registerBlock("onyx_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PERIDOT_BEJEWELED_CALCITE_BRICKS = registerBlock("peridot_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ROSE_QUARTZ_BEJEWELED_CALCITE_BRICKS = registerBlock("rose_quartz_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SAPPHIRE_BEJEWELED_CALCITE_BRICKS = registerBlock("sapphire_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICKS = registerBlock("smoky_quartz_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> TAAFFEITE_BEJEWELED_CALCITE_BRICKS = registerBlock("taaffeite_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICKS = registerBlock("topaz_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON)));
 

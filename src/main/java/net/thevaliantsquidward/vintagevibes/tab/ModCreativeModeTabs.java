@@ -129,6 +129,25 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STARRY_TAAFFEITE_CALCITE_TILES.get());
                         pOutput.accept(ModBlocks.STARRY_TOPAZ_CALCITE_TILES.get());
 
+                        //calcite bricks
+                        pOutput.accept(ModBlocks.CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.AMBER_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.AQUAMARINE_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.ENSTATITE_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.GARNET_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.JADE_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.KUNZITE_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.LARIMAR_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.MILKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.MOONSTONE_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.ONYX_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.PERIDOT_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.TAAFFEITE_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.TOPAZ_BEJEWELED_CALCITE_BRICKS.get());
+
                         pOutput.accept(ModBlocks.ORANGE_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PINK_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PURPLE_HIBISCUS.get());
