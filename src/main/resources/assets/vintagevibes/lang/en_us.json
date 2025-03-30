@@ -90,6 +90,25 @@
   "block.vintagevibes.taaffeite_tiles" : "Taaffeite Tiles",
   "block.vintagevibes.topaz_tiles" : "Topaz Tiles",
 
+  "block.vintagevibes.calcite_tiles" : "Calcite Tiles",
+  "block.vintagevibes.starry_amber_calcite_tiles" : "Starry Amber Calcite Tiles",
+  "block.vintagevibes.starry_aquamarine_calcite_tiles" : "Starry Aquamarine Calcite Tiles",
+  "block.vintagevibes.starry_enstatite_calcite_tiles" : "Starry Enstatite Calcite Tiles",
+  "block.vintagevibes.starry_garnet_calcite_tiles" : "Starry Garnet Calcite Tiles",
+  "block.vintagevibes.starry_jade_calcite_tiles" : "Starry Jade Calcite Tiles",
+  "block.vintagevibes.starry_kunzite_calcite_tiles" : "Starry Kunzite Calcite Tiles",
+  "block.vintagevibes.starry_larimar_calcite_tiles" : "Starry Larimar Calcite Tiles",
+  "block.vintagevibes.starry_milky_quartz_calcite_tiles" : "Starry Milky Quartz Calcite Tiles",
+  "block.vintagevibes.starry_moonstone_calcite_tiles" : "Starry Moonstone Calcite Tiles",
+  "block.vintagevibes.starry_onyx_calcite_tiles" : "Starry Onyx Calcite Tiles",
+  "block.vintagevibes.starry_peridot_calcite_tiles" : "Starry Peridot Calcite Tiles",
+  "block.vintagevibes.starry_rose_quartz_calcite_tiles" : "Starry Amber Calcite Tiles",
+  "block.vintagevibes.starry_sapphire_calcite_tiles" : "Starry Sapphire Calcite Tiles",
+  "block.vintagevibes.starry_smoky_quartz_calcite_tiles" : "Starry Smoky Quartz Calcite Tiles",
+  "block.vintagevibes.starry_taaffeite_calcite_tiles" : "Starry Taaffeite Calcite Tiles",
+  "block.vintagevibes.starry_topaz_calcite_tiles" : "Starry Topaz Calcite Tiles",
+
+
   "block.vintagevibes.carved_sandstone_concerned" : "Carved Sandstone",
   "block.vintagevibes.carved_sandstone_concerned.desc" : "Concerned",
 

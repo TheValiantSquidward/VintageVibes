@@ -110,6 +110,24 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TAAFFEITE_TILES.get());
                         pOutput.accept(ModBlocks.TOPAZ_TILES.get());
 
+                        //calcite tiles
+                        pOutput.accept(ModBlocks.CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_AMBER_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_AQUAMARINE_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_ENSTATITE_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_GARNET_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_JADE_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_KUNZITE_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_LARIMAR_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_MILKY_QUARTZ_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_MOONSTONE_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_ONYX_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_PERIDOT_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_ROSE_QUARTZ_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_SAPPHIRE_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_SMOKY_QUARTZ_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_TAAFFEITE_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_TOPAZ_CALCITE_TILES.get());
 
                         pOutput.accept(ModBlocks.ORANGE_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PINK_HIBISCUS.get());
