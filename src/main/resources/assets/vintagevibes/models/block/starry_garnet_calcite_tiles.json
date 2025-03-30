@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "vintagevibes:block/calcite_tiles/enstatite_starry_calcite_tiles"
+    "all": "vintagevibes:block/calcite_tiles/garnet_starry_calcite_tiles"
   }
 }
