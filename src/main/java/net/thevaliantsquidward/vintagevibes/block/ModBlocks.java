@@ -303,6 +303,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CANNA_LILY = registerBlock("canna_lily",
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
 
+    public static final RegistryObject<Block> PINEAPPLE_CROWN = registerBlock("pineapple_crown",
+            () -> new Block( BlockBehaviour.Properties.copy(Blocks.BIG_DRIPLEAF).noOcclusion()));
+
 
     public static final RegistryObject<Block> ORANGE_HIBISCUS_CARPET = registerBlock("orange_hibiscus_carpet",
             () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
