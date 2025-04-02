@@ -11,6 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.block.custom.CarvedSandstoneBlockItem;
+import net.thevaliantsquidward.vintagevibes.block.custom.PineappleTopBlock;
 import net.thevaliantsquidward.vintagevibes.block.custom.PlantCarpetBlock;
 import net.thevaliantsquidward.vintagevibes.item.ModItems;
 
@@ -304,7 +305,7 @@ public class ModBlocks {
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
 
     public static final RegistryObject<Block> PINEAPPLE_CROWN = registerBlock("pineapple_crown",
-            () -> new Block( BlockBehaviour.Properties.copy(Blocks.BIG_DRIPLEAF).noOcclusion()));
+            () -> new PineappleTopBlock( BlockBehaviour.Properties.copy(Blocks.BIG_DRIPLEAF).noOcclusion().noCollission()));
 
 
     public static final RegistryObject<Block> ORANGE_HIBISCUS_CARPET = registerBlock("orange_hibiscus_carpet",
