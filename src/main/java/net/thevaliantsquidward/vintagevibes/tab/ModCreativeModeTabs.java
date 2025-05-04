@@ -185,6 +185,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CARVED_SANDSTONE_LAZYBONES.get());
                         pOutput.accept(ModBlocks.CARVED_SANDSTONE_NOSE.get());
                         pOutput.accept(ModBlocks.CARVED_SANDSTONE_OPEN.get());
+                        pOutput.accept(ModBlocks.CARVED_SANDSTONE_SPIRAL.get());
 
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_BOLD_AND_BRASH.get());
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_CLOSED.get());
@@ -194,6 +195,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_LIPS.get());
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_SAD.get());
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_TOUCH.get());
+                        pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_MESSAGE.get());
 
                         pOutput.accept(ModItems.PINEAPPLE_SLICE.get());
                         pOutput.accept(ModBlocks.PINEAPPLE.get());

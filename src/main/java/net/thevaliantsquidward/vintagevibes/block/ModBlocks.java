@@ -219,7 +219,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CARVED_SANDSTONE_NOSE = registerSandstoneBlock("carved_sandstone_nose",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> CARVED_SANDSTONE_OPEN = registerSandstoneBlock("carved_sandstone_open",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CARVED_SANDSTONE_SPIRAL = registerSandstoneBlock("carved_sandstone_spiral",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> RED_CARVED_SANDSTONE_BOLD_AND_BRASH = registerSandstoneBlock("red_carved_sandstone_bold_and_brash",
@@ -243,6 +247,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RED_CARVED_SANDSTONE_TOUCH = registerSandstoneBlock("red_carved_sandstone_touch",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_MESSAGE = registerSandstoneBlock("red_carved_sandstone_message",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).requiresCorrectToolForDrops()));
+
 
     public static final RegistryObject<Block> PINK_HIBISCUS = registerBlock("pink_hibiscus",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));

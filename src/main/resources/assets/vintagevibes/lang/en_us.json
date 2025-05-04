@@ -147,32 +147,38 @@
   "block.vintagevibes.red_carved_sandstone_bold_and_brash" : "Carved Sandstone",
   "block.vintagevibes.red_carved_sandstone_bold_and_brash.desc" : "Bold and Brash",
 
-  "block.vintagevibes.red_carved_sandstone_closed" : "Carved Sandstone",
-  "block.vintagevibes.red_carved_sandstone_closed.desc" : "Closed",
-
-  "block.vintagevibes.red_carved_sandstone_excited" : "Carved Sandstone",
-  "block.vintagevibes.red_carved_sandstone_excited.desc" : "Excited",
-
-  "block.vintagevibes.red_carved_sandstone_frown" : "Carved Sandstone",
-  "block.vintagevibes.red_carved_sandstone_frown.desc" : "Frown",
-
   "block.vintagevibes.carved_sandstone_nose" : "Carved Sandstone",
   "block.vintagevibes.carved_sandstone_nose.desc" : "Nose",
+
+  "block.vintagevibes.carved_sandstone_spiral" : "Carved Sandstone",
+  "block.vintagevibes.carved_sandstone_spiral.desc" : "Spiral",
+
+  "block.vintagevibes.red_carved_sandstone_closed" : "Carved Red Sandstone",
+  "block.vintagevibes.red_carved_sandstone_closed.desc" : "Closed",
+
+  "block.vintagevibes.red_carved_sandstone_excited" : "Carved Red Sandstone",
+  "block.vintagevibes.red_carved_sandstone_excited.desc" : "Excited",
+
+  "block.vintagevibes.red_carved_sandstone_frown" : "Carved Rec Sandstone",
+  "block.vintagevibes.red_carved_sandstone_frown.desc" : "Frown",
 
   "block.vintagevibes.carved_sandstone_open" : "Carved Sandstone",
   "block.vintagevibes.carved_sandstone_open.desc" : "Open",
 
-  "block.vintagevibes.red_carved_sandstone_happy" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_happy" : "Carved Red Sandstone",
   "block.vintagevibes.red_carved_sandstone_happy.desc" : "Happy",
 
-  "block.vintagevibes.red_carved_sandstone_lips" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_lips" : "Carved Red Sandstone",
   "block.vintagevibes.red_carved_sandstone_lips.desc" : "Lips",
 
-  "block.vintagevibes.red_carved_sandstone_sad" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_sad" : "Carved Red Sandstone",
   "block.vintagevibes.red_carved_sandstone_sad.desc" : "Sad",
 
-  "block.vintagevibes.red_carved_sandstone_touch" : "Carved Sandstone",
+  "block.vintagevibes.red_carved_sandstone_touch" : "Carved Red Sandstone",
   "block.vintagevibes.red_carved_sandstone_touch.desc" : "Touch",
+
+  "block.vintagevibes.red_carved_sandstone_message" : "Carved Red Sandstone",
+  "block.vintagevibes.red_carved_sandstone_message.desc" : "Message",
 
   "block.vintagevibes.orange_hibiscus" : "Orange Hibiscus",
   "block.vintagevibes.pink_hibiscus" : "Pink Hibiscus",
