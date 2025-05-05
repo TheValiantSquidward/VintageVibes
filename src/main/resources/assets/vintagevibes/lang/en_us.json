@@ -1,6 +1,7 @@
 {
 
-  "creativetab.vintage_vibes_tab" : "Vintage Vibes",
+  "creativetab.vintage_vibes_tab" : "Vintage Vibes Blocks",
+  "creativetab.vintage_vibes_items_tab" : "Vintage Vibes Items",
 
   "item.vintagevibes.aquamarine" : "Aquamarine",
   "item.vintagevibes.amber" : "Amber",
@@ -125,6 +126,19 @@
   "block.vintagevibes.smoky_quartz_bejeweled_calcite_bricks" : "Smoky Quartz Bejeweled Calcite Bricks",
   "block.vintagevibes.taaffeite_bejeweled_calcite_bricks" : "Taaffeite Bejeweled Calcite Bricks",
   "block.vintagevibes.topaz_bejeweled_calcite_bricks" : "Topaz Bejeweled Calcite Bricks",
+
+  "block.vintagevibes.oak_paper_lantern" : "Oak Paper Lantern",
+  "block.vintagevibes.spruce_paper_lantern" : "Spruce Paper Lantern",
+  "block.vintagevibes.birch_paper_lantern" : "Birch Paper Lantern",
+  "block.vintagevibes.jungle_paper_lantern" : "Jungle Paper Lantern",
+  "block.vintagevibes.acacia_paper_lantern" : "Acacia Paper Lantern",
+  "block.vintagevibes.dark_oak_paper_lantern" : "Dark Oak Paper Lantern",
+  "block.vintagevibes.warped_paper_lantern" : "Warped Paper Lantern",
+  "block.vintagevibes.crimson_paper_lantern" : "Crimson Paper Lantern",
+  "block.vintagevibes.mangrove_paper_lantern" : "Mangrove Paper Lantern",
+  "block.vintagevibes.cherry_paper_lantern" : "Cherry Paper Lantern",
+  "block.vintagevibes.bamboo_paper_lantern" : "Bamboo Paper Lantern",
+
 
   "block.vintagevibes.carved_sandstone_concerned" : "Carved Sandstone",
   "block.vintagevibes.carved_sandstone_concerned.desc" : "Concerned",

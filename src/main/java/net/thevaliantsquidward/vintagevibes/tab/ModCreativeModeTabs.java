@@ -16,45 +16,10 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VintageVibes.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> VINTAGE_VIBES_TAB = CREATIVE_MODE_TABS.register("vintage_vibes_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PINK_HIBISCUS.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CARVED_SANDSTONE_GRIN.get()))
                     .title(Component.translatable("creativetab.vintage_vibes_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        //gem items
-                        pOutput.accept(ModItems.AQUAMARINE.get());
-                        pOutput.accept(ModItems.AMBER.get());
-                        pOutput.accept(ModItems.ENSTATITE.get());
-                        pOutput.accept(ModItems.GARNET.get());
-                        pOutput.accept(ModItems.JADE.get());
-                        pOutput.accept(ModItems.KUNZITE.get());
-                        pOutput.accept(ModItems.LARIMAR.get());
-                        pOutput.accept(ModItems.MILKY_QUARTZ.get());
-                        pOutput.accept(ModItems.MOONSTONE.get());
-                        pOutput.accept(ModItems.ONYX.get());
-                        pOutput.accept(ModItems.PERIDOT.get());
-                        pOutput.accept(ModItems.ROSE_QUARTZ.get());
-                        pOutput.accept(ModItems.SAPPHIRE.get());
-                        pOutput.accept(ModItems.SMOKY_QUARTZ.get());
-                        pOutput.accept(ModItems.TAAFFEITE.get());
-                        pOutput.accept(ModItems.TOPAZ.get());
-
-                        //rough gem items
-                        pOutput.accept(ModItems.ROUGH_AQUAMARINE.get());
-                        pOutput.accept(ModItems.ROUGH_AMBER.get());
-                        pOutput.accept(ModItems.ROUGH_ENSTATITE.get());
-                        pOutput.accept(ModItems.ROUGH_GARNET.get());
-                        pOutput.accept(ModItems.ROUGH_JADE.get());
-                        pOutput.accept(ModItems.ROUGH_KUNZITE.get());
-                        pOutput.accept(ModItems.ROUGH_LARIMAR.get());
-                        pOutput.accept(ModItems.ROUGH_MILKY_QUARTZ.get());
-                        pOutput.accept(ModItems.ROUGH_MOONSTONE.get());
-                        pOutput.accept(ModItems.ROUGH_ONYX.get());
-                        pOutput.accept(ModItems.ROUGH_PERIDOT.get());
-                        pOutput.accept(ModItems.ROUGH_ROSE_QUARTZ.get());
-                        pOutput.accept(ModItems.ROUGH_SAPPHIRE.get());
-                        pOutput.accept(ModItems.ROUGH_SMOKY_QUARTZ.get());
-                        pOutput.accept(ModItems.ROUGH_TAAFFEITE.get());
-                        pOutput.accept(ModItems.ROUGH_TOPAZ.get());
 
                         //gem blocks
                         pOutput.accept(ModBlocks.AQUAMARINE_BLOCK.get());
@@ -197,11 +162,67 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_TOUCH.get());
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_MESSAGE.get());
 
-                        pOutput.accept(ModItems.PINEAPPLE_SLICE.get());
                         pOutput.accept(ModBlocks.PINEAPPLE.get());
+
+                        pOutput.accept(ModBlocks.OAK_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.SPRUCE_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.BIRCH_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.JUNGLE_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.ACACIA_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.DARK_OAK_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.WARPED_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.CRIMSON_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.MANGROVE_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.CHERRY_PAPER_LANTERN.get());
+                        pOutput.accept(ModBlocks.BAMBOO_PAPER_LANTERN.get());
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> VINTAGE_VIBES_ITEM_TAB = CREATIVE_MODE_TABS.register("vintage_vibes_items_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TOPAZ.get()))
+                    .title(Component.translatable("creativetab.vintage_vibes_items_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+                        //gem items
+                        pOutput.accept(ModItems.AQUAMARINE.get());
+                        pOutput.accept(ModItems.AMBER.get());
+                        pOutput.accept(ModItems.ENSTATITE.get());
+                        pOutput.accept(ModItems.GARNET.get());
+                        pOutput.accept(ModItems.JADE.get());
+                        pOutput.accept(ModItems.KUNZITE.get());
+                        pOutput.accept(ModItems.LARIMAR.get());
+                        pOutput.accept(ModItems.MILKY_QUARTZ.get());
+                        pOutput.accept(ModItems.MOONSTONE.get());
+                        pOutput.accept(ModItems.ONYX.get());
+                        pOutput.accept(ModItems.PERIDOT.get());
+                        pOutput.accept(ModItems.ROSE_QUARTZ.get());
+                        pOutput.accept(ModItems.SAPPHIRE.get());
+                        pOutput.accept(ModItems.SMOKY_QUARTZ.get());
+                        pOutput.accept(ModItems.TAAFFEITE.get());
+                        pOutput.accept(ModItems.TOPAZ.get());
+
+                        //rough gem items
+                        pOutput.accept(ModItems.ROUGH_AQUAMARINE.get());
+                        pOutput.accept(ModItems.ROUGH_AMBER.get());
+                        pOutput.accept(ModItems.ROUGH_ENSTATITE.get());
+                        pOutput.accept(ModItems.ROUGH_GARNET.get());
+                        pOutput.accept(ModItems.ROUGH_JADE.get());
+                        pOutput.accept(ModItems.ROUGH_KUNZITE.get());
+                        pOutput.accept(ModItems.ROUGH_LARIMAR.get());
+                        pOutput.accept(ModItems.ROUGH_MILKY_QUARTZ.get());
+                        pOutput.accept(ModItems.ROUGH_MOONSTONE.get());
+                        pOutput.accept(ModItems.ROUGH_ONYX.get());
+                        pOutput.accept(ModItems.ROUGH_PERIDOT.get());
+                        pOutput.accept(ModItems.ROUGH_ROSE_QUARTZ.get());
+                        pOutput.accept(ModItems.ROUGH_SAPPHIRE.get());
+                        pOutput.accept(ModItems.ROUGH_SMOKY_QUARTZ.get());
+                        pOutput.accept(ModItems.ROUGH_TAAFFEITE.get());
+                        pOutput.accept(ModItems.ROUGH_TOPAZ.get());
+
+                        pOutput.accept(ModItems.PINEAPPLE_SLICE.get());
+
+                    })
+                    .build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

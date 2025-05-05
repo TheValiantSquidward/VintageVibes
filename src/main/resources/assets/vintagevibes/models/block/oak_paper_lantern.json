@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "vintagevibes:block/paper_lanterns/oak_paper_lantern_top",
+    "side": "vintagevibes:block/paper_lanterns/oak_paper_lantern_side"
+  }
+}
