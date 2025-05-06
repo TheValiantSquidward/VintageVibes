@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:husbandry/plant_seed",
+  "criteria": {
+    "carbon_sludge": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:pineapple_slice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "vintagevibes.advancement.pineapple_slice.desc"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "vintagevibes:pineapple_slice"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "vintagevibes.advancement.pineapple_slice"
+    }
+  },
+  "requirements": [
+    [
+      "carbon_sludge"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

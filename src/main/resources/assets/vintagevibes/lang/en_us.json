@@ -3,6 +3,9 @@
   "creativetab.vintage_vibes_tab" : "Vintage Vibes Blocks",
   "creativetab.vintage_vibes_items_tab" : "Vintage Vibes Items",
 
+  "vintagevibes.advancement.pineapple_slice" : "I've Heard It Both Ways",
+  "vintagevibes.advancement.pineapple_slice.desc" : "Obtain a Pineapple Slice",
+
   "item.vintagevibes.aquamarine" : "Aquamarine",
   "item.vintagevibes.amber" : "Amber",
   "item.vintagevibes.enstatite" : "Enstatite",
@@ -39,6 +42,7 @@
 
   "item.vintagevibes.pineapple_slice" : "Pineapple Slice",
   "block.vintagevibes.pineapple" : "Pineapple",
+  "block.vintagevibes.pineapple_crown" : "Pineapple Crown",
 
   "block.vintagevibes.aquamarine_block" : "Blocks of Aquamarine",
   "block.vintagevibes.amber_block" : "Block of Amber",
