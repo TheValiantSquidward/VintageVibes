@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "0": {
+      "item": "minecraft:torch"
+    },
+    "#": {
+      "item": "minecraft:birch_planks"
+    },
+    "%": {
+      "item": "minecraft:stick"
+    },
+    "/": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "#%#",
+    "%0%",
+    "#/#"
+  ],
+  "result": {
+    "item": "vintagevibes:birch_paper_lantern"
+  },
+  "show_notification": true
+}
