@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:oak_paper_lantern"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "vintagevibes:blocks/oak_paper_lantern"
+}
