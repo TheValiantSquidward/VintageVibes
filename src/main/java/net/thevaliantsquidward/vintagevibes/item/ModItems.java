@@ -82,6 +82,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> PINEAPPLE_SLICE = ITEMS.register
             ("pineapple_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
+    public static final RegistryObject<Item> PINEAPPLE_SEEDS = ITEMS.register
+            ("pineapple_seeds", () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

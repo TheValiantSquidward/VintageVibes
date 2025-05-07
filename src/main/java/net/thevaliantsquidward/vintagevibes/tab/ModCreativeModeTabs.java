@@ -256,7 +256,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ROUGH_TOPAZ.get());
 
                         pOutput.accept(ModItems.PINEAPPLE_SLICE.get());
-
+                        pOutput.accept(ModItems.PINEAPPLE_SEEDS.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
