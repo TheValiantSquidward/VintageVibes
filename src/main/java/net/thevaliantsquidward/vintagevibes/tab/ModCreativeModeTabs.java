@@ -89,6 +89,23 @@ public class ModCreativeModeTabs {
                         //crystal stand
                         pOutput.accept(ModBlocks.AMBER_STAND.get());
 
+                        //vanilla gem blocks
+                        pOutput.accept(ModBlocks.AMETHYST_TILES.get());
+                        pOutput.accept(ModBlocks.DIAMOND_TILES.get());
+                        pOutput.accept(ModBlocks.EMERALD_TILES.get());
+                        pOutput.accept(ModBlocks.QUARTZ_TILES.get());
+
+                        pOutput.accept(ModBlocks.STARRY_AMETHYST_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_DIAMOND_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_EMERALD_CALCITE_TILES.get());
+                        pOutput.accept(ModBlocks.STARRY_QUARTZ_CALCITE_TILES.get());
+
+                        pOutput.accept(ModBlocks.AMETHYST_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.DIAMOND_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.EMERALD_BEJEWELED_CALCITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
+
+
                         //calcite tiles
                         pOutput.accept(ModBlocks.CALCITE_TILES.get());
                         pOutput.accept(ModBlocks.STARRY_AMBER_CALCITE_TILES.get());

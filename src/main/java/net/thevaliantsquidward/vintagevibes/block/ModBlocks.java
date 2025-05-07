@@ -132,6 +132,34 @@ public class ModBlocks {
     public static final RegistryObject<Block> TOPAZ_TILES = registerBlock("topaz_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
 
+    //vanilla gem blocks
+    public static final RegistryObject<Block> AMETHYST_TILES = registerBlock("amethyst_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIAMOND_TILES = registerBlock("diamond_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> EMERALD_TILES = registerBlock("emerald_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> QUARTZ_TILES = registerBlock("quartz_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> STARRY_AMETHYST_CALCITE_TILES = registerBlock("starry_amethyst_calcite_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> STARRY_DIAMOND_CALCITE_TILES = registerBlock("starry_diamond_calcite_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> STARRY_EMERALD_CALCITE_TILES = registerBlock("starry_emerald_calcite_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> STARRY_QUARTZ_CALCITE_TILES = registerBlock("starry_quartz_calcite_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICKS = registerBlock("amethyst_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICKS = registerBlock("diamond_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICKS = registerBlock("emerald_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICKS = registerBlock("quartz_bejeweled_calcite_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
+
     //calcite tiles
     public static final RegistryObject<Block> CALCITE_TILES = registerBlock("calcite_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));

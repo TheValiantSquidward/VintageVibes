@@ -95,6 +95,24 @@
   "block.vintagevibes.taaffeite_tiles" : "Taaffeite Tiles",
   "block.vintagevibes.topaz_tiles" : "Topaz Tiles",
 
+  "block.vintagevibes.amber_stand" : "Amber On Stand",
+
+  "block.vintagevibes.amethyst_tiles" : "Amethyst Tiles",
+  "block.vintagevibes.diamond_tiles" : "Diamond Tiles",
+  "block.vintagevibes.emerald_tiles" : "Emerald Tiles",
+  "block.vintagevibes.quartz_tiles" : "Quartz Tiles",
+
+  "block.vintagevibes.starry_amethyst_calcite_tiles" : "Starry Amethyst Calcite Tiles",
+  "block.vintagevibes.starry_diamond_calcite_tiles" : "Starry Diamond Calcite Tiles",
+  "block.vintagevibes.starry_emerald_calcite_tiles" : "Starry Emerald Calcite Tiles",
+  "block.vintagevibes.starry_quartz_calcite_tiles" : "Starry Quartz Calcite Tiles",
+
+  "block.vintagevibes.amethyst_bejeweled_calcite_bricks" : "Amethyst Bejeweled Calcite Bricks",
+  "block.vintagevibes.diamond_bejeweled_calcite_bricks" : "Diamond Bejeweled Calcite Bricks",
+  "block.vintagevibes.emerald_bejeweled_calcite_bricks" : "Emerald Bejeweled Calcite Bricks",
+  "block.vintagevibes.quartz_bejeweled_calcite_bricks" : "Quartz Bejeweled Calcite Bricks",
+
+
   "block.vintagevibes.calcite_tiles" : "Calcite Tiles",
   "block.vintagevibes.starry_amber_calcite_tiles" : "Starry Amber Calcite Tiles",
   "block.vintagevibes.starry_aquamarine_calcite_tiles" : "Starry Aquamarine Calcite Tiles",
