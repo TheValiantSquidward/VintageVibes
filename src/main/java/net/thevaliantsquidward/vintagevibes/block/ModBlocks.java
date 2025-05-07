@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.block.custom.CarvedSandstoneBlockItem;
+import net.thevaliantsquidward.vintagevibes.block.custom.CrystalDisplayBlock;
 import net.thevaliantsquidward.vintagevibes.block.custom.PineappleTopBlock;
 import net.thevaliantsquidward.vintagevibes.block.custom.PlantCarpetBlock;
 import net.thevaliantsquidward.vintagevibes.item.ModItems;
@@ -26,7 +27,7 @@ public class ModBlocks {
 
             //crystal stand
     public static final RegistryObject<Block> AMBER_STAND = registerBlock("amber_stand",
-                    () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                             .instabreak()
                             .noOcclusion()));
 
