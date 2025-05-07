@@ -183,6 +183,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RED_CARVED_SANDSTONE_MESSAGE.get());
 
                         pOutput.accept(ModBlocks.PINEAPPLE.get());
+                        pOutput.accept(ModBlocks.PINEAPPLE_CROWN.get());
 
                         pOutput.accept(ModBlocks.OAK_PAPER_LANTERN.get());
                         pOutput.accept(ModBlocks.SPRUCE_PAPER_LANTERN.get());
