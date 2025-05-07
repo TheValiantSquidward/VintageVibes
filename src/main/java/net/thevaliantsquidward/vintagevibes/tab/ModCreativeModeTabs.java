@@ -129,6 +129,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PURPLE_HIBISCUS.get());
                         pOutput.accept(ModBlocks.WHITE_HIBISCUS.get());
 
+                        pOutput.accept(ModBlocks.TALL_ORANGE_HIBISCUS.get());
+                        pOutput.accept(ModBlocks.TALL_PINK_HIBISCUS.get());
+                        pOutput.accept(ModBlocks.TALL_PURPLE_HIBISCUS.get());
+                        pOutput.accept(ModBlocks.TALL_WHITE_HIBISCUS.get());
+
                         pOutput.accept(ModBlocks.ORANGE_HIBISCUS_CARPET.get());
                         pOutput.accept(ModBlocks.PINK_HIBISCUS_CARPET.get());
                         pOutput.accept(ModBlocks.PURPLE_HIBISCUS_CARPET.get());

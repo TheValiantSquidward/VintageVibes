@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "render_type": "cutout",
+  "textures": {
+    "cross": "vintagevibes:block/flower/tall_white_hibiscus_bottom"
+  }
+}

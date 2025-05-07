@@ -372,11 +372,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_YELLOW_ORCHID = registerBlockWithoutBlockItem("potted_yellow_orchid",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.YELLOW_ORCHID, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
 
-    public static final RegistryObject<Block> BIRD_OF_PARADISE = registerBlock("bird_of_paradise",
-            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
-    public static final RegistryObject<Block> CANNA_LILY = registerBlock("canna_lily",
-            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
-
     public static final RegistryObject<Block> ORANGE_BROMELIA = registerBlock("orange_bromelia",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_ORANGE_BROMELIA = registerBlockWithoutBlockItem("potted_orange_bromelia",
@@ -397,11 +392,26 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_LACELEAF = registerBlockWithoutBlockItem("potted_laceleaf",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.LACELEAF, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
 
+    //tall plants
     public static final RegistryObject<Block> TALL_LACELEAF = registerBlock("tall_laceleaf",
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
 
+    public static final RegistryObject<Block> BIRD_OF_PARADISE = registerBlock("bird_of_paradise",
+            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
 
-//hibiscus carpets
+    public static final RegistryObject<Block> CANNA_LILY = registerBlock("canna_lily",
+            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
+
+    public static final RegistryObject<Block> TALL_PINK_HIBISCUS = registerBlock("tall_pink_hibiscus",
+            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
+    public static final RegistryObject<Block> TALL_ORANGE_HIBISCUS = registerBlock("tall_orange_hibiscus",
+            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
+    public static final RegistryObject<Block> TALL_PURPLE_HIBISCUS = registerBlock("tall_purple_hibiscus",
+            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
+    public static final RegistryObject<Block> TALL_WHITE_HIBISCUS = registerBlock("tall_white_hibiscus",
+            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
+
+    //hibiscus carpets
     public static final RegistryObject<Block> ORANGE_HIBISCUS_CARPET = registerBlock("orange_hibiscus_carpet",
             () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
     public static final RegistryObject<Block> PINK_HIBISCUS_CARPET = registerBlock("pink_hibiscus_carpet",
