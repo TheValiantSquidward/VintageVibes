@@ -86,6 +86,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ROUGH_TOPAZ_BLOCK.get());
                         pOutput.accept(ModBlocks.TOPAZ_TILES.get());
 
+                        //crystal stand
+                        pOutput.accept(ModBlocks.AMBER_STAND.get());
+
                         //calcite tiles
                         pOutput.accept(ModBlocks.CALCITE_TILES.get());
                         pOutput.accept(ModBlocks.STARRY_AMBER_CALCITE_TILES.get());
@@ -124,6 +127,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TAAFFEITE_BEJEWELED_CALCITE_BRICKS.get());
                         pOutput.accept(ModBlocks.TOPAZ_BEJEWELED_CALCITE_BRICKS.get());
 
+                        //plants
                         pOutput.accept(ModBlocks.ORANGE_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PINK_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PURPLE_HIBISCUS.get());

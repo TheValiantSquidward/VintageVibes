@@ -24,7 +24,13 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
             VintageVibes.MOD_ID);
 
-    //gem blocks
+            //crystal stand
+    public static final RegistryObject<Block> AMBER_STAND = registerBlock("amber_stand",
+                    () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                            .instabreak()
+                            .noOcclusion()));
+
+            //gem blocks
     public static final RegistryObject<Block> AMBER_BLOCK = registerBlock("amber_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> AQUAMARINE_BLOCK = registerBlock("aquamarine_block",

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "blue_dye",
+  "ingredients": [
+    {
+      "item": "vintagevibes:bird_of_paradise"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:blue_dye"
+  }
+}

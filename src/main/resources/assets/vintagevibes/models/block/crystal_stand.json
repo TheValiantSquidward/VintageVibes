@@ -2,9 +2,10 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"texture_size": [32, 32],
+	"render_type": "cutout",
 	"textures": {
-		"5": "Textures/Crystal Stand/kunzite",
-		"particle": "Textures/Crystal Stand/amber"
+		"1": "amber",
+		"particle": "crystal_stand_base"
 	},
 	"elements": [
 		{
