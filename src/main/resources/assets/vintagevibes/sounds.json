@@ -1,0 +1,10 @@
+{
+  "vibe": {
+    "sounds": [
+      {
+        "name": "vintagevibes:vibe",
+        "stream": true
+      }
+    ]
+  }
+}

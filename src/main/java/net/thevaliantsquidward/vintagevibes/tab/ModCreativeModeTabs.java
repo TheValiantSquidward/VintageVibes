@@ -284,6 +284,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModItems.PINEAPPLE_SLICE.get());
                         pOutput.accept(ModItems.PINEAPPLE_SEEDS.get());
+                        pOutput.accept(ModItems.VIBE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

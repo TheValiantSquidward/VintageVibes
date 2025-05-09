@@ -19,6 +19,7 @@ import net.thevaliantsquidward.vintagevibes.block.ModBlocks;
 import net.thevaliantsquidward.vintagevibes.entity.ModEntities;
 import net.thevaliantsquidward.vintagevibes.entity.client.ButterflyRenderer;
 import net.thevaliantsquidward.vintagevibes.item.ModItems;
+import net.thevaliantsquidward.vintagevibes.sound.ModSounds;
 import net.thevaliantsquidward.vintagevibes.tab.ModCreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -39,6 +40,7 @@ public class VintageVibes
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModSounds.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModEntities.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
