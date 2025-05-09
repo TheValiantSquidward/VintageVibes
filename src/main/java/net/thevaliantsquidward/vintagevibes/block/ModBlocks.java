@@ -26,7 +26,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, VintageVibes.MOD_ID);
 
     // block properties
-    public static final BlockBehaviour.Properties GEM_STAND_PROPERTIES = BlockBehaviour.Properties.of().strength(0.5F, 2.0F).noOcclusion().sound(SoundType.AMETHYST_CLUSTER).instrument(NoteBlockInstrument.HARP);
+    public static final BlockBehaviour.Properties GEM_STAND_PROPERTIES = BlockBehaviour.Properties.of().strength(0.5F, 2.0F).noOcclusion().sound(SoundType.AMETHYST_CLUSTER).instrument(NoteBlockInstrument.HARP).lightLevel((state) -> 5);
 
     // crystal stands
     public static final RegistryObject<Block> AMBER_STAND = registerBlock("amber_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
