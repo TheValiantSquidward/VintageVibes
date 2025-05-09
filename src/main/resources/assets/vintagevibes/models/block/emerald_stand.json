@@ -1,0 +1,62 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"render_type": "cutout",
+	"textures": {
+		"1": "vintagevibes:block/crystal_stand/emerald",
+		"particle": "vintagevibes:block/particle/crystal_stand_base"
+	},
+	"elements": [
+		{
+			"name": "Base",
+			"from": [4, 0, 4],
+			"to": [12, 1, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [4, 12, 8, 12.5], "texture": "#1"},
+				"east": {"uv": [0, 12, 4, 12.5], "texture": "#1"},
+				"south": {"uv": [12, 12, 16, 12.5], "texture": "#1"},
+				"west": {"uv": [8, 12, 12, 12.5], "texture": "#1"},
+				"up": {"uv": [8, 12, 4, 8], "texture": "#1"},
+				"down": {"uv": [12, 8, 8, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Crystal",
+			"from": [0, 0, 8],
+			"to": [16, 16, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"south": {"uv": [8, 0, 16, 8], "texture": "#1"},
+				"west": {"uv": [8, 0, 8, 8], "texture": "#1"},
+				"up": {"uv": [8, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [16, 0, 8, 0], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Crystal",
+			"from": [0, 0, 8],
+			"to": [16, 16, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"south": {"uv": [8, 0, 16, 8], "texture": "#1"},
+				"west": {"uv": [8, 0, 8, 8], "texture": "#1"},
+				"up": {"uv": [8, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [16, 0, 8, 0], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Root",
+			"origin": [8, 1, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

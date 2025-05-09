@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "vv_crystal_stands",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_planks"
+    }
+  ],
+  "pattern": [
+    "#",
+    "#",
+    "&"
+  ],
+  "key": {
+    "#": {
+      "item": "vintagevibes:rough_taaffeite"
+    },
+    "&": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "result": {
+    "item": "vintagevibes:taaffeite_stand"
+  }
+}

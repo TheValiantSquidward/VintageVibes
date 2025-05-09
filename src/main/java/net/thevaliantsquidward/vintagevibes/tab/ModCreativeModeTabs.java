@@ -159,6 +159,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TAAFFEITE_STAND.get());
                         pOutput.accept(ModBlocks.TOPAZ_STAND.get());
 
+                        pOutput.accept(ModBlocks.AMETHYST_STAND.get());
+                        pOutput.accept(ModBlocks.DIAMOND_STAND.get());
+                        pOutput.accept(ModBlocks.EMERALD_STAND.get());
+                        pOutput.accept(ModBlocks.QUARTZ_STAND.get());
+
                         //plants
                         pOutput.accept(ModBlocks.ORANGE_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PINK_HIBISCUS.get());
@@ -190,6 +195,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.ORANGE_ORCHID.get());
                         pOutput.accept(ModBlocks.PINK_ORCHID.get());
+                        pOutput.accept(ModBlocks.WHITE_ORCHID.get());
                         pOutput.accept(ModBlocks.YELLOW_ORCHID.get());
 
                         pOutput.accept(ModBlocks.BIRD_OF_PARADISE.get());

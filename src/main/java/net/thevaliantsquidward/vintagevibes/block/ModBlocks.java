@@ -91,6 +91,23 @@ public class ModBlocks {
                     .instabreak()
                     .noOcclusion()));
 
+    public static final RegistryObject<Block> AMETHYST_STAND = registerBlock("amethyst_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> DIAMOND_STAND = registerBlock("diamond_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> EMERALD_STAND = registerBlock("emerald_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> QUARTZ_STAND = registerBlock("quartz_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+
             //gem blocks
     public static final RegistryObject<Block> AMBER_BLOCK = registerBlock("amber_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
@@ -468,6 +485,11 @@ public class ModBlocks {
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_PINK_ORCHID = registerBlockWithoutBlockItem("potted_pink_orchid",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.PINK_ORCHID, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
+
+    public static final RegistryObject<Block> WHITE_ORCHID = registerBlock("white_orchid",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_WHITE_ORCHID = registerBlockWithoutBlockItem("potted_white_orchid",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.WHITE_ORCHID, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
 
     public static final RegistryObject<Block> YELLOW_ORCHID = registerBlock("yellow_orchid",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));

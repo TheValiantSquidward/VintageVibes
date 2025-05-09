@@ -113,6 +113,11 @@
   "block.vintagevibes.taaffeite_stand" : "Taaffeite On Stand",
   "block.vintagevibes.topaz_stand" : "Topaz On Stand",
 
+  "block.vintagevibes.amethyst_stand" : "Amethyst On Stand",
+  "block.vintagevibes.diamond_stand" : "Diamond On Stand",
+  "block.vintagevibes.emerald_stand" : "Emerald On Stand",
+  "block.vintagevibes.quartz_stand" : "Quartz On Stand",
+
 
   "block.vintagevibes.amethyst_tiles" : "Amethyst Tiles",
   "block.vintagevibes.diamond_tiles" : "Diamond Tiles",
@@ -237,7 +242,6 @@
   "block.vintagevibes.pink_hibiscus" : "Pink Hibiscus",
   "block.vintagevibes.red_hibiscus" : "Red Hibiscus",
   "block.vintagevibes.purple_hibiscus" : "Purple Hibiscus",
-
   "block.vintagevibes.white_hibiscus" : "White Hibiscus",
 
   "block.vintagevibes.tall_orange_hibiscus" : "Tall Orange Hibiscus",
@@ -264,6 +268,7 @@
 
   "block.vintagevibes.orange_orchid" : "Orange Orchid",
   "block.vintagevibes.pink_orchid" : "Pink Orchid",
+  "block.vintagevibes.white_orchid" : "White Orchid",
   "block.vintagevibes.yellow_orchid" : "Yellow Orchid",
 
   "block.vintagevibes.torch_ginger" : "Torch Ginger",
