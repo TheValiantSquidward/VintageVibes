@@ -86,9 +86,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ROUGH_TOPAZ_BLOCK.get());
                         pOutput.accept(ModBlocks.TOPAZ_TILES.get());
 
-                        //crystal stand
-                        pOutput.accept(ModBlocks.AMBER_STAND.get());
-
                         //vanilla gem blocks
                         pOutput.accept(ModBlocks.AMETHYST_TILES.get());
                         pOutput.accept(ModBlocks.DIAMOND_TILES.get());
@@ -144,20 +141,41 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TAAFFEITE_BEJEWELED_CALCITE_BRICKS.get());
                         pOutput.accept(ModBlocks.TOPAZ_BEJEWELED_CALCITE_BRICKS.get());
 
+                        //crystal stand
+                        pOutput.accept(ModBlocks.AMBER_STAND.get());
+                        pOutput.accept(ModBlocks.AQUAMARINE_STAND.get());
+                        pOutput.accept(ModBlocks.ENSTATITE_STAND.get());
+                        pOutput.accept(ModBlocks.GARNET_STAND.get());
+                        pOutput.accept(ModBlocks.JADE_STAND.get());
+                        pOutput.accept(ModBlocks.KUNZITE_STAND.get());
+                        pOutput.accept(ModBlocks.LARIMAR_STAND.get());
+                        pOutput.accept(ModBlocks.MILKY_QUARTZ_STAND.get());
+                        pOutput.accept(ModBlocks.MOONSTONE_STAND.get());
+                        pOutput.accept(ModBlocks.ONYX_STAND.get());
+                        pOutput.accept(ModBlocks.PERIDOT_STAND.get());
+                        pOutput.accept(ModBlocks.ROSE_QUARTZ_STAND.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_STAND.get());
+                        pOutput.accept(ModBlocks.SMOKY_QUARTZ_STAND.get());
+                        pOutput.accept(ModBlocks.TAAFFEITE_STAND.get());
+                        pOutput.accept(ModBlocks.TOPAZ_STAND.get());
+
                         //plants
                         pOutput.accept(ModBlocks.ORANGE_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PINK_HIBISCUS.get());
                         pOutput.accept(ModBlocks.PURPLE_HIBISCUS.get());
+                        pOutput.accept(ModBlocks.RED_HIBISCUS.get());
                         pOutput.accept(ModBlocks.WHITE_HIBISCUS.get());
 
                         pOutput.accept(ModBlocks.TALL_ORANGE_HIBISCUS.get());
                         pOutput.accept(ModBlocks.TALL_PINK_HIBISCUS.get());
                         pOutput.accept(ModBlocks.TALL_PURPLE_HIBISCUS.get());
+                        pOutput.accept(ModBlocks.TALL_RED_HIBISCUS.get());
                         pOutput.accept(ModBlocks.TALL_WHITE_HIBISCUS.get());
 
                         pOutput.accept(ModBlocks.ORANGE_HIBISCUS_CARPET.get());
                         pOutput.accept(ModBlocks.PINK_HIBISCUS_CARPET.get());
                         pOutput.accept(ModBlocks.PURPLE_HIBISCUS_CARPET.get());
+                        pOutput.accept(ModBlocks.RED_HIBISCUS_CARPET.get());
                         pOutput.accept(ModBlocks.WHITE_HIBISCUS_CARPET.get());
 
                         pOutput.accept(ModBlocks.BLACK_CALLA.get());
@@ -167,6 +185,7 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.ORANGE_BROMELIA.get());
                         pOutput.accept(ModBlocks.PINK_BROMELIA.get());
+                        pOutput.accept(ModBlocks.PURPLE_BROMELIA.get());
                         pOutput.accept(ModBlocks.YELLOW_BROMELIA.get());
 
                         pOutput.accept(ModBlocks.ORANGE_ORCHID.get());
@@ -178,6 +197,8 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.LACELEAF.get());
                         pOutput.accept(ModBlocks.TALL_LACELEAF.get());
+
+                        pOutput.accept(ModBlocks.TORCH_GINGER.get());
 
                         pOutput.accept(ModBlocks.CARVED_SANDSTONE_CONCERNED.get());
                         pOutput.accept(ModBlocks.CARVED_SANDSTONE_DISAPPOINTED.get());

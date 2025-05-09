@@ -53,6 +53,7 @@ public class VintageVibes
         addToFlowerPot(ModBlocks.PINK_HIBISCUS, ModBlocks.POTTED_PINK_HIBISCUS);
         addToFlowerPot(ModBlocks.ORANGE_HIBISCUS, ModBlocks.POTTED_ORANGE_HIBISCUS);
         addToFlowerPot(ModBlocks.PURPLE_HIBISCUS, ModBlocks.POTTED_PURPLE_HIBISCUS);
+        addToFlowerPot(ModBlocks.RED_HIBISCUS, ModBlocks.POTTED_RED_HIBISCUS);
         addToFlowerPot(ModBlocks.WHITE_HIBISCUS, ModBlocks.POTTED_WHITE_HIBISCUS);
 
         addToFlowerPot(ModBlocks.BLACK_CALLA, ModBlocks.POTTED_BLACK_CALLA);
@@ -61,14 +62,17 @@ public class VintageVibes
         addToFlowerPot(ModBlocks.WHITE_CALLA, ModBlocks.POTTED_WHITE_CALLA);
 
         addToFlowerPot(ModBlocks.ORANGE_BROMELIA, ModBlocks.POTTED_ORANGE_BROMELIA);
-        addToFlowerPot(ModBlocks.YELLOW_BROMELIA, ModBlocks.POTTED_YELLOW_BROMELIA);
         addToFlowerPot(ModBlocks.PINK_BROMELIA, ModBlocks.POTTED_PINK_BROMELIA);
+        addToFlowerPot(ModBlocks.PURPLE_BROMELIA, ModBlocks.POTTED_PURPLE_BROMELIA);
+        addToFlowerPot(ModBlocks.YELLOW_BROMELIA, ModBlocks.POTTED_YELLOW_BROMELIA);
 
         addToFlowerPot(ModBlocks.ORANGE_ORCHID, ModBlocks.POTTED_ORANGE_ORCHID);
         addToFlowerPot(ModBlocks.PINK_ORCHID, ModBlocks.POTTED_PINK_ORCHID);
         addToFlowerPot(ModBlocks.YELLOW_ORCHID, ModBlocks.POTTED_YELLOW_ORCHID);
 
         addToFlowerPot(ModBlocks.LACELEAF, ModBlocks.POTTED_LACELEAF);
+
+        addToFlowerPot(ModBlocks.TORCH_GINGER, ModBlocks.POTTED_TORCH_GINGER);
 
     }
     public static ResourceLocation prefix(String name) {

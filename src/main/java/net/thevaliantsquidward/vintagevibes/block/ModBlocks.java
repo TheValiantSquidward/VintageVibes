@@ -30,6 +30,66 @@ public class ModBlocks {
                     () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                             .instabreak()
                             .noOcclusion()));
+    public static final RegistryObject<Block> AQUAMARINE_STAND = registerBlock("aquamarine_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> ENSTATITE_STAND = registerBlock("enstatite_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> GARNET_STAND = registerBlock("garnet_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> JADE_STAND = registerBlock("jade_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> KUNZITE_STAND = registerBlock("kunzite_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> LARIMAR_STAND = registerBlock("larimar_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> MILKY_QUARTZ_STAND = registerBlock("milky_quartz_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> MOONSTONE_STAND = registerBlock("moonstone_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> ONYX_STAND = registerBlock("onyx_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> PERIDOT_STAND = registerBlock("peridot_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAND = registerBlock("rose_quartz_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> SAPPHIRE_STAND = registerBlock("sapphire_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> SMOKY_QUARTZ_STAND = registerBlock("smoky_quartz_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> TAAFFEITE_STAND = registerBlock("taaffeite_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
+    public static final RegistryObject<Block> TOPAZ_STAND = registerBlock("topaz_stand",
+            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .instabreak()
+                    .noOcclusion()));
 
             //gem blocks
     public static final RegistryObject<Block> AMBER_BLOCK = registerBlock("amber_block",
@@ -357,20 +417,26 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_PINK_HIBISCUS = registerBlockWithoutBlockItem("potted_pink_hibiscus",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.PINK_HIBISCUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
 
-    public static final RegistryObject<Block> ORANGE_HIBISCUS = registerBlock("orange_hibiscus",
-            () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_ORANGE_HIBISCUS = registerBlockWithoutBlockItem("potted_orange_hibiscus",
-            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.ORANGE_HIBISCUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
-
     public static final RegistryObject<Block> PURPLE_HIBISCUS = registerBlock("purple_hibiscus",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_PURPLE_HIBISCUS = registerBlockWithoutBlockItem("potted_purple_hibiscus",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.PURPLE_HIBISCUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
 
+    public static final RegistryObject<Block> ORANGE_HIBISCUS = registerBlock("orange_hibiscus",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_ORANGE_HIBISCUS = registerBlockWithoutBlockItem("potted_orange_hibiscus",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.ORANGE_HIBISCUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
+
+    public static final RegistryObject<Block> RED_HIBISCUS = registerBlock("red_hibiscus",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_RED_HIBISCUS = registerBlockWithoutBlockItem("potted_red_hibiscus",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.RED_HIBISCUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
+
     public static final RegistryObject<Block> WHITE_HIBISCUS = registerBlock("white_hibiscus",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_WHITE_HIBISCUS = registerBlockWithoutBlockItem("potted_white_hibiscus",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.WHITE_HIBISCUS, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
+
 
     public static final RegistryObject<Block> BLACK_CALLA = registerBlock("black_calla",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
@@ -392,6 +458,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_WHITE_CALLA = registerBlockWithoutBlockItem("potted_white_calla",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.WHITE_CALLA, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
 
+
     public static final RegistryObject<Block> ORANGE_ORCHID = registerBlock("orange_orchid",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_ORANGE_ORCHID = registerBlockWithoutBlockItem("potted_orange_orchid",
@@ -407,6 +474,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_YELLOW_ORCHID = registerBlockWithoutBlockItem("potted_yellow_orchid",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.YELLOW_ORCHID, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
 
+
     public static final RegistryObject<Block> ORANGE_BROMELIA = registerBlock("orange_bromelia",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_ORANGE_BROMELIA = registerBlockWithoutBlockItem("potted_orange_bromelia",
@@ -417,6 +485,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_PINK_BROMELIA = registerBlockWithoutBlockItem("potted_pink_bromelia",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.PINK_BROMELIA, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
 
+    public static final RegistryObject<Block> PURPLE_BROMELIA = registerBlock("purple_bromelia",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_PURPLE_BROMELIA = registerBlockWithoutBlockItem("potted_purple_bromelia",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.PURPLE_BROMELIA, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
+
     public static final RegistryObject<Block> YELLOW_BROMELIA = registerBlock("yellow_bromelia",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_YELLOW_BROMELIA = registerBlockWithoutBlockItem("potted_yellow_bromelia",
@@ -426,6 +499,12 @@ public class ModBlocks {
             () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_LACELEAF = registerBlockWithoutBlockItem("potted_laceleaf",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.LACELEAF, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
+
+    public static final RegistryObject<Block> TORCH_GINGER = registerBlock("torch_ginger",
+            () -> new FlowerBlock(MobEffects.GLOWING, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> POTTED_TORCH_GINGER = registerBlockWithoutBlockItem("potted_torch_ginger",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, ModBlocks.TORCH_GINGER, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
+
 
     //tall plants
     public static final RegistryObject<Block> TALL_LACELEAF = registerBlock("tall_laceleaf",
@@ -439,9 +518,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TALL_PINK_HIBISCUS = registerBlock("tall_pink_hibiscus",
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
+    public static final RegistryObject<Block> TALL_PURPLE_HIBISCUS = registerBlock("tall_purple_hibiscus",
+            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
     public static final RegistryObject<Block> TALL_ORANGE_HIBISCUS = registerBlock("tall_orange_hibiscus",
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
-    public static final RegistryObject<Block> TALL_PURPLE_HIBISCUS = registerBlock("tall_purple_hibiscus",
+    public static final RegistryObject<Block> TALL_RED_HIBISCUS = registerBlock("tall_red_hibiscus",
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
     public static final RegistryObject<Block> TALL_WHITE_HIBISCUS = registerBlock("tall_white_hibiscus",
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
@@ -452,6 +533,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> PINK_HIBISCUS_CARPET = registerBlock("pink_hibiscus_carpet",
             () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
     public static final RegistryObject<Block> PURPLE_HIBISCUS_CARPET = registerBlock("purple_hibiscus_carpet",
+            () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
+    public static final RegistryObject<Block> RED_HIBISCUS_CARPET = registerBlock("red_hibiscus_carpet",
             () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
     public static final RegistryObject<Block> WHITE_HIBISCUS_CARPET = registerBlock("white_hibiscus_carpet",
             () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));

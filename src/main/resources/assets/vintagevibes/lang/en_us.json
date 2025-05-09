@@ -97,6 +97,22 @@
   "block.vintagevibes.topaz_tiles" : "Topaz Tiles",
 
   "block.vintagevibes.amber_stand" : "Amber On Stand",
+  "block.vintagevibes.aquamarine_stand" : "Aquamarine On Stand",
+  "block.vintagevibes.enstatite_stand" : "Enstatite On Stand",
+  "block.vintagevibes.garnet_stand" : "Garnet On Stand",
+  "block.vintagevibes.jade_stand" : "Jade On Stand",
+  "block.vintagevibes.kunzite_stand" : "Kunzite On Stand",
+  "block.vintagevibes.larimar_stand" : "Larimar On Stand",
+  "block.vintagevibes.milky_quartz_stand" : "Milky Quartz On Stand",
+  "block.vintagevibes.moonstone_stand" : "Moonstone On Stand",
+  "block.vintagevibes.onyx_stand" : "Onyx On Stand",
+  "block.vintagevibes.peridot_stand" : "Peridot On Stand",
+  "block.vintagevibes.rose_quartz_stand" : "Rose Quartz On Stand",
+  "block.vintagevibes.sapphire_stand" : "Sapphire On Stand",
+  "block.vintagevibes.smoky_quartz_stand" : "Smoky Quartz On Stand",
+  "block.vintagevibes.taaffeite_stand" : "Taaffeite On Stand",
+  "block.vintagevibes.topaz_stand" : "Topaz On Stand",
+
 
   "block.vintagevibes.amethyst_tiles" : "Amethyst Tiles",
   "block.vintagevibes.diamond_tiles" : "Diamond Tiles",
@@ -219,17 +235,21 @@
 
   "block.vintagevibes.orange_hibiscus" : "Orange Hibiscus",
   "block.vintagevibes.pink_hibiscus" : "Pink Hibiscus",
+  "block.vintagevibes.red_hibiscus" : "Red Hibiscus",
   "block.vintagevibes.purple_hibiscus" : "Purple Hibiscus",
+
   "block.vintagevibes.white_hibiscus" : "White Hibiscus",
 
   "block.vintagevibes.tall_orange_hibiscus" : "Tall Orange Hibiscus",
   "block.vintagevibes.tall_pink_hibiscus" : "Tall Pink Hibiscus",
   "block.vintagevibes.tall_purple_hibiscus" : "Tall Purple Hibiscus",
+  "block.vintagevibes.tall_red_hibiscus" : "Tall Red Hibiscus",
   "block.vintagevibes.tall_white_hibiscus" : "Tall White Hibiscus",
 
   "block.vintagevibes.orange_hibiscus_carpet" : "Orange Hibiscus Carpet",
   "block.vintagevibes.pink_hibiscus_carpet" : "Pink Hibiscus Carpet",
   "block.vintagevibes.purple_hibiscus_carpet" : "Purple Hibiscus Carpet",
+  "block.vintagevibes.red_hibiscus_carpet" : "Red Hibiscus Carpet",
   "block.vintagevibes.white_hibiscus_carpet" : "White Hibiscus Carpet",
 
   "block.vintagevibes.black_calla" : "Black Calla Lily",
@@ -238,6 +258,7 @@
   "block.vintagevibes.yellow_calla" : "Yellow Calla Lily",
 
   "block.vintagevibes.pink_bromelia" : "Pink Bromeliad",
+  "block.vintagevibes.purple_bromelia" : "Purple Bromeliad",
   "block.vintagevibes.orange_bromelia" : "Orange Bromeliad",
   "block.vintagevibes.yellow_bromelia" : "Yellow Bromeliad",
 
@@ -245,9 +266,10 @@
   "block.vintagevibes.pink_orchid" : "Pink Orchid",
   "block.vintagevibes.yellow_orchid" : "Yellow Orchid",
 
+  "block.vintagevibes.torch_ginger" : "Torch Ginger",
+
   "block.vintagevibes.bird_of_paradise" : "Bird of Paradise",
   "block.vintagevibes.canna_lily" : "Canna Lily",
-
 
   "block.vintagevibes.laceleaf" : "Laceleaf",
   "block.vintagevibes.tall_laceleaf" : "Tall Laceleaf"
