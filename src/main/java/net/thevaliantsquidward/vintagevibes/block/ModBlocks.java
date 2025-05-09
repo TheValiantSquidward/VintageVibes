@@ -22,93 +22,35 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class ModBlocks {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
-            VintageVibes.MOD_ID);
 
-            //crystal stand
-    public static final RegistryObject<Block> AMBER_STAND = registerBlock("amber_stand",
-                    () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                            .instabreak()
-                            .noOcclusion()));
-    public static final RegistryObject<Block> AQUAMARINE_STAND = registerBlock("aquamarine_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> ENSTATITE_STAND = registerBlock("enstatite_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> GARNET_STAND = registerBlock("garnet_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> JADE_STAND = registerBlock("jade_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> KUNZITE_STAND = registerBlock("kunzite_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> LARIMAR_STAND = registerBlock("larimar_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> MILKY_QUARTZ_STAND = registerBlock("milky_quartz_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> MOONSTONE_STAND = registerBlock("moonstone_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> ONYX_STAND = registerBlock("onyx_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> PERIDOT_STAND = registerBlock("peridot_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> ROSE_QUARTZ_STAND = registerBlock("rose_quartz_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> SAPPHIRE_STAND = registerBlock("sapphire_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> SMOKY_QUARTZ_STAND = registerBlock("smoky_quartz_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> TAAFFEITE_STAND = registerBlock("taaffeite_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> TOPAZ_STAND = registerBlock("topaz_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, VintageVibes.MOD_ID);
 
-    public static final RegistryObject<Block> AMETHYST_STAND = registerBlock("amethyst_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> DIAMOND_STAND = registerBlock("diamond_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> EMERALD_STAND = registerBlock("emerald_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
-    public static final RegistryObject<Block> QUARTZ_STAND = registerBlock("quartz_stand",
-            () -> new CrystalDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .noOcclusion()));
+    // block properties
+    public static final BlockBehaviour.Properties GEM_STAND_PROPERTIES = BlockBehaviour.Properties.of().strength(0.5F, 2.0F).noOcclusion().sound(SoundType.AMETHYST_CLUSTER).instrument(NoteBlockInstrument.HARP);
 
-            //gem blocks
+    // crystal stands
+    public static final RegistryObject<Block> AMBER_STAND = registerBlock("amber_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final RegistryObject<Block> AQUAMARINE_STAND = registerBlock("aquamarine_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_CYAN)));
+    public static final RegistryObject<Block> ENSTATITE_STAND = registerBlock("enstatite_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
+    public static final RegistryObject<Block> GARNET_STAND = registerBlock("garnet_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final RegistryObject<Block> JADE_STAND = registerBlock("jade_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN)));
+    public static final RegistryObject<Block> KUNZITE_STAND = registerBlock("kunzite_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> LARIMAR_STAND = registerBlock("larimar_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryObject<Block> MILKY_QUARTZ_STAND = registerBlock("milky_quartz_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.SNOW)));
+    public static final RegistryObject<Block> MOONSTONE_STAND = registerBlock("moonstone_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryObject<Block> ONYX_STAND = registerBlock("onyx_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_BLACK)));
+    public static final RegistryObject<Block> PERIDOT_STAND = registerBlock("peridot_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_GREEN)));
+    public static final RegistryObject<Block> ROSE_QUARTZ_STAND = registerBlock("rose_quartz_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> SAPPHIRE_STAND = registerBlock("sapphire_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryObject<Block> SMOKY_QUARTZ_STAND = registerBlock("smoky_quartz_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
+    public static final RegistryObject<Block> TAAFFEITE_STAND = registerBlock("taaffeite_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_MAGENTA)));
+    public static final RegistryObject<Block> TOPAZ_STAND = registerBlock("topaz_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_YELLOW)));
+    public static final RegistryObject<Block> AMETHYST_STAND = registerBlock("amethyst_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> DIAMOND_STAND = registerBlock("diamond_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.DIAMOND)));
+    public static final RegistryObject<Block> EMERALD_STAND = registerBlock("emerald_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.EMERALD)));
+    public static final RegistryObject<Block> QUARTZ_STAND = registerBlock("quartz_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.QUARTZ)));
+
+    // gem blocks
     public static final RegistryObject<Block> AMBER_BLOCK = registerBlock("amber_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> AQUAMARINE_BLOCK = registerBlock("aquamarine_block",
@@ -587,8 +529,6 @@ public class ModBlocks {
     private static <T extends Block> Supplier<T> create(String key, Supplier<T> block, CreativeModeTab tab) {
         return create(key, block, entry -> new BlockItem(entry.get(), new Item.Properties()));
     }
-
-
 
     private static <T extends Block> Supplier<T> create(String key, Supplier<T> block) {
         return BLOCKS.register(key, block);

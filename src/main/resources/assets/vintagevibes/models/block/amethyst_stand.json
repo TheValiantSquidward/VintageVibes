@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
-	"texture_size": [32, 32],
 	"render_type": "cutout",
+	"texture_size": [32, 32],
 	"textures": {
 		"1": "vintagevibes:block/crystal_stand/amethyst",
 		"particle": "vintagevibes:block/particle/crystal_stand_base"
