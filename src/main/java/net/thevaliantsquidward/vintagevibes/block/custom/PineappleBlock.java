@@ -9,9 +9,9 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 
-public class WoodenLampBlock extends DirectionalBlock {
+public class PineappleBlock extends DirectionalBlock {
 
-    public WoodenLampBlock(Properties properties) {
+    public PineappleBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.UP));
     }

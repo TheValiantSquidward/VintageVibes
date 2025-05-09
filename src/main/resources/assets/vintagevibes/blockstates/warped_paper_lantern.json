@@ -1,7 +1,30 @@
 {
   "variants": {
-    "": {
+    "facing=up": {
       "model": "vintagevibes:block/warped_paper_lantern"
+    },
+    "facing=down": {
+      "model": "vintagevibes:block/warped_paper_lantern",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/warped_paper_lantern",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/warped_paper_lantern",
+      "x": 90,
+      "y": 180
+    },
+    "facing=east": {
+      "model": "vintagevibes:block/warped_paper_lantern",
+      "x": 90,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/warped_paper_lantern",
+      "x": 90,
+      "y": 270
     }
   }
 }

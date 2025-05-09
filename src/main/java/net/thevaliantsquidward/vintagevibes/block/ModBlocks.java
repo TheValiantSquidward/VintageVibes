@@ -12,10 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
-import net.thevaliantsquidward.vintagevibes.block.custom.CarvedSandstoneBlockItem;
-import net.thevaliantsquidward.vintagevibes.block.custom.CrystalDisplayBlock;
-import net.thevaliantsquidward.vintagevibes.block.custom.PineappleTopBlock;
-import net.thevaliantsquidward.vintagevibes.block.custom.PlantCarpetBlock;
+import net.thevaliantsquidward.vintagevibes.block.custom.*;
 import net.thevaliantsquidward.vintagevibes.item.ModItems;
 
 import java.util.function.Function;
@@ -252,63 +249,20 @@ public class ModBlocks {
     public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICKS = registerBlock("topaz_bejeweled_calcite_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE).requiresCorrectToolForDrops()));
 
-//paper lanterns
+    // paper lanterns
+    public static final RegistryObject<Block> OAK_PAPER_LANTERN = registerBlock("oak_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> SPRUCE_PAPER_LANTERN = registerBlock("spruce_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> BIRCH_PAPER_LANTERN = registerBlock("birch_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> JUNGLE_PAPER_LANTERN = registerBlock("jungle_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> ACACIA_PAPER_LANTERN = registerBlock("acacia_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> DARK_OAK_PAPER_LANTERN = registerBlock("dark_oak_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> WARPED_PAPER_LANTERN = registerBlock("warped_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> CRIMSON_PAPER_LANTERN = registerBlock("crimson_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> MANGROVE_PAPER_LANTERN = registerBlock("mangrove_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> CHERRY_PAPER_LANTERN = registerBlock("cherry_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
+    public static final RegistryObject<Block> BAMBOO_PAPER_LANTERN = registerBlock("bamboo_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS).strength(1.0F, 1.0F).lightLevel((state) -> 15)));
 
-    public static final RegistryObject<Block> OAK_PAPER_LANTERN = registerBlock("oak_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> SPRUCE_PAPER_LANTERN = registerBlock("spruce_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> BIRCH_PAPER_LANTERN = registerBlock("birch_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> JUNGLE_PAPER_LANTERN = registerBlock("jungle_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> ACACIA_PAPER_LANTERN = registerBlock("acacia_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> DARK_OAK_PAPER_LANTERN = registerBlock("dark_oak_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> WARPED_PAPER_LANTERN = registerBlock("warped_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> CRIMSON_PAPER_LANTERN = registerBlock("crimson_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> MANGROVE_PAPER_LANTERN = registerBlock("mangrove_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> CHERRY_PAPER_LANTERN = registerBlock("cherry_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-
-    public static final RegistryObject<Block> BAMBOO_PAPER_LANTERN = registerBlock("bamboo_paper_lantern",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS)
-                    .instabreak()
-                    .lightLevel((p_152677_) -> {return 15;})));
-    //carved sandstone(s)
+    // carved sandstone
     public static final RegistryObject<Block> CARVED_SANDSTONE_CONCERNED = registerSandstoneBlock("carved_sandstone_concerned",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).requiresCorrectToolForDrops()));
 
@@ -363,12 +317,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> RED_CARVED_SANDSTONE_MESSAGE = registerSandstoneBlock("red_carved_sandstone_message",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_SANDSTONE).strength(0.8F).requiresCorrectToolForDrops()));
 
-    //pineapple
-    public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON)));
-
-    public static final RegistryObject<Block> PINEAPPLE_CROWN = registerBlock("pineapple_crown",
-            () -> new PineappleTopBlock( BlockBehaviour.Properties.copy(Blocks.BIG_DRIPLEAF).noOcclusion().noCollission()));
+    // pineapple
+    public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple", () -> new PineappleBlock(BlockBehaviour.Properties.copy(Blocks.MELON)));
+    public static final RegistryObject<Block> PINEAPPLE_SCALE_BLOCK = registerBlock("pineapple_scale_block", () -> new PineappleBlock(BlockBehaviour.Properties.copy(Blocks.MELON)));
+    public static final RegistryObject<Block> PINEAPPLE_CROWN = registerBlock("pineapple_crown", () -> new PineappleCrownBlock( BlockBehaviour.Properties.copy(Blocks.BIG_DRIPLEAF).noOcclusion().noCollission()));
 
     //flowers
     public static final RegistryObject<Block> PINK_HIBISCUS = registerBlock("pink_hibiscus",
