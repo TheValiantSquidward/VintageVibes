@@ -11,6 +11,7 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.block.VVBlocks;
+import net.thevaliantsquidward.vintagevibes.item.VVItems;
 import net.thevaliantsquidward.vintagevibes.tab.VVCreativeTabs;
 import org.apache.commons.lang3.text.WordUtils;
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ import java.util.Objects;
 import java.util.function.Supplier;
 
 import static net.thevaliantsquidward.vintagevibes.block.VVBlocks.*;
+import static net.thevaliantsquidward.vintagevibes.item.VVItems.*;
 
 public class VVLangProvider extends LanguageProvider {
 
@@ -37,10 +39,65 @@ public class VVLangProvider extends LanguageProvider {
         // blocks
         VVBlocks.AUTO_TRANSLATE.forEach(this::forBlock);
 
-//        // items
-//        VVItems.AUTO_TRANSLATE.forEach(this::forItem);
+        // items
+        VVItems.AUTO_TRANSLATE.forEach(this::forItem);
 
         // untranslated blocks
+        addBlock(AMBER_STAND, "Amber Crystal Stand");
+        addBlock(AQUAMARINE_STAND, "Aquamarine Crystal Stand");
+        addBlock(ENSTATITE_STAND, "Enstatite Crystal Stand");
+        addBlock(GARNET_STAND, "Garnet Crystal Stand");
+        addBlock(JADE_STAND, "Jade Crystal Stand");
+        addBlock(KUNZITE_STAND, "Kunzite Crystal Stand");
+        addBlock(LARIMAR_STAND, "Larimar Crystal Stand");
+        addBlock(MILKY_QUARTZ_STAND, "Milky Quartz Crystal Stand");
+        addBlock(MOONSTONE_STAND, "Moonstone Crystal Stand");
+        addBlock(ONYX_STAND, "Onyx Crystal Stand");
+        addBlock(PERIDOT_STAND, "Peridot Crystal Stand");
+        addBlock(ROSE_QUARTZ_STAND, "Rose Quartz Crystal Stand");
+        addBlock(SAPPHIRE_STAND, "Sapphire Crystal Stand");
+        addBlock(SMOKY_QUARTZ_STAND, "Smoky Quartz Crystal Stand");
+        addBlock(TAAFFEITE_STAND, "Taaffeite Crystal Stand");
+        addBlock(TOPAZ_STAND, "Topaz Crystal Stand");
+        addBlock(AMETHYST_STAND, "Amethyst Crystal Stand");
+        addBlock(DIAMOND_STAND, "Diamond Crystal Stand");
+        addBlock(EMERALD_STAND, "Emerald Crystal Stand");
+        addBlock(QUARTZ_STAND, "Quartz Crystal Stand");
+
+        addBlock(AMBER_BLOCK, "Block of Amber");
+        addBlock(AQUAMARINE_BLOCK, "Block of Aquamarine");
+        addBlock(ENSTATITE_BLOCK, "Block of Enstatite");
+        addBlock(GARNET_BLOCK, "Block of Garnet");
+        addBlock(JADE_BLOCK, "Block of Jade");
+        addBlock(KUNZITE_BLOCK, "Block of Kunzite");
+        addBlock(LARIMAR_BLOCK, "Block of Larimar");
+        addBlock(MILKY_QUARTZ_BLOCK, "Block of Milky Quartz");
+        addBlock(MOONSTONE_BLOCK, "Block of Moonstone");
+        addBlock(ONYX_BLOCK, "Block of Onyx");
+        addBlock(PERIDOT_BLOCK, "Block of Peridot");
+        addBlock(ROSE_QUARTZ_BLOCK, "Block of Rose Quartz");
+        addBlock(SAPPHIRE_BLOCK, "Block of Sapphire");
+        addBlock(SMOKY_QUARTZ_BLOCK, "Block of Smoky Quartz");
+        addBlock(TAAFFEITE_BLOCK, "Block of Taaffeite");
+        addBlock(TOPAZ_BLOCK, "Block of Topaz");
+
+        addBlock(ROUGH_AMBER_BLOCK, "Block of Rough Amber");
+        addBlock(ROUGH_AQUAMARINE_BLOCK, "Block of Rough Aquamarine");
+        addBlock(ROUGH_ENSTATITE_BLOCK, "Block of Rough Enstatite");
+        addBlock(ROUGH_GARNET_BLOCK, "Block of Rough Garnet");
+        addBlock(ROUGH_JADE_BLOCK, "Block of Rough Jade");
+        addBlock(ROUGH_KUNZITE_BLOCK, "Block of Rough Kunzite");
+        addBlock(ROUGH_LARIMAR_BLOCK, "Block of Rough Larimar");
+        addBlock(ROUGH_MILKY_QUARTZ_BLOCK, "Block of Rough Milky Quartz");
+        addBlock(ROUGH_MOONSTONE_BLOCK, "Block of Rough Moonstone");
+        addBlock(ROUGH_ONYX_BLOCK, "Block of Rough Onyx");
+        addBlock(ROUGH_PERIDOT_BLOCK, "Block of Rough Peridot");
+        addBlock(ROUGH_ROSE_QUARTZ_BLOCK, "Block of Rough Rose Quartz");
+        addBlock(ROUGH_SAPPHIRE_BLOCK, "Block of Rough Sapphire");
+        addBlock(ROUGH_SMOKY_QUARTZ_BLOCK, "Block of Rough Smoky Quartz");
+        addBlock(ROUGH_TAAFFEITE_BLOCK, "Block of Rough Taaffeite");
+        addBlock(ROUGH_TOPAZ_BLOCK, "Block of Rough Topaz");
+
         addBlock(CARVED_SANDSTONE_CONCERNED, "Carved Sandstone");
         addBlock(CARVED_SANDSTONE_DISAPPOINTED, "Carved Sandstone");
         addBlock(CARVED_SANDSTONE_FISHEYE, "Carved Sandstone");
@@ -80,6 +137,9 @@ public class VVLangProvider extends LanguageProvider {
         add("block.vintagevibes.red_carved_sandstone_sad.desc", "Sad");
         add("block.vintagevibes.red_carved_sandstone_touch.desc", "Touch");
         add("block.vintagevibes.red_carved_sandstone_message.desc", "Message");
+
+        // untranslated items
+        musicDisc(VIBE_DISC, "TheValiantSquidward - vibe");
     }
 
     private void forBlock(Supplier<? extends Block> block) {
