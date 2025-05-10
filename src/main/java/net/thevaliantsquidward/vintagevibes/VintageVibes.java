@@ -63,10 +63,10 @@ public class VintageVibes {
         addToFlowerPot(VVBlocks.YELLOW_CALLA, VVBlocks.POTTED_YELLOW_CALLA);
         addToFlowerPot(VVBlocks.WHITE_CALLA, VVBlocks.POTTED_WHITE_CALLA);
 
-        addToFlowerPot(VVBlocks.ORANGE_BROMELIA, VVBlocks.POTTED_ORANGE_BROMELIA);
-        addToFlowerPot(VVBlocks.PINK_BROMELIA, VVBlocks.POTTED_PINK_BROMELIA);
-        addToFlowerPot(VVBlocks.PURPLE_BROMELIA, VVBlocks.POTTED_PURPLE_BROMELIA);
-        addToFlowerPot(VVBlocks.YELLOW_BROMELIA, VVBlocks.POTTED_YELLOW_BROMELIA);
+        addToFlowerPot(VVBlocks.ORANGE_BROMELIAD, VVBlocks.POTTED_ORANGE_BROMELIAD);
+        addToFlowerPot(VVBlocks.PINK_BROMELIAD, VVBlocks.POTTED_PINK_BROMELIAD);
+        addToFlowerPot(VVBlocks.PURPLE_BROMELIAD, VVBlocks.POTTED_PURPLE_BROMELIAD);
+        addToFlowerPot(VVBlocks.YELLOW_BROMELIAD, VVBlocks.POTTED_YELLOW_BROMELIAD);
 
         addToFlowerPot(VVBlocks.ORANGE_ORCHID, VVBlocks.POTTED_ORANGE_ORCHID);
         addToFlowerPot(VVBlocks.PINK_ORCHID, VVBlocks.POTTED_PINK_ORCHID);

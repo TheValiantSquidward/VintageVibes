@@ -349,10 +349,10 @@ public class VVCreativeTabs {
                         pOutput.accept(VVBlocks.ORANGE_CALLA.get());
                         pOutput.accept(VVBlocks.YELLOW_CALLA.get());
 
-                        pOutput.accept(VVBlocks.ORANGE_BROMELIA.get());
-                        pOutput.accept(VVBlocks.YELLOW_BROMELIA.get());
-                        pOutput.accept(VVBlocks.PURPLE_BROMELIA.get());
-                        pOutput.accept(VVBlocks.PINK_BROMELIA.get());
+                        pOutput.accept(VVBlocks.ORANGE_BROMELIAD.get());
+                        pOutput.accept(VVBlocks.YELLOW_BROMELIAD.get());
+                        pOutput.accept(VVBlocks.PURPLE_BROMELIAD.get());
+                        pOutput.accept(VVBlocks.PINK_BROMELIAD.get());
 
                         pOutput.accept(VVBlocks.WHITE_ORCHID.get());
                         pOutput.accept(VVBlocks.ORANGE_ORCHID.get());
