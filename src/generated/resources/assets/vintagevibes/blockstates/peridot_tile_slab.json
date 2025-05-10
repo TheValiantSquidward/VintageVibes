@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vintagevibes:block/peridot_tile_slab"
+    },
+    "type=double": {
+      "model": "vintagevibes:block/peridot_tiles"
+    },
+    "type=top": {
+      "model": "vintagevibes:block/peridot_tile_slab_top"
+    }
+  }
+}

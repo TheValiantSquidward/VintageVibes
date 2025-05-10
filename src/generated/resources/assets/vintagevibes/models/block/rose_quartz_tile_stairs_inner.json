@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "vintagevibes:block/rose_quartz_tiles",
+    "side": "vintagevibes:block/rose_quartz_tiles",
+    "top": "vintagevibes:block/rose_quartz_tiles"
+  }
+}

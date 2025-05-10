@@ -27,8 +27,8 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.thevaliantsquidward.vintagevibes.goal.ButterflyBodyHelper;
-import net.thevaliantsquidward.vintagevibes.goal.ButterflyMoveGoal;
+import net.thevaliantsquidward.vintagevibes.entity.custom.ai.goal.ButterflyBodyHelper;
+import net.thevaliantsquidward.vintagevibes.entity.custom.ai.goal.ButterflyMoveGoal;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

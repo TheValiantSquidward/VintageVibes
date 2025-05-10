@@ -2,7 +2,7 @@
   "vibe": {
     "sounds": [
       {
-        "name": "vintagevibes:vibe",
+        "name": "vintagevibes:vibe_disc",
         "stream": true
       }
     ]

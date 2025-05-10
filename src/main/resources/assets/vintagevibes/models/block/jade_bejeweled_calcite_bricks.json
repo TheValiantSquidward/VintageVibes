@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "vintagevibes:block/calcite_bricks/jade_calcite_bricks"
-  }
-}

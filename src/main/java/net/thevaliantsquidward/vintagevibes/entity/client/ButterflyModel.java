@@ -5,18 +5,13 @@ package net.thevaliantsquidward.vintagevibes.entity.client;// Made with Blockben
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
-import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.ai.control.BodyRotationControl;
-import net.thevaliantsquidward.vintagevibes.entity.animations.ModAnimationDefinitions;
+import net.thevaliantsquidward.vintagevibes.entity.animations.VVAnimationDefinitions;
 import net.thevaliantsquidward.vintagevibes.entity.custom.ButterflyEntity;
-import net.thevaliantsquidward.vintagevibes.goal.ButterflyBodyHelper;
-import org.jetbrains.annotations.NotNull;
 
 
 public class ButterflyModel<T extends Entity> extends HierarchicalModel<T> {
@@ -56,8 +51,8 @@ public class ButterflyModel<T extends Entity> extends HierarchicalModel<T> {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 
 
-		this.animate(((ButterflyEntity) entity).flyingAnimationState, ModAnimationDefinitions.fly, ageInTicks, 1f);
-		this.animate(((ButterflyEntity) entity).idleAnimationState, ModAnimationDefinitions.land_idle, ageInTicks, 1f);
+		this.animate(((ButterflyEntity) entity).flyingAnimationState, VVAnimationDefinitions.fly, ageInTicks, 1f);
+		this.animate(((ButterflyEntity) entity).idleAnimationState, VVAnimationDefinitions.land_idle, ageInTicks, 1f);
 	}
 
 

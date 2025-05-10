@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vintagevibes:block/emerald_bejeweled_calcite_brick_slab"
+    },
+    "type=double": {
+      "model": "vintagevibes:block/emerald_bejeweled_calcite_bricks"
+    },
+    "type=top": {
+      "model": "vintagevibes:block/emerald_bejeweled_calcite_brick_slab_top"
+    }
+  }
+}

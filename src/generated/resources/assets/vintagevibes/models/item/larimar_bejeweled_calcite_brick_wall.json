@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "vintagevibes:block/larimar_bejeweled_calcite_bricks"
+  }
+}
