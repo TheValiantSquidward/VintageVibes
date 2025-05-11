@@ -1,0 +1,19 @@
+// 1.20.1	2025-05-11T10:04:15.0145724	vintagevibes Block Tags
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/ores.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/ores_in_ground/deepslate.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/ores_in_ground/stone.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/ore_rates/dense.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/ore_rates/singular.json
+fa004bd5e773150f8d8ded46552f14cb6d01f393 data/forge/tags/blocks/storage_blocks.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/beacon_base_blocks.json
+2068a40d4f1cef349a42752cbf100d68a4c57fb6 data/minecraft/tags/blocks/enderman_holdable.json
+02a85bb285c1838998a1aa31ff0e2c9431eb7c5e data/minecraft/tags/blocks/mineable/axe.json
+c96c4bc573d8465c7129322cd94441a07d29a245 data/minecraft/tags/blocks/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
+47b03b9ebd32f2c8908245515a4e20c407572d01 data/minecraft/tags/blocks/needs_iron_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
+8c4a57a37f211efe0e145bd775577183c9b70e5d data/minecraft/tags/blocks/slabs.json
+d38b0b08619a04083301b8e1897aa24b6f318559 data/minecraft/tags/blocks/small_flowers.json
+52936281cb5d459380cba7530ebc6b4902d75660 data/minecraft/tags/blocks/stairs.json
+2068a40d4f1cef349a42752cbf100d68a4c57fb6 data/minecraft/tags/blocks/sword_efficient.json
+f7c9c95e0d4eab7aaa03b6c2c32712b0a7bd9054 data/minecraft/tags/blocks/walls.json

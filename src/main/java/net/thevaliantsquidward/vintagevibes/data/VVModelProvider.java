@@ -5,11 +5,14 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.*;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
+
+import java.util.function.Function;
 
 import static net.thevaliantsquidward.vintagevibes.block.VVBlocks.*;
 import static net.thevaliantsquidward.vintagevibes.item.VVItems.*;
@@ -231,6 +234,43 @@ public class VVModelProvider extends BlockStateProvider {
         this.stairs(QUARTZ_BEJEWELED_CALCITE_BRICK_STAIRS, this.blockTexture(QUARTZ_BEJEWELED_CALCITE_BRICKS.get()));
         this.slab(QUARTZ_BEJEWELED_CALCITE_BRICK_SLAB, this.blockTexture(QUARTZ_BEJEWELED_CALCITE_BRICKS.get()));
         this.wall(QUARTZ_BEJEWELED_CALCITE_BRICK_WALL, this.blockTexture(QUARTZ_BEJEWELED_CALCITE_BRICKS.get()));
+
+        this.pottedPlant(PINK_HIBISCUS, POTTED_PINK_HIBISCUS);
+        this.pottedPlant(PURPLE_HIBISCUS, POTTED_PURPLE_HIBISCUS);
+        this.pottedPlant(ORANGE_HIBISCUS, POTTED_ORANGE_HIBISCUS);
+        this.pottedPlant(RED_HIBISCUS, POTTED_RED_HIBISCUS);
+        this.pottedPlant(WHITE_HIBISCUS, POTTED_WHITE_HIBISCUS);
+
+        this.pottedPlant(BLACK_CALLA, POTTED_BLACK_CALLA);
+        this.pottedPlant(ORANGE_CALLA, POTTED_ORANGE_CALLA);
+        this.pottedPlant(YELLOW_CALLA, POTTED_YELLOW_CALLA);
+        this.pottedPlant(WHITE_CALLA, POTTED_WHITE_CALLA);
+
+        this.pottedPlant(ORANGE_ORCHID, POTTED_ORANGE_ORCHID);
+        this.pottedPlant(PINK_ORCHID, POTTED_PINK_ORCHID);
+        this.pottedPlant(WHITE_ORCHID, POTTED_WHITE_ORCHID);
+        this.pottedPlant(YELLOW_ORCHID, POTTED_YELLOW_ORCHID);
+
+        this.pottedPlant(ORANGE_BROMELIAD, POTTED_ORANGE_BROMELIAD);
+        this.pottedPlant(PINK_BROMELIAD, POTTED_PINK_BROMELIAD);
+        this.pottedPlant(PURPLE_BROMELIAD, POTTED_PURPLE_BROMELIAD);
+        this.pottedPlant(YELLOW_BROMELIAD, POTTED_YELLOW_BROMELIAD);
+
+        this.pottedPlant(LACELEAF, POTTED_LACELEAF);
+
+        this.pottedPlant(TORCH_GINGER, POTTED_TORCH_GINGER);
+
+        this.tallPlant(TALL_PINK_HIBISCUS);
+        this.tallPlant(TALL_PURPLE_HIBISCUS);
+        this.tallPlant(TALL_ORANGE_HIBISCUS);
+        this.tallPlant(TALL_RED_HIBISCUS);
+        this.tallPlant(TALL_WHITE_HIBISCUS);
+
+        this.tallPlant(BIRD_OF_PARADISE);
+
+        this.tallPlant(CANNA_LILY);
+
+        this.tallPlant(TALL_LACELEAF);
     }
 
     // item
@@ -262,6 +302,31 @@ public class VVModelProvider extends BlockStateProvider {
     private void wall(RegistryObject<Block> wall, ResourceLocation texture) {
         this.wallBlock((WallBlock) wall.get(), texture);
         this.itemModels().wallInventory(getItemName(wall.get()), texture);
+    }
+
+    private void simpleCross(RegistryObject<Block> block) {
+        this.simpleBlock(block.get(), this.models().cross(getItemName(block.get()), this.blockTexture(block.get())).renderType("cutout"));
+    }
+
+    private void tallPlant(RegistryObject<Block> flower) {
+        String name = getItemName(flower.get());
+        Function<String, ModelFile> model = s -> this.models().cross(name + "_" + s, this.modLoc("block/" + name + "_" + s)).renderType("cutout");
+
+        this.itemModels().withExistingParent(name, "item/generated").texture("layer0", this.modLoc("block/" + name + "_top"));
+        this.getVariantBuilder(flower.get())
+                .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER).addModels(new ConfiguredModel(model.apply("top")))
+                .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER).addModels(new ConfiguredModel(model.apply("bottom")));
+    }
+
+    private void pot(RegistryObject<Block> pot, ResourceLocation texture) {
+        ModelFile model = this.models().withExistingParent(getBlockName(pot.get()), "block/flower_pot_cross").texture("plant", texture).renderType("cutout");
+        this.simpleBlock(pot.get(), model);
+    }
+
+    private void pottedPlant(RegistryObject<Block> plant, RegistryObject<Block> pot) {
+        this.pot(pot, this.blockTexture(plant.get()));
+        this.simpleCross(plant);
+        this.generatedItem(plant.get(), TextureFolder.BLOCK);
     }
 
     // utils
