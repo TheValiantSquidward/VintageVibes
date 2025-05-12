@@ -25,12 +25,14 @@ public class VVBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, VintageVibes.MOD_ID);
     public static List<RegistryObject<? extends Block>> AUTO_TRANSLATE = new ArrayList<>();
 
+
     // block properties
     public static final BlockBehaviour.Properties GEM_STAND_PROPERTIES = BlockBehaviour.Properties.of().strength(0.5F, 1.0F).noOcclusion().sound(SoundType.AMETHYST_CLUSTER).instrument(NoteBlockInstrument.HARP).lightLevel((state) -> 5);
     public static final BlockBehaviour.Properties GEM_BLOCK_PROPERTIES = BlockBehaviour.Properties.of().strength(1.5F, 2.0F).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).instrument(NoteBlockInstrument.HARP);
     public static final BlockBehaviour.Properties CALCITE_BLOCK_PROPERTIES = BlockBehaviour.Properties.of().strength(0.75F).requiresCorrectToolForDrops().sound(SoundType.CALCITE).instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_WHITE);
     public static final BlockBehaviour.Properties CARVED_SANDSTONE_PROPERTIES = BlockBehaviour.Properties.of().mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(0.8F);
     public static final BlockBehaviour.Properties PINEAPPLE_PROPERTIES = BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).instrument(NoteBlockInstrument.BANJO).sound(SoundType.WOOD).strength(1.5F, 2.0F);
+    public static final BlockBehaviour.Properties BEJEWELED_LAMP_PROPERTIES = BlockBehaviour.Properties.of().strength(1.5F, 2.0F).requiresCorrectToolForDrops().sound(SoundType.METAL).instrument(NoteBlockInstrument.HARP).lightLevel((state) -> 15);
 
     // crystal stands
     public static final RegistryObject<Block> AMBER_STAND = registerBlockNoLang("amber_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
@@ -325,6 +327,12 @@ public class VVBlocks {
     public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("topaz_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> TOPAZ_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("topaz_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("topaz_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
+
+    //bejeweled lamps
+    public static final RegistryObject<Block> BANDED_BEJEWELED_LAMP = registerBlockNoLang("banded_bejeweled_lamp", () -> new BejeweledLampBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final RegistryObject<Block> DIAMANTE_BEJEWELED_LAMP = registerBlockNoLang("diamante_bejeweled_lamp", () -> new BejeweledLampBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final RegistryObject<Block> FLORAL_BEJEWELED_LAMP = registerBlockNoLang("floral_bejeweled_lamp", () -> new BejeweledLampBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final RegistryObject<Block> HONEYCOMB_BEJEWELED_LAMP = registerBlockNoLang("honeycomb_bejeweled_lamp", () -> new BejeweledLampBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
 
     // paper lanterns
     public static final RegistryObject<Block> OAK_PAPER_LANTERN = registerBlock("oak_paper_lantern", () -> new PaperLanternBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(0.5F).lightLevel((state) -> 15)));

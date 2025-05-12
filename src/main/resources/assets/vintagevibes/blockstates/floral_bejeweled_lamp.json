@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "vintagevibes:block/floral_bejeweled_lamp"
+    },
+    "facing=down": {
+      "model": "vintagevibes:block/floral_bejeweled_lamp",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/floral_bejeweled_lamp",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/floral_bejeweled_lamp",
+      "x": 90,
+      "y": 180
+    },
+    "facing=east": {
+      "model": "vintagevibes:block/floral_bejeweled_lamp",
+      "x": 90,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/floral_bejeweled_lamp",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

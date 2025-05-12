@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:yellow_orchid"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "vintagevibes:blocks/yellow_orchid"
+}

@@ -321,6 +321,10 @@
   "block.vintagevibes.yellow_bromeliad": "Yellow Bromeliad",
   "block.vintagevibes.yellow_calla": "Yellow Calla",
   "block.vintagevibes.yellow_orchid": "Yellow Orchid",
+  "block.vintagevibes.banded_bejeweled_lamp": "Banded Bejeweled Lamp",
+  "block.vintagevibes.diamante_bejeweled_lamp": "Diamante Bejeweled Lamp",
+  "block.vintagevibes.floral_bejeweled_lamp": "Floral Bejeweled Lamp",
+  "block.vintagevibes.honeycomb_bejeweled_lamp": "Honeycomb Bejeweled Lamp",
   "creativetab.vintage_vibes_tab": "Vintage Vibes",
   "item.vintagevibes.amber": "Amber",
   "item.vintagevibes.aquamarine": "Aquamarine",
@@ -358,4 +362,6 @@
   "item.vintagevibes.topaz": "Topaz",
   "item.vintagevibes.vibe_disc": "Music Disc",
   "item.vintagevibes.vibe_disc.desc": "TheValiantSquidward - vibe"
+
+
 }
