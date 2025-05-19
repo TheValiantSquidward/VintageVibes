@@ -18,8 +18,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.thevaliantsquidward.vintagevibes.block.VVBlocks;
 import net.thevaliantsquidward.vintagevibes.data.VVBlockTagProvider;
+import net.thevaliantsquidward.vintagevibes.data.VVItemModelProvider;
 import net.thevaliantsquidward.vintagevibes.data.VVLangProvider;
-import net.thevaliantsquidward.vintagevibes.data.VVModelProvider;
+import net.thevaliantsquidward.vintagevibes.data.VVBlockstateProvider;
 import net.thevaliantsquidward.vintagevibes.entity.VVEntities;
 import net.thevaliantsquidward.vintagevibes.entity.client.ButterflyRenderer;
 import net.thevaliantsquidward.vintagevibes.item.VVItems;
@@ -61,7 +62,8 @@ public class VintageVibes {
         ExistingFileHelper helper = event.getExistingFileHelper();
 
         boolean client = event.includeClient();
-        dataGenerator.addProvider(client, new VVModelProvider(event));
+        dataGenerator.addProvider(client, new VVBlockstateProvider(event));
+        dataGenerator.addProvider(client, new VVItemModelProvider(event));
         dataGenerator.addProvider(client, new VVLangProvider(event));
 
         boolean server = event.includeServer();

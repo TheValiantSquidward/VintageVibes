@@ -20,6 +20,9 @@ public class VVCreativeTabs {
                     .title(Component.translatable("creativetab.vintage_vibes_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
+                        // EVIL BEASTS OF EVIL ORIGINS
+                        pOutput.accept(VVItems.BUTTERFLY_SPAWN_EGG.get());
+
                         pOutput.accept(VVItems.AMBER.get());
                         pOutput.accept(VVItems.ROUGH_AMBER.get());
                         pOutput.accept(VVItems.AQUAMARINE.get());

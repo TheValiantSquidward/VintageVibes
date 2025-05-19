@@ -15,11 +15,10 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import java.util.function.Function;
 
 import static net.thevaliantsquidward.vintagevibes.block.VVBlocks.*;
-import static net.thevaliantsquidward.vintagevibes.item.VVItems.*;
 
-public class VVModelProvider extends BlockStateProvider {
+public class VVBlockstateProvider extends BlockStateProvider {
 
-    public VVModelProvider(GatherDataEvent event) {
+    public VVBlockstateProvider(GatherDataEvent event) {
         super(event.getGenerator().getPackOutput(), VintageVibes.MOD_ID, event.getExistingFileHelper());
     }
 

@@ -10,9 +10,11 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.entity.custom.ButterflyEntity;
 
 public class ButterflyRenderer extends MobRenderer<ButterflyEntity, ButterflyModel<ButterflyEntity>> {
+
     public ButterflyRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new ButterflyModel<>(pContext.bakeLayer(ModModelLayers.BUTTERFLY_LAYER)), -1f);
+        super(pContext, new ButterflyModel<>(pContext.bakeLayer(ModModelLayers.BUTTERFLY_LAYER)), 0.2f);
     }
+
     private static final ResourceLocation MONARCH = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/monarch.png");
     private static final ResourceLocation BLUE_BANDED_SWALLOWTAIL = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/blue_banded_swallowtail.png");
     private static final ResourceLocation BLUE_MORPHO = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/blue_morpho.png");
@@ -26,7 +28,6 @@ public class ButterflyRenderer extends MobRenderer<ButterflyEntity, ButterflyMod
     private static final ResourceLocation TIGER_LONGWING = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/tiger_longwing.png");
     private static final ResourceLocation TIGER_SWALLOWTAIL = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/tiger_swallowtail.png");
     private static final ResourceLocation ZEBRA = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/zebra.png");
-
 
     public ResourceLocation getTextureLocation(ButterflyEntity entity) {
         return switch (entity.getVariant()) {
@@ -47,10 +48,7 @@ public class ButterflyRenderer extends MobRenderer<ButterflyEntity, ButterflyMod
     }
 
     @Override
-    public void render(ButterflyEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pMatrixStack,
-                       MultiBufferSource pBuffer, int pPackedLight) {
-
-
+    public void render(ButterflyEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pMatrixStack, MultiBufferSource pBuffer, int pPackedLight) {
         super.render(pEntity, pEntityYaw, pPartialTicks, pMatrixStack, pBuffer, pPackedLight);
     }
 }

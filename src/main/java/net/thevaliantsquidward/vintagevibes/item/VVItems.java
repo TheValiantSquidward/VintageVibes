@@ -4,11 +4,13 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.RecordItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
+import net.thevaliantsquidward.vintagevibes.entity.VVEntities;
 import net.thevaliantsquidward.vintagevibes.sound.VVSounds;
 
 import java.util.ArrayList;
@@ -63,6 +65,9 @@ public class VVItems {
     // discs
     public static final RegistryObject<Item> VIBE_DISC = registerItemNoLang("vibe_disc", () -> new RecordItem(6, VVSounds.VIBE_DISC, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1360));
 
+    // evil beasts of evil origins
+    public static final RegistryObject<Item> BUTTERFLY_SPAWN_EGG = registerSpawnEggItem("butterfly", VVEntities.BUTTERFLY, 0xb8510d, 0x270d07);
+
     private static <I extends Item> RegistryObject<I> registerItem(String name, Supplier<? extends I> supplier) {
         RegistryObject<I> item = ITEMS.register(name, supplier);
         AUTO_TRANSLATE.add(item);
@@ -72,5 +77,9 @@ public class VVItems {
     private static <I extends Item> RegistryObject<I> registerItemNoLang(String name, Supplier<? extends I> supplier) {
         RegistryObject<I> item = ITEMS.register(name, supplier);
         return item;
+    }
+
+    private static RegistryObject<Item> registerSpawnEggItem(String name, RegistryObject type, int baseColor, int spotColor) {
+        return registerItem(name + "_spawn_egg", () -> new ForgeSpawnEggItem(type, baseColor, spotColor, new Item.Properties()));
     }
 }
