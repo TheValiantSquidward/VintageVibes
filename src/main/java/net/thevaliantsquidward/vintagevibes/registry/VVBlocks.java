@@ -411,16 +411,16 @@ public class VVBlocks {
     public static final RegistryObject<Block> YELLOW_ORCHID = registerBlock("yellow_orchid", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_YELLOW_ORCHID = registerBlockWithoutItem("potted_yellow_orchid", () -> new FlowerPotBlock(VVBlocks.YELLOW_ORCHID.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> ORANGE_BROMELIAD = registerBlock("orange_bromeliad", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> ORANGE_BROMELIAD = registerBlock("orange_bromeliad", () -> new BromeliadFlower(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_ORANGE_BROMELIAD = registerBlockWithoutItem("potted_orange_bromelia", () -> new FlowerPotBlock(VVBlocks.ORANGE_BROMELIAD.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> PINK_BROMELIAD = registerBlock("pink_bromeliad", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> PINK_BROMELIAD = registerBlock("pink_bromeliad", () -> new BromeliadFlower(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_PINK_BROMELIAD = registerBlockWithoutItem("potted_pink_bromelia", () -> new FlowerPotBlock(VVBlocks.PINK_BROMELIAD.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> PURPLE_BROMELIAD = registerBlock("purple_bromeliad", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> PURPLE_BROMELIAD = registerBlock("purple_bromeliad", () -> new BromeliadFlower(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_PURPLE_BROMELIAD = registerBlockWithoutItem("potted_purple_bromelia", () -> new FlowerPotBlock(VVBlocks.PURPLE_BROMELIAD.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> YELLOW_BROMELIAD = registerBlock("yellow_bromeliad", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
+    public static final RegistryObject<Block> YELLOW_BROMELIAD = registerBlock("yellow_bromeliad", () -> new BromeliadFlower(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
     public static final RegistryObject<Block> POTTED_YELLOW_BROMELIAD = registerBlockWithoutItem("potted_yellow_bromelia", () -> new FlowerPotBlock(VVBlocks.YELLOW_BROMELIAD.get(), registerFlowerPot()));
 
     public static final RegistryObject<Block> LACELEAF = registerBlock("laceleaf", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
