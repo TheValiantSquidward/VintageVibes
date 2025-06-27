@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:emerald_tiles"
+  },
+  "result": "vintagevibes:emerald_tile_wall"
+}

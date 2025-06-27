@@ -388,15 +388,11 @@ public class VVCreativeTab {
                         pOutput.accept(VVBlocks.JUNGLE_PAPER_LANTERN.get());
                         pOutput.accept(VVBlocks.ACACIA_PAPER_LANTERN.get());
                         pOutput.accept(VVBlocks.DARK_OAK_PAPER_LANTERN.get());
-                        pOutput.accept(VVBlocks.WARPED_PAPER_LANTERN.get());
-                        pOutput.accept(VVBlocks.CRIMSON_PAPER_LANTERN.get());
                         pOutput.accept(VVBlocks.MANGROVE_PAPER_LANTERN.get());
                         pOutput.accept(VVBlocks.CHERRY_PAPER_LANTERN.get());
                         pOutput.accept(VVBlocks.BAMBOO_PAPER_LANTERN.get());
+                        pOutput.accept(VVBlocks.CRIMSON_PAPER_LANTERN.get());
+                        pOutput.accept(VVBlocks.WARPED_PAPER_LANTERN.get());
 
                     }).build());
-
-    public static void register(IEventBus eventBus) {
-        CREATIVE_TABS.register(eventBus);
-    }
 }

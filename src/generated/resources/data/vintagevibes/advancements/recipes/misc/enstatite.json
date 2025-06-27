@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rough_enstatite_block": {
+    "has_enstatite_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vintagevibes:rough_enstatite_block"
+              "vintagevibes:enstatite_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rough_enstatite_block",
+      "has_enstatite_block",
       "has_the_recipe"
     ]
   ],

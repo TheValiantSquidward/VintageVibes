@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "vintagevibes:calcite_tiles"
+    },
+    "X": {
+      "item": "vintagevibes:jade"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "vintagevibes:starry_jade_calcite_tiles"
+  },
+  "show_notification": true
+}

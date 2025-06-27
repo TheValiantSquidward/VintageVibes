@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rough_kunzite_block": {
+    "has_kunzite_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vintagevibes:rough_kunzite_block"
+              "vintagevibes:kunzite_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rough_kunzite_block",
+      "has_kunzite_block",
       "has_the_recipe"
     ]
   ],

@@ -55,40 +55,40 @@ public class VVBlocks {
     public static final RegistryObject<Block> QUARTZ_STAND = registerBlockNoLang("quartz_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.QUARTZ)));
 
     // polished gem blocks
-    public static final RegistryObject<Block> POLISHED_AMBER = registerBlockNoLang("amber_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
-    public static final RegistryObject<Block> POLISHED_AQUAMARINE = registerBlockNoLang("aquamarine_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_CYAN)));
-    public static final RegistryObject<Block> POLISHED_ENSTATITE = registerBlockNoLang("enstatite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
-    public static final RegistryObject<Block> POLISHED_GARNET = registerBlockNoLang("garnet_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_RED)));
-    public static final RegistryObject<Block> POLISHED_JADE = registerBlockNoLang("jade_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN)));
-    public static final RegistryObject<Block> POLISHED_KUNZITE = registerBlockNoLang("kunzite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
-    public static final RegistryObject<Block> POLISHED_LARIMAR = registerBlockNoLang("larimar_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
-    public static final RegistryObject<Block> POLISHED_MILKY_QUARTZ = registerBlockNoLang("milky_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.SNOW)));
-    public static final RegistryObject<Block> POLISHED_MOONSTONE = registerBlockNoLang("moonstone_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
-    public static final RegistryObject<Block> POLISHED_ONYX = registerBlockNoLang("onyx_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_BLACK)));
-    public static final RegistryObject<Block> POLISHED_PERIDOT = registerBlockNoLang("peridot_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_GREEN)));
-    public static final RegistryObject<Block> POLISHED_ROSE_QUARTZ = registerBlockNoLang("rose_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_PINK)));
-    public static final RegistryObject<Block> POLISHED_SAPPHIRE = registerBlockNoLang("sapphire_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_BLUE)));
-    public static final RegistryObject<Block> POLISHED_SMOKY_QUARTZ = registerBlockNoLang("smoky_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
-    public static final RegistryObject<Block> POLISHED_TAAFFEITE = registerBlockNoLang("taaffeite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_MAGENTA)));
-    public static final RegistryObject<Block> POLISHED_TOPAZ = registerBlockNoLang("topaz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_YELLOW)));
+    public static final RegistryObject<Block> POLISHED_AMBER = registerBlock("polished_amber", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final RegistryObject<Block> POLISHED_AQUAMARINE = registerBlock("polished_aquamarine", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_CYAN)));
+    public static final RegistryObject<Block> POLISHED_ENSTATITE = registerBlock("polished_enstatite", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
+    public static final RegistryObject<Block> POLISHED_GARNET = registerBlock("polished_garnet", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final RegistryObject<Block> POLISHED_JADE = registerBlock("polished_jade", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN)));
+    public static final RegistryObject<Block> POLISHED_KUNZITE = registerBlock("polished_kunzite", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> POLISHED_LARIMAR = registerBlock("polished_larimar", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryObject<Block> POLISHED_MILKY_QUARTZ = registerBlock("polished_milky_quartz", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.SNOW)));
+    public static final RegistryObject<Block> POLISHED_MOONSTONE = registerBlock("polished_moonstone", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryObject<Block> POLISHED_ONYX = registerBlock("polished_onyx", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_BLACK)));
+    public static final RegistryObject<Block> POLISHED_PERIDOT = registerBlock("polished_peridot", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_GREEN)));
+    public static final RegistryObject<Block> POLISHED_ROSE_QUARTZ = registerBlock("polished_rose_quartz", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> POLISHED_SAPPHIRE = registerBlock("polished_sapphire", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryObject<Block> POLISHED_SMOKY_QUARTZ = registerBlock("polished_smoky_quartz", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
+    public static final RegistryObject<Block> POLISHED_TAAFFEITE = registerBlock("polished_taaffeite", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_MAGENTA)));
+    public static final RegistryObject<Block> POLISHED_TOPAZ = registerBlock("polished_topaz", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_YELLOW)));
 
     // gem blocks
-    public static final RegistryObject<Block> AMBER_BLOCK = registerBlockNoLang("rough_amber_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
-    public static final RegistryObject<Block> AQUAMARINE_BLOCK = registerBlockNoLang("rough_aquamarine_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_CYAN)));
-    public static final RegistryObject<Block> ENSTATITE_BLOCK = registerBlockNoLang("rough_enstatite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
-    public static final RegistryObject<Block> GARNET_BLOCK = registerBlockNoLang("rough_garnet_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_RED)));
-    public static final RegistryObject<Block> JADE_BLOCK = registerBlockNoLang("rough_jade_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN)));
-    public static final RegistryObject<Block> KUNZITE_BLOCK = registerBlockNoLang("rough_kunzite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
-    public static final RegistryObject<Block> LARIMAR_BLOCK = registerBlockNoLang("rough_larimar_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
-    public static final RegistryObject<Block> MILKY_QUARTZ_BLOCK = registerBlockNoLang("rough_milky_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.SNOW)));
-    public static final RegistryObject<Block> MOONSTONE_BLOCK = registerBlockNoLang("rough_moonstone_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
-    public static final RegistryObject<Block> ONYX_BLOCK = registerBlockNoLang("rough_onyx_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_BLACK)));
-    public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlockNoLang("rough_peridot_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_GREEN)));
-    public static final RegistryObject<Block> ROSE_QUARTZ_BLOCK = registerBlockNoLang("rough_rose_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_PINK)));
-    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlockNoLang("rough_sapphire_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_BLUE)));
-    public static final RegistryObject<Block> SMOKY_QUARTZ_BLOCK = registerBlockNoLang("rough_smoky_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
-    public static final RegistryObject<Block> TAAFFEITE_BLOCK = registerBlockNoLang("rough_taaffeite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_MAGENTA)));
-    public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlockNoLang("rough_topaz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_YELLOW)));
+    public static final RegistryObject<Block> AMBER_BLOCK = registerBlockNoLang("amber_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final RegistryObject<Block> AQUAMARINE_BLOCK = registerBlockNoLang("aquamarine_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_CYAN)));
+    public static final RegistryObject<Block> ENSTATITE_BLOCK = registerBlockNoLang("enstatite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
+    public static final RegistryObject<Block> GARNET_BLOCK = registerBlockNoLang("garnet_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final RegistryObject<Block> JADE_BLOCK = registerBlockNoLang("jade_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_LIGHT_GREEN)));
+    public static final RegistryObject<Block> KUNZITE_BLOCK = registerBlockNoLang("kunzite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> LARIMAR_BLOCK = registerBlockNoLang("larimar_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryObject<Block> MILKY_QUARTZ_BLOCK = registerBlockNoLang("milky_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.SNOW)));
+    public static final RegistryObject<Block> MOONSTONE_BLOCK = registerBlockNoLang("moonstone_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryObject<Block> ONYX_BLOCK = registerBlockNoLang("onyx_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_BLACK)));
+    public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlockNoLang("peridot_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_GREEN)));
+    public static final RegistryObject<Block> ROSE_QUARTZ_BLOCK = registerBlockNoLang("rose_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlockNoLang("sapphire_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryObject<Block> SMOKY_QUARTZ_BLOCK = registerBlockNoLang("smoky_quartz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_BROWN)));
+    public static final RegistryObject<Block> TAAFFEITE_BLOCK = registerBlockNoLang("taaffeite_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_MAGENTA)));
+    public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlockNoLang("topaz_block", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.COLOR_YELLOW)));
 
     // gem tiles
     public static final RegistryObject<Block> AMBER_TILES = registerBlock("amber_tiles", () -> new Block(GEM_BLOCK_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
@@ -327,10 +327,10 @@ public class VVBlocks {
     public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("topaz_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
 
     //bejeweled lamps
-    public static final RegistryObject<Block> BANDED_BEJEWELED_LAMP = registerBlockNoLang("banded_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final RegistryObject<Block> DIAMANTE_BEJEWELED_LAMP = registerBlockNoLang("diamante_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final RegistryObject<Block> FLORAL_BEJEWELED_LAMP = registerBlockNoLang("floral_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final RegistryObject<Block> HONEYCOMB_BEJEWELED_LAMP = registerBlockNoLang("honeycomb_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final RegistryObject<Block> BANDED_BEJEWELED_LAMP = registerBlock("banded_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final RegistryObject<Block> DIAMANTE_BEJEWELED_LAMP = registerBlock("diamante_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final RegistryObject<Block> FLORAL_BEJEWELED_LAMP = registerBlock("floral_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final RegistryObject<Block> HONEYCOMB_BEJEWELED_LAMP = registerBlock("honeycomb_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));
 
     // paper lanterns
     public static final RegistryObject<Block> OAK_PAPER_LANTERN = registerBlock("oak_paper_lantern", () -> new VVDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(0.5F).lightLevel((state) -> 15)));

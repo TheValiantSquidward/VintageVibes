@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rough_milky_quartz_block": {
+    "has_milky_quartz_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vintagevibes:rough_milky_quartz_block"
+              "vintagevibes:milky_quartz_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rough_milky_quartz_block",
+      "has_milky_quartz_block",
       "has_the_recipe"
     ]
   ],

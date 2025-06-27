@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "vintagevibes:sapphire_block"
-  },
-  "result": "vintagevibes:sapphire_tiles"
-}

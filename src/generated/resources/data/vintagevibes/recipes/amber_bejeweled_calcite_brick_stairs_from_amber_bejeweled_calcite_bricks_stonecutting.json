@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:amber_bejeweled_calcite_bricks"
+  },
+  "result": "vintagevibes:amber_bejeweled_calcite_brick_stairs"
+}

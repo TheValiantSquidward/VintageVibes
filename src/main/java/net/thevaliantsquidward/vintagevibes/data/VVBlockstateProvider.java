@@ -15,6 +15,11 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import java.util.function.Function;
 
 import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.*;
+import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.ROSE_QUARTZ_BLOCK;
+import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.SAPPHIRE_BLOCK;
+import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.SMOKY_QUARTZ_BLOCK;
+import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.TAAFFEITE_BLOCK;
+import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.TOPAZ_BLOCK;
 
 public class VVBlockstateProvider extends BlockStateProvider {
 
@@ -24,6 +29,41 @@ public class VVBlockstateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
+        this.cubeAllBlock(AMBER_BLOCK);
+        this.cubeAllBlock(AQUAMARINE_BLOCK);
+        this.cubeAllBlock(ENSTATITE_BLOCK);
+        this.cubeAllBlock(GARNET_BLOCK);
+        this.cubeAllBlock(KUNZITE_BLOCK);
+        this.cubeAllBlock(LARIMAR_BLOCK);
+        this.cubeAllBlock(MILKY_QUARTZ_BLOCK);
+        this.cubeAllBlock(MOONSTONE_BLOCK);
+        this.cubeAllBlock(ONYX_BLOCK);
+        this.cubeAllBlock(PERIDOT_BLOCK);
+        this.cubeAllBlock(ROSE_QUARTZ_BLOCK);
+        this.cubeAllBlock(SAPPHIRE_BLOCK);
+        this.cubeAllBlock(SMOKY_QUARTZ_BLOCK);
+        this.cubeAllBlock(TAAFFEITE_BLOCK);
+        this.cubeAllBlock(TOPAZ_BLOCK);
+        this.cubeAllBlock(JADE_BLOCK);
+
+        this.cubeAllBlock(POLISHED_AMBER);
+        this.cubeAllBlock(POLISHED_AQUAMARINE);
+        this.cubeAllBlock(POLISHED_ENSTATITE);
+        this.cubeAllBlock(POLISHED_GARNET);
+        this.cubeAllBlock(POLISHED_KUNZITE);
+        this.cubeAllBlock(POLISHED_LARIMAR);
+        this.cubeAllBlock(POLISHED_MILKY_QUARTZ);
+        this.cubeAllBlock(POLISHED_MOONSTONE);
+        this.cubeAllBlock(POLISHED_ONYX);
+        this.cubeAllBlock(POLISHED_PERIDOT);
+        this.cubeAllBlock(POLISHED_ROSE_QUARTZ);
+        this.cubeAllBlock(POLISHED_SAPPHIRE);
+        this.cubeAllBlock(POLISHED_SMOKY_QUARTZ);
+        this.cubeAllBlock(POLISHED_TAAFFEITE);
+        this.cubeAllBlock(POLISHED_TOPAZ);
+        this.cubeAllBlock(POLISHED_JADE);
+
         this.cubeAllBlock(AMBER_TILES);
         this.stairs(AMBER_TILE_STAIRS, this.blockTexture(AMBER_TILES.get()));
         this.slab(AMBER_TILE_SLAB, this.blockTexture(AMBER_TILES.get()));

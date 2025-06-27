@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_polished_topaz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:polished_topaz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vintagevibes:topaz_tiles_from_polished_topaz_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_polished_topaz",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vintagevibes:topaz_tiles_from_polished_topaz_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

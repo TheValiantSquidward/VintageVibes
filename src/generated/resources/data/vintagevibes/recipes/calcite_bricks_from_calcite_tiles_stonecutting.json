@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:calcite_tiles"
+  },
+  "result": "vintagevibes:calcite_bricks"
+}

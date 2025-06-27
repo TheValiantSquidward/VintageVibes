@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:polished_milky_quartz"
+  },
+  "result": "vintagevibes:milky_quartz_tiles"
+}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "vintagevibes:smoky_quartz_block"
-  },
-  "result": "vintagevibes:smoky_quartz_tiles"
-}

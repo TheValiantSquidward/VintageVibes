@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rough_amber_block": {
+    "has_amber_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vintagevibes:rough_amber_block"
+              "vintagevibes:amber_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rough_amber_block",
+      "has_amber_block",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rough_jade_block": {
+    "has_jade_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vintagevibes:rough_jade_block"
+              "vintagevibes:jade_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rough_jade_block",
+      "has_jade_block",
       "has_the_recipe"
     ]
   ],

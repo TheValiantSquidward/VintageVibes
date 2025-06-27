@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "vintagevibes:aquamarine_block"
-  },
-  "result": "vintagevibes:aquamarine_tiles"
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "vintagevibes:moonstone_block"
-  },
-  "result": "vintagevibes:moonstone_tiles"
-}

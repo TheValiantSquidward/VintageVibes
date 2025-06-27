@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rough_garnet_block": {
+    "has_garnet_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vintagevibes:rough_garnet_block"
+              "vintagevibes:garnet_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rough_garnet_block",
+      "has_garnet_block",
       "has_the_recipe"
     ]
   ],

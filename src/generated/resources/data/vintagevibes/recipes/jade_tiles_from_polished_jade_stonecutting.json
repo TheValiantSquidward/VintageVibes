@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:polished_jade"
+  },
+  "result": "vintagevibes:jade_tiles"
+}

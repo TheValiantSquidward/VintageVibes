@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:polished_kunzite"
+  },
+  "result": "vintagevibes:kunzite_tiles"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "vintagevibes:calcite_bricks"
+    },
+    "X": {
+      "item": "vintagevibes:amber"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "vintagevibes:amber_bejeweled_calcite_bricks"
+  },
+  "show_notification": true
+}

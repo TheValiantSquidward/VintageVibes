@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_rough_peridot_block": {
+    "has_peridot_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vintagevibes:rough_peridot_block"
+              "vintagevibes:peridot_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_rough_peridot_block",
+      "has_peridot_block",
       "has_the_recipe"
     ]
   ],

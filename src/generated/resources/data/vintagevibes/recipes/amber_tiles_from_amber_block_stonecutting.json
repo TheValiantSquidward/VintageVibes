@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "vintagevibes:amber_block"
-  },
-  "result": "vintagevibes:amber_tiles"
-}
