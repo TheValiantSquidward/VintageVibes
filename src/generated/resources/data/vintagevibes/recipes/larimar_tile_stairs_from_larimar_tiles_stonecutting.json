@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:larimar_tiles"
+  },
+  "result": "vintagevibes:larimar_tile_stairs"
+}

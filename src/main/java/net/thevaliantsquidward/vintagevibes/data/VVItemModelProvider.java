@@ -13,8 +13,6 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 
 import java.util.Objects;
 
-import static net.thevaliantsquidward.vintagevibes.item.VVItems.*;
-
 public class VVItemModelProvider extends ItemModelProvider {
 
     public VVItemModelProvider(GatherDataEvent event) {

@@ -12,7 +12,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.thevaliantsquidward.vintagevibes.block.VVBlocks.*;
+import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.*;
 
 public class VVBlockTagProvider extends BlockTagsProvider {
 
@@ -112,6 +112,15 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 TAAFFEITE_STAND.get(), TOPAZ_STAND.get(),
                 AMETHYST_STAND.get(), DIAMOND_STAND.get(), EMERALD_STAND.get(), QUARTZ_STAND.get(),
 
+                POLISHED_AMBER.get(), POLISHED_AQUAMARINE.get(),
+                POLISHED_ENSTATITE.get(), POLISHED_GARNET.get(),
+                POLISHED_JADE.get(), POLISHED_KUNZITE.get(),
+                POLISHED_LARIMAR.get(), POLISHED_MILKY_QUARTZ.get(),
+                POLISHED_MOONSTONE.get(), POLISHED_ONYX.get(),
+                POLISHED_PERIDOT.get(), POLISHED_ROSE_QUARTZ.get(),
+                POLISHED_SAPPHIRE.get(), POLISHED_SMOKY_QUARTZ.get(),
+                POLISHED_TAAFFEITE.get(), POLISHED_TOPAZ.get(),
+
                 AMBER_BLOCK.get(), AQUAMARINE_BLOCK.get(),
                 ENSTATITE_BLOCK.get(), GARNET_BLOCK.get(),
                 JADE_BLOCK.get(), KUNZITE_BLOCK.get(),
@@ -120,15 +129,6 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 PERIDOT_BLOCK.get(), ROSE_QUARTZ_BLOCK.get(),
                 SAPPHIRE_BLOCK.get(), SMOKY_QUARTZ_BLOCK.get(),
                 TAAFFEITE_BLOCK.get(), TOPAZ_BLOCK.get(),
-
-                ROUGH_AMBER_BLOCK.get(), ROUGH_AQUAMARINE_BLOCK.get(),
-                ROUGH_ENSTATITE_BLOCK.get(), ROUGH_GARNET_BLOCK.get(),
-                ROUGH_JADE_BLOCK.get(), ROUGH_KUNZITE_BLOCK.get(),
-                ROUGH_LARIMAR_BLOCK.get(), ROUGH_MILKY_QUARTZ_BLOCK.get(),
-                ROUGH_MOONSTONE_BLOCK.get(), ROUGH_ONYX_BLOCK.get(),
-                ROUGH_PERIDOT_BLOCK.get(), ROUGH_ROSE_QUARTZ_BLOCK.get(),
-                ROUGH_SAPPHIRE_BLOCK.get(), ROUGH_SMOKY_QUARTZ_BLOCK.get(),
-                ROUGH_TAAFFEITE_BLOCK.get(), ROUGH_TOPAZ_BLOCK.get(),
 
                 AMBER_TILES.get(), AQUAMARINE_TILES.get(),
                 ENSTATITE_TILES.get(), GARNET_TILES.get(),
@@ -269,6 +269,15 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         this.tag(Tags.Blocks.ORE_RATES_SINGULAR);
 
         this.tag(Tags.Blocks.STORAGE_BLOCKS).add(
+                POLISHED_AMBER.get(), POLISHED_AQUAMARINE.get(),
+                POLISHED_ENSTATITE.get(), POLISHED_GARNET.get(),
+                POLISHED_JADE.get(), POLISHED_KUNZITE.get(),
+                POLISHED_LARIMAR.get(), POLISHED_MILKY_QUARTZ.get(),
+                POLISHED_MOONSTONE.get(), POLISHED_ONYX.get(),
+                POLISHED_PERIDOT.get(), POLISHED_ROSE_QUARTZ.get(),
+                POLISHED_SAPPHIRE.get(), POLISHED_SMOKY_QUARTZ.get(),
+                POLISHED_TAAFFEITE.get(), POLISHED_TOPAZ.get(),
+
                 AMBER_BLOCK.get(), AQUAMARINE_BLOCK.get(),
                 ENSTATITE_BLOCK.get(), GARNET_BLOCK.get(),
                 JADE_BLOCK.get(), KUNZITE_BLOCK.get(),
@@ -276,16 +285,7 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 MOONSTONE_BLOCK.get(), ONYX_BLOCK.get(),
                 PERIDOT_BLOCK.get(), ROSE_QUARTZ_BLOCK.get(),
                 SAPPHIRE_BLOCK.get(), SMOKY_QUARTZ_BLOCK.get(),
-                TAAFFEITE_BLOCK.get(), TOPAZ_BLOCK.get(),
-
-                ROUGH_AMBER_BLOCK.get(), ROUGH_AQUAMARINE_BLOCK.get(),
-                ROUGH_ENSTATITE_BLOCK.get(), ROUGH_GARNET_BLOCK.get(),
-                ROUGH_JADE_BLOCK.get(), ROUGH_KUNZITE_BLOCK.get(),
-                ROUGH_LARIMAR_BLOCK.get(), ROUGH_MILKY_QUARTZ_BLOCK.get(),
-                ROUGH_MOONSTONE_BLOCK.get(), ROUGH_ONYX_BLOCK.get(),
-                ROUGH_PERIDOT_BLOCK.get(), ROUGH_ROSE_QUARTZ_BLOCK.get(),
-                ROUGH_SAPPHIRE_BLOCK.get(), ROUGH_SMOKY_QUARTZ_BLOCK.get(),
-                ROUGH_TAAFFEITE_BLOCK.get(), ROUGH_TOPAZ_BLOCK.get()
+                TAAFFEITE_BLOCK.get(), TOPAZ_BLOCK.get()
         );
 
         // vintage vibes tags

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vintagevibes:rough_peridot_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "vintagevibes:peridot"
+  }
+}

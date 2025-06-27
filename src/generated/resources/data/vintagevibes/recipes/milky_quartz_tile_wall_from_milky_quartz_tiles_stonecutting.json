@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:milky_quartz_tiles"
+  },
+  "result": "vintagevibes:milky_quartz_tile_wall"
+}

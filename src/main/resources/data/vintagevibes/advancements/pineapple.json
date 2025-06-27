@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:husbandry/plant_seed",
   "criteria": {
-    "carbon_sludge": {
+    "pineapple": {
       "conditions": {
         "items": [
           {
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "carbon_sludge"
+      "pineapple"
     ]
   ],
   "sends_telemetry_event": true

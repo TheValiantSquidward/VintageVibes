@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:garnet_tiles"
+  },
+  "result": "vintagevibes:garnet_tile_wall"
+}

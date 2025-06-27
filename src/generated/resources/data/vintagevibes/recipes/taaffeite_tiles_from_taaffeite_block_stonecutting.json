@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:taaffeite_block"
+  },
+  "result": "vintagevibes:taaffeite_tiles"
+}

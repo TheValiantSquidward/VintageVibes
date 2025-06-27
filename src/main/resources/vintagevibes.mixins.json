@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.thevaliantsquidward.vintagevibes.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "shifted_lens.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

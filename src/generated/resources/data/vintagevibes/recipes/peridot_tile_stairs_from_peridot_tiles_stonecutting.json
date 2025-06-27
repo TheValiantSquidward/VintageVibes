@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:peridot_tiles"
+  },
+  "result": "vintagevibes:peridot_tile_stairs"
+}

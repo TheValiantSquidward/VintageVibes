@@ -14,7 +14,7 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 
 import java.util.function.Function;
 
-import static net.thevaliantsquidward.vintagevibes.block.VVBlocks.*;
+import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.*;
 
 public class VVBlockstateProvider extends BlockStateProvider {
 
