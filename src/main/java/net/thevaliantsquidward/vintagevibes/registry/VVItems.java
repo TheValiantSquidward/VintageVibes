@@ -10,7 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
-import net.thevaliantsquidward.vintagevibes.items.TikiMaskItem;
+import net.thevaliantsquidward.vintagevibes.items.MaskItem;
 import net.thevaliantsquidward.vintagevibes.registry.enums.VVArmorMaterials;
 
 import java.util.ArrayList;
@@ -50,7 +50,16 @@ public class VVItems {
     // evil beasts of evil origins
     public static final RegistryObject<Item> BUTTERFLY_SPAWN_EGG = registerSpawnEggItem("butterfly", VVEntities.BUTTERFLY, 0xb8510d, 0x270d07);
 
-    public static final RegistryObject<Item> VOLCANIC_TIKI_MASK = registerItem("volcanic_tiki_mask", ()-> new TikiMaskItem(VVArmorMaterials.TIKI_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> CELESTIAL_MASK = registerItem("celestial_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> DEITY_MASK = registerItem("deity_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> FESTIVE_MASK = registerItem("festive_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> FROND_MASK = registerItem("frond_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> MONSOON_MASK = registerItem("monsoon_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> PETRIFIED_MASK = registerItem("petrified_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> SPIRIT_MASK = registerItem("spirit_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> SUNRISE_MASK = registerItem("sunrise_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> TIDAL_MASK = registerItem("tidal_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> VOLCANIC_MASK = registerItem("volcanic_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
 
     private static <I extends Item> RegistryObject<I> registerItem(String name, Supplier<? extends I> supplier) {
         RegistryObject<I> item = ITEMS.register(name, supplier);

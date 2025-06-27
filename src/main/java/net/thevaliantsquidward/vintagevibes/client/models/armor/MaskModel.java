@@ -9,9 +9,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 @SuppressWarnings("FieldCanBeLocal, unused")
-public class TikiMaskModel extends HumanoidModel {
+public class MaskModel extends HumanoidModel {
 
-	public TikiMaskModel(ModelPart root) {
+	public MaskModel(ModelPart root) {
 		super(root);
 	}
 
@@ -27,9 +27,9 @@ public class TikiMaskModel extends HumanoidModel {
 		PartDefinition rightArm = partdefinition.getChild("right_arm");
 
 		head.addOrReplaceChild("mask", CubeListBuilder.create()
-			.texOffs(26, 28).addBox(-4.0F, -8.0F, -10.0F, 9.0F, 16.0F, 2.0F, new CubeDeformation(0.0F))
-			.texOffs(0, 28).addBox(-6.0F, -11.0F, -10.25F, 13.0F, 21.0F, 0.0F, new CubeDeformation(0.0F))
-			.texOffs(0, 0).addBox(-7.0F, -14.0F, -9.0F, 15.0F, 28.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, -2.0F));
+				.texOffs(42, 18).addBox(-3.5F, -8.0F, -10.0F, 9.0F, 16.0F, 2.0F, new CubeDeformation(0.0F))
+				.texOffs(8, 43).addBox(-5.5F, -11.0F, -10.25F, 13.0F, 21.0F, 0.0F, new CubeDeformation(0.05F))
+				.texOffs(34, 36).addBox(-6.5F, -14.0F, -9.0F, 15.0F, 28.0F, 0.0F, new CubeDeformation(0.05F)), PartPose.offset(-1.0F, 0.0F, 4.0F));
 
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}

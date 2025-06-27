@@ -4,7 +4,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
@@ -38,7 +37,16 @@ public class VVCreativeTab {
                         pOutput.accept(VVItems.TAAFFEITE.get());
                         pOutput.accept(VVItems.TOPAZ.get());
 
-                        pOutput.accept(VVItems.VOLCANIC_TIKI_MASK.get());
+                        pOutput.accept(VVItems.CELESTIAL_MASK.get());
+                        pOutput.accept(VVItems.DEITY_MASK.get());
+                        pOutput.accept(VVItems.FESTIVE_MASK.get());
+                        pOutput.accept(VVItems.FROND_MASK.get());
+                        pOutput.accept(VVItems.MONSOON_MASK.get());
+                        pOutput.accept(VVItems.PETRIFIED_MASK.get());
+                        pOutput.accept(VVItems.SPIRIT_MASK.get());
+                        pOutput.accept(VVItems.SUNRISE_MASK.get());
+                        pOutput.accept(VVItems.TIDAL_MASK.get());
+                        pOutput.accept(VVItems.VOLCANIC_MASK.get());
 
                         pOutput.accept(VVItems.PINEAPPLE_SEEDS.get());
                         pOutput.accept(VVItems.PINEAPPLE_SLICE.get());

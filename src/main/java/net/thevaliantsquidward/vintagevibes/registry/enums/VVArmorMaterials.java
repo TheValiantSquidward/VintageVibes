@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 
 public enum VVArmorMaterials implements ArmorMaterial {
 
-    TIKI_MASK ("tiki_mask", 12, new int[] {1, 0, 0, 0}, 9, SoundEvents.ARMOR_EQUIP_LEATHER, 0F, 0F, ()-> Ingredient.of(ItemTags.PLANKS));
+    MASK("mask", 12, new int[] {1, 0, 0, 0}, 9, SoundEvents.ARMOR_EQUIP_LEATHER, 0F, 0F, ()-> Ingredient.of(ItemTags.PLANKS));
 
     private final String name;
     private final int durabilityMultiplier;

@@ -6,16 +6,20 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.SuspiciousEffectHolder;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.function.Supplier;
 
-public class BromeliadFlower extends FlowerBlock {
-    public BromeliadFlower(Supplier<MobEffect> effectSupplier, int p_53513_, Properties p_53514_) {
-        super(effectSupplier, p_53513_, p_53514_);
+public class BromeliadFlower extends FlowerBlock implements SuspiciousEffectHolder {
+
+    public BromeliadFlower(Supplier<MobEffect> effect, int duration, BlockBehaviour.Properties properties) {
+        super(effect, duration, properties);
     }
+
     @Override
-    protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return pState.is(BlockTags.DIRT) || pState.is(Blocks.FARMLAND) || pState.is(BlockTags.LOGS);
+    protected boolean mayPlaceOn(BlockState state, BlockGetter worldIn, BlockPos pos) {
+        return state.is(BlockTags.DIRT) || state.is(Blocks.FARMLAND) || state.is(BlockTags.LOGS);
     }
 }

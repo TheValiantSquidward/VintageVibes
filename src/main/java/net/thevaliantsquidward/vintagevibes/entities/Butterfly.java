@@ -162,38 +162,47 @@ public class Butterfly extends Animal {
     @Nullable
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor worldIn, DifficultyInstance difficultyIn, MobSpawnType reason, @Nullable SpawnGroupData spawnDataIn, @Nullable CompoundTag dataTag) {
         int variantChange = this.random.nextInt(0, 100);
-        if (variantChange <= 8) {
+        if (variantChange <= 6) {
             this.setVariant(1);
         }
-        else if (variantChange <= 16) {
+        else if (variantChange <= 12) {
             this.setVariant(2);
         }
-        else if (variantChange <= 24) {
+        else if (variantChange <= 18) {
             this.setVariant(3);
         }
-        else if (variantChange <= 32) {
+        else if (variantChange <= 24) {
             this.setVariant(4);
         }
-        else if (variantChange <= 40) {
+        else if (variantChange <= 30) {
             this.setVariant(5);
         }
-        else if (variantChange <= 48) {
+        else if (variantChange <= 36) {
             this.setVariant(6);
         }
-        else if (variantChange <= 56) {
+        else if (variantChange <= 42) {
             this.setVariant(7);
         }
-        else if (variantChange <= 64) {
+        else if (variantChange <= 48) {
             this.setVariant(9);
         }
-        else if (variantChange <= 72) {
+        else if (variantChange <= 54) {
             this.setVariant(10);
         }
-        else if (variantChange <= 80) {
+        else if (variantChange <= 60) {
             this.setVariant(11);
         }
-        else if (variantChange <= 88) {
+        else if (variantChange <= 66) {
             this.setVariant(12);
+        }
+        else if (variantChange <= 72) {
+            this.setVariant(13);
+        }
+        else if (variantChange <= 78) {
+            this.setVariant(14);
+        }
+        else if (variantChange <= 84) {
+            this.setVariant(15);
         }
         else {
             this.setVariant(0);

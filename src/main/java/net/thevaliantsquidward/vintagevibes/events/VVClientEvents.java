@@ -5,7 +5,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
-import net.thevaliantsquidward.vintagevibes.client.models.armor.TikiMaskModel;
+import net.thevaliantsquidward.vintagevibes.client.models.armor.MaskModel;
 import net.thevaliantsquidward.vintagevibes.client.models.entity.ButterflyModel;
 import net.thevaliantsquidward.vintagevibes.client.renderer.ButterflyRenderer;
 import net.thevaliantsquidward.vintagevibes.registry.VVEntities;
@@ -22,6 +22,6 @@ public class VVClientEvents {
     @SubscribeEvent
     public static void registerEntityLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(VVModelLayers.BUTTERFLY_LAYER, ButterflyModel::createBodyLayer);
-        event.registerLayerDefinition(VVModelLayers.TIKI_MASK_LAYER, TikiMaskModel::createArmorLayer);
+        event.registerLayerDefinition(VVModelLayers.TIKI_MASK_LAYER, MaskModel::createArmorLayer);
     }
 }

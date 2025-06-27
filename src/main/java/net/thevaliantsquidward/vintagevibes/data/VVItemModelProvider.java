@@ -13,6 +13,8 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 
 import java.util.Objects;
 
+import static net.thevaliantsquidward.vintagevibes.registry.VVItems.*;
+
 public class VVItemModelProvider extends ItemModelProvider {
 
     public VVItemModelProvider(GatherDataEvent event) {
@@ -21,6 +23,17 @@ public class VVItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        item(CELESTIAL_MASK);
+        item(DEITY_MASK);
+        item(FESTIVE_MASK);
+        item(FROND_MASK);
+        item(MONSOON_MASK);
+        item(PETRIFIED_MASK);
+        item(SPIRIT_MASK);
+        item(SUNRISE_MASK);
+        item(TIDAL_MASK);
+        item(VOLCANIC_MASK);
+
         // spawn eggs
         for (Item item : BuiltInRegistries.ITEM) {
             if (item instanceof SpawnEggItem && Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(item)).getNamespace().equals(VintageVibes.MOD_ID)) {

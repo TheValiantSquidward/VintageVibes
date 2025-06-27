@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
-import net.thevaliantsquidward.vintagevibes.items.TikiMaskItem;
+import net.thevaliantsquidward.vintagevibes.items.MaskItem;
 
 @Mod.EventBusSubscriber(modid = VintageVibes.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class VVClientForgeEvents {
@@ -16,7 +16,7 @@ public class VVClientForgeEvents {
     @SubscribeEvent
     public static void renderNameplate(RenderNameTagEvent event) {
         if (event.getEntity() instanceof LivingEntity entity) {
-            if (entity.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof TikiMaskItem) {
+            if (entity.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof MaskItem) {
                 event.setResult(Event.Result.DENY);
             }
         }
