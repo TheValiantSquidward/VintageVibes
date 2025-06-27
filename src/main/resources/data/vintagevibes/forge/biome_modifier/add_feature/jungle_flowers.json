@@ -1,0 +1,27 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": [
+    "vintagevibes:bird_of_paradise",
+    "vintagevibes:canna_lily",
+    "vintagevibes:laceleaf",
+    "vintagevibes:orange_bromeliad",
+    "vintagevibes:pink_bromeliad",
+    "vintagevibes:purple_bromeliad",
+    "vintagevibes:sweet_hibiscus",
+    "vintagevibes:sweet_hibiscus_carpet",
+    "vintagevibes:sweet_tall_hibiscus",
+    "vintagevibes:tall_laceleaf",
+    "vintagevibes:torch_ginger",
+    "vintagevibes:warm_hibiscus",
+    "vintagevibes:warm_hibiscus_carpet",
+    "vintagevibes:warm_tall_hibiscus",
+    "vintagevibes:white_hibiscus",
+    "vintagevibes:white_hibiscus_carpet",
+    "vintagevibes:white_tall_hibiscus",
+    "vintagevibes:yellow_bromeliad"
+  ],
+  "step": "vegetal_decoration"
+}
+
+

@@ -60,7 +60,7 @@ public class VintageVibes {
         boolean client = event.includeClient();
         dataGenerator.addProvider(client, new VVBlockstateProvider(event));
         dataGenerator.addProvider(client, new VVItemModelProvider(event));
-        dataGenerator.addProvider(client, new VVLangProvider(event));
+        dataGenerator.addProvider(client, new VVLanguageProvider(event));
 
         boolean server = event.includeServer();
         VVBlockTagProvider blockTags = new VVBlockTagProvider(output, provider, helper);

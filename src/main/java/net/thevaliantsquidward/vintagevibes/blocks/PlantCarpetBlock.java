@@ -5,7 +5,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BushBlock;
@@ -23,12 +22,7 @@ public class PlantCarpetBlock extends BushBlock {
 
     @Override
     public boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return pState.is(BlockTags.DIRT) || pState.is(Blocks.FARMLAND) && !(pLevel.getBlockState(pPos.below()).getBlock() instanceof PlantCarpetBlock) && super.mayPlaceOn(pState, pLevel, pPos);
-    }
-
-    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
-        BlockState belowBlockState = level.getBlockState(pos.below());
-        return !(belowBlockState.getBlock() instanceof PlantCarpetBlock) && !level.isEmptyBlock(pos.below());
+        return pState.is(BlockTags.DIRT) || pState.is(Blocks.FARMLAND);
     }
 
     public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {

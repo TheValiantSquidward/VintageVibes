@@ -23,9 +23,9 @@ import java.util.function.Supplier;
 import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.*;
 import static net.thevaliantsquidward.vintagevibes.registry.VVItems.*;
 
-public class VVLangProvider extends LanguageProvider {
+public class VVLanguageProvider extends LanguageProvider {
 
-    public VVLangProvider(GatherDataEvent event) {
+    public VVLanguageProvider(GatherDataEvent event) {
         super(event.getGenerator().getPackOutput(), VintageVibes.MOD_ID, "en_us");
     }
 

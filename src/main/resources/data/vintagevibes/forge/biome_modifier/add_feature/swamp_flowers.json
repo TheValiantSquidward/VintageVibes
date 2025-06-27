@@ -1,0 +1,17 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_swamp",
+  "features": [
+    "vintagevibes:black_calla",
+    "vintagevibes:orange_calla",
+    "vintagevibes:white_calla",
+    "vintagevibes:yellow_calla",
+    "vintagevibes:orange_orchid",
+    "vintagevibes:pink_orchid",
+    "vintagevibes:white_orchid",
+    "vintagevibes:yellow_orchid"
+  ],
+  "step": "vegetal_decoration"
+}
+
+
