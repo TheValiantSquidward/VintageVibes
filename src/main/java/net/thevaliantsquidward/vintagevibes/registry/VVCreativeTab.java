@@ -38,6 +38,8 @@ public class VVCreativeTab {
                         pOutput.accept(VVItems.TAAFFEITE.get());
                         pOutput.accept(VVItems.TOPAZ.get());
 
+                        pOutput.accept(VVItems.VOLCANIC_TIKI_MASK.get());
+
                         pOutput.accept(VVItems.PINEAPPLE_SEEDS.get());
                         pOutput.accept(VVItems.PINEAPPLE_SLICE.get());
                         pOutput.accept(VVItems.VIBE_DISC.get());

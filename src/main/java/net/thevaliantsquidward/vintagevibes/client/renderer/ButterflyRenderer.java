@@ -6,7 +6,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
-import net.thevaliantsquidward.vintagevibes.client.models.ButterflyModel;
+import net.thevaliantsquidward.vintagevibes.client.models.entity.ButterflyModel;
 import net.thevaliantsquidward.vintagevibes.registry.VVModelLayers;
 import net.thevaliantsquidward.vintagevibes.entities.Butterfly;
 

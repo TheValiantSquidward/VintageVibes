@@ -1,4 +1,4 @@
-package net.thevaliantsquidward.vintagevibes.client.models;
+package net.thevaliantsquidward.vintagevibes.client.models.entity;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -6,9 +6,13 @@ import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.thevaliantsquidward.vintagevibes.client.animations.ButterflyAnimations;
 import net.thevaliantsquidward.vintagevibes.entities.Butterfly;
 
+@OnlyIn(Dist.CLIENT)
+@SuppressWarnings("FieldCanBeLocal, unused")
 public class ButterflyModel<T extends Butterfly> extends HierarchicalModel<T> {
 
 	private final ModelPart root;
