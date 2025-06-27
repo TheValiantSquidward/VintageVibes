@@ -3,10 +3,10 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:birch_planks"
+      "item": "minecraft:paper"
     },
     "X": {
-      "item": "minecraft:paper"
+      "item": "minecraft:birch_planks"
     },
     "Y": {
       "item": "minecraft:torch"

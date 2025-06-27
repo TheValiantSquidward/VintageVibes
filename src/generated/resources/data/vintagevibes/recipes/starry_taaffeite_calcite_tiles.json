@@ -6,7 +6,7 @@
       "item": "vintagevibes:calcite_tiles"
     },
     "X": {
-      "item": "vintagevibes:taaffeite"
+      "tag": "forge:gems/taaffeite"
     }
   },
   "pattern": [

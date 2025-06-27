@@ -6,7 +6,7 @@
       "item": "vintagevibes:calcite_bricks"
     },
     "X": {
-      "item": "vintagevibes:amber"
+      "tag": "forge:gems/amber"
     }
   },
   "pattern": [

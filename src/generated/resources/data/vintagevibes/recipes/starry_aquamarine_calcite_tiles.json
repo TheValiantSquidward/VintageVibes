@@ -6,7 +6,7 @@
       "item": "vintagevibes:calcite_tiles"
     },
     "X": {
-      "item": "vintagevibes:aquamarine"
+      "tag": "forge:gems/aquamarine"
     }
   },
   "pattern": [

@@ -6,7 +6,7 @@
       "item": "vintagevibes:calcite_tiles"
     },
     "X": {
-      "item": "vintagevibes:jade"
+      "tag": "forge:gems/jade"
     }
   },
   "pattern": [

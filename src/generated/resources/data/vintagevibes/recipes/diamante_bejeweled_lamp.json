@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "forge:glass"
+    },
+    "X": {
+      "tag": "vintagevibes:gems"
+    },
+    "Y": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "XYX",
+    "#X#"
+  ],
+  "result": {
+    "item": "vintagevibes:diamante_bejeweled_lamp"
+  },
+  "show_notification": true
+}

@@ -6,7 +6,7 @@
       "item": "vintagevibes:calcite_tiles"
     },
     "X": {
-      "item": "vintagevibes:rose_quartz"
+      "tag": "forge:gems/rose_quartz"
     }
   },
   "pattern": [

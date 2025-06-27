@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vintagevibes:kunzite_bejeweled_calcite_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vintagevibes:kunzite_bejeweled_calcite_brick_wall"
+  },
+  "show_notification": true
+}

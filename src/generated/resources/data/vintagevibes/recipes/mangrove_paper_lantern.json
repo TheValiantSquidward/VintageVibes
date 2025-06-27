@@ -3,10 +3,10 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:mangrove_planks"
+      "item": "minecraft:paper"
     },
     "X": {
-      "item": "minecraft:paper"
+      "item": "minecraft:mangrove_planks"
     },
     "Y": {
       "item": "minecraft:torch"

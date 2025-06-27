@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "minecraft:flowers"
+    },
+    "X": {
+      "tag": "vintagevibes:gems"
+    },
+    "Y": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "XYX",
+    "#X#"
+  ],
+  "result": {
+    "item": "vintagevibes:floral_bejeweled_lamp"
+  },
+  "show_notification": true
+}

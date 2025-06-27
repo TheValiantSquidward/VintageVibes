@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "vintagevibes:moonstone_bejeweled_calcite_bricks"
+  },
+  "result": "vintagevibes:moonstone_bejeweled_calcite_brick_slab"
+}

@@ -242,26 +242,26 @@ public class VVRecipeProvider extends RecipeProvider implements IConditionBuilde
         stonecutterRecipe(consumer, BUILDING_BLOCKS, CALCITE_TILE_STAIRS.get(), CALCITE_TILES.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, CALCITE_TILE_WALL.get(), CALCITE_TILES.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_AMBER_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.AMBER.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_AQUAMARINE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.AQUAMARINE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_aquamarine", has(VVItemTags.GEMS_AQUAMARINE)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_ENSTATITE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.ENSTATITE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_enstatite", has(VVItemTags.GEMS_ENSTATITE)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_GARNET_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.GARNET.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_garnet", has(VVItemTags.GEMS_GARNET)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_JADE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.JADE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_jade", has(VVItemTags.GEMS_JADE)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_KUNZITE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.KUNZITE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_kunzite", has(VVItemTags.GEMS_KUNZITE)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_LARIMAR_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.LARIMAR.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_larimar", has(VVItemTags.GEMS_LARIMAR)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_MILKY_QUARTZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.MILKY_QUARTZ.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_milky_quartz", has(VVItemTags.GEMS_MILKY_QUARTZ)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_MOONSTONE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.MOONSTONE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_moonstone", has(VVItemTags.GEMS_MOONSTONE)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_ONYX_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.ONYX.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_onyx", has(VVItemTags.GEMS_ONYX)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_PERIDOT_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.PERIDOT.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_peridot", has(VVItemTags.GEMS_PERIDOT)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_ROSE_QUARTZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.ROSE_QUARTZ.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_rose_quartz", has(VVItemTags.GEMS_ROSE_QUARTZ)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_SAPPHIRE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.SAPPHIRE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_sapphire", has(VVItemTags.GEMS_SAPPHIRE)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_SMOKY_QUARTZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.SMOKY_QUARTZ.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_smoky_quartz", has(VVItemTags.GEMS_SMOKY_QUARTZ)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_TAAFFEITE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.TAAFFEITE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_taaffeite", has(VVItemTags.GEMS_TAAFFEITE)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_TOPAZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItems.TOPAZ.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_topaz", has(VVItemTags.GEMS_TOPAZ)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_AMETHYST_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', Items.AMETHYST_SHARD).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_amethyst", has(Tags.Items.GEMS_AMETHYST)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_DIAMOND_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', Items.DIAMOND).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_diamond", has(Tags.Items.GEMS_DIAMOND)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_EMERALD_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', Items.EMERALD).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_emerald", has(Tags.Items.GEMS_EMERALD)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_QUARTZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', Items.QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_quartz", has(Tags.Items.GEMS_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_AMBER_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_AMBER).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_AQUAMARINE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_AQUAMARINE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_aquamarine", has(VVItemTags.GEMS_AQUAMARINE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_ENSTATITE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_ENSTATITE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_enstatite", has(VVItemTags.GEMS_ENSTATITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_GARNET_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_GARNET).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_garnet", has(VVItemTags.GEMS_GARNET)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_JADE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_JADE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_jade", has(VVItemTags.GEMS_JADE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_KUNZITE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_KUNZITE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_kunzite", has(VVItemTags.GEMS_KUNZITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_LARIMAR_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_LARIMAR).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_larimar", has(VVItemTags.GEMS_LARIMAR)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_MILKY_QUARTZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_MILKY_QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_milky_quartz", has(VVItemTags.GEMS_MILKY_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_MOONSTONE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_MOONSTONE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_moonstone", has(VVItemTags.GEMS_MOONSTONE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_ONYX_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_ONYX).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_onyx", has(VVItemTags.GEMS_ONYX)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_PERIDOT_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_PERIDOT).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_peridot", has(VVItemTags.GEMS_PERIDOT)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_ROSE_QUARTZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_ROSE_QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_rose_quartz", has(VVItemTags.GEMS_ROSE_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_SAPPHIRE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_SAPPHIRE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_sapphire", has(VVItemTags.GEMS_SAPPHIRE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_SMOKY_QUARTZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_SMOKY_QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_smoky_quartz", has(VVItemTags.GEMS_SMOKY_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_TAAFFEITE_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_TAAFFEITE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_taaffeite", has(VVItemTags.GEMS_TAAFFEITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_TOPAZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', VVItemTags.GEMS_TOPAZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_topaz", has(VVItemTags.GEMS_TOPAZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_AMETHYST_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', Tags.Items.GEMS_AMETHYST).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_amethyst", has(Tags.Items.GEMS_AMETHYST)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_DIAMOND_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', Tags.Items.GEMS_DIAMOND).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_diamond", has(Tags.Items.GEMS_DIAMOND)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_EMERALD_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', Tags.Items.GEMS_EMERALD).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_emerald", has(Tags.Items.GEMS_EMERALD)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, STARRY_QUARTZ_CALCITE_TILES.get(), 8).define('#', CALCITE_TILES.get()).define('X', Tags.Items.GEMS_QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_quartz", has(Tags.Items.GEMS_QUARTZ)).save(consumer);
 
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, CALCITE_BRICKS.get(), 4).define('#', CALCITE_TILES.get()).pattern("##").pattern("##").unlockedBy("has_calcite", has(Blocks.CALCITE)).save(consumer);
         generateRecipes(consumer, CALCITE_BRICKS_FAMILY);
@@ -271,153 +271,154 @@ public class VVRecipeProvider extends RecipeProvider implements IConditionBuilde
         stonecutterRecipe(consumer, BUILDING_BLOCKS, CALCITE_BRICK_STAIRS.get(), CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, CALCITE_BRICK_WALL.get(), CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.AMBER.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_AMBER).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
         generateRecipes(consumer, AMBER_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AMBER_BEJEWELED_CALCITE_BRICK_SLAB.get(), AMBER_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AMBER_BEJEWELED_CALCITE_BRICK_STAIRS.get(), AMBER_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AMBER_BEJEWELED_CALCITE_BRICK_WALL.get(), AMBER_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AQUAMARINE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.AQUAMARINE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_aquamarine", has(VVItemTags.GEMS_AQUAMARINE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AQUAMARINE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_AQUAMARINE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_aquamarine", has(VVItemTags.GEMS_AQUAMARINE)).save(consumer);
         generateRecipes(consumer, AQUAMARINE_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AQUAMARINE_BEJEWELED_CALCITE_BRICK_SLAB.get(), AQUAMARINE_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AQUAMARINE_BEJEWELED_CALCITE_BRICK_STAIRS.get(), AQUAMARINE_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AQUAMARINE_BEJEWELED_CALCITE_BRICK_WALL.get(), AQUAMARINE_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ENSTATITE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.ENSTATITE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_enstatite", has(VVItemTags.GEMS_ENSTATITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ENSTATITE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_ENSTATITE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_enstatite", has(VVItemTags.GEMS_ENSTATITE)).save(consumer);
         generateRecipes(consumer, ENSTATITE_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ENSTATITE_BEJEWELED_CALCITE_BRICK_SLAB.get(), ENSTATITE_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ENSTATITE_BEJEWELED_CALCITE_BRICK_STAIRS.get(), ENSTATITE_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ENSTATITE_BEJEWELED_CALCITE_BRICK_WALL.get(), ENSTATITE_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, GARNET_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.GARNET.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_garnet", has(VVItemTags.GEMS_GARNET)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, GARNET_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_GARNET).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_garnet", has(VVItemTags.GEMS_GARNET)).save(consumer);
         generateRecipes(consumer, GARNET_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, GARNET_BEJEWELED_CALCITE_BRICK_SLAB.get(), GARNET_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, GARNET_BEJEWELED_CALCITE_BRICK_STAIRS.get(), GARNET_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, GARNET_BEJEWELED_CALCITE_BRICK_WALL.get(), GARNET_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, JADE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.JADE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_jade", has(VVItemTags.GEMS_JADE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, JADE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_JADE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_jade", has(VVItemTags.GEMS_JADE)).save(consumer);
         generateRecipes(consumer, JADE_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, JADE_BEJEWELED_CALCITE_BRICK_SLAB.get(), JADE_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, JADE_BEJEWELED_CALCITE_BRICK_STAIRS.get(), JADE_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, JADE_BEJEWELED_CALCITE_BRICK_WALL.get(), JADE_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, KUNZITE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.KUNZITE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_kunzite", has(VVItemTags.GEMS_KUNZITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, KUNZITE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_KUNZITE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_kunzite", has(VVItemTags.GEMS_KUNZITE)).save(consumer);
         generateRecipes(consumer, KUNZITE_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, KUNZITE_BEJEWELED_CALCITE_BRICK_SLAB.get(), KUNZITE_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, KUNZITE_BEJEWELED_CALCITE_BRICK_STAIRS.get(), KUNZITE_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, KUNZITE_BEJEWELED_CALCITE_BRICK_WALL.get(), KUNZITE_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, LARIMAR_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.LARIMAR.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_larimar", has(VVItemTags.GEMS_LARIMAR)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, LARIMAR_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_LARIMAR).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_larimar", has(VVItemTags.GEMS_LARIMAR)).save(consumer);
         generateRecipes(consumer, LARIMAR_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, LARIMAR_BEJEWELED_CALCITE_BRICK_SLAB.get(), LARIMAR_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, LARIMAR_BEJEWELED_CALCITE_BRICK_STAIRS.get(), LARIMAR_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, LARIMAR_BEJEWELED_CALCITE_BRICK_WALL.get(), LARIMAR_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, MILKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.MILKY_QUARTZ.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_milky_quartz", has(VVItemTags.GEMS_MILKY_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, MILKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_MILKY_QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_milky_quartz", has(VVItemTags.GEMS_MILKY_QUARTZ)).save(consumer);
         generateRecipes(consumer, MILKY_QUARTZ_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, MILKY_QUARTZ_BEJEWELED_CALCITE_BRICK_SLAB.get(), MILKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, MILKY_QUARTZ_BEJEWELED_CALCITE_BRICK_STAIRS.get(), MILKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, MILKY_QUARTZ_BEJEWELED_CALCITE_BRICK_WALL.get(), MILKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, MOONSTONE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.MOONSTONE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_moonstone", has(VVItemTags.GEMS_MOONSTONE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, MOONSTONE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_MOONSTONE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_moonstone", has(VVItemTags.GEMS_MOONSTONE)).save(consumer);
         generateRecipes(consumer, MOONSTONE_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, MOONSTONE_BEJEWELED_CALCITE_BRICK_SLAB.get(), MOONSTONE_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, MOONSTONE_BEJEWELED_CALCITE_BRICK_STAIRS.get(), MOONSTONE_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, MOONSTONE_BEJEWELED_CALCITE_BRICK_WALL.get(), MOONSTONE_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ONYX_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.ONYX.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_onyx", has(VVItemTags.GEMS_ONYX)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ONYX_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_ONYX).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_onyx", has(VVItemTags.GEMS_ONYX)).save(consumer);
         generateRecipes(consumer, ONYX_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ONYX_BEJEWELED_CALCITE_BRICK_SLAB.get(), ONYX_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ONYX_BEJEWELED_CALCITE_BRICK_STAIRS.get(), ONYX_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ONYX_BEJEWELED_CALCITE_BRICK_WALL.get(), ONYX_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PERIDOT_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.PERIDOT.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_peridot", has(VVItemTags.GEMS_PERIDOT)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PERIDOT_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_PERIDOT).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_peridot", has(VVItemTags.GEMS_PERIDOT)).save(consumer);
         generateRecipes(consumer, PERIDOT_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, PERIDOT_BEJEWELED_CALCITE_BRICK_SLAB.get(), PERIDOT_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, PERIDOT_BEJEWELED_CALCITE_BRICK_STAIRS.get(), PERIDOT_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, PERIDOT_BEJEWELED_CALCITE_BRICK_WALL.get(), PERIDOT_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ROSE_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.ROSE_QUARTZ.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_rose_quartz", has(VVItemTags.GEMS_ROSE_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ROSE_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_ROSE_QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_rose_quartz", has(VVItemTags.GEMS_ROSE_QUARTZ)).save(consumer);
         generateRecipes(consumer, ROSE_QUARTZ_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ROSE_QUARTZ_BEJEWELED_CALCITE_BRICK_SLAB.get(), ROSE_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ROSE_QUARTZ_BEJEWELED_CALCITE_BRICK_STAIRS.get(), ROSE_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, ROSE_QUARTZ_BEJEWELED_CALCITE_BRICK_WALL.get(), ROSE_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SAPPHIRE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.SAPPHIRE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_sapphire", has(VVItemTags.GEMS_SAPPHIRE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SAPPHIRE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_SAPPHIRE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_sapphire", has(VVItemTags.GEMS_SAPPHIRE)).save(consumer);
         generateRecipes(consumer, SAPPHIRE_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, SAPPHIRE_BEJEWELED_CALCITE_BRICK_SLAB.get(), SAPPHIRE_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, SAPPHIRE_BEJEWELED_CALCITE_BRICK_STAIRS.get(), SAPPHIRE_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, SAPPHIRE_BEJEWELED_CALCITE_BRICK_WALL.get(), SAPPHIRE_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.SMOKY_QUARTZ.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_smoky_quartz", has(VVItemTags.GEMS_SMOKY_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_SMOKY_QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_smoky_quartz", has(VVItemTags.GEMS_SMOKY_QUARTZ)).save(consumer);
         generateRecipes(consumer, SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICK_SLAB.get(), SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICK_STAIRS.get(), SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICK_WALL.get(), SMOKY_QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, TAAFFEITE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.TAAFFEITE.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_taaffeite", has(VVItemTags.GEMS_TAAFFEITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, TAAFFEITE_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_TAAFFEITE).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_taaffeite", has(VVItemTags.GEMS_TAAFFEITE)).save(consumer);
         generateRecipes(consumer, TAAFFEITE_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, TAAFFEITE_BEJEWELED_CALCITE_BRICK_SLAB.get(), TAAFFEITE_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, TAAFFEITE_BEJEWELED_CALCITE_BRICK_STAIRS.get(), TAAFFEITE_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, TAAFFEITE_BEJEWELED_CALCITE_BRICK_WALL.get(), TAAFFEITE_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, TOPAZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItems.TOPAZ.get()).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_topaz", has(VVItemTags.GEMS_TOPAZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, TOPAZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', VVItemTags.GEMS_TOPAZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_topaz", has(VVItemTags.GEMS_TOPAZ)).save(consumer);
         generateRecipes(consumer, TOPAZ_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, TOPAZ_BEJEWELED_CALCITE_BRICK_SLAB.get(), TOPAZ_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, TOPAZ_BEJEWELED_CALCITE_BRICK_STAIRS.get(), TOPAZ_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, TOPAZ_BEJEWELED_CALCITE_BRICK_WALL.get(), TOPAZ_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMETHYST_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', Items.AMETHYST_SHARD).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_amethyst", has(Tags.Items.GEMS_AMETHYST)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMETHYST_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', Tags.Items.GEMS_AMETHYST).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_amethyst", has(Tags.Items.GEMS_AMETHYST)).save(consumer);
         generateRecipes(consumer, AMETHYST_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AMETHYST_BEJEWELED_CALCITE_BRICK_SLAB.get(), AMETHYST_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AMETHYST_BEJEWELED_CALCITE_BRICK_STAIRS.get(), AMETHYST_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, AMETHYST_BEJEWELED_CALCITE_BRICK_WALL.get(), AMETHYST_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, DIAMOND_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', Items.DIAMOND).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_diamond", has(Tags.Items.GEMS_DIAMOND)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, DIAMOND_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', Tags.Items.GEMS_DIAMOND).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_diamond", has(Tags.Items.GEMS_DIAMOND)).save(consumer);
         generateRecipes(consumer, DIAMOND_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, DIAMOND_BEJEWELED_CALCITE_BRICK_SLAB.get(), DIAMOND_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, DIAMOND_BEJEWELED_CALCITE_BRICK_STAIRS.get(), DIAMOND_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, DIAMOND_BEJEWELED_CALCITE_BRICK_WALL.get(), DIAMOND_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, EMERALD_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', Items.EMERALD).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_emerald", has(Tags.Items.GEMS_EMERALD)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, EMERALD_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', Tags.Items.GEMS_EMERALD).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_emerald", has(Tags.Items.GEMS_EMERALD)).save(consumer);
         generateRecipes(consumer, EMERALD_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, EMERALD_BEJEWELED_CALCITE_BRICK_SLAB.get(), EMERALD_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, EMERALD_BEJEWELED_CALCITE_BRICK_STAIRS.get(), EMERALD_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, EMERALD_BEJEWELED_CALCITE_BRICK_WALL.get(), EMERALD_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', Items.QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_quartz", has(Tags.Items.GEMS_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 8).define('#', CALCITE_BRICKS.get()).define('X', Tags.Items.GEMS_QUARTZ).pattern("###").pattern("#X#").pattern("###").unlockedBy("has_quartz", has(Tags.Items.GEMS_QUARTZ)).save(consumer);
         generateRecipes(consumer, QUARTZ_BEJEWELED_CALCITE_BRICKS_FAMILY);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, QUARTZ_BEJEWELED_CALCITE_BRICK_SLAB.get(), QUARTZ_BEJEWELED_CALCITE_BRICKS.get(), 2);
         stonecutterRecipe(consumer, BUILDING_BLOCKS, QUARTZ_BEJEWELED_CALCITE_BRICK_STAIRS.get(), QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
         stonecutterRecipe(consumer, BUILDING_BLOCKS, QUARTZ_BEJEWELED_CALCITE_BRICK_WALL.get(), QUARTZ_BEJEWELED_CALCITE_BRICKS.get());
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AQUAMARINE_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AQUAMARINE.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AQUAMARINE)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
-//        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItems.AMBER.get()).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMBER_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_AMBER).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AMBER)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AQUAMARINE_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_AQUAMARINE).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amber", has(VVItemTags.GEMS_AQUAMARINE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ENSTATITE_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_ENSTATITE).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_enstatite", has(VVItemTags.GEMS_ENSTATITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, GARNET_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_GARNET).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_garnet", has(VVItemTags.GEMS_GARNET)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, JADE_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_JADE).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_jade", has(VVItemTags.GEMS_JADE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, KUNZITE_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_KUNZITE).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_kunzite", has(VVItemTags.GEMS_KUNZITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, LARIMAR_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_LARIMAR).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_larimar", has(VVItemTags.GEMS_LARIMAR)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, MILKY_QUARTZ_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_MILKY_QUARTZ).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_milky_quartz", has(VVItemTags.GEMS_MILKY_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, MOONSTONE_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_MOONSTONE).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_moonstone", has(VVItemTags.GEMS_MOONSTONE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ONYX_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_ONYX).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_onyx", has(VVItemTags.GEMS_ONYX)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PERIDOT_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_PERIDOT).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_peridot", has(VVItemTags.GEMS_PERIDOT)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ROSE_QUARTZ_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_ROSE_QUARTZ).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_rose_quartz", has(VVItemTags.GEMS_ROSE_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SAPPHIRE_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_SAPPHIRE).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_sapphire", has(VVItemTags.GEMS_SAPPHIRE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SMOKY_QUARTZ_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_SMOKY_QUARTZ).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_smoky_quartz", has(VVItemTags.GEMS_SMOKY_QUARTZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, TAAFFEITE_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_TAAFFEITE).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_taaffeite", has(VVItemTags.GEMS_TAAFFEITE)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, TOPAZ_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', VVItemTags.GEMS_TOPAZ).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_topaz", has(VVItemTags.GEMS_TOPAZ)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, AMETHYST_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', Tags.Items.GEMS_AMETHYST).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_amethyst", has(Tags.Items.GEMS_AMETHYST)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, DIAMOND_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', Tags.Items.GEMS_DIAMOND).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_diamond", has(Tags.Items.GEMS_DIAMOND)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, EMERALD_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', Tags.Items.GEMS_EMERALD).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_emerald", has(Tags.Items.GEMS_EMERALD)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, QUARTZ_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', Tags.Items.GEMS_QUARTZ).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_quartz", has(Tags.Items.GEMS_QUARTZ)).save(consumer);
 
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_pineapple", has(PINEAPPLE.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE.get(), 1).define('#', VVItems.PINEAPPLE_SLICE.get()).pattern("###").pattern("###").pattern("###").unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);
+
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, HONEYCOMB_BEJEWELED_LAMP.get(), 1).define('#', Items.HONEYCOMB).define('X', VVItemTags.GEMS).define('Y', Blocks.GLOWSTONE).pattern("#X#").pattern("XYX").pattern("#X#").unlockedBy("has_gems", has(VVItemTags.GEMS)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, FLORAL_BEJEWELED_LAMP.get(), 1).define('#', ItemTags.FLOWERS).define('X', VVItemTags.GEMS).define('Y', Blocks.GLOWSTONE).pattern("#X#").pattern("XYX").pattern("#X#").unlockedBy("has_gems", has(VVItemTags.GEMS)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, DIAMANTE_BEJEWELED_LAMP.get(), 1).define('#', Tags.Items.GLASS).define('X', VVItemTags.GEMS).define('Y', Blocks.GLOWSTONE).pattern("#X#").pattern("XYX").pattern("#X#").unlockedBy("has_gems", has(VVItemTags.GEMS)).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, BANDED_BEJEWELED_LAMP.get(), 1).define('#', Tags.Items.INGOTS_IRON).define('X', VVItemTags.GEMS).define('Y', Blocks.GLOWSTONE).pattern("#X#").pattern("XYX").pattern("#X#").unlockedBy("has_gems", has(VVItemTags.GEMS)).save(consumer);
 
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, OAK_PAPER_LANTERN.get(), 1).define('X', Blocks.OAK_PLANKS).define('#', Items.PAPER).define('Y', Blocks.TORCH).pattern("X#X").pattern("#Y#").pattern("X#X").unlockedBy("has_planks", has(ItemTags.PLANKS)).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SPRUCE_PAPER_LANTERN.get(), 1).define('X', Blocks.SPRUCE_PLANKS).define('#', Items.PAPER).define('Y', Blocks.TORCH).pattern("X#X").pattern("#Y#").pattern("X#X").unlockedBy("has_planks", has(ItemTags.PLANKS)).save(consumer);

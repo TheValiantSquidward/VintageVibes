@@ -6,7 +6,7 @@
       "item": "vintagevibes:calcite_tiles"
     },
     "X": {
-      "item": "vintagevibes:peridot"
+      "tag": "forge:gems/peridot"
     }
   },
   "pattern": [

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:smoky_quartz_bejeweled_calcite_bricks"
+  },
+  "result": "vintagevibes:smoky_quartz_bejeweled_calcite_brick_wall"
+}

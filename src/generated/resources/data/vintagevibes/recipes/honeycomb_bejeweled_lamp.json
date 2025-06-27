@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:honeycomb"
+    },
+    "X": {
+      "tag": "vintagevibes:gems"
+    },
+    "Y": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "XYX",
+    "#X#"
+  ],
+  "result": {
+    "item": "vintagevibes:honeycomb_bejeweled_lamp"
+  },
+  "show_notification": true
+}

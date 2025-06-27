@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "vintagevibes:jade_bejeweled_calcite_bricks"
+  },
+  "result": "vintagevibes:jade_bejeweled_calcite_brick_stairs"
+}

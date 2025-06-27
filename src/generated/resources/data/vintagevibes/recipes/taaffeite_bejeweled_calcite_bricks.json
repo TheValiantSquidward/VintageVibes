@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "vintagevibes:calcite_bricks"
+    },
+    "X": {
+      "tag": "forge:gems/taaffeite"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "vintagevibes:taaffeite_bejeweled_calcite_bricks"
+  },
+  "show_notification": true
+}

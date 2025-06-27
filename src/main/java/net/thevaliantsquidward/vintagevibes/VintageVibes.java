@@ -37,6 +37,7 @@ public class VintageVibes {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(VVCompat::registerCompat);
     }
 
     private void dataSetup(GatherDataEvent event) {
