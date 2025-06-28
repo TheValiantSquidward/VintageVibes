@@ -1,0 +1,90 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:amber",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:aquamarine",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:enstatite",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:garnet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:jade",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:kunzite",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:larimar",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:milky_quartz",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:moonstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:onyx",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:peridot",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:rose_quartz",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:sapphire",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:smoky_quartz",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:taaffeite",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:topaz",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

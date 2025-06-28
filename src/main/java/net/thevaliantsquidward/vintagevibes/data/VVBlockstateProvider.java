@@ -15,11 +15,6 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import java.util.function.Function;
 
 import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.*;
-import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.ROSE_QUARTZ_BLOCK;
-import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.SAPPHIRE_BLOCK;
-import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.SMOKY_QUARTZ_BLOCK;
-import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.TAAFFEITE_BLOCK;
-import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.TOPAZ_BLOCK;
 
 public class VVBlockstateProvider extends BlockStateProvider {
 
@@ -29,6 +24,9 @@ public class VVBlockstateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
+        this.cubeAllBlock(BEJEWELED_ORE);
+        this.cubeAllBlock(DEEPSLATE_BEJEWELED_ORE);
 
         this.cubeAllBlock(AMBER_BLOCK);
         this.cubeAllBlock(AQUAMARINE_BLOCK);

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "entries": [
+    "vintagevibes:add_loot_buried_treasure",
+    "vintagevibes:add_loot_shipwreck",
+    "vintagevibes:add_loot_underwater_ruin"
+  ]
+}

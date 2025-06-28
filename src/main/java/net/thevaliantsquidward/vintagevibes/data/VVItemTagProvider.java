@@ -28,7 +28,7 @@ public class VVItemTagProvider extends ItemTagsProvider {
         this.copy(BlockTags.STAIRS, ItemTags.STAIRS);
         this.copy(BlockTags.WALLS, ItemTags.WALLS);
         this.copy(BlockTags.SMALL_FLOWERS, ItemTags.SMALL_FLOWERS);
-//        this.copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
+        this.copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
 
         this.tag(VVItemTags.GEMS_AMBER).add(
                 AMBER.get()
@@ -100,6 +100,19 @@ public class VVItemTagProvider extends ItemTagsProvider {
         this.tag(Tags.Items.GEMS).addTag(VVItemTags.GEMS);
 
         this.tag(ItemTags.MUSIC_DISCS).add(VIBE_DISC.get());
+
+        this.tag(Tags.Items.ARMORS_HELMETS).add(
+                CELESTIAL_MASK.get(),
+                DEITY_MASK.get(),
+                FESTIVE_MASK.get(),
+                FROND_MASK.get(),
+                MONSOON_MASK.get(),
+                PETRIFIED_MASK.get(),
+                SPIRIT_MASK.get(),
+                SUNRISE_MASK.get(),
+                TIDAL_MASK.get(),
+                VOLCANIC_MASK.get()
+        );
 
     }
 }

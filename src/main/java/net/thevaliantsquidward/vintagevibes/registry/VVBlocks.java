@@ -1,5 +1,7 @@
 package net.thevaliantsquidward.vintagevibes.registry;
 
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;
@@ -31,6 +33,10 @@ public class VVBlocks {
     public static final BlockBehaviour.Properties CARVED_SANDSTONE_PROPERTIES = BlockBehaviour.Properties.of().mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(0.8F);
     public static final BlockBehaviour.Properties PINEAPPLE_PROPERTIES = BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).instrument(NoteBlockInstrument.BANJO).sound(SoundType.WOOD).strength(1.5F, 2.0F);
     public static final BlockBehaviour.Properties BEJEWELED_LAMP_PROPERTIES = BlockBehaviour.Properties.of().strength(1.5F, 2.0F).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).instrument(NoteBlockInstrument.HARP).lightLevel((state) -> 15);
+
+    // bejeweled ore
+    public static final RegistryObject<Block> BEJEWELED_ORE = registerBlock("bejeweled_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of().strength(3.0F).requiresCorrectToolForDrops().sound(SoundType.STONE).instrument(NoteBlockInstrument.HARP).mapColor(MapColor.STONE), UniformInt.of(2, 4)));
+    public static final RegistryObject<Block> DEEPSLATE_BEJEWELED_ORE = registerBlock("deepslate_bejeweled_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of().strength(4.5F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.DEEPSLATE), UniformInt.of(2, 4)));
 
     // crystal stands
     public static final RegistryObject<Block> AMBER_STAND = registerBlockNoLang("amber_stand", () -> new CrystalDisplayBlock(GEM_STAND_PROPERTIES.mapColor(MapColor.TERRACOTTA_ORANGE)));
