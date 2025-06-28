@@ -1,0 +1,10 @@
+{
+  "type": "vintagevibes:add_loot_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/buried_treasure"
+    }
+  ],
+  "lootTable": "vintagevibes:chests/vintagevibes_buried_treasure"
+}

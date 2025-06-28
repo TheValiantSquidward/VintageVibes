@@ -52,6 +52,9 @@ public class VVCreativeTab {
                         pOutput.accept(VVItems.PINEAPPLE_SLICE.get());
                         pOutput.accept(VVItems.VIBE_DISC.get());
 
+                        pOutput.accept(VVBlocks.BEJEWELED_ORE.get());
+                        pOutput.accept(VVBlocks.DEEPSLATE_BEJEWELED_ORE.get());
+
                         // bejeweled lamp
                         pOutput.accept(VVBlocks.BANDED_BEJEWELED_LAMP.get());
                         pOutput.accept(VVBlocks.DIAMANTE_BEJEWELED_LAMP.get());

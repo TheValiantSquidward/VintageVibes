@@ -8,6 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.thevaliantsquidward.vintagevibes.registry.tags.VVBlockTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -94,6 +95,8 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         );
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+                BEJEWELED_ORE.get(), DEEPSLATE_BEJEWELED_ORE.get(),
+
                 CARVED_SANDSTONE_CONCERNED.get(), CARVED_SANDSTONE_DISAPPOINTED.get(),  CARVED_SANDSTONE_FISHEYE.get(),
                 CARVED_SANDSTONE_GRIN.get(), CARVED_SANDSTONE_JOYOUS.get(), CARVED_SANDSTONE_LAZYBONES.get(),
                 CARVED_SANDSTONE_NOSE.get(), CARVED_SANDSTONE_OPEN.get(), CARVED_SANDSTONE_SPIRAL.get(),
@@ -245,6 +248,7 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_STONE_TOOL);
 
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(
+                DEEPSLATE_BEJEWELED_ORE.get(), BEJEWELED_ORE.get(),
                 DIAMOND_TILES.get(), EMERALD_TILES.get()
         );
 
@@ -261,23 +265,27 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 TORCH_GINGER.get()
         );
 
+        this.tag(BlockTags.TALL_FLOWERS).add(
+                TALL_WHITE_HIBISCUS.get(), TALL_RED_HIBISCUS.get(), TALL_ORANGE_HIBISCUS.get(), TALL_PURPLE_HIBISCUS.get(), TALL_PINK_HIBISCUS.get(),
+                BIRD_OF_PARADISE.get(), CANNA_LILY.get(), TALL_LACELEAF.get()
+        );
+
         // forge tags
-        this.tag(Tags.Blocks.ORES);
-        this.tag(Tags.Blocks.ORES_IN_GROUND_STONE);
-        this.tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE);
-        this.tag(Tags.Blocks.ORE_RATES_DENSE);
-        this.tag(Tags.Blocks.ORE_RATES_SINGULAR);
+        this.tag(Tags.Blocks.ORES).add(
+                BEJEWELED_ORE.get(),
+                DEEPSLATE_BEJEWELED_ORE.get()
+        );
+
+        this.tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(BEJEWELED_ORE.get());
+
+        this.tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(DEEPSLATE_BEJEWELED_ORE.get());
+
+        this.tag(Tags.Blocks.ORE_RATES_DENSE).add(
+                BEJEWELED_ORE.get(),
+                DEEPSLATE_BEJEWELED_ORE.get()
+        );
 
         this.tag(Tags.Blocks.STORAGE_BLOCKS).add(
-                POLISHED_AMBER.get(), POLISHED_AQUAMARINE.get(),
-                POLISHED_ENSTATITE.get(), POLISHED_GARNET.get(),
-                POLISHED_JADE.get(), POLISHED_KUNZITE.get(),
-                POLISHED_LARIMAR.get(), POLISHED_MILKY_QUARTZ.get(),
-                POLISHED_MOONSTONE.get(), POLISHED_ONYX.get(),
-                POLISHED_PERIDOT.get(), POLISHED_ROSE_QUARTZ.get(),
-                POLISHED_SAPPHIRE.get(), POLISHED_SMOKY_QUARTZ.get(),
-                POLISHED_TAAFFEITE.get(), POLISHED_TOPAZ.get(),
-
                 AMBER_BLOCK.get(), AQUAMARINE_BLOCK.get(),
                 ENSTATITE_BLOCK.get(), GARNET_BLOCK.get(),
                 JADE_BLOCK.get(), KUNZITE_BLOCK.get(),
@@ -289,9 +297,27 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         );
 
         // vintage vibes tags
+        this.tag(VVBlockTags.BEJEWELED_ORES).add(BEJEWELED_ORE.get(), DEEPSLATE_BEJEWELED_ORE.get());
 
         // vintage vibes forge tags
+        this.tag(VVBlockTags.ORES_BEJEWELED).addTag(VVBlockTags.BEJEWELED_ORES);
 
+        this.tag(VVBlockTags.STORAGE_BLOCKS_AMBER).add(AMBER_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_AQUAMARINE).add(AQUAMARINE_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_ENSTATITE).add(ENSTATITE_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_GARNET).add(GARNET_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_JADE).add(JADE_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_KUNZITE).add(KUNZITE_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_LARIMAR).add(LARIMAR_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_MILKY_QUARTZ).add(MILKY_QUARTZ_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_MOONSTONE).add(MOONSTONE_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_ONYX).add(ONYX_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_PERIDOT).add(PERIDOT_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_ROSE_QUARTZ).add(ROSE_QUARTZ_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_SAPPHIRE).add(SAPPHIRE_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_SMOKY_QUARTZ).add(SMOKY_QUARTZ_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_TAAFFEITE).add(TAAFFEITE_BLOCK.get());
+        this.tag(VVBlockTags.STORAGE_BLOCKS_TOPAZ).add(TOPAZ_BLOCK.get());
     }
 
     @Override

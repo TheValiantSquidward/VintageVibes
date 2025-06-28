@@ -1,17 +1,11 @@
 package net.thevaliantsquidward.vintagevibes.data;
 
-import net.minecraft.advancements.critereon.*;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraft.world.level.storage.loot.predicates.MatchTool;
-import net.minecraftforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashSet;
@@ -22,11 +16,6 @@ import static net.thevaliantsquidward.vintagevibes.registry.VVBlocks.*;
 public class VVBlockLootTableProvider extends BlockLootSubProvider {
 
     private final Set<Block> knownBlocks = new HashSet<>();
-
-    private static final LootItemCondition.Builder HAS_SILK_TOUCH = MatchTool.toolMatches(ItemPredicate.Builder.item().hasEnchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.atLeast(1))));
-    private static final LootItemCondition.Builder HAS_SHEARS = MatchTool.toolMatches(ItemPredicate.Builder.item().of(Tags.Items.SHEARS));
-    private static final LootItemCondition.Builder HAS_SHEARS_OR_SILK_TOUCH = HAS_SHEARS.or(HAS_SILK_TOUCH);
-    private static final LootItemCondition.Builder HAS_NO_SHEARS_OR_SILK_TOUCH = HAS_SHEARS_OR_SILK_TOUCH.invert();
 
     public VVBlockLootTableProvider() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
@@ -436,10 +425,8 @@ public class VVBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(RED_CARVED_SANDSTONE_TOUCH.get());
         this.dropSelf(RED_CARVED_SANDSTONE_MESSAGE.get());
 
-        this.dropSelf(PINEAPPLE.get());
         this.dropSelf(PINEAPPLE_SCALE_BLOCK.get());
-//        this.add(PINEAPPLE_CROWN.get(), (LootTable.Builder) HAS_SHEARS_OR_SILK_TOUCH);
-
+        this.add(PINEAPPLE_CROWN.get(), createShearsOnlyDrop(PINEAPPLE_CROWN.get()));
     }
 
     @Override

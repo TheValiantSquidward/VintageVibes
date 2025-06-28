@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-27T19:40:51.7736457	Loot Tables
+// 1.20.1	2025-06-27T19:57:29.6696342	Loot Tables
 b249f98cf8c63429b4eadbf41cc07e934804e8b4 data/vintagevibes/loot_tables/blocks/acacia_paper_lantern.json
 ed515d944628e3fa36038a64c27cd4c693769ff6 data/vintagevibes/loot_tables/blocks/amber_bejeweled_calcite_bricks.json
 7efa50d823d778830339fdc1bf5d4e1780a21788 data/vintagevibes/loot_tables/blocks/amber_bejeweled_calcite_brick_slab.json
@@ -175,7 +175,7 @@ b890e33ad6f0daed2433fc06e4fd205155d60a44 data/vintagevibes/loot_tables/blocks/pe
 5fdc397202eb22cb45fec1a3cfcc2cc017eac2f1 data/vintagevibes/loot_tables/blocks/peridot_tile_slab.json
 412a606e146c77b5d3ff1e36720453d8ddb74d8a data/vintagevibes/loot_tables/blocks/peridot_tile_stairs.json
 d0387df9e2e18ff2eeb66342a53c9a80435afe45 data/vintagevibes/loot_tables/blocks/peridot_tile_wall.json
-f64878f988a9e0adb1ba3bc19b12dbf9c55d1729 data/vintagevibes/loot_tables/blocks/pineapple.json
+b5e46a707d561e237cc293fbe545c88d7f5c2fac data/vintagevibes/loot_tables/blocks/pineapple_crown.json
 c7be29c99b34049ef0404cef7badb5d51bf0de8e data/vintagevibes/loot_tables/blocks/pineapple_scale_block.json
 b7eeba5f833c0a2b76e1b56774379d94a2eaea91 data/vintagevibes/loot_tables/blocks/pink_bromeliad.json
 ad9895de1c293416295b50030bcea5a8f0fdac0b data/vintagevibes/loot_tables/blocks/pink_hibiscus.json
