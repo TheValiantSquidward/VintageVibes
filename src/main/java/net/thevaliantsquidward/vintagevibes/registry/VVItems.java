@@ -1,15 +1,14 @@
 package net.thevaliantsquidward.vintagevibes.registry;
 
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.RecordItem;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
+import net.thevaliantsquidward.vintagevibes.items.ButterflyBottleItem;
 import net.thevaliantsquidward.vintagevibes.items.MaskItem;
 import net.thevaliantsquidward.vintagevibes.registry.enums.VVArmorMaterials;
 
@@ -49,6 +48,7 @@ public class VVItems {
 
     // evil beasts of evil origins
     public static final RegistryObject<Item> BUTTERFLY_SPAWN_EGG = registerSpawnEggItem("butterfly", VVEntities.BUTTERFLY, 0xb8510d, 0x270d07);
+    public static final RegistryObject<Item> BUTTERFLY_BOTTLE = registerItem("butterfly_bottle", () -> new ButterflyBottleItem(VVEntities.BUTTERFLY::get, Items.GLASS_BOTTLE, false, new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> CELESTIAL_MASK = registerItem("celestial_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> DEITY_MASK = registerItem("deity_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));

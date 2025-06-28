@@ -1,14 +1,20 @@
 package net.thevaliantsquidward.vintagevibes.entities;
 
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.Mth;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -21,6 +27,10 @@ import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.animal.Bucketable;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
@@ -32,15 +42,18 @@ import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.thevaliantsquidward.vintagevibes.entities.ai.navigation.FlyingMoveController;
+import net.thevaliantsquidward.vintagevibes.registry.VVItems;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumSet;
 
-public class Butterfly extends Animal {
+public class Butterfly extends Animal implements Bucketable {
 
     @Nullable
     private static final EntityDataAccessor<Boolean> FLYING = SynchedEntityData.defineId(Butterfly.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Integer> VARIANT = SynchedEntityData.defineId(Butterfly.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Boolean> FROM_BUCKET = SynchedEntityData.defineId(Butterfly.class, EntityDataSerializers.BOOLEAN);
 
     public final float[] ringBuffer = new float[64];
     public float prevFlyProgress;
@@ -94,7 +107,7 @@ public class Butterfly extends Animal {
             case 1 -> "blue_banded_swallowtail";
             case 2 -> "blue_morpho";
             case 3 -> "cabbage";
-            case 4 -> "clouded yellow";
+            case 4 -> "clouded_yellow";
             case 5 -> "glasswing";
             case 6 -> "malachite";
             case 7 -> "mexican_shoemaker";
@@ -103,9 +116,37 @@ public class Butterfly extends Animal {
             case 10 -> "tiger_longwing";
             case 11 -> "tiger_swallowtail";
             case 12 -> "zebra";
+            case 13 -> "common_blue";
+            case 14 -> "atala";
+            case 15 -> "red_admiral";
             default -> "monarch";
         };
     }
+
+
+    @Override
+    public @NotNull InteractionResult mobInteract(Player player, @NotNull InteractionHand hand) {
+        ItemStack heldItem = player.getItemInHand(hand);
+
+        if (heldItem.getItem() == Items.GLASS_BOTTLE && this.isAlive()) {
+            playSound(SoundEvents.BOTTLE_FILL_DRAGONBREATH, 0.5F, 1.0F);
+            heldItem.shrink(1);
+            ItemStack itemstack1 = new ItemStack(VVItems.BUTTERFLY_BOTTLE.get());
+            this.setBucketData(itemstack1);
+            if (!this.level().isClientSide) {
+                CriteriaTriggers.FILLED_BUCKET.trigger((ServerPlayer) player, itemstack1);
+            }
+            if (heldItem.isEmpty() && !player.isCreative()) {
+                player.setItemInHand(hand, itemstack1);
+            } else if (!player.getInventory().add(itemstack1)) {
+                player.drop(itemstack1, false);
+            }
+            this.discard();
+            return InteractionResult.SUCCESS;
+        }
+        return super.mobInteract(player, hand);
+    }
+
 
     @Override
     public void tick() {
@@ -162,6 +203,10 @@ public class Butterfly extends Animal {
     @Nullable
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor worldIn, DifficultyInstance difficultyIn, MobSpawnType reason, @Nullable SpawnGroupData spawnDataIn, @Nullable CompoundTag dataTag) {
         int variantChange = this.random.nextInt(0, 100);
+
+        if (reason == MobSpawnType.BUCKET && dataTag != null) {
+            this.setVariant(dataTag.getInt("Variant"));
+        } else
         if (variantChange <= 6) {
             this.setVariant(1);
         }
@@ -222,8 +267,54 @@ public class Butterfly extends Animal {
     protected void defineSynchedData() {
         super.defineSynchedData();
         this.entityData.define(VARIANT, 0);
+        this.entityData.define(FROM_BUCKET, false);
         this.entityData.define(FLYING, false);
     }
+
+    public boolean fromBucket() {
+        return this.entityData.get(FROM_BUCKET);
+    }
+
+    public void setFromBucket(boolean pFromBucket) {
+        this.entityData.set(FROM_BUCKET, pFromBucket);
+    }
+
+    @Override
+    public void saveToBucketTag(ItemStack bucket) {
+        CompoundTag compoundnbt = bucket.getOrCreateTag();
+        Bucketable.saveDefaultDataToBucketTag(this, bucket);
+        compoundnbt.putFloat("Health", this.getHealth());
+        compoundnbt.putInt("Age", this.getAge());
+        compoundnbt.putInt("Variant", this.getVariant());
+        if (this.hasCustomName()) {
+            bucket.setHoverName(this.getCustomName());
+        }
+    }
+
+    @Override
+    public void loadFromBucketTag(CompoundTag pTag) {
+        Bucketable.loadDefaultDataFromBucketTag(this, pTag);
+    }
+
+    @Override
+    public ItemStack getBucketItemStack() {
+        return new ItemStack(VVItems.BUTTERFLY_BOTTLE.get());
+    }
+
+    private void setBucketData(ItemStack bucket) {
+        CompoundTag compoundnbt = bucket.getOrCreateTag();
+        compoundnbt.putFloat("Health", this.getHealth());
+        compoundnbt.putInt("Variant", this.getVariant());
+        if (this.hasCustomName()) {
+            bucket.setHoverName(this.getCustomName());
+        }
+    }
+
+    @Override
+    public SoundEvent getPickupSound() {
+        return SoundEvents.BOTTLE_FILL_DRAGONBREATH;
+    }
+
 
     @Override
     public void addAdditionalSaveData(CompoundTag compound) {
