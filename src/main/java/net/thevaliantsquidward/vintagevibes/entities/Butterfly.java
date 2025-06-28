@@ -119,6 +119,7 @@ public class Butterfly extends Animal implements Bucketable {
             case 13 -> "common_blue";
             case 14 -> "atala";
             case 15 -> "red_admiral";
+            case 16 -> "queen_alexandra_birdwing";
             default -> "monarch";
         };
     }
@@ -201,6 +202,7 @@ public class Butterfly extends Animal implements Bucketable {
     }
 
     @Nullable
+    @Override
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor worldIn, DifficultyInstance difficultyIn, MobSpawnType reason, @Nullable SpawnGroupData spawnDataIn, @Nullable CompoundTag dataTag) {
         int variantChange = this.random.nextInt(0, 100);
 
@@ -249,13 +251,16 @@ public class Butterfly extends Animal implements Bucketable {
         else if (variantChange <= 84) {
             this.setVariant(15);
         }
-        else {
+        else if (variantChange <= 90) {
+            this.setVariant(16);
+        } else {
             this.setVariant(0);
         }
         return super.finalizeSpawn(worldIn, difficultyIn, reason, spawnDataIn, dataTag);
     }
 
-    public int getVariant() {
+
+        public int getVariant() {
         return this.entityData.get(VARIANT);
     }
 

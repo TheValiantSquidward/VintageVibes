@@ -58,6 +58,7 @@ public class VVLanguageProvider extends LanguageProvider {
         add("entity.vintagevibes.butterfly.variant_common_blue", "Common Blue");
         add("entity.vintagevibes.butterfly.variant_atala", "Atala");
         add("entity.vintagevibes.butterfly.variant_red_admiral", "Red Admiral");
+        add("entity.vintagevibes.butterfly.variant_queen_alexandra_birdwing", "Queen Alexandra's Birdwing");
 
         this.forEntity(VVEntities.BUTTERFLY);
 
