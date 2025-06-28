@@ -52,10 +52,6 @@
           "type": "minecraft:item",
           "name": "vintagevibes:volcanic_mask",
           "weight": 1
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 24
         }
       ]
     }
