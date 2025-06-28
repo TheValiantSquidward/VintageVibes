@@ -42,6 +42,22 @@ public class VVLanguageProvider extends LanguageProvider {
 
         // items
         VVItems.AUTO_TRANSLATE.forEach(this::forItem);
+        add("entity.vintagevibes.butterfly.variant_monarch", "Monarch");
+        add("entity.vintagevibes.butterfly.variant_blue_banded_swallowtail", "Blue Banded Swallowtail");
+        add("entity.vintagevibes.butterfly.variant_blue_morpho", "Blue Morpho");
+        add("entity.vintagevibes.butterfly.variant_cabbage", "Cabbage");
+        add("entity.vintagevibes.butterfly.variant_clouded_yellow", "Clouded Yellow");
+        add("entity.vintagevibes.butterfly.variant_glasswing", "Glasswing");
+        add("entity.vintagevibes.butterfly.variant_malachite", "Malachite");
+        add("entity.vintagevibes.butterfly.variant_mexican_shoemaker", "Mexican Shoemaker");
+        add("entity.vintagevibes.butterfly.variant_mourning_cloak", "Mourning Cloak");
+        add("entity.vintagevibes.butterfly.variant_purple_emperor", "Purple Emperor");
+        add("entity.vintagevibes.butterfly.variant_tiger_longwing", "Tiger Longwing");
+        add("entity.vintagevibes.butterfly.variant_tiger_swallowtail", "Tiger Swallowtail");
+        add("entity.vintagevibes.butterfly.variant_zebra", "Zebra");
+        add("entity.vintagevibes.butterfly.variant_common_blue", "Common Blue");
+        add("entity.vintagevibes.butterfly.variant_atala", "Atala");
+        add("entity.vintagevibes.butterfly.variant_red_admiral", "Red Admiral");
 
         this.forEntity(VVEntities.BUTTERFLY);
 
