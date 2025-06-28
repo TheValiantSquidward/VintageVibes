@@ -52,7 +52,7 @@ public class VVLanguageProvider extends LanguageProvider {
         add("entity.vintagevibes.butterfly.variant_mexican_shoemaker", "Mexican Shoemaker");
         add("entity.vintagevibes.butterfly.variant_mourning_cloak", "Mourning Cloak");
         add("entity.vintagevibes.butterfly.variant_purple_emperor", "Purple Emperor");
-        add("entity.vintagevibes.butterfly.variant_tiger_longwing", "Tiger Longwing");
+        add("entity.vintagevibes.butterfly.variant_gulf_fritillary", "Gulf Fritillary");
         add("entity.vintagevibes.butterfly.variant_tiger_swallowtail", "Tiger Swallowtail");
         add("entity.vintagevibes.butterfly.variant_zebra", "Zebra");
         add("entity.vintagevibes.butterfly.variant_common_blue", "Common Blue");

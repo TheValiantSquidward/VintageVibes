@@ -113,7 +113,7 @@ public class Butterfly extends Animal implements Bucketable {
             case 7 -> "mexican_shoemaker";
             case 8 -> "mourning_cloak";
             case 9 -> "purple_emperor";
-            case 10 -> "tiger_longwing";
+            case 10 -> "gulf_fritillary";
             case 11 -> "tiger_swallowtail";
             case 12 -> "zebra";
             case 13 -> "common_blue";

@@ -26,7 +26,7 @@ public class ButterflyRenderer extends MobRenderer<Butterfly, ButterflyModel<But
     private static final ResourceLocation MEXICAN_SHOEMAKER = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/mexican_shoemaker.png");
     private static final ResourceLocation MOURNING_CLOAK = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/mourning_cloak.png");
     private static final ResourceLocation PURPLE_EMPEROR = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/purple_emperor.png");
-    private static final ResourceLocation TIGER_LONGWING = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/tiger_longwing.png");
+    private static final ResourceLocation GULF_FRITILLARY = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/gulf_fritillary.png");
     private static final ResourceLocation TIGER_SWALLOWTAIL = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/tiger_swallowtail.png");
     private static final ResourceLocation ZEBRA = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/zebra.png");
     private static final ResourceLocation COMMON_BLUE = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/common_blue.png");
@@ -45,7 +45,7 @@ public class ButterflyRenderer extends MobRenderer<Butterfly, ButterflyModel<But
             case 7 -> MEXICAN_SHOEMAKER;
             case 8 -> MOURNING_CLOAK;
             case 9 -> PURPLE_EMPEROR;
-            case 10 -> TIGER_LONGWING;
+            case 10 -> GULF_FRITILLARY;
             case 11 -> TIGER_SWALLOWTAIL;
             case 12 -> ZEBRA;
             case 13 -> COMMON_BLUE;
