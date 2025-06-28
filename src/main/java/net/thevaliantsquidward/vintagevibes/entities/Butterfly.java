@@ -10,8 +10,10 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -320,7 +322,6 @@ public class Butterfly extends Animal implements Bucketable {
         return SoundEvents.BOTTLE_FILL_DRAGONBREATH;
     }
 
-
     @Override
     public void addAdditionalSaveData(CompoundTag compound) {
         super.addAdditionalSaveData(compound);
@@ -372,6 +373,11 @@ public class Butterfly extends Animal implements Bucketable {
 
     @Override
     protected void playStepSound(BlockPos pPos, BlockState pState) {
+    }
+
+    @SuppressWarnings("unused")
+    public static boolean canSpawn(EntityType<Butterfly> entitty, ServerLevelAccessor world, MobSpawnType spawnReason, BlockPos pos, RandomSource random) {
+        return world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && Animal.isBrightEnoughToSpawn(world, pos);
     }
 
     // flight

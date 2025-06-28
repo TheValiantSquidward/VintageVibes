@@ -15,7 +15,7 @@ public class VVEntities {
 
     public static final RegistryObject<EntityType<Butterfly>> BUTTERFLY = ENTITIES.register(
             "butterfly", () ->
-            EntityType.Builder.of(Butterfly::new, MobCategory.AMBIENT)
+            EntityType.Builder.of(Butterfly::new, MobCategory.CREATURE)
                     .sized(0.4F, 0.4F)
                     .clientTrackingRange(10)
                     .build(new ResourceLocation(VintageVibes.MOD_ID, "butterfly").toString())

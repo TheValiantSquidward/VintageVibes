@@ -20,6 +20,8 @@ public class VVCreativeTab {
                         // EVIL BEASTS OF EVIL ORIGINS
                         pOutput.accept(VVItems.BUTTERFLY_SPAWN_EGG.get());
 
+                        pOutput.accept(VVItems.BUTTERFLY_BOTTLE.get());
+
                         pOutput.accept(VVItems.AMBER.get());
                         pOutput.accept(VVItems.AQUAMARINE.get());
                         pOutput.accept(VVItems.ENSTATITE.get());

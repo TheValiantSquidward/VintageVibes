@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "minecraft:desert",
+  "spawners": {
+    "type": "vintagevibes:butterfly",
+    "maxCount": 4,
+    "minCount": 4,
+    "weight": 5
+  }
+}
