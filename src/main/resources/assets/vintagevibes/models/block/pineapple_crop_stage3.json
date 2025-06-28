@@ -1,0 +1,7 @@
+{
+  "parent": "vintagevibes:block/crop_cross",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "vintagevibes:block/pineapple_crop_stage3"
+  }
+}

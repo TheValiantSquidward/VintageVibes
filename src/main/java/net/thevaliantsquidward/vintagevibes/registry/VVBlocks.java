@@ -1,11 +1,12 @@
 package net.thevaliantsquidward.vintagevibes.registry;
 
-import net.minecraft.util.valueproviders.ConstantInt;
+import com.sun.jna.platform.win32.WinBase;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -376,6 +377,8 @@ public class VVBlocks {
     public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
     public static final RegistryObject<Block> PINEAPPLE_SCALE_BLOCK = registerBlock("pineapple_scale_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
     public static final RegistryObject<Block> PINEAPPLE_CROWN = registerBlock("pineapple_crown", () -> new PineappleCrownBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak().sound(SoundType.SMALL_DRIPLEAF).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> PINEAPPLE_CROP = BLOCKS.register("pineapple_crop", () -> new PineappleCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
 
     // flowers
     public static final RegistryObject<Block> PINK_HIBISCUS = registerBlock("pink_hibiscus", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
