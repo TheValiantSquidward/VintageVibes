@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "vintagevibes:pineapple_scale_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "vintagevibes:blocks/pineapple_scale_block"
+}

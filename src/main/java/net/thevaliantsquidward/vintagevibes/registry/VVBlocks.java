@@ -192,31 +192,6 @@ public class VVBlocks {
     public static final RegistryObject<Block> QUARTZ_TILE_SLAB = registerBlock("quartz_tile_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(VVBlocks.QUARTZ_TILES.get())));
     public static final RegistryObject<Block> QUARTZ_TILE_WALL = registerBlock("quartz_tile_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(VVBlocks.QUARTZ_TILES.get())));
 
-    public static final RegistryObject<Block> STARRY_AMETHYST_CALCITE_TILES = registerBlock("starry_amethyst_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> STARRY_DIAMOND_CALCITE_TILES = registerBlock("starry_diamond_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> STARRY_EMERALD_CALCITE_TILES = registerBlock("starry_emerald_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> STARRY_QUARTZ_CALCITE_TILES = registerBlock("starry_quartz_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
-
-    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICKS = registerBlock("amethyst_bejeweled_calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("amethyst_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> AMETHYST_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("amethyst_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("amethyst_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
-
-    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICKS = registerBlock("diamond_bejeweled_calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("diamond_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> DIAMOND_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("diamond_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("diamond_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
-
-    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICKS = registerBlock("emerald_bejeweled_calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("emerald_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> EMERALD_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("emerald_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("emerald_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
-
-    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICKS = registerBlock("quartz_bejeweled_calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("quartz_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> QUARTZ_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("quartz_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("quartz_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
-
     // calcite tiles
     public static final RegistryObject<Block> CALCITE_TILES = registerBlock("calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> CALCITE_TILE_STAIRS = registerBlock("calcite_tile_stairs", () -> new StairBlock(() -> CALCITE_TILES.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
@@ -239,6 +214,11 @@ public class VVBlocks {
     public static final RegistryObject<Block> STARRY_SMOKY_QUARTZ_CALCITE_TILES = registerBlock("starry_smoky_quartz_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> STARRY_TAAFFEITE_CALCITE_TILES = registerBlock("starry_taaffeite_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> STARRY_TOPAZ_CALCITE_TILES = registerBlock("starry_topaz_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
+
+    public static final RegistryObject<Block> STARRY_AMETHYST_CALCITE_TILES = registerBlock("starry_amethyst_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> STARRY_DIAMOND_CALCITE_TILES = registerBlock("starry_diamond_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> STARRY_EMERALD_CALCITE_TILES = registerBlock("starry_emerald_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> STARRY_QUARTZ_CALCITE_TILES = registerBlock("starry_quartz_calcite_tiles", () -> new Block(CALCITE_BLOCK_PROPERTIES));
 
     // calcite bricks
     public static final RegistryObject<Block> CALCITE_BRICKS = registerBlock("calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
@@ -325,6 +305,26 @@ public class VVBlocks {
     public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("topaz_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> TOPAZ_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("topaz_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> TOPAZ_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("topaz_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
+
+    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICKS = registerBlock("amethyst_bejeweled_calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("amethyst_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> AMETHYST_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("amethyst_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> AMETHYST_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("amethyst_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
+
+    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICKS = registerBlock("diamond_bejeweled_calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("diamond_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> DIAMOND_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("diamond_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> DIAMOND_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("diamond_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
+
+    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICKS = registerBlock("emerald_bejeweled_calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("emerald_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> EMERALD_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("emerald_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> EMERALD_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("emerald_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
+
+    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICKS = registerBlock("quartz_bejeweled_calcite_bricks", () -> new Block(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICK_STAIRS = registerBlock("quartz_bejeweled_calcite_brick_stairs", () -> new StairBlock(() -> QUARTZ_BEJEWELED_CALCITE_BRICKS.get().defaultBlockState(), CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICK_SLAB = registerBlock("quartz_bejeweled_calcite_brick_slab", () -> new SlabBlock(CALCITE_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> QUARTZ_BEJEWELED_CALCITE_BRICK_WALL = registerBlock("quartz_bejeweled_calcite_brick_wall", () -> new WallBlock(CALCITE_BLOCK_PROPERTIES));
 
     //bejeweled lamps
     public static final RegistryObject<Block> BANDED_BEJEWELED_LAMP = registerBlock("banded_bejeweled_lamp", () -> new VVDirectionalBlock(BEJEWELED_LAMP_PROPERTIES.mapColor(MapColor.TERRACOTTA_BLACK)));

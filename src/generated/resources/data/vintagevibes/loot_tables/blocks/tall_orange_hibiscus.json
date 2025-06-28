@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "vintagevibes:tall_orange_hibiscus",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "vintagevibes:tall_orange_hibiscus"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "vintagevibes:blocks/tall_orange_hibiscus"
+}

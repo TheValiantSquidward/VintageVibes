@@ -67,6 +67,7 @@ public class VintageVibes {
         dataGenerator.addProvider(server, blockTags);
         dataGenerator.addProvider(server, new VVItemTagProvider(output, provider, blockTags.contentsGetter(), helper));
         dataGenerator.addProvider(server, new VVRecipeProvider(output));
+        dataGenerator.addProvider(server, VVLootProvider.register(output));
     }
 
     public static ResourceLocation modPrefix(String name) {
