@@ -1,0 +1,174 @@
+{
+  "parent": "vintagevibes:root",
+  "criteria": {
+    "celestial_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:celestial_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "deity_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:deity_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "festive_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:festive_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "frond_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:frond_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "monsoon_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:monsoon_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "petrified_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:petrified_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "spirit_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:spirit_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sunrise_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:sunrise_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "tidal_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:tidal_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "volcanic_mask": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:volcanic_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.vintagevibes.all_masks.desc"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "vintagevibes:festive_mask",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.vintagevibes.all_masks"
+    }
+  },
+  "requirements": [
+    [
+      "celestial_mask"
+    ],
+    [
+      "deity_mask"
+    ],
+    [
+      "festive_mask"
+    ],
+    [
+      "frond_mask"
+    ],
+    [
+      "monsoon_mask"
+    ],
+    [
+      "petrified_mask"
+    ],
+    [
+      "spirit_mask"
+    ],
+    [
+      "sunrise_mask"
+    ],
+    [
+      "tidal_mask"
+    ],
+    [
+      "volcanic_mask"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

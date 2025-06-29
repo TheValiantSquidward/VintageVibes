@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:husbandry/plant_seed",
+  "parent": "vintagevibes:root",
   "criteria": {
-    "pineapple": {
+    "pineapple_slice": {
       "conditions": {
         "items": [
           {
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "vintagevibes.advancement.pineapple_slice.desc"
+      "translate": "advancement.vintagevibes.pineapple_slice.desc"
     },
     "frame": "task",
-    "hidden": true,
+    "hidden": false,
     "icon": {
       "item": "vintagevibes:pineapple_slice"
     },
     "show_toast": true,
     "title": {
-      "translate": "vintagevibes.advancement.pineapple_slice"
+      "translate": "advancement.vintagevibes.pineapple_slice"
     }
   },
   "requirements": [
     [
-      "pineapple"
+      "pineapple_slice"
     ]
   ],
   "sends_telemetry_event": true

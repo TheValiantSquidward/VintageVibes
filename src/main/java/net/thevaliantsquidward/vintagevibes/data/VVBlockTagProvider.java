@@ -8,7 +8,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 import net.thevaliantsquidward.vintagevibes.registry.tags.VVBlockTags;
 import org.jetbrains.annotations.Nullable;
 

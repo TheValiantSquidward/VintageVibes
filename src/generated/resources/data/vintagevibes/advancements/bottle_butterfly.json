@@ -1,0 +1,38 @@
+{
+  "parent": "vintagevibes:root",
+  "criteria": {
+    "bottle_butterfly": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:butterfly_bottle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.vintagevibes.bottle_butterfly.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vintagevibes:butterfly_bottle"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.vintagevibes.bottle_butterfly"
+    }
+  },
+  "requirements": [
+    [
+      "bottle_butterfly"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

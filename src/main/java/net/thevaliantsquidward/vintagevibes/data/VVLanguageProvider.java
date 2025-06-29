@@ -141,6 +141,21 @@ public class VVLanguageProvider extends LanguageProvider {
         add("block.vintagevibes.red_carved_sandstone_touch.desc", "Touch");
         add("block.vintagevibes.red_carved_sandstone_message.desc", "Message");
 
+        this.addAdvancement("root", "Vintage Vibes");
+        this.addAdvancementDesc("root", "Utilize new vintage themed decor and more");
+
+        this.addAdvancement("pineapple_slice", "I've Heard It Both Ways");
+        this.addAdvancementDesc("pineapple_slice", "Obtain a Pineapple Slice");
+
+        this.addAdvancement("all_masks", "Ring of Fire");
+        this.addAdvancementDesc("all_masks", "Obtain every Mask");
+
+        this.addAdvancement("all_gems", "All that Glitters");
+        this.addAdvancementDesc("all_gems", "Obtain every Gem from Bejeweled Ore");
+
+        this.addAdvancement("bottle_butterfly", "Metamorphosis");
+        this.addAdvancementDesc("bottle_butterfly", "Bottle a Butterfly");
+
         // untranslated items
         musicDisc(VIBE_DISC, "TheValiantSquidward - vibe");
     }
@@ -170,6 +185,14 @@ public class VVLanguageProvider extends LanguageProvider {
         String disc = item.get().getDescriptionId();
         add(disc, "Music Disc");
         add(disc + ".desc", description);
+    }
+
+    public void addAdvancement(String key, String name) {
+        this.add("advancement." + VintageVibes.MOD_ID + "." + key, name);
+    }
+
+    public void addAdvancementDesc(String key, String name) {
+        this.add("advancement." + VintageVibes.MOD_ID + "." + key + ".desc", name);
     }
 
     public void creativeTab(CreativeModeTab key, String name){

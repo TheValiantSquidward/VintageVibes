@@ -1,0 +1,263 @@
+{
+  "parent": "vintagevibes:root",
+  "criteria": {
+    "amber": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:amber"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "aquamarine": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:aquamarine"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "enstatite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:enstatite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "garnet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:garnet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "jade": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:jade"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "kunzite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:kunzite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "larimar": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:larimar"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "milky_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:milky_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "moonstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:moonstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "onyx": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:onyx"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "peridot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:peridot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "rose_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:rose_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sapphire": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:sapphire"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "smoky_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:smoky_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "taaffeite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:taaffeite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "topaz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:topaz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.vintagevibes.all_gems.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vintagevibes:kunzite"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.vintagevibes.all_gems"
+    }
+  },
+  "requirements": [
+    [
+      "amber"
+    ],
+    [
+      "aquamarine"
+    ],
+    [
+      "enstatite"
+    ],
+    [
+      "garnet"
+    ],
+    [
+      "jade"
+    ],
+    [
+      "kunzite"
+    ],
+    [
+      "larimar"
+    ],
+    [
+      "milky_quartz"
+    ],
+    [
+      "moonstone"
+    ],
+    [
+      "onyx"
+    ],
+    [
+      "peridot"
+    ],
+    [
+      "rose_quartz"
+    ],
+    [
+      "sapphire"
+    ],
+    [
+      "smoky_quartz"
+    ],
+    [
+      "taaffeite"
+    ],
+    [
+      "topaz"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
