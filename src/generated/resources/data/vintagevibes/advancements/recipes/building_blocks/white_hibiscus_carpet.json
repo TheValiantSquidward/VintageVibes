@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vintagevibes:white_hibiscus_carpet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_hibiscus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:white_hibiscus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_white_hibiscus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vintagevibes:white_hibiscus_carpet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

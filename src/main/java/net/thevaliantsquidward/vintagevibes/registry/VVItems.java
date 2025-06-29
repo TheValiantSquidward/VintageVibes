@@ -2,7 +2,7 @@ package net.thevaliantsquidward.vintagevibes.registry;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,6 +14,7 @@ import net.thevaliantsquidward.vintagevibes.registry.enums.VVArmorMaterials;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Supplier;
 
 public class VVItems {
@@ -41,7 +42,18 @@ public class VVItems {
 
     // pineapple
     public static final RegistryObject<Item> PINEAPPLE_SLICE = registerItem("pineapple_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
-    public static final RegistryObject<Item> PINEAPPLE_SEEDS = registerItem("pineapple_seeds", () -> new ItemNameBlockItem(VVBlocks.PINEAPPLE_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PINEAPPLE_SEEDS = registerItem("pineapple_seeds", () -> new ItemNameBlockItem(VVBlocks.PINEAPPLE_STEM.get(), new Item.Properties()) {
+        @Override
+        public void registerBlocks(Map<Block, Item> blockItemMap, Item item) {
+            super.registerBlocks(blockItemMap, item);
+            blockItemMap.put(VVBlocks.PINEAPPLE_STEM.get(), item);
+        }
+        @Override
+        public void removeFromBlockToItemMap(Map<Block, Item> blockItemMap, Item item) {
+            super.removeFromBlockToItemMap(blockItemMap, item);
+            blockItemMap.remove(VVBlocks.PINEAPPLE_STEM.get());
+        }
+    });
 
     // discs
     public static final RegistryObject<Item> VIBE_DISC = registerItemNoLang("vibe_disc", () -> new RecordItem(6, VVSoundEvents.VIBE_DISC, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1360));

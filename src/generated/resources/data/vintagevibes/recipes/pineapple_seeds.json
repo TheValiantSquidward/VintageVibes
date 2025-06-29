@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vintagevibes:pineapple_slice"
+    }
+  ],
+  "result": {
+    "item": "vintagevibes:pineapple_seeds"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:sparse_jungle",
+  "features": [
+    "vintagevibes:pineapple"
+  ],
+  "step": "vegetal_decoration"
+}
+
+

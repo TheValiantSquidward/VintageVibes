@@ -1,0 +1,42 @@
+{
+  "name": "desert_ruins",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "vintagevibes:ruined_visage",
+        "processors": "vintagevibes:desert_ruins_archaeology",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "vintagevibes:obelisk_of_ego",
+        "processors": "vintagevibes:desert_ruins_archaeology",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "vintagevibes:pillar_of_faces",
+        "processors": "vintagevibes:desert_ruins_archaeology",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "vintagevibes:bad_time_shrine",
+        "processors": "vintagevibes:desert_ruins_archaeology",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

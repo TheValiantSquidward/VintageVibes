@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_purple_hibiscus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:purple_hibiscus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vintagevibes:purple_hibiscus_carpet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_purple_hibiscus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vintagevibes:purple_hibiscus_carpet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

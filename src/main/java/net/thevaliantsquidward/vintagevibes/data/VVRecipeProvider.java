@@ -13,6 +13,7 @@ import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
+import net.thevaliantsquidward.vintagevibes.registry.VVBlocks;
 import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 import net.thevaliantsquidward.vintagevibes.registry.tags.VVItemTags;
 
@@ -414,6 +415,7 @@ public class VVRecipeProvider extends RecipeProvider implements IConditionBuilde
 
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_pineapple", has(PINEAPPLE.get())).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE.get(), 1).define('#', VVItems.PINEAPPLE_SLICE.get()).pattern("###").pattern("###").pattern("###").unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(MISC, VVItems.PINEAPPLE_SEEDS.get()).requires(VVItems.PINEAPPLE_SLICE.get()).unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);
 
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, HONEYCOMB_BEJEWELED_LAMP.get(), 1).define('#', Items.HONEYCOMB).define('X', VVItemTags.GEMS).define('Y', Blocks.GLOWSTONE).pattern("#X#").pattern("XYX").pattern("#X#").unlockedBy("has_gems", has(VVItemTags.GEMS)).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, FLORAL_BEJEWELED_LAMP.get(), 1).define('#', ItemTags.FLOWERS).define('X', VVItemTags.GEMS).define('Y', Blocks.GLOWSTONE).pattern("#X#").pattern("XYX").pattern("#X#").unlockedBy("has_gems", has(VVItemTags.GEMS)).save(consumer);
@@ -431,6 +433,12 @@ public class VVRecipeProvider extends RecipeProvider implements IConditionBuilde
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, MANGROVE_PAPER_LANTERN.get(), 1).define('X', Blocks.MANGROVE_PLANKS).define('#', Items.PAPER).define('Y', Blocks.TORCH).pattern("X#X").pattern("#Y#").pattern("X#X").unlockedBy("has_planks", has(ItemTags.PLANKS)).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, CHERRY_PAPER_LANTERN.get(), 1).define('X', Blocks.CHERRY_PLANKS).define('#', Items.PAPER).define('Y', Blocks.TORCH).pattern("X#X").pattern("#Y#").pattern("X#X").unlockedBy("has_planks", has(ItemTags.PLANKS)).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, BAMBOO_PAPER_LANTERN.get(), 1).define('X', Blocks.BAMBOO_PLANKS).define('#', Items.PAPER).define('Y', Blocks.TORCH).pattern("X#X").pattern("#Y#").pattern("X#X").unlockedBy("has_planks", has(ItemTags.PLANKS)).save(consumer);
+
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, ORANGE_HIBISCUS_CARPET.get(), 3).define('#', ORANGE_HIBISCUS.get()).pattern("##").unlockedBy("has_orange_hibiscus", has(ORANGE_HIBISCUS.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, RED_HIBISCUS_CARPET.get(), 3).define('#', RED_HIBISCUS.get()).pattern("##").unlockedBy("has_red_hibiscus", has(RED_HIBISCUS.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PURPLE_HIBISCUS_CARPET.get(), 3).define('#', PURPLE_HIBISCUS.get()).pattern("##").unlockedBy("has_purple_hibiscus", has(PURPLE_HIBISCUS.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINK_HIBISCUS_CARPET.get(), 3).define('#', PINK_HIBISCUS.get()).pattern("##").unlockedBy("has_pink_hibiscus", has(PINK_HIBISCUS.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, WHITE_HIBISCUS_CARPET.get(), 3).define('#', WHITE_HIBISCUS.get()).pattern("##").unlockedBy("has_white_hibiscus", has(WHITE_HIBISCUS.get())).save(consumer);
 
     }
 

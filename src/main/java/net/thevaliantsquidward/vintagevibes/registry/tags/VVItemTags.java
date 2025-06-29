@@ -29,6 +29,8 @@ public class VVItemTags {
     public static final TagKey<Item> GEMS_TAAFFEITE  = forgeItemTag("gems/taaffeite");
     public static final TagKey<Item> GEMS_TOPAZ  = forgeItemTag("gems/topaz");
 
+    public static final TagKey<Item> SEEDS_PINEAPPLE  = forgeItemTag("seeds/pineapple");
+
     private static TagKey<Item> modItemTag(String name) {
         return itemTag(VintageVibes.MOD_ID, name);
     }

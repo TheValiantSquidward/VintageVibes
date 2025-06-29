@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "vintagevibes:block/pineapple_stem_stage0"
+    },
+    "age=1": {
+      "model": "vintagevibes:block/pineapple_stem_stage1"
+    },
+    "age=2": {
+      "model": "vintagevibes:block/pineapple_stem_stage2"
+    },
+    "age=3": {
+      "model": "vintagevibes:block/pineapple_stem_stage3"
+    }
+  }
+}

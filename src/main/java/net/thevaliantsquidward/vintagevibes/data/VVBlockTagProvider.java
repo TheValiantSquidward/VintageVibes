@@ -8,6 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 import net.thevaliantsquidward.vintagevibes.registry.tags.VVBlockTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -222,6 +223,8 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_AXE).add(
                 PINEAPPLE.get(),
                 PINEAPPLE_SCALE_BLOCK.get(),
+                PINEAPPLE_STEM.get(),
+                ATTACHED_PINEAPPLE_STEM.get(),
                 OAK_PAPER_LANTERN.get(),
                 SPRUCE_PAPER_LANTERN.get(),
                 BIRCH_PAPER_LANTERN.get(),
@@ -233,6 +236,16 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 MANGROVE_PAPER_LANTERN.get(),
                 CHERRY_PAPER_LANTERN.get(),
                 BAMBOO_PAPER_LANTERN.get()
+        );
+
+        this.tag(BlockTags.CROPS).add(
+                PINEAPPLE_STEM.get(),
+                ATTACHED_PINEAPPLE_STEM.get()
+        );
+
+        this.tag(BlockTags.MAINTAINS_FARMLAND).add(
+                PINEAPPLE_STEM.get(),
+                ATTACHED_PINEAPPLE_STEM.get()
         );
 
         this.tag(BlockTags.SWORD_EFFICIENT).add(
@@ -294,6 +307,16 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 PERIDOT_BLOCK.get(), ROSE_QUARTZ_BLOCK.get(),
                 SAPPHIRE_BLOCK.get(), SMOKY_QUARTZ_BLOCK.get(),
                 TAAFFEITE_BLOCK.get(), TOPAZ_BLOCK.get()
+        );
+
+        this.tag(Tags.Blocks.SANDSTONE).add(
+                CARVED_SANDSTONE_CONCERNED.get(), CARVED_SANDSTONE_DISAPPOINTED.get(),  CARVED_SANDSTONE_FISHEYE.get(),
+                CARVED_SANDSTONE_GRIN.get(), CARVED_SANDSTONE_JOYOUS.get(), CARVED_SANDSTONE_LAZYBONES.get(),
+                CARVED_SANDSTONE_NOSE.get(), CARVED_SANDSTONE_OPEN.get(), CARVED_SANDSTONE_SPIRAL.get(),
+
+                RED_CARVED_SANDSTONE_CLOSED.get(), RED_CARVED_SANDSTONE_BOLD_AND_BRASH.get(), RED_CARVED_SANDSTONE_EXCITED.get(),
+                RED_CARVED_SANDSTONE_FROWN.get(), RED_CARVED_SANDSTONE_LIPS.get(), RED_CARVED_SANDSTONE_HAPPY.get(),
+                RED_CARVED_SANDSTONE_MESSAGE.get(), RED_CARVED_SANDSTONE_SAD.get(), RED_CARVED_SANDSTONE_TOUCH.get()
         );
 
         // vintage vibes tags

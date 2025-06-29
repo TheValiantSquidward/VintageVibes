@@ -114,5 +114,8 @@ public class VVItemTagProvider extends ItemTagsProvider {
                 VOLCANIC_MASK.get()
         );
 
+        this.tag(VVItemTags.SEEDS_PINEAPPLE).add(PINEAPPLE_SEEDS.get());
+        this.tag(Tags.Items.SEEDS).addTag(VVItemTags.SEEDS_PINEAPPLE);
+
     }
 }
