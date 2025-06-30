@@ -12,7 +12,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
@@ -22,86 +21,88 @@ import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
-import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.Goal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.util.AirAndWaterRandomPos;
+import net.minecraft.world.entity.ai.util.HoverRandomPos;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.Bucketable;
+import net.minecraft.world.entity.animal.FlyingAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import net.thevaliantsquidward.vintagevibes.entities.ai.navigation.FlyingMoveController;
 import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumSet;
 
-public class Butterfly extends Animal implements Bucketable {
+public class Butterfly extends Animal implements Bucketable, FlyingAnimal {
 
-    @Nullable
-    private static final EntityDataAccessor<Boolean> FLYING = SynchedEntityData.defineId(Butterfly.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Integer> VARIANT = SynchedEntityData.defineId(Butterfly.class, EntityDataSerializers.INT);
     private static final EntityDataAccessor<Boolean> FROM_BUCKET = SynchedEntityData.defineId(Butterfly.class, EntityDataSerializers.BOOLEAN);
 
-    public final float[] ringBuffer = new float[64];
-    public float prevFlyProgress;
-    public float flyProgress;
-    public int ringBufferIndex = -1;
-    private boolean isLandNavigator;
-    private int timeFlying;
+    public int groundTicks;
 
     public final AnimationState idleAnimationState = new AnimationState();
     public final AnimationState flyingAnimationState = new AnimationState();
 
     public Butterfly(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.moveControl = new FlyingMoveControl(this, 20, true);
-        this.setPathfindingMalus(BlockPathTypes.DANGER_FIRE, -1.0F);
-        this.setPathfindingMalus(BlockPathTypes.WATER, -1.0F);
-        this.setPathfindingMalus(BlockPathTypes.WATER_BORDER, 16.0F);
-        this.setPathfindingMalus(BlockPathTypes.COCOA, -1.0F);
-        this.setPathfindingMalus(BlockPathTypes.FENCE, -1.0F);
+        this.moveControl = new FlyingMoveControl(this, 20, false);
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return Animal.createLivingAttributes().add(Attributes.MAX_HEALTH, 4.0D).add(Attributes.FLYING_SPEED, 0.1F).add(Attributes.MOVEMENT_SPEED, 0.1F).add(Attributes.FOLLOW_RANGE, 16.0F);
+        return Animal.createLivingAttributes()
+                .add(Attributes.MAX_HEALTH, 4.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.2F)
+                .add(Attributes.FLYING_SPEED, 0.7F)
+                .add(Attributes.FOLLOW_RANGE, 16.0D);
     }
 
     @Override
     protected void registerGoals() {
+        this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new TemptGoal(this, 1.0D, Ingredient.of(ItemTags.FLOWERS), false));
-        this.goalSelector.addGoal(2, new ButterflyFlightGoal());
+        this.goalSelector.addGoal(2, new ButterflyWanderAroundGoal());
+        this.goalSelector.addGoal(3, new ButterflyLookAroundGoal());
     }
 
-    private void switchNavigator(boolean onLand) {
-        if (onLand) {
-            this.moveControl = new MoveControl(this);
-            this.navigation = new GroundPathNavigation(this, level());
-            this.isLandNavigator = true;
-        } else {
-            this.moveControl = new FlyingMoveController(this, 1.0F, false, true);
-            this.navigation = new FlyingPathNavigation(this, level()) {
-                public boolean isStableDestination(BlockPos pos) {
-                    return !this.level.getBlockState(pos.below(2)).isAir();
-                }
-            };
-            navigation.setCanFloat(false);
-            this.isLandNavigator = false;
-        }
+    @Override
+    public boolean causeFallDamage(float f, float g, DamageSource damageSource) {
+        return false;
+    }
+
+    @Override
+    protected void playStepSound(BlockPos blockPos, BlockState blockState) {
+    }
+
+    @Override
+    protected void checkFallDamage(double d, boolean bl, BlockState blockState, BlockPos blockPos) {
+    }
+
+    @Override
+    protected PathNavigation createNavigation(Level level) {
+        FlyingPathNavigation flyingPathNavigation = new FlyingPathNavigation(this, level){
+            @Override
+            public boolean isStableDestination(BlockPos blockPos) {
+                return !level().getBlockState(blockPos.below()).isAir();
+            }
+        };
+        flyingPathNavigation.setCanOpenDoors(false);
+        flyingPathNavigation.setCanFloat(false);
+        flyingPathNavigation.setCanPassDoors(true);
+        return flyingPathNavigation;
     }
 
     public static String getVariantName(int variant) {
@@ -155,44 +156,6 @@ public class Butterfly extends Animal implements Bucketable {
     public void tick() {
         super.tick();
 
-        this.prevFlyProgress = flyProgress;
-        if (this.isFlying() && flyProgress < 5F) {
-            flyProgress++;
-        }
-        if (!this.isFlying() && flyProgress > 0F) {
-            flyProgress--;
-        }
-        if (this.ringBufferIndex < 0) {
-            for (int i = 0; i < this.ringBuffer.length; ++i) {
-                this.ringBuffer[i] = 15;
-            }
-        }
-        this.ringBufferIndex++;
-        if (this.ringBufferIndex == this.ringBuffer.length) {
-            this.ringBufferIndex = 0;
-        }
-        if (!level().isClientSide) {
-            if (isFlying() && this.isLandNavigator) {
-                switchNavigator(false);
-            }
-            if (!isFlying() && !this.isLandNavigator) {
-                switchNavigator(true);
-            }
-            if (this.isFlying()) {
-                if (this.isFlying() && !this.onGround()) {
-                    if (!this.isInWaterOrBubble()) {
-                        this.setDeltaMovement(this.getDeltaMovement().multiply(1F, 0.6F, 1F));
-                    }
-                }
-                if (this.onGround() && timeFlying > 20) {
-                    this.setFlying(false);
-                }
-                this.timeFlying++;
-            } else {
-                this.timeFlying = 0;
-            }
-        }
-
         if (this.level().isClientSide()) {
             this.setupAnimationStates();
         }
@@ -200,7 +163,22 @@ public class Butterfly extends Animal implements Bucketable {
 
     private void setupAnimationStates() {
         this.idleAnimationState.animateWhen(this.isAlive() && this.onGround(), this.tickCount);
-        this.flyingAnimationState.animateWhen(this.isAlive() && !this.onGround() && this.isFlying(), this.tickCount);
+    }
+
+    @Override
+    public void aiStep() {
+        super.aiStep();
+        Vec3 vec3d = this.getDeltaMovement();
+        if (!this.onGround() && vec3d.y < 0.0 && this.getTarget() == null) {
+            this.setDeltaMovement(vec3d.multiply(1.0, 0.8, 1.0));
+        }
+        if (this.isFlying()) {
+            this.groundTicks = random.nextInt(200) + 20;
+            this.setPose(Pose.FALL_FLYING);
+        } else {
+            this.groundTicks--;
+            this.setPose(Pose.STANDING);
+        }
     }
 
     @Nullable
@@ -261,21 +239,12 @@ public class Butterfly extends Animal implements Bucketable {
         return super.finalizeSpawn(worldIn, difficultyIn, reason, spawnDataIn, dataTag);
     }
 
-
-        public int getVariant() {
+    public int getVariant() {
         return this.entityData.get(VARIANT);
     }
 
     public void setVariant(int variant) {
         this.entityData.set(VARIANT, variant);
-    }
-
-    @Override
-    protected void defineSynchedData() {
-        super.defineSynchedData();
-        this.entityData.define(VARIANT, 0);
-        this.entityData.define(FROM_BUCKET, false);
-        this.entityData.define(FLYING, false);
     }
 
     public boolean fromBucket() {
@@ -323,17 +292,35 @@ public class Butterfly extends Animal implements Bucketable {
     }
 
     @Override
+    protected void defineSynchedData() {
+        super.defineSynchedData();
+        this.entityData.define(VARIANT, 0);
+        this.entityData.define(FROM_BUCKET, false);
+    }
+
+    @Override
     public void addAdditionalSaveData(CompoundTag compound) {
         super.addAdditionalSaveData(compound);
         compound.putInt("Variant", this.getVariant());
-        compound.putBoolean("Flying", this.isFlying());
     }
 
     @Override
     public void readAdditionalSaveData(CompoundTag compound) {
         super.readAdditionalSaveData(compound);
         this.setVariant(compound.getInt("Variant"));
-        this.setFlying(compound.getBoolean("Flying"));
+    }
+
+    @Override
+    public void onSyncedDataUpdated(EntityDataAccessor<?> entityDataAccessor) {
+        if (DATA_POSE.equals(entityDataAccessor)) {
+            Pose entityPose = this.getPose();
+            if (entityPose == Pose.FALL_FLYING) {
+                this.flyingAnimationState.start(this.age);
+            } else {
+                this.flyingAnimationState.stop();
+            }
+        }
+        super.onSyncedDataUpdated(entityDataAccessor);
     }
 
     @Override
@@ -348,8 +335,8 @@ public class Butterfly extends Animal implements Bucketable {
     }
 
     @Override
-    public boolean isFlapping() {
-        return this.isFlying() && this.tickCount % Mth.ceil(1.4959966F) == 0;
+    public boolean isFlying() {
+        return !this.onGround();
     }
 
     @Override
@@ -362,166 +349,62 @@ public class Butterfly extends Animal implements Bucketable {
         return null;
     }
 
-    @Override
-    public boolean causeFallDamage(float pFallDistance, float pMultiplier, DamageSource pSource) {
-        return false;
-    }
-
-    @Override
-    protected void checkFallDamage(double pY, boolean pOnGround, BlockState pState, BlockPos pPos) {
-    }
-
-    @Override
-    protected void playStepSound(BlockPos pPos, BlockState pState) {
-    }
-
     @SuppressWarnings("unused")
     public static boolean canSpawn(EntityType<Butterfly> entitty, ServerLevelAccessor world, MobSpawnType spawnReason, BlockPos pos, RandomSource random) {
         return world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && Animal.isBrightEnoughToSpawn(world, pos);
     }
 
-    // flight
-    public boolean isFlying() {
-        return this.entityData.get(FLYING);
-    }
+    class ButterflyWanderAroundGoal extends Goal {
 
-    public void setFlying(boolean flying) {
-        if (flying && isBaby()) {
-            return;
-        }
-        this.entityData.set(FLYING, flying);
-    }
-
-    public Vec3 getBlockGrounding(Vec3 fleePos) {
-        final float radius = 3.15F * -3 - this.getRandom().nextInt(24);
-        float neg = this.getRandom().nextBoolean() ? 1 : -1;
-        float renderYawOffset = this.yBodyRot;
-        float angle = (0.01745329251F * renderYawOffset) + 3.15F + (this.getRandom().nextFloat() * neg);
-        final double extraX = radius * Mth.sin(Mth.PI + angle);
-        final double extraZ = radius * Mth.cos(angle);
-        final BlockPos radialPos = new BlockPos((int) (fleePos.x() + extraX), (int) getY(), (int) (fleePos.z() + extraZ));
-        BlockPos ground = this.getGround(radialPos);
-        if (ground.getY() == -64) {
-            return this.position();
-        } else {
-            ground = this.blockPosition();
-            while (ground.getY() > -64 && !level().getBlockState(ground).isSolid()) {
-                ground = ground.below();
-            }
-        }
-        if (!this.isTargetBlocked(Vec3.atCenterOf(ground.above()))) {
-            return Vec3.atCenterOf(ground);
-        }
-        return null;
-    }
-
-    public boolean isTargetBlocked(Vec3 target) {
-        Vec3 Vector3d = new Vec3(this.getX(), this.getEyeY(), this.getZ());
-
-        return this.level().clip(new ClipContext(Vector3d, target, ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, this)).getType() != HitResult.Type.MISS;
-    }
-
-    public Vec3 getBlockInViewAway(Vec3 fleePos, float radiusAdd) {
-        float radius = 5 + radiusAdd + this.getRandom().nextInt(5);
-        float neg = this.getRandom().nextBoolean() ? 1 : -1;
-        float renderYawOffset = this.yBodyRot;
-        float angle = (0.01745329251F * renderYawOffset) + 3.15F + (this.getRandom().nextFloat() * neg);
-        double extraX = radius * Mth.sin((float) (Math.PI + angle));
-        double extraZ = radius * Mth.cos(angle);
-        final BlockPos radialPos = new BlockPos((int) (fleePos.x() + extraX), (int) getY(), (int) (fleePos.z() + extraZ));
-        BlockPos ground = getGround(radialPos);
-        int distFromGround = (int) this.getY() - ground.getY();
-        int flightHeight = 5 + this.getRandom().nextInt(5);
-        int j = this.getRandom().nextInt(5) + 5;
-
-        BlockPos newPos = ground.above(distFromGround > 5 ? flightHeight : j);
-        if (!this.isTargetBlocked(Vec3.atCenterOf(newPos)) && this.distanceToSqr(Vec3.atCenterOf(newPos)) > 1) {
-            return Vec3.atCenterOf(newPos);
-        }
-        return null;
-    }
-
-    private boolean isOverWaterOrVoid() {
-        BlockPos position = this.blockPosition();
-        while (position.getY() > -65 && level().isEmptyBlock(position)) {
-            position = position.below();
-        }
-        return !level().getFluidState(position).isEmpty() || level().getBlockState(position).is(Blocks.VINE) || position.getY() <= -65;
-    }
-
-    public BlockPos getGround(BlockPos in) {
-        BlockPos position = new BlockPos(in.getX(), (int) this.getY(), in.getZ());
-        while (position.getY() > -64 && !level().getBlockState(position).isSolid() && level().getFluidState(position).isEmpty()) {
-            position = position.below();
-        }
-        return position;
-    }
-
-    // goals
-    private class ButterflyFlightGoal extends Goal {
-
-        protected double x;
-        protected double y;
-        protected double z;
-
-        public ButterflyFlightGoal() {
-            super();
-            this.setFlags(EnumSet.of(Flag.MOVE));
+        ButterflyWanderAroundGoal() {
+            this.setFlags(EnumSet.of(Goal.Flag.MOVE));
         }
 
         @Override
         public boolean canUse() {
-            if (Butterfly.this.isVehicle() || (Butterfly.this.getTarget() != null && Butterfly.this.getTarget().isAlive()) || Butterfly.this.isPassenger()) {
-                return false;
-            } else {
-                if (Butterfly.this.getRandom().nextInt(10) != 0 && !Butterfly.this.isFlying()) {
-                    return false;
-                }
-
-                Vec3 vec3 = this.getPosition();
-                if (vec3 == null) {
-                    return false;
-                } else {
-                    this.x = vec3.x;
-                    this.y = vec3.y;
-                    this.z = vec3.z;
-                    return true;
-                }
-            }
+            if (Butterfly.this.groundTicks < 0) return true;
+            else if (Butterfly.this.isFlying()) return Butterfly.this.navigation.isDone() && Butterfly.this.random.nextInt(10) == 0;
+            return false;
         }
 
-        public void tick() {
-            Butterfly.this.getMoveControl().setWantedPosition(this.x, this.y, this.z, 1F);
-            if (isFlying() && Butterfly.this.onGround() && Butterfly.this.timeFlying > 10) {
-                Butterfly.this.setFlying(false);
+        @Override
+        public boolean canContinueToUse() {
+            return Butterfly.this.navigation.isInProgress();
+        }
+
+        @Override
+        public void start() {
+            Vec3 vec3d = this.getRandomLocation();
+            if (vec3d != null) {
+                Butterfly.this.navigation.moveTo(Butterfly.this.navigation.createPath(BlockPos.containing(vec3d), 1), 1.0);
             }
         }
 
         @Nullable
-        protected Vec3 getPosition() {
-            Vec3 vector3d = Butterfly.this.position();
-            if (Butterfly.this.timeFlying < 200 || Butterfly.this.isOverWaterOrVoid()) {
-                return Butterfly.this.getBlockInViewAway(vector3d, 0);
-            } else {
-                return Butterfly.this.getBlockGrounding(vector3d);
-            }
+        private Vec3 getRandomLocation() {
+            Vec3 vec3d2;
+
+            vec3d2 = Butterfly.this.getViewVector(0.0F);
+
+            Vec3 vec3d3 = HoverRandomPos.getPos(Butterfly.this, 16, 8, vec3d2.x, vec3d2.z, 1.5707964F, 3, 1);
+            return vec3d3 != null ? vec3d3 : AirAndWaterRandomPos.getPos(Butterfly.this, 16, 6, -2, vec3d2.x, vec3d2.z, 1.5707963705062866);
+        }
+    }
+
+    class ButterflyLookAroundGoal extends RandomLookAroundGoal {
+
+        ButterflyLookAroundGoal() {
+            super(Butterfly.this);
         }
 
+        @Override
+        public boolean canUse() {
+            return Butterfly.this.onGround() && super.canUse();
+        }
+
+        @Override
         public boolean canContinueToUse() {
-            return Butterfly.this.isFlying() && Butterfly.this.distanceToSqr(x, y, z) > 5F;
-        }
-
-        public void start() {
-            Butterfly.this.setFlying(true);
-            Butterfly.this.getMoveControl().setWantedPosition(this.x, this.y, this.z, 1F);
-        }
-
-        public void stop() {
-            Butterfly.this.getNavigation().stop();
-            x = 0;
-            y = 0;
-            z = 0;
-            super.stop();
+            return Butterfly.this.onGround() && super.canContinueToUse();
         }
     }
 }
