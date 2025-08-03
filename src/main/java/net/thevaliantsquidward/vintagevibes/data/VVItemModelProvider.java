@@ -55,6 +55,27 @@ public class VVItemModelProvider extends ItemModelProvider {
         item(SHATTERED_DAGGER);
         item(SIRENS_PEARL);
         item(TONGUE_STONE);
+        item(ANCIENT_FIGURINE);
+        item(BLOSSOM_NECKLACE);
+        item(CROWNED_JEWEL);
+        item(CRYSTAL_EYE);
+        item(ELONGATED_SKULL);
+        item(EMBEDDED_FOSSIL);
+        item(ENDER_AMULET);
+        item(EYE_RING);
+        item(GOLDEN_SYMBOL);
+        item(METAL_COIN);
+        item(MUD_TOTEM);
+        item(OBSIDIAN_MASK);
+        item(ODD_COIN);
+        item(OLD_TOKEN);
+        item(PEARLESCENT_FACE);
+        item(PRICELESS_COIN);
+        item(RELUCENT_GRAIL);
+        item(RUBY_SLIPPER);
+        item(SPLIT_MASK);
+        item(WEATHERED_COIN);
+        item(WHIMSICAL_BUNDLE);
 
         // spawn eggs
         for (Item item : BuiltInRegistries.ITEM) {

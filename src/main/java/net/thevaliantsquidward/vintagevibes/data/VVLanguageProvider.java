@@ -163,6 +163,8 @@ public class VVLanguageProvider extends LanguageProvider {
         add("item.vintagevibes.oceanic_pendant.desc", "Said to contain the will of an ancient fish god. When you wear it and close your eyes, you can hear the ocean.");
         add("item.vintagevibes.rusted_spearhead.desc", "This spearhead is so old that it could easily be mistaken for a simple pebble. Despite its venerable age, it is still sharp enough to cut your hand.");
         add("item.vintagevibes.shattered_dagger.desc", "This terrible dagger was used in ancient blood sacrifices. Looking at the runes inscribed on the handle sends shivers down your spine");
+        add("item.vintagevibes.amberized_critter.desc", "A large ant, frozen in amber. Its tiny face is frozen in a state of confusion.");
+        //add("item.vintagevibes.amberized_critter.desc", "");
 
         this.addAdvancement("root", "Vintage Vibes");
         this.addAdvancementDesc("root", "Utilize new vintage themed decor and more");
