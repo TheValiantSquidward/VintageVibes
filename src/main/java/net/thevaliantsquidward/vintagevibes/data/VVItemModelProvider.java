@@ -34,6 +34,28 @@ public class VVItemModelProvider extends ItemModelProvider {
         item(TIDAL_MASK);
         item(VOLCANIC_MASK);
 
+        item(AMBERIZED_CRITTER);
+        item(ANTIQUE_KEY);
+        item(BEJEWELED_BROOCH);
+        item(CHIPPED_RING);
+        item(CITRINE_DIAMOND);
+        item(COPPER_APPLE);
+        item(CORAL_BEADS);
+        item(CROWNED_INSECT);
+        item(ENCHANTED_TOME);
+        item(GLIMMERING_SKULL);
+        item(GOLDEN_HEAD);
+        item(LUXURIOUS_BOWL);
+        item(MERCHANTS_AMULET);
+        item(OBSIDIAN_BLADE);
+        item(OBSIDIAN_TOOL);
+        item(OCEANIC_PENDANT);
+        item(ONYX_FIGURINE);
+        item(RUSTED_SPEARHEAD);
+        item(SHATTERED_DAGGER);
+        item(SIRENS_PEARL);
+        item(TONGUE_STONE);
+
         // spawn eggs
         for (Item item : BuiltInRegistries.ITEM) {
             if (item instanceof SpawnEggItem && Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(item)).getNamespace().equals(VintageVibes.MOD_ID)) {

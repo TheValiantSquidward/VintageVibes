@@ -50,6 +50,28 @@ public class VVCreativeTab {
                         pOutput.accept(VVItems.TIDAL_MASK.get());
                         pOutput.accept(VVItems.VOLCANIC_MASK.get());
 
+                        pOutput.accept(VVItems.AMBERIZED_CRITTER.get());
+                        pOutput.accept(VVItems.ANTIQUE_KEY.get());
+                        pOutput.accept(VVItems.BEJEWELED_BROOCH.get());
+                        pOutput.accept(VVItems.CHIPPED_RING.get());
+                        pOutput.accept(VVItems.CITRINE_DIAMOND.get());
+                        pOutput.accept(VVItems.COPPER_APPLE.get());
+                        pOutput.accept(VVItems.CORAL_BEADS.get());
+                        pOutput.accept(VVItems.CROWNED_INSECT.get());
+                        pOutput.accept(VVItems.ENCHANTED_TOME.get());
+                        pOutput.accept(VVItems.GLIMMERING_SKULL.get());
+                        pOutput.accept(VVItems.GOLDEN_HEAD.get());
+                        pOutput.accept(VVItems.LUXURIOUS_BOWL.get());
+                        pOutput.accept(VVItems.MERCHANTS_AMULET.get());
+                        pOutput.accept(VVItems.OBSIDIAN_BLADE.get());
+                        pOutput.accept(VVItems.OBSIDIAN_TOOL.get());
+                        pOutput.accept(VVItems.OCEANIC_PENDANT.get());
+                        pOutput.accept(VVItems.ONYX_FIGURINE.get());
+                        pOutput.accept(VVItems.RUSTED_SPEARHEAD.get());
+                        pOutput.accept(VVItems.SHATTERED_DAGGER.get());
+                        pOutput.accept(VVItems.SIRENS_PEARL.get());
+                        pOutput.accept(VVItems.TONGUE_STONE.get());
+
                         pOutput.accept(VVItems.PINEAPPLE_SEEDS.get());
                         pOutput.accept(VVItems.PINEAPPLE_SLICE.get());
                         pOutput.accept(VVItems.VIBE_DISC.get());
@@ -408,6 +430,8 @@ public class VVCreativeTab {
                         pOutput.accept(VVBlocks.BAMBOO_PAPER_LANTERN.get());
                         pOutput.accept(VVBlocks.CRIMSON_PAPER_LANTERN.get());
                         pOutput.accept(VVBlocks.WARPED_PAPER_LANTERN.get());
+
+
 
                     }).build());
 }

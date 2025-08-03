@@ -141,6 +141,29 @@ public class VVLanguageProvider extends LanguageProvider {
         add("block.vintagevibes.red_carved_sandstone_touch.desc", "Touch");
         add("block.vintagevibes.red_carved_sandstone_message.desc", "Message");
 
+        addItem(SIRENS_PEARL, "Siren's Pearl");
+        addItem(MERCHANTS_AMULET, "Merchant's Amulet");
+
+        add("item.vintagevibes.bejeweled_brooch.desc", "Contains an intricate mechanism that allows the wings to flap. Engraved on the back are the initials N.A.");
+        add("item.vintagevibes.onyx_figurine.desc", "An ominous aura exudes from this figurine. It appears to be shaped like some kind of animal.");
+        add("item.vintagevibes.golden_head.desc", "A priceless treasure, depicting a deity worshipped in ancient times. Contrary to popular belief, it is much heavier than a bag of sand.");
+        add("item.vintagevibes.crowned_insect.desc", "This scarab seal once belonged to a mysterious pharaoh from a long forgotten desert kingdom. The meaning of the symbols on the back have long been lost to time.");
+        add("item.vintagevibes.sirens_pearl.desc", "A pearl, said to have been harvested from a siren’s chest cavity. If you hold it up to your ear, you can hear distant music.");
+        add("item.vintagevibes.enchanted_tome.desc", "An ancient tome of wizardry and dark magicks. Also contains a spectacular recipe for cherry pie!");
+        add("item.vintagevibes.tongue_stone.desc", "A fossilized tooth of some massive aquatic creature. Slightly resembles a tongue.");
+        add("item.vintagevibes.copper_apple.desc", "A highly abnormal apple, coated in waxed copper. Consumption is not advised.");
+        add("item.vintagevibes.antique_key.desc", "A forgotten key to a forgotten lock. The head is shaped like three intersecting spheres… or maybe it’s a flower?");
+        add("item.vintagevibes.chipped_ring.desc", "A priceless ring worn by nobles as a token of wealth. Worn down and broken from years in the elements.");
+        add("item.vintagevibes.coral_beads.desc", "Colorful beads from an island nation long since swallowed by the sea. The necklace is much lighter than it seems, due to the beads being hollow.");
+        add("item.vintagevibes.glimmering_skull.desc", "This artifact was carved from many varieties of sparkling quartz. When sunlight hits the skull, rainbow light is scattered everywhere.");
+        add("item.vintagevibes.luxurious_bowl.desc", "A rare bowl made of lapis and gold, once used in religious rites. Its surface is smooth and cracked.");
+        add("item.vintagevibes.merchants_amulet.desc", "Used as a seal by ancient merchants to recognize their fellow tradesmen. It has been said to bring good luck.");
+        add("item.vintagevibes.obsidian_blade.desc", "An unbreakable blade, used in times of war long gone. Said to be one of a set of two.");
+        add("item.vintagevibes.obsidian_tool.desc", "An unbreakable tool, used to harvest resources in a long forgotten nation. Said to be one of a set of two.");
+        add("item.vintagevibes.oceanic_pendant.desc", "Said to contain the will of an ancient fish god. When you wear it and close your eyes, you can hear the ocean.");
+        add("item.vintagevibes.rusted_spearhead.desc", "This spearhead is so old that it could easily be mistaken for a simple pebble. Despite its venerable age, it is still sharp enough to cut your hand.");
+        add("item.vintagevibes.shattered_dagger.desc", "This terrible dagger was used in ancient blood sacrifices. Looking at the runes inscribed on the handle sends shivers down your spine");
+
         this.addAdvancement("root", "Vintage Vibes");
         this.addAdvancementDesc("root", "Utilize new vintage themed decor and more");
 
