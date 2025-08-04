@@ -61,7 +61,7 @@ public class VVItems {
 
     // evil beasts of evil origins
     public static final RegistryObject<Item> BUTTERFLY_SPAWN_EGG = registerSpawnEggItem("butterfly", VVEntities.BUTTERFLY, 0xb8510d, 0x270d07);
-    public static final RegistryObject<Item> BUTTERFLY_BOTTLE = registerItem("butterfly_bottle", () -> new ButterflyBottleItem(VVEntities.BUTTERFLY::get, Items.GLASS_BOTTLE, false, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BUTTERFLY_BOTTLE = registerItemNoLang("butterfly_bottle", () -> new ButterflyBottleItem(VVEntities.BUTTERFLY::get, Items.GLASS_BOTTLE, false, new Item.Properties().stacksTo(1)));
 
     //trinkets
     public static final RegistryObject<Item> AMBERIZED_CRITTER = registerItem("amberized_critter", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));

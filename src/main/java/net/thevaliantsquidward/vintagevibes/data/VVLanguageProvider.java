@@ -62,6 +62,8 @@ public class VVLanguageProvider extends LanguageProvider {
 
         this.forEntity(VVEntities.BUTTERFLY);
 
+        addItem(BUTTERFLY_BOTTLE, "Bottle of Butterfly");
+
         // untranslated blocks
         addBlock(AMBER_STAND, "Amber Crystal Stand");
         addBlock(AQUAMARINE_STAND, "Aquamarine Crystal Stand");

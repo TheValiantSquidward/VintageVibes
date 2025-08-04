@@ -12,12 +12,13 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class TrinketItem extends Item {
-    public TrinketItem(Properties p_41383_) {
-        super(p_41383_);
+
+    public TrinketItem(Properties properties) {
+        super(properties);
     }
 
-    public void appendHoverText(ItemStack p_43043_, @Nullable Level p_43044_, List<Component> p_43045_, TooltipFlag p_43046_) {
-        p_43045_.add(this.getDisplayName().withStyle(ChatFormatting.GRAY));
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> component, TooltipFlag flag) {
+        component.add(this.getDisplayName().withStyle(ChatFormatting.GRAY));
     }
 
     public MutableComponent getDisplayName() {
