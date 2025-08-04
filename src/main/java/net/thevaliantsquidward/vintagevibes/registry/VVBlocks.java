@@ -463,6 +463,12 @@ public class VVBlocks {
             () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
     public static final RegistryObject<Block> AMPHORA_MEDUSA = registerAmphora("amphora_medusa",
             () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_CHIMERA = registerAmphora("amphora_chimera",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_SIREN = registerAmphora("amphora_siren",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_SERPENT = registerAmphora("amphora_serpent",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
 
 
     private static <B extends Block> RegistryObject<B> registerBlock(String name, Supplier<? extends B> supplier) {
