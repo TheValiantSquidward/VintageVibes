@@ -13,7 +13,7 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.registry.VVBlocks;
 import net.thevaliantsquidward.vintagevibes.registry.VVEntities;
 import net.thevaliantsquidward.vintagevibes.registry.VVItems;
-import net.thevaliantsquidward.vintagevibes.registry.VVCreativeTab;
+import net.thevaliantsquidward.vintagevibes.VintageVibesTab;
 import org.apache.commons.lang3.text.WordUtils;
 import org.slf4j.Logger;
 
@@ -35,7 +35,7 @@ public class VVLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
 
         // creative tab
-        creativeTab(VVCreativeTab.VINTAGE_VIBES_TAB.get(), "Vintage Vibes");
+        creativeTab(VintageVibesTab.VINTAGE_VIBES_TAB.get(), "Vintage Vibes");
 
         // blocks
         VVBlocks.AUTO_TRANSLATE.forEach(this::forBlock);

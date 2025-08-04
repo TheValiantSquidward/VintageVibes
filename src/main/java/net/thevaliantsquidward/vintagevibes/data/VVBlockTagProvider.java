@@ -321,6 +321,12 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         // vintage vibes tags
         this.tag(VVBlockTags.BEJEWELED_ORES).add(BEJEWELED_ORE.get(), DEEPSLATE_BEJEWELED_ORE.get());
 
+        this.tag(VVBlockTags.MINEABLE_WITH_OBSIDIAN_TOOL)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .addTag(BlockTags.MINEABLE_WITH_HOE);
+
         // vintage vibes forge tags
         this.tag(VVBlockTags.ORES_BEJEWELED).addTag(VVBlockTags.BEJEWELED_ORES);
 

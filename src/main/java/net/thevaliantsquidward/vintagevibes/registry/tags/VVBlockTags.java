@@ -29,6 +29,8 @@ public class VVBlockTags {
     public static final TagKey<Block> STORAGE_BLOCKS_TAAFFEITE  = forgeBlockTag("storage_blocks/taaffeite");
     public static final TagKey<Block> STORAGE_BLOCKS_TOPAZ  = forgeBlockTag("storage_blocks/topaz");
 
+    public static final TagKey<Block> MINEABLE_WITH_OBSIDIAN_TOOL = modBlockTag("mineable/obsidian_tool");
+
     public static TagKey<Block> blockTag(String modid, String name) {
         return TagKey.create(Registries.BLOCK, new ResourceLocation(modid, name));
     }

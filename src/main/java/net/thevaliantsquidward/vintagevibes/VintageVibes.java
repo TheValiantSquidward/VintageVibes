@@ -38,7 +38,7 @@ public class VintageVibes {
         VVBlocks.BLOCKS.register(bus);
         VVEntities.ENTITIES.register(bus);
         VVLootModifiers.LOOT_MODIFIERS.register(bus);
-        VVCreativeTab.CREATIVE_TABS.register(bus);
+        VintageVibesTab.CREATIVE_TABS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
         PROXY.init();

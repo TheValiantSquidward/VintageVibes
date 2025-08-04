@@ -1,4 +1,4 @@
-package net.thevaliantsquidward.vintagevibes.registry;
+package net.thevaliantsquidward.vintagevibes;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -6,14 +6,15 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import net.thevaliantsquidward.vintagevibes.VintageVibes;
+import net.thevaliantsquidward.vintagevibes.registry.VVBlocks;
+import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 
-public class VVCreativeTab {
+public class VintageVibesTab {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VintageVibes.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> VINTAGE_VIBES_TAB = CREATIVE_TABS.register("vintage_vibes_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(VVBlocks.PINK_HIBISCUS.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(VVItems.BEJEWELED_BROOCH.get()))
                     .title(Component.translatable("creativetab.vintage_vibes_tab"))
                     .displayItems((pParameters, pOutput) -> {
 

@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-28T18:58:00.8608511	vintagevibes Block Tags
+// 1.20.1	2025-08-04T13:05:41.010185	vintagevibes Block Tags
 b7e27c556735dd185734435b7653ea379fca3e54 data/forge/tags/blocks/ores.json
 467c8b3f765caa03671a01f5874ee98bca0359f5 data/forge/tags/blocks/ores/bejeweled.json
 584d2832c97d1d231120b789e05064cdad5f9e79 data/forge/tags/blocks/ores_in_ground/deepslate.json
@@ -38,3 +38,4 @@ d38b0b08619a04083301b8e1897aa24b6f318559 data/minecraft/tags/blocks/small_flower
 95ed6ac154710b860c3ed9e9b2d3610886920f32 data/minecraft/tags/blocks/tall_flowers.json
 f7c9c95e0d4eab7aaa03b6c2c32712b0a7bd9054 data/minecraft/tags/blocks/walls.json
 b7e27c556735dd185734435b7653ea379fca3e54 data/vintagevibes/tags/blocks/bejeweled_ores.json
+984a835f12c583514b244703d6bad1afa79b3402 data/vintagevibes/tags/blocks/mineable/obsidian_tool.json

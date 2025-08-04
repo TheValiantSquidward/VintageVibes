@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-03T16:41:23.1915064	Item Models: vintagevibes
+// 1.20.1	2025-08-04T12:01:11.3399043	Item Models: vintagevibes
 7dc44ffc8b87b94994a63dba59a07a0625a2195a assets/vintagevibes/models/item/amberized_critter.json
 214e8a20ab7932bb572c53a16cecc53a72f75c52 assets/vintagevibes/models/item/ancient_figurine.json
 61b37186ec1a2e86345438aa15eea6129535b2df assets/vintagevibes/models/item/antique_key.json
@@ -29,9 +29,9 @@ f21fbe2d87eef6d735d781213e234d34923f5e02 assets/vintagevibes/models/item/merchan
 d723a0b708fd71ee90b6670226dcdf530f2d204c assets/vintagevibes/models/item/metal_coin.json
 ee4525b3aa55cf56b2e5ca1af8e272df30a0220c assets/vintagevibes/models/item/monsoon_mask.json
 909e009cc5a47debc03ba5e83ef013de39e5e9d3 assets/vintagevibes/models/item/mud_totem.json
-765c7bc0c5ecfcf80c57fbc825d7abf0bd281e7c assets/vintagevibes/models/item/obsidian_blade.json
+3c8d0ce2213251b1621741998b7e3d94e8d04ce9 assets/vintagevibes/models/item/obsidian_blade.json
 f69f99de75a915eaa5590d8fd7eb30392ef055a8 assets/vintagevibes/models/item/obsidian_mask.json
-872337fc23aca7fccb6cd8a73c7876309a0fbff7 assets/vintagevibes/models/item/obsidian_tool.json
+1ac8f04f0aab10ae815c2a8c4740466f0b1d2861 assets/vintagevibes/models/item/obsidian_tool.json
 80f2b408af822816d7bce6f4a5b5d747f42c049a assets/vintagevibes/models/item/oceanic_pendant.json
 53c371e239e442bc63b99b17286aeae6453d7d35 assets/vintagevibes/models/item/odd_coin.json
 24c62499ecfe4d94d0084d2106abab8e9ae7b0c8 assets/vintagevibes/models/item/old_token.json

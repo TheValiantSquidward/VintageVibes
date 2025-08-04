@@ -1,17 +1,21 @@
 package net.thevaliantsquidward.vintagevibes.registry;
 
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
-import net.thevaliantsquidward.vintagevibes.items.ButterflyBottleItem;
-import net.thevaliantsquidward.vintagevibes.items.MaskItem;
-import net.thevaliantsquidward.vintagevibes.items.TrinketItem;
+import net.thevaliantsquidward.vintagevibes.items.*;
 import net.thevaliantsquidward.vintagevibes.registry.enums.VVArmorMaterials;
+import net.thevaliantsquidward.vintagevibes.registry.enums.VVItemTiers;
+import net.thevaliantsquidward.vintagevibes.registry.tags.VVBlockTags;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +26,9 @@ public class VVItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, VintageVibes.MOD_ID);
     public static List<RegistryObject<? extends Item>> AUTO_TRANSLATE = new ArrayList<>();
+
+    public static final Rarity TRINKET = Rarity.create("vintagevibes:trinket", style -> style.withColor(15971101));
+    public static final Item.Properties TINKET_PROPERTIES = new Item.Properties().rarity(VVItems.TRINKET);
 
     // gems
     public static final RegistryObject<Item> AMBER = registerItem("amber", () -> new Item(new Item.Properties()));
@@ -64,48 +71,48 @@ public class VVItems {
     public static final RegistryObject<Item> BUTTERFLY_BOTTLE = registerItemNoLang("butterfly_bottle", () -> new ButterflyBottleItem(VVEntities.BUTTERFLY::get, Items.GLASS_BOTTLE, false, new Item.Properties().stacksTo(1)));
 
     //trinkets
-    public static final RegistryObject<Item> AMBERIZED_CRITTER = registerItem("amberized_critter", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ANCIENT_FIGURINE = registerItem("ancient_figurine", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ANTIQUE_KEY = registerItem("antique_key", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> BEJEWELED_BROOCH = registerItem("bejeweled_brooch", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> BLOSSOM_NECKLACE = registerItem("blossom_necklace", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> AMBERIZED_CRITTER = registerItem("amberized_critter", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> ANCIENT_FIGURINE = registerItem("ancient_figurine", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> ANTIQUE_KEY = registerItem("antique_key", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> BEJEWELED_BROOCH = registerItem("bejeweled_brooch", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> BLOSSOM_NECKLACE = registerItem("blossom_necklace", () -> new TrinketItem(TINKET_PROPERTIES));
     public static final RegistryObject<Item> CHIPPED_RING = registerItem("chipped_ring", () -> new TrinketItem(new Item.Properties()));
-    public static final RegistryObject<Item> CITRINE_DIAMOND = registerItem("citrine_diamond", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> COPPER_APPLE = registerItem("copper_apple", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> CORAL_BEADS = registerItem("coral_beads", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> CROWNED_INSECT = registerItem("crowned_insect", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> CROWNED_JEWEL = registerItem("crowned_jewel", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> CRYSTAL_EYE = registerItem("crystal_eye", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ELONGATED_SKULL = registerItem("elongated_skull", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> EMBEDDED_FOSSIL = registerItem("embedded_fossil", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ENCHANTED_TOME = registerItem("enchanted_tome", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ENDER_AMULET = registerItem("ender_amulet", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> EYE_RING = registerItem("eye_ring", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> GLIMMERING_SKULL = registerItem("glimmering_skull", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> GOLDEN_HEAD = registerItem("golden_head", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> GOLDEN_SYMBOL = registerItem("golden_symbol", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> LUXURIOUS_BOWL = registerItem("luxurious_bowl", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> MERCHANTS_AMULET = registerItemNoLang("merchants_amulet", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> METAL_COIN = registerItem("metal_coin", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> MUD_TOTEM = registerItem("mud_totem", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> OBSIDIAN_BLADE = registerItem("obsidian_blade", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> OBSIDIAN_TOOL = registerItem("obsidian_tool", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> OBSIDIAN_MASK = registerItem("obsidian_mask", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> OCEANIC_PENDANT = registerItem("oceanic_pendant", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ODD_COIN = registerItem("odd_coin", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> OLD_TOKEN = registerItem("old_token", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> ONYX_FIGURINE = registerItem("onyx_figurine", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> PEARLESCENT_FACE = registerItem("pearlescent_face", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> PRICELESS_COIN = registerItem("priceless_coin", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> RELUCENT_GRAIL = registerItem("relucent_grail", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> RUBY_SLIPPER = registerItem("ruby_slipper", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> RUSTED_SPEARHEAD = registerItem("rusted_spearhead", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> TONGUE_STONE = registerItem("tongue_stone", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> SHATTERED_DAGGER = registerItem("shattered_dagger", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> SIRENS_PEARL = registerItemNoLang("sirens_pearl", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> SPLIT_MASK = registerItem("split_mask", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> WEATHERED_COIN = registerItem("weathered_coin", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
-    public static final RegistryObject<Item> WHIMSICAL_BUNDLE = registerItem("whimsical_bundle", () -> new TrinketItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> CITRINE_DIAMOND = registerItem("citrine_diamond", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> COPPER_APPLE = registerItem("copper_apple", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> CORAL_BEADS = registerItem("coral_beads", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> CROWNED_INSECT = registerItem("crowned_insect", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> CROWNED_JEWEL = registerItem("crowned_jewel", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> CRYSTAL_EYE = registerItem("crystal_eye", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> ELONGATED_SKULL = registerItem("elongated_skull", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> EMBEDDED_FOSSIL = registerItem("embedded_fossil", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> ENCHANTED_TOME = registerItem("enchanted_tome", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> ENDER_AMULET = registerItem("ender_amulet", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> EYE_RING = registerItem("eye_ring", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> GLIMMERING_SKULL = registerItem("glimmering_skull", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> GOLDEN_HEAD = registerItem("golden_head", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> GOLDEN_SYMBOL = registerItem("golden_symbol", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> LUXURIOUS_BOWL = registerItem("luxurious_bowl", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> MERCHANTS_AMULET = registerItemNoLang("merchants_amulet", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> METAL_COIN = registerItem("metal_coin", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> MUD_TOTEM = registerItem("mud_totem", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> OBSIDIAN_BLADE = registerItem("obsidian_blade", () -> new ObsidianBladeItem(VVItemTiers.OBSIDIAN, 3, -2.4F, new Item.Properties().rarity(VVItems.TRINKET).stacksTo(1)));
+    public static final RegistryObject<Item> OBSIDIAN_TOOL = registerItem("obsidian_tool", () -> new ObsidianToolItem(1, -2.8F, VVItemTiers.OBSIDIAN, new Item.Properties().rarity(VVItems.TRINKET).stacksTo(1)));
+    public static final RegistryObject<Item> OBSIDIAN_MASK = registerItem("obsidian_mask", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> OCEANIC_PENDANT = registerItem("oceanic_pendant", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> ODD_COIN = registerItem("odd_coin", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> OLD_TOKEN = registerItem("old_token", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> ONYX_FIGURINE = registerItem("onyx_figurine", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> PEARLESCENT_FACE = registerItem("pearlescent_face", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> PRICELESS_COIN = registerItem("priceless_coin", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> RELUCENT_GRAIL = registerItem("relucent_grail", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> RUBY_SLIPPER = registerItem("ruby_slipper", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> RUSTED_SPEARHEAD = registerItem("rusted_spearhead", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> TONGUE_STONE = registerItem("tongue_stone", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> SHATTERED_DAGGER = registerItem("shattered_dagger", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> SIRENS_PEARL = registerItemNoLang("sirens_pearl", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> SPLIT_MASK = registerItem("split_mask", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> WEATHERED_COIN = registerItem("weathered_coin", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> WHIMSICAL_BUNDLE = registerItem("whimsical_bundle", () -> new TrinketItem(TINKET_PROPERTIES));
 
     public static final RegistryObject<Item> CELESTIAL_MASK = registerItem("celestial_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> DEITY_MASK = registerItem("deity_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));

@@ -101,6 +101,12 @@ public class VVItemTagProvider extends ItemTagsProvider {
 
         this.tag(ItemTags.MUSIC_DISCS).add(VIBE_DISC.get());
 
+        this.tag(ItemTags.SWORDS).add(OBSIDIAN_BLADE.get());
+        this.tag(ItemTags.PICKAXES).add(OBSIDIAN_TOOL.get());
+        this.tag(ItemTags.SHOVELS).add(OBSIDIAN_TOOL.get());
+        this.tag(ItemTags.AXES).add(OBSIDIAN_TOOL.get());
+        this.tag(ItemTags.HOES).add(OBSIDIAN_TOOL.get());
+
         this.tag(Tags.Items.ARMORS_HELMETS).add(
                 CELESTIAL_MASK.get(),
                 DEITY_MASK.get(),

@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-28T18:38:14.5089048	Tags for minecraft:item mod id vintagevibes
+// 1.20.1	2025-08-04T13:05:41.0081907	Tags for minecraft:item mod id vintagevibes
 da41a907101a9db57b34243c0d59f53bc2efd452 data/forge/tags/items/armors/helmets.json
 8a8eee5bc9758556d608f0eb9ba09615b72b148f data/forge/tags/items/gems.json
 048661b959d4e654fc26b9bdf7cc1434de4fa3ae data/forge/tags/items/gems/amber.json
@@ -19,10 +19,15 @@ b8d02781f95211a1ffd65973ccb33f19084196d9 data/forge/tags/items/gems/taaffeite.js
 d6f361e4ba697e001b166fcadf55c2e79a045faf data/forge/tags/items/gems/topaz.json
 d35d88e56074b526877c9676888e05d8f21f884e data/forge/tags/items/seeds.json
 5175aa99046ccf127907b0922c5921b009508d3d data/forge/tags/items/seeds/pineapple.json
+547b6248859c8fd9cd3a5e6c21346c95fa7e61ae data/minecraft/tags/items/axes.json
+547b6248859c8fd9cd3a5e6c21346c95fa7e61ae data/minecraft/tags/items/hoes.json
 5a9d5b9d5a835e1f58613e6ece036cd2ae59a786 data/minecraft/tags/items/music_discs.json
+547b6248859c8fd9cd3a5e6c21346c95fa7e61ae data/minecraft/tags/items/pickaxes.json
+547b6248859c8fd9cd3a5e6c21346c95fa7e61ae data/minecraft/tags/items/shovels.json
 8c4a57a37f211efe0e145bd775577183c9b70e5d data/minecraft/tags/items/slabs.json
 d38b0b08619a04083301b8e1897aa24b6f318559 data/minecraft/tags/items/small_flowers.json
 52936281cb5d459380cba7530ebc6b4902d75660 data/minecraft/tags/items/stairs.json
+9d1dede4a3ac88ed292c3532ddff39b5fb683e09 data/minecraft/tags/items/swords.json
 95ed6ac154710b860c3ed9e9b2d3610886920f32 data/minecraft/tags/items/tall_flowers.json
 f7c9c95e0d4eab7aaa03b6c2c32712b0a7bd9054 data/minecraft/tags/items/walls.json
 6d31177cefd335ce00c36c0130f04d20e5e9e25a data/vintagevibes/tags/items/gems.json

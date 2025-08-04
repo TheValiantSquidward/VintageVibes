@@ -47,8 +47,8 @@ public class VVItemModelProvider extends ItemModelProvider {
         item(GOLDEN_HEAD);
         item(LUXURIOUS_BOWL);
         item(MERCHANTS_AMULET);
-        item(OBSIDIAN_BLADE);
-        item(OBSIDIAN_TOOL);
+        handheldItem(OBSIDIAN_BLADE);
+        handheldItem(OBSIDIAN_TOOL);
         item(OCEANIC_PENDANT);
         item(ONYX_FIGURINE);
         item(RUSTED_SPEARHEAD);
@@ -90,9 +90,21 @@ public class VVItemModelProvider extends ItemModelProvider {
         return generated(item.getId().getPath(), modLoc("item/" + item.getId().getPath()));
     }
 
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return handheld(item.getId().getPath(), modLoc("item/" + item.getId().getPath()));
+    }
+
     // utils
     private ItemModelBuilder generated(String name, ResourceLocation... layers) {
         ItemModelBuilder builder = withExistingParent(name, "item/generated");
+        for (int i = 0; i < layers.length; i++) {
+            builder = builder.texture("layer" + i, layers[i]);
+        }
+        return builder;
+    }
+
+    private ItemModelBuilder handheld(String name, ResourceLocation... layers) {
+        ItemModelBuilder builder = withExistingParent(name, "item/handheld");
         for (int i = 0; i < layers.length; i++) {
             builder = builder.texture("layer" + i, layers[i]);
         }
