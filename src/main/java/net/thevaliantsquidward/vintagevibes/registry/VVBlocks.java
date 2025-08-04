@@ -459,6 +459,12 @@ public class VVBlocks {
     public static final RegistryObject<Block> RED_HIBISCUS_CARPET = registerBlock("red_hibiscus_carpet", () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
     public static final RegistryObject<Block> WHITE_HIBISCUS_CARPET = registerBlock("white_hibiscus_carpet", () -> new PlantCarpetBlock(BlockBehaviour.Properties.copy(Blocks.GLOW_LICHEN).noOcclusion()));
 
+    public static final RegistryObject<Block> AMPHORA_BLANK = registerBlock("amphora_blank",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_MEDUSA = registerBlock("amphora_medusa",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+
+
     private static <B extends Block> RegistryObject<B> registerBlock(String name, Supplier<? extends B> supplier) {
         RegistryObject<B> block = BLOCKS.register(name, supplier);
         VVItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
