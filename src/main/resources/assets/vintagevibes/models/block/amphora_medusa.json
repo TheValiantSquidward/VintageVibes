@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "vintagevibes:block/amphora/medusa",
-		"particle": "amphora_blank"
+		"particle": "vintagevibes:block/amphora/amphora_particle"
 	},
 	"elements": [
 		{

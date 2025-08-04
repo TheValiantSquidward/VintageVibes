@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class AmphoraBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-    public static final VoxelShape SHAPE = Block.box(1, 0, 1, 15, 16, 15);
+    public static final VoxelShape SHAPE = Block.box(2, 0, 2, 14, 16, 14);
 
     public AmphoraBlock(Properties pProperties) {
         super(pProperties);

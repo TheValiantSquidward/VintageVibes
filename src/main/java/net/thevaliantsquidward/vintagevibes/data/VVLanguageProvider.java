@@ -123,6 +123,12 @@ public class VVLanguageProvider extends LanguageProvider {
         addBlock(RED_CARVED_SANDSTONE_TOUCH, "Red Carved Sandstone");
         addBlock(RED_CARVED_SANDSTONE_MESSAGE, "Red Carved Sandstone");
 
+        addBlock(AMPHORA_BLANK, "Amphora");
+        addBlock(AMPHORA_MEDUSA, "Amphora");
+
+        add("block.vintagevibes.amphora_blank.desc", "Blank");
+        add("block.vintagevibes.amphora_medusa.desc", "Medusa");
+
         add("block.vintagevibes.carved_sandstone_concerned.desc", "Concerned");
         add("block.vintagevibes.carved_sandstone_disappointed.desc", "Disappointed");
         add("block.vintagevibes.carved_sandstone_fisheye.desc", "Fisheye");
