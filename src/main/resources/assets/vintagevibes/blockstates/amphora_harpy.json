@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vintagevibes:block/amphora_harpy",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/amphora_harpy"
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/amphora_harpy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/amphora_harpy",
+      "y": 270
+    }
+  }
+}

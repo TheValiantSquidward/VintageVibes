@@ -480,6 +480,14 @@ public class VVBlocks {
             () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
     public static final RegistryObject<Block> AMPHORA_ZIGZAG = registerAmphora("amphora_zigzag",
             () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_SPROUTS = registerAmphora("amphora_sprouts",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_PEGASUS = registerAmphora("amphora_pegasus",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_HARPY = registerAmphora("amphora_harpy",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+
+
 
     public static final RegistryObject<Block> CHISELED_CALCITE = registerBlock("chiseled_calcite", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
     public static final RegistryObject<Block> CRACKED_CALCITE_BRICKS = registerBlock("cracked_calcite_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
