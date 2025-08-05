@@ -455,11 +455,14 @@ public class VintageVibesTab {
 
                         pOutput.accept(VVBlocks.AMPHORA_BLANK.get());
                         pOutput.accept(VVBlocks.AMPHORA_CHIMERA.get());
+                        pOutput.accept(VVBlocks.AMPHORA_HARPY.get());
                         pOutput.accept(VVBlocks.AMPHORA_MEDUSA.get());
+                        pOutput.accept(VVBlocks.AMPHORA_PEGASUS.get());
                         pOutput.accept(VVBlocks.AMPHORA_RIDGES.get());
                         pOutput.accept(VVBlocks.AMPHORA_SEGMENTED.get());
                         pOutput.accept(VVBlocks.AMPHORA_SERPENT.get());
                         pOutput.accept(VVBlocks.AMPHORA_SIREN.get());
+                        pOutput.accept(VVBlocks.AMPHORA_SPROUTS.get());
                         pOutput.accept(VVBlocks.AMPHORA_STRIPED.get());
                         pOutput.accept(VVBlocks.AMPHORA_TIDES.get());
                         pOutput.accept(VVBlocks.AMPHORA_WAVY.get());
