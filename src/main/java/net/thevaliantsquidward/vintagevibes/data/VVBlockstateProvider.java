@@ -308,6 +308,9 @@ public class VVBlockstateProvider extends BlockStateProvider {
         this.tallPlant(CANNA_LILY);
 
         this.tallPlant(TALL_LACELEAF);
+
+        this.cubeAllBlock(CRACKED_CALCITE_BRICKS);
+        this.cubeAllBlock(CRACKED_CALCITE_TILES);
     }
 
     // item
