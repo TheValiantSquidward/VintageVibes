@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/calcite",
+    "side": "vintagevibes:block/calcite_pillar_side"
+  }
+}
