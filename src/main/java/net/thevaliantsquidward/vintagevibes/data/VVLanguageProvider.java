@@ -125,9 +125,27 @@ public class VVLanguageProvider extends LanguageProvider {
 
         addBlock(AMPHORA_BLANK, "Amphora");
         addBlock(AMPHORA_MEDUSA, "Amphora");
+        addBlock(AMPHORA_CHIMERA, "Amphora");
+        addBlock(AMPHORA_SIREN, "Amphora");
+        addBlock(AMPHORA_SERPENT, "Amphora");
+        addBlock(AMPHORA_RIDGES, "Amphora");
+        addBlock(AMPHORA_STRIPED, "Amphora");
+        addBlock(AMPHORA_TIDES, "Amphora");
+        addBlock(AMPHORA_WAVY, "Amphora");
+        addBlock(AMPHORA_ZIGZAG, "Amphora");
+        addBlock(AMPHORA_SEGMENTED, "Amphora");
 
         add("block.vintagevibes.amphora_blank.desc", "Blank");
         add("block.vintagevibes.amphora_medusa.desc", "Medusa");
+        add("block.vintagevibes.amphora_chimera.desc", "Chimera");
+        add("block.vintagevibes.amphora_siren.desc", "Siren");
+        add("block.vintagevibes.amphora_serpent.desc", "Serpent");
+        add("block.vintagevibes.amphora_ridges.desc", "Ridges");
+        add("block.vintagevibes.amphora_striped.desc", "Striped");
+        add("block.vintagevibes.amphora_tides.desc", "Tides");
+        add("block.vintagevibes.amphora_wavy.desc", "Wavy");
+        add("block.vintagevibes.amphora_zigzag.desc", "Zigzag");
+        add("block.vintagevibes.amphora_segmented.desc", "Segmented");
 
         add("block.vintagevibes.carved_sandstone_concerned.desc", "Concerned");
         add("block.vintagevibes.carved_sandstone_disappointed.desc", "Disappointed");

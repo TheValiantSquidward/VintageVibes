@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vintagevibes:block/amphora_tides",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/amphora_tides"
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/amphora_tides",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/amphora_tides",
+      "y": 270
+    }
+  }
+}

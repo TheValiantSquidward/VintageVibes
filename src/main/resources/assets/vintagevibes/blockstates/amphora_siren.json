@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vintagevibes:block/amphora_siren",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/amphora_siren"
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/amphora_siren",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/amphora_siren",
+      "y": 270
+    }
+  }
+}

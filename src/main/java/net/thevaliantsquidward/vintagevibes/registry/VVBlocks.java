@@ -468,6 +468,18 @@ public class VVBlocks {
             () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
     public static final RegistryObject<Block> AMPHORA_SERPENT = registerAmphora("amphora_serpent",
             () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_RIDGES = registerAmphora("amphora_ridges",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_STRIPED = registerAmphora("amphora_striped",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_TIDES = registerAmphora("amphora_tides",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_WAVY = registerAmphora("amphora_wavy",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_SEGMENTED = registerAmphora("amphora_segmented",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
+    public static final RegistryObject<Block> AMPHORA_ZIGZAG = registerAmphora("amphora_zigzag",
+            () -> new AmphoraBlock(BlockBehaviour.Properties.copy(Blocks.DECORATED_POT).noOcclusion().sound(SoundType.DECORATED_POT)));
 
 
     private static <B extends Block> RegistryObject<B> registerBlock(String name, Supplier<? extends B> supplier) {

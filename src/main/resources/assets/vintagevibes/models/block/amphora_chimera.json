@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"2": "vintagevibes:block/amphora/amphora_blank",
+		"2": "vintagevibes:block/amphora/chimera",
 		"particle": "vintagevibes:block/amphora/amphora_particle"
 	},
 	"elements": [
