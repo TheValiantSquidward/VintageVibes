@@ -98,6 +98,7 @@ public class VintageVibesTab {
                         pOutput.accept(VVItems.PINEAPPLE_SLICE.get());
                         pOutput.accept(VVItems.VIBE_DISC.get());
 
+                        pOutput.accept(VVBlocks.DISPLAY_CASE.get());
                         pOutput.accept(VVBlocks.BEJEWELED_ORE.get());
                         pOutput.accept(VVBlocks.DEEPSLATE_BEJEWELED_ORE.get());
 

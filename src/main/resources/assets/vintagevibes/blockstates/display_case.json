@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vintagevibes:block/display_case",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/display_case"
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/display_case",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/display_case",
+      "y": 270
+    }
+  }
+}

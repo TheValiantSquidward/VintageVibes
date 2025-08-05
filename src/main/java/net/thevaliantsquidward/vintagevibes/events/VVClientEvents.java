@@ -8,6 +8,8 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.client.models.armor.MaskModel;
 import net.thevaliantsquidward.vintagevibes.client.models.entity.ButterflyModel;
 import net.thevaliantsquidward.vintagevibes.client.renderer.ButterflyRenderer;
+import net.thevaliantsquidward.vintagevibes.client.renderer.blockentities.DisplayCaseRenderer;
+import net.thevaliantsquidward.vintagevibes.registry.VVBlockEntityTypes;
 import net.thevaliantsquidward.vintagevibes.registry.VVEntities;
 import net.thevaliantsquidward.vintagevibes.registry.VVModelLayers;
 
@@ -23,5 +25,10 @@ public class VVClientEvents {
     public static void registerEntityLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(VVModelLayers.BUTTERFLY_LAYER, ButterflyModel::createBodyLayer);
         event.registerLayerDefinition(VVModelLayers.TIKI_MASK_LAYER, MaskModel::createArmorLayer);
+    }
+
+    @SubscribeEvent
+    public static void registerBlockEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(VVBlockEntityTypes.DISPLAY_CASE.get(), DisplayCaseRenderer::new);
     }
 }

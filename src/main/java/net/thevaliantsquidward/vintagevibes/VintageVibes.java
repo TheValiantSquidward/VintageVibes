@@ -36,6 +36,7 @@ public class VintageVibes {
         VVItems.ITEMS.register(bus);
         VVSoundEvents.SOUNDS.register(bus);
         VVBlocks.BLOCKS.register(bus);
+        VVBlockEntityTypes.BLOCK_ENTITIES.register(bus);
         VVEntities.ENTITIES.register(bus);
         VVLootModifiers.LOOT_MODIFIERS.register(bus);
         VintageVibesTab.CREATIVE_TABS.register(bus);

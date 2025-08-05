@@ -24,7 +24,6 @@ public class VVBlockstateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-
         this.cubeAllBlock(BEJEWELED_ORE);
         this.cubeAllBlock(DEEPSLATE_BEJEWELED_ORE);
 
