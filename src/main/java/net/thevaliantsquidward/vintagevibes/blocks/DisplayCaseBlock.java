@@ -37,12 +37,13 @@ public class DisplayCaseBlock extends Block implements EntityBlock {
         if (entity instanceof DisplayCaseBlockEntity itemDisplay) {
             if (itemDisplay.getDisplayItem().isEmpty()) {
                 itemDisplay.setDisplayItem(itemstack.copy());
+
                 if (!player.isCreative() && !player.getAbilities().instabuild) {
+                    level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 1F, 1);
                     itemstack.shrink(1);
                 }
-                if (!itemstack.isEmpty()) {
-                    level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 1F, 1);
-                }
+                level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 1F, 1);
+
                 return InteractionResult.sidedSuccess(level.isClientSide());
             } else if (itemstack.isEmpty()) {
                 if (!player.isCreative() && !player.getAbilities().instabuild) {

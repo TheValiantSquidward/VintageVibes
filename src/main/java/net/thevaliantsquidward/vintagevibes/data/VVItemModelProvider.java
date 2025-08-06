@@ -84,7 +84,7 @@ public class VVItemModelProvider extends ItemModelProvider {
         item(DUSTY_SPHINX);
         item(FOOLS_FOSSIL);
         item(FRAGILE_POT);
-        item(GOAT_MASONRY);
+        item(LUXURIOUS_MASONRY);
         item(JADE_FIGURINE);
         item(ODD_STONE);
         handheldItem(OSSEOUS_AXE);
@@ -92,6 +92,13 @@ public class VVItemModelProvider extends ItemModelProvider {
         handheldItem(OSSEOUS_SWORD);
         handheldItem(OSSEOUS_SHOVEL);
         item(RUSTIC_MASK);
+        item(AQUA_PORCELAIN);
+        item(CUT_TULMARINE);
+        item(FACETED_AMETRINE);
+        item(MARBLE_CROSS);
+        item(OLIVE_PORCELAIN);
+        item(POCKET_MIRROR);
+        item(SILVER_PORCELAIN);
 
         // spawn eggs
         for (Item item : BuiltInRegistries.ITEM) {

@@ -1,12 +1,8 @@
 package net.thevaliantsquidward.vintagevibes.registry;
 
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,7 +11,6 @@ import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.items.*;
 import net.thevaliantsquidward.vintagevibes.registry.enums.VVArmorMaterials;
 import net.thevaliantsquidward.vintagevibes.registry.enums.VVItemTiers;
-import net.thevaliantsquidward.vintagevibes.registry.tags.VVBlockTags;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -117,7 +112,7 @@ public class VVItems {
     public static final RegistryObject<Item> DUSTY_SPHINX = registerItem("dusty_sphinx", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> FOOLS_FOSSIL = registerItemNoLang("fools_fossil", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> FRAGILE_POT = registerItem("fragile_pot", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
-    public static final RegistryObject<Item> GOAT_MASONRY = registerItem("goat_masonry", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> LUXURIOUS_MASONRY = registerItem("luxurious_masonry", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> JADE_FIGURINE = registerItem("jade_figurine", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> ODD_STONE = registerItem("odd_stone", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> OSSEOUS_AXE = registerItem("osseous_axe", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
@@ -126,6 +121,13 @@ public class VVItems {
     public static final RegistryObject<Item> RUSTIC_MASK = registerItem("rustic_mask", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> DELICATE_BOWL = registerItem("delicate_bowl", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> OSSEOUS_SHOVEL = registerItem("osseous_shovel", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> AQUA_PORCELAIN = registerItem("aqua_porcelain", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> CUT_TULMARINE = registerItem("cut_tulmarine", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> FACETED_AMETRINE = registerItem("faceted_ametrine", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> MARBLE_CROSS = registerItem("marble_cross", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> OLIVE_PORCELAIN = registerItem("olive_porcelain", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> POCKET_MIRROR = registerItem("pocket_mirror", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> SILVER_PORCELAIN = registerItem("silver_porcelain", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
 
 
     public static final RegistryObject<Item> CELESTIAL_MASK = registerItem("celestial_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
