@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "vintagevibes:block/display_case",
-		"particle": "vintagevibes:block/display_case"
+		"particle": "minecraft:block/glass"
 	},
 	"elements": [
 		{

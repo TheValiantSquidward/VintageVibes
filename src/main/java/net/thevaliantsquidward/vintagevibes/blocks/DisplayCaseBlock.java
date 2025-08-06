@@ -2,12 +2,15 @@ package net.thevaliantsquidward.vintagevibes.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -28,14 +31,17 @@ public class DisplayCaseBlock extends Block implements EntityBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        BlockEntity entity = level.getBlockEntity(pos);
+    public InteractionResult use(BlockState state, Level level, BlockPos blockPos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+        BlockEntity entity = level.getBlockEntity(blockPos);
         ItemStack itemstack = player.getItemInHand(hand);
         if (entity instanceof DisplayCaseBlockEntity itemDisplay) {
             if (itemDisplay.getDisplayItem().isEmpty()) {
                 itemDisplay.setDisplayItem(itemstack.copy());
                 if (!player.isCreative() && !player.getAbilities().instabuild) {
                     itemstack.shrink(1);
+                }
+                if (!itemstack.isEmpty()) {
+                    level.playSound((Player) null, blockPos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 1F, 1);
                 }
                 return InteractionResult.sidedSuccess(level.isClientSide());
             } else if (itemstack.isEmpty()) {
@@ -44,11 +50,12 @@ public class DisplayCaseBlock extends Block implements EntityBlock {
                         player.spawnAtLocation(itemDisplay.getDisplayItem().getItem());
                     }
                 }
+                level.playSound((Player)null, blockPos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1F, 1);
                 itemDisplay.setDisplayItem(ItemStack.EMPTY);
                 return InteractionResult.sidedSuccess(level.isClientSide());
             }
         }
-        return super.use(state, level, pos, player, hand, hitResult);
+        return super.use(state, level, blockPos, player, hand, hitResult);
     }
 
     @Override
@@ -93,4 +100,13 @@ public class DisplayCaseBlock extends Block implements EntityBlock {
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
         return new DisplayCaseBlockEntity(pPos, pState);
     }
+
+    public float getShadeBrightness(BlockState p_48731_, BlockGetter p_48732_, BlockPos p_48733_) {
+        return 1.0F;
+    }
+
+    public boolean propagatesSkylightDown(BlockState p_48740_, BlockGetter p_48741_, BlockPos p_48742_) {
+        return true;
+    }
+
 }

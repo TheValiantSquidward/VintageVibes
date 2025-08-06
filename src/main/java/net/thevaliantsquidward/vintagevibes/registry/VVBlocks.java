@@ -492,7 +492,7 @@ public class VVBlocks {
     public static final RegistryObject<Block> CRACKED_CALCITE_TILES = registerBlock("cracked_calcite_tiles", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
     public static final RegistryObject<Block> CALCITE_PILLAR = registerBlock("calcite_pillar", () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
 
-    public static final RegistryObject<Block> DISPLAY_CASE = registerBlock("display_case", () -> new DisplayCaseBlock(BlockBehaviour.Properties.of().strength(2.0F, 6.0F).requiresCorrectToolForDrops().noOcclusion()));
+    public static final RegistryObject<Block> DISPLAY_CASE = registerBlock("display_case", () -> new DisplayCaseBlock(BlockBehaviour.Properties.of().strength(2.0F, 6.0F).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.GLASS)));
 
     private static <B extends Block> RegistryObject<B> registerBlock(String name, Supplier<? extends B> supplier) {
         RegistryObject<B> block = BLOCKS.register(name, supplier);
