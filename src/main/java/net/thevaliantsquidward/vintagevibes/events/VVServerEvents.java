@@ -19,6 +19,7 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
+import net.thevaliantsquidward.vintagevibes.registry.VVCriterion;
 import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 
 import java.util.Objects;
@@ -59,6 +60,7 @@ public class VVServerEvents {
                     entity.level().getServer().tell(teleport);
                     // temporary solution, could interfere with other mods
                     entity.level().broadcastEntityEvent(entity, (byte) 117);
+                    VVCriterion.USE_RUBY_SLIPPER.trigger(player);
                 }
                 event.setCanceled(true);
             }
