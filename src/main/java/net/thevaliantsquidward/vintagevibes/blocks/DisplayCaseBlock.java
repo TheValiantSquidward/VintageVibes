@@ -41,7 +41,7 @@ public class DisplayCaseBlock extends Block implements EntityBlock {
                     itemstack.shrink(1);
                 }
                 if (!itemstack.isEmpty()) {
-                    level.playSound((Player) null, blockPos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 1F, 1);
+                    level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.BLOCKS, 1F, 1);
                 }
                 return InteractionResult.sidedSuccess(level.isClientSide());
             } else if (itemstack.isEmpty()) {
@@ -50,7 +50,7 @@ public class DisplayCaseBlock extends Block implements EntityBlock {
                         player.spawnAtLocation(itemDisplay.getDisplayItem().getItem());
                     }
                 }
-                level.playSound((Player)null, blockPos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1F, 1);
+                level.playSound(null, blockPos, SoundEvents.ITEM_FRAME_REMOVE_ITEM, SoundSource.BLOCKS, 1F, 1);
                 itemDisplay.setDisplayItem(ItemStack.EMPTY);
                 return InteractionResult.sidedSuccess(level.isClientSide());
             }
@@ -97,15 +97,15 @@ public class DisplayCaseBlock extends Block implements EntityBlock {
 
     @Nullable
     @Override
-    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new DisplayCaseBlockEntity(pPos, pState);
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new DisplayCaseBlockEntity(pos, state);
     }
 
-    public float getShadeBrightness(BlockState p_48731_, BlockGetter p_48732_, BlockPos p_48733_) {
+    public float getShadeBrightness(BlockState state, BlockGetter getter, BlockPos pos) {
         return 1.0F;
     }
 
-    public boolean propagatesSkylightDown(BlockState p_48740_, BlockGetter p_48741_, BlockPos p_48742_) {
+    public boolean propagatesSkylightDown(BlockState state, BlockGetter getter, BlockPos pos) {
         return true;
     }
 

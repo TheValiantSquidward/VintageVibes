@@ -1,6 +1,5 @@
 package net.thevaliantsquidward.vintagevibes.registry;
 
-import com.sun.jna.platform.win32.WinBase;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.flag.FeatureFlag;
