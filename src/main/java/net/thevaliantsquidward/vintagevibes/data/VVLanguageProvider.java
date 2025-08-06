@@ -176,6 +176,7 @@ public class VVLanguageProvider extends LanguageProvider {
 
         addItem(SIRENS_PEARL, "Siren's Pearl");
         addItem(MERCHANTS_AMULET, "Merchant's Amulet");
+        addItem(FOOLS_FOSSIL, "Fool's Fossil");
 
         add("item.vintagevibes.bejeweled_brooch.desc", "Contains an intricate mechanism that allows the wings to flap. Engraved on the back are the initials N.A.");
         add("item.vintagevibes.onyx_figurine.desc", "An ominous aura exudes from this figurine. It appears to be shaped like some kind of animal.");

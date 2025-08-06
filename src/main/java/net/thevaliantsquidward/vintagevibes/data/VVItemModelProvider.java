@@ -76,6 +76,22 @@ public class VVItemModelProvider extends ItemModelProvider {
         item(SPLIT_MASK);
         item(WEATHERED_COIN);
         item(WHIMSICAL_BUNDLE);
+        item(BRITTLE_VASE);
+        item(COMEDY_MASK);
+        item(CREATURE_MASK);
+        item(CRYSTALLIZED_SHELL);
+        item(DELICATE_BOWL);
+        item(DUSTY_SPHINX);
+        item(FOOLS_FOSSIL);
+        item(FRAGILE_POT);
+        item(GOAT_MASONRY);
+        item(JADE_FIGURINE);
+        item(ODD_STONE);
+        handheldItem(OSSEOUS_AXE);
+        handheldItem(OSSEOUS_PICKAXE);
+        handheldItem(OSSEOUS_SWORD);
+        handheldItem(OSSEOUS_SHOVEL);
+        item(RUSTIC_MASK);
 
         // spawn eggs
         for (Item item : BuiltInRegistries.ITEM) {

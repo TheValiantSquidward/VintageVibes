@@ -113,6 +113,23 @@ public class VVItems {
     public static final RegistryObject<Item> SPLIT_MASK = registerItem("split_mask", () -> new TrinketItem(TINKET_PROPERTIES));
     public static final RegistryObject<Item> WEATHERED_COIN = registerItem("weathered_coin", () -> new TrinketItem(TINKET_PROPERTIES));
     public static final RegistryObject<Item> WHIMSICAL_BUNDLE = registerItem("whimsical_bundle", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> BRITTLE_VASE = registerItem("brittle_vase", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> COMEDY_MASK = registerItem("comedy_mask", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> CREATURE_MASK = registerItem("creature_mask", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> CRYSTALLIZED_SHELL = registerItem("crystallized_shell", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> DUSTY_SPHINX = registerItem("dusty_sphinx", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> FOOLS_FOSSIL = registerItemNoLang("fools_fossil", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> FRAGILE_POT = registerItem("fragile_pot", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> GOAT_MASONRY = registerItem("goat_masonry", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> JADE_FIGURINE = registerItem("jade_figurine", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> ODD_STONE = registerItem("odd_stone", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> OSSEOUS_AXE = registerItem("osseous_axe", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> OSSEOUS_PICKAXE = registerItem("osseous_pickaxe", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> OSSEOUS_SWORD = registerItem("osseous_sword", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> RUSTIC_MASK = registerItem("rustic_mask", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> DELICATE_BOWL = registerItem("delicate_bowl", () -> new TrinketItem(TINKET_PROPERTIES));
+    public static final RegistryObject<Item> OSSEOUS_SHOVEL = registerItem("osseous_shovel", () -> new TrinketItem(TINKET_PROPERTIES));
+
 
     public static final RegistryObject<Item> CELESTIAL_MASK = registerItem("celestial_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> DEITY_MASK = registerItem("deity_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
