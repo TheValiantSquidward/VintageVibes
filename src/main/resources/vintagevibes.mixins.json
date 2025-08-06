@@ -3,10 +3,11 @@
   "minVersion": "0.8",
   "package": "net.thevaliantsquidward.vintagevibes.mixins",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "shifted_lens.refmap.json",
+  "refmap": "vintagevibes.refmap.json",
   "mixins": [
   ],
   "client": [
+    "ClientPacketListenerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

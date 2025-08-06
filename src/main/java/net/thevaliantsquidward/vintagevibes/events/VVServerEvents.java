@@ -1,81 +1,69 @@
 package net.thevaliantsquidward.vintagevibes.events;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.InteractionHand;
+import net.minecraft.core.SectionPos;
+import net.minecraft.server.TickTask;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.TicketType;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.DamageTypeTags;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraft.world.level.ChunkPos;
+import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
+import net.thevaliantsquidward.vintagevibes.registry.VVCriterion;
+import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 
+import java.util.Objects;
+import java.util.Optional;
 
 @Mod.EventBusSubscriber(modid = VintageVibes.MOD_ID)
 public class VVServerEvents {
-
+    
     @SubscribeEvent
-    public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-        Player player = event.getEntity();
-        Level level = event.getLevel();
-        BlockPos pos = event.getPos();
-        InteractionHand hand = event.getHand();
-        BlockState blockState = level.getBlockState(pos);
-        Block block = blockState.getBlock();
-        RandomSource random = level.getRandom();
-        ItemStack itemInHand = player.getItemInHand(hand);
+    public static void onLivingDeath(LivingDeathEvent event) {
+        LivingEntity entity = event.getEntity();
 
-     //   if (block instanceof GrindstoneBlock) {
-     //       ArrayList<GrindingRecipe> recipes = new ArrayList<>(GrindingRecipe.getRecipes(level));
-     //       for (GrindingRecipe polishingRecipe : recipes) {
-     //           for (ItemStack ingredient : polishingRecipe.getIngredients().iterator().next().getItems()) {
-     //               ItemStack result = polishingRecipe.result;
-     //               int resultCount = polishingRecipe.getResultCount();
-     //               int xpAmount = polishingRecipe.getExperience();
-//
-     //               if (itemInHand.is(ingredient.getItem())) {
-     //                   event.setCanceled(true);
-     //                   event.setCancellationResult(InteractionResult.FAIL);
-     //                   ItemStack resultItem = result.copy();
-     //                   if (player.isShiftKeyDown()) {
-     //                       int ingredientCount = itemInHand.getCount();
-     //                       shrinkIngredientAddResults(player, itemInHand, resultItem, resultCount, ingredientCount);
-//
-     //                       if (!(xpAmount == 0)) {
-     //                           for (int i = 0; i <= ingredientCount; i++) {
-     //                               int dropXp = random.nextInt(2);
-     //                               if (dropXp < 1) {
-     //                                   xpAmount = xpAmount + polishingRecipe.getExperience();
-     //                               }
-     //                           }
-     //                           level.addFreshEntity(new ExperienceOrb(level, pos.getX(), pos.getY() + 1, pos.getZ(), xpAmount));
-     //                       }
-     //                   } else {
-     //                       resultItem.setCount(resultCount);
-     //                       shrinkIngredientAddResults(player, itemInHand, resultItem, resultCount, 1);
-//
-     //                       if (!(xpAmount == 0)) {
-     //                           int canDropXp = random.nextInt(2);
-//
-     //                           if (canDropXp < 1) {
-     //                               level.addFreshEntity(new ExperienceOrb(level, pos.getX(), pos.getY() + 1, pos.getZ(), xpAmount));
-     //                           }
-     //                       }
-     //                   }
-     //                   player.swing(hand);
-     //                   Direction face = event.getFace();
-     //                   if (face != null) {
-     //                       ParticleUtils.spawnParticlesOnBlockFace(level, pos, ParticleTypes.CRIT, UniformInt.of(1, 4), face, () -> new Vec3(player.getLookAngle().x() + Mth.nextDouble(random, -0.5, 0.5), 0.8D, player.getLookAngle().z() + Mth.nextDouble(random, -0.5, 0.5)), 0.55D);
-     //                       ParticleUtils.spawnParticlesOnBlockFace(level, pos, new ItemParticleOption(ParticleTypes.ITEM, itemInHand), UniformInt.of(1, 2), face, () -> new Vec3(Mth.nextDouble(random, -0.05D, 0.05D), 0, Mth.nextDouble(random, -0.05D, 0.05D)), 0.55D);
-     //                   }
-     //                   level.playSound(player, pos, SMSounds.POLISH_JADE.get(), SoundSource.BLOCKS, 0.5F, 0.0F);
-     //               }
-     //           }
-     //       }
-     //   }
+        if (!event.getSource().is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
+            if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() == VVItems.RUBY_SLIPPER.get()) {
+                entity.setHealth(1.0F);
+                entity.clearFire();
+                entity.fallDistance = 0F;
+                entity.removeAllEffects();
+                entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 3));
+                entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 0));
+                entity.getItemBySlot(EquipmentSlot.FEET).hurtAndBreak(600, entity, (livingEntity) -> livingEntity.broadcastBreakEvent(EquipmentSlot.FEET));
+                entity.playSound(SoundEvents.ENDERMAN_TELEPORT, 1.0F, 1.0F);
+
+                if (entity instanceof ServerPlayer && !entity.level().isClientSide()) {
+                    ServerPlayer player = (ServerPlayer) entity;
+                    ServerLevel spawn = Objects.requireNonNullElse(player.getServer().getLevel(player.getRespawnDimension()), player.getServer().overworld());
+                    Vec3 spawnpoint = Optional.ofNullable(player.getRespawnPosition())
+                            .flatMap(pos -> Player.findRespawnPositionAndUseSpawnBlock(spawn, pos, player.getRespawnAngle(), player.isRespawnForced(), true))
+                            .orElseGet(() -> {
+                                BlockPos worldSpawn = spawn.getSharedSpawnPos();
+                                return new Vec3(worldSpawn.getX(), worldSpawn.getY(), worldSpawn.getZ());
+                            });
+
+                    TickTask teleport = new TickTask((entity.level().getServer().getTickCount()) + 1, () -> {
+                        spawn.getChunkSource().addRegionTicket(TicketType.POST_TELEPORT, new ChunkPos(SectionPos.posToSectionCoord(spawnpoint.x), SectionPos.posToSectionCoord(spawnpoint.z)), 1, player.getId());
+                        player.teleportTo(spawn, spawnpoint.x(), spawnpoint.y(), spawnpoint.z(), 5.0F, 5.0F);
+                    });
+                    entity.level().getServer().tell(teleport);
+                    // temporary solution, could interfere with other mods
+                    entity.level().broadcastEntityEvent(entity, (byte) 117);
+                    VVCriterion.USE_RUBY_SLIPPER.trigger(player);
+                }
+                event.setCanceled(true);
+            }
+        }
     }
-
 }
