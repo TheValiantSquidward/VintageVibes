@@ -351,25 +351,25 @@ public class VVBlocks {
     public static final RegistryObject<Block> BAMBOO_PAPER_LANTERN = registerBlock("bamboo_paper_lantern", () -> new VVDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS).strength(0.5F).lightLevel((state) -> 15)));
 
     // carved sandstone
-    public static final RegistryObject<Block> CARVED_SANDSTONE_CONCERNED = registerSandstoneBlock("carved_sandstone_concerned", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_DISAPPOINTED = registerSandstoneBlock("carved_sandstone_disappointed", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_FISHEYE = registerSandstoneBlock("carved_sandstone_fisheye", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_GRIN = registerSandstoneBlock("carved_sandstone_grin", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_JOYOUS = registerSandstoneBlock("carved_sandstone_joyous", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_LAZYBONES = registerSandstoneBlock("carved_sandstone_lazybones", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_NOSE = registerSandstoneBlock("carved_sandstone_nose", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_OPEN = registerSandstoneBlock("carved_sandstone_open", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_SPIRAL = registerSandstoneBlock("carved_sandstone_spiral", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_CONCERNED = registerTooltipBlock("carved_sandstone_concerned", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_DISAPPOINTED = registerTooltipBlock("carved_sandstone_disappointed", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_FISHEYE = registerTooltipBlock("carved_sandstone_fisheye", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_GRIN = registerTooltipBlock("carved_sandstone_grin", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_JOYOUS = registerTooltipBlock("carved_sandstone_joyous", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_LAZYBONES = registerTooltipBlock("carved_sandstone_lazybones", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_NOSE = registerTooltipBlock("carved_sandstone_nose", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_OPEN = registerTooltipBlock("carved_sandstone_open", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_SPIRAL = registerTooltipBlock("carved_sandstone_spiral", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
 
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_BOLD_AND_BRASH = registerSandstoneBlock("red_carved_sandstone_bold_and_brash", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_CLOSED = registerSandstoneBlock("red_carved_sandstone_closed", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_EXCITED = registerSandstoneBlock("red_carved_sandstone_excited", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_FROWN = registerSandstoneBlock("red_carved_sandstone_frown", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_HAPPY = registerSandstoneBlock("red_carved_sandstone_happy", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_LIPS = registerSandstoneBlock("red_carved_sandstone_lips", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_SAD = registerSandstoneBlock("red_carved_sandstone_sad", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_TOUCH = registerSandstoneBlock("red_carved_sandstone_touch", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_MESSAGE = registerSandstoneBlock("red_carved_sandstone_message", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_BOLD_AND_BRASH = registerTooltipBlock("red_carved_sandstone_bold_and_brash", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_CLOSED = registerTooltipBlock("red_carved_sandstone_closed", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_EXCITED = registerTooltipBlock("red_carved_sandstone_excited", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_FROWN = registerTooltipBlock("red_carved_sandstone_frown", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_HAPPY = registerTooltipBlock("red_carved_sandstone_happy", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_LIPS = registerTooltipBlock("red_carved_sandstone_lips", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_SAD = registerTooltipBlock("red_carved_sandstone_sad", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_TOUCH = registerTooltipBlock("red_carved_sandstone_touch", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_MESSAGE = registerTooltipBlock("red_carved_sandstone_message", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
 
     // pineapple
     public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
@@ -493,6 +493,9 @@ public class VVBlocks {
 
     public static final RegistryObject<Block> DISPLAY_CASE = registerBlock("display_case", () -> new DisplayCaseBlock(BlockBehaviour.Properties.of().strength(2.0F, 6.0F).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.GLASS)));
 
+    public static final RegistryObject<Block> GOLDEN_HEAD = registerTooltipBlock("golden_head", () -> new GoldenHeadBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+
+
     private static <B extends Block> RegistryObject<B> registerBlock(String name, Supplier<? extends B> supplier) {
         RegistryObject<B> block = BLOCKS.register(name, supplier);
         VVItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
@@ -510,9 +513,9 @@ public class VVBlocks {
         return BLOCKS.register(name, block);
     }
 
-    public static <B extends Block> RegistryObject<B> registerSandstoneBlock(String name, Supplier<? extends B> supplier) {
+    public static <B extends Block> RegistryObject<B> registerTooltipBlock(String name, Supplier<? extends B> supplier) {
         RegistryObject<B> block = BLOCKS.register(name, supplier);
-        VVItems.ITEMS.register(name, () -> new CarvedSandstoneBlockItem(block.get(), new Item.Properties()));
+        VVItems.ITEMS.register(name, () -> new NondescriptTooltipBlockItem(block.get(), new Item.Properties()));
         return block;
     }
     public static <B extends Block> RegistryObject<B> registerAmphora(String name, Supplier<? extends B> supplier) {

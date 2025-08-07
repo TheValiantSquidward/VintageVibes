@@ -44,7 +44,7 @@ public class VVItemModelProvider extends ItemModelProvider {
         item(CROWNED_INSECT);
         item(ENCHANTED_TOME);
         item(GLIMMERING_SKULL);
-        item(GOLDEN_HEAD);
+        //item(GOLDEN_HEAD);
         item(LUXURIOUS_BOWL);
         item(MERCHANTS_AMULET);
         handheldItem(OBSIDIAN_BLADE);

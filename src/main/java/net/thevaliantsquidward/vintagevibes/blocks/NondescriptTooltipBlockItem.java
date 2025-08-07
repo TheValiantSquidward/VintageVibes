@@ -12,9 +12,9 @@ import net.minecraft.world.level.block.Block;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class CarvedSandstoneBlockItem extends BlockItem {
+public class NondescriptTooltipBlockItem extends BlockItem {
 
-    public CarvedSandstoneBlockItem(Block pBlock, Properties pProperties) {
+    public NondescriptTooltipBlockItem(Block pBlock, Properties pProperties) {
         super(pBlock, pProperties);
     }
 

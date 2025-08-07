@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vintagevibes:block/golden_head",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/golden_head"
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/golden_head",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/golden_head",
+      "y": 270
+    }
+  }
+}

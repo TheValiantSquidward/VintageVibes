@@ -138,6 +138,8 @@ public class VVLanguageProvider extends LanguageProvider {
         addBlock(AMPHORA_PEGASUS, "Amphora");
         addBlock(AMPHORA_HARPY, "Amphora");
 
+        addBlock(GOLDEN_HEAD, "Golden Head");
+
         add("block.vintagevibes.amphora_blank.desc", "Blank");
         add("block.vintagevibes.amphora_medusa.desc", "Medusa");
         add("block.vintagevibes.amphora_chimera.desc", "Chimera");
@@ -180,7 +182,7 @@ public class VVLanguageProvider extends LanguageProvider {
 
         add("item.vintagevibes.bejeweled_brooch.desc", "Contains an intricate mechanism that allows the wings to flap. Engraved on the back are the initials N.A.");
         add("item.vintagevibes.onyx_figurine.desc", "An ominous aura exudes from this figurine. It appears to be shaped like some kind of animal.");
-        add("item.vintagevibes.golden_head.desc", "A priceless treasure, depicting a deity worshipped in ancient times. Contrary to popular belief, it is much heavier than a bag of sand.");
+        add("block.vintagevibes.golden_head.desc", "A priceless treasure, depicting a deity worshipped in ancient times. Contrary to popular belief, it is much heavier than a bag of sand.");
         add("item.vintagevibes.crowned_insect.desc", "This scarab seal once belonged to a mysterious pharaoh from a long forgotten desert kingdom. The meaning of the symbols on the back have long been lost to time.");
         add("item.vintagevibes.sirens_pearl.desc", "A pearl, said to have been harvested from a siren’s chest cavity. If you hold it up to your ear, you can hear distant music.");
         add("item.vintagevibes.enchanted_tome.desc", "An ancient tome of wizardry and dark magicks. Also contains a spectacular recipe for cherry pie!");

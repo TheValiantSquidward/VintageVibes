@@ -81,7 +81,7 @@ public class VVItems {
     public static final RegistryObject<Item> ENDER_AMULET = registerItem("ender_amulet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> EYE_RING = registerItem("eye_ring", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> GLIMMERING_SKULL = registerItem("glimmering_skull", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
-    public static final RegistryObject<Item> GOLDEN_HEAD = registerItem("golden_head", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    //public static final RegistryObject<Item> GOLDEN_HEAD = registerItem("golden_head", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> GOLDEN_SYMBOL = registerItem("golden_symbol", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> LUXURIOUS_BOWL = registerItem("luxurious_bowl", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> MERCHANTS_AMULET = registerItemNoLang("merchants_amulet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));

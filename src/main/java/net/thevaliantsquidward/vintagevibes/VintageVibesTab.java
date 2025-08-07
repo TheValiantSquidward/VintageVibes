@@ -81,7 +81,7 @@ public class VintageVibesTab {
                         pOutput.accept(VVItems.FOOLS_FOSSIL.get());
                         pOutput.accept(VVItems.FRAGILE_POT.get());
                         pOutput.accept(VVItems.GLIMMERING_SKULL.get());
-                        pOutput.accept(VVItems.GOLDEN_HEAD.get());
+                        pOutput.accept(VVBlocks.GOLDEN_HEAD.get());
                         pOutput.accept(VVItems.GOLDEN_SYMBOL.get());
                         pOutput.accept(VVItems.JADE_FIGURINE.get());
                         pOutput.accept(VVItems.MARBLE_CROSS.get());
