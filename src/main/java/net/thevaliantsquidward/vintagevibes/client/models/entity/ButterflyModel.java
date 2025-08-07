@@ -32,11 +32,21 @@ public class ButterflyModel<T extends Butterfly> extends HierarchicalModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition root = partdefinition.addOrReplaceChild("root", CubeListBuilder.create(), PartPose.offset(-0.5F, 23.5F, 1.0F));
+
+		PartDefinition root = partdefinition.addOrReplaceChild("root", CubeListBuilder.create(), PartPose.offset(-0.5F, 23.5F, 0.0F));
+
 		PartDefinition body = root.addOrReplaceChild("body", CubeListBuilder.create().texOffs(0, 13).addBox(-0.5F, -0.25F, -2.75F, 1.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -0.25F, -0.25F));
-		PartDefinition antenna = body.addOrReplaceChild("antenna", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, -1.0F, -3.0F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -0.25F, -2.75F));
-		PartDefinition l_wing = body.addOrReplaceChild("l_wing", CubeListBuilder.create().texOffs(-4, 0).addBox(0.0F, 0.0F, -8.0F, 12.0F, 0.0F, 16.0F, new CubeDeformation(0.0F)), PartPose.offset(0.5F, -0.25F, 0.25F));
-		PartDefinition r_wing = body.addOrReplaceChild("r_wing", CubeListBuilder.create().texOffs(-4, 0).mirror().addBox(-12.0F, 0.0F, -8.0F, 12.0F, 0.0F, 16.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.5F, -0.25F, 0.25F));
+
+		PartDefinition antenna = body.addOrReplaceChild("antenna", CubeListBuilder.create(), PartPose.offset(0.0F, -0.25F, -2.75F));
+
+		PartDefinition cube_r1 = antenna.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(1, 0).mirror().addBox(0.0F, -1.5F, -3.0F, 0.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.5F, 0.0F, 0.0F, 0.4363F, 0.0F));
+
+		PartDefinition cube_r2 = antenna.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(1, 0).addBox(0.0F, -1.5F, -3.0F, 0.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.5F, 0.0F, 0.0F, -0.4363F, 0.0F));
+
+		PartDefinition l_wing = body.addOrReplaceChild("l_wing", CubeListBuilder.create().texOffs(-4, 0).addBox(0.0F, 0.0F, -8.0F, 12.0F, 0.0F, 16.0F, new CubeDeformation(0.025F)), PartPose.offset(0.5F, -0.25F, 0.25F));
+
+		PartDefinition r_wing = body.addOrReplaceChild("r_wing", CubeListBuilder.create().texOffs(-4, 0).mirror().addBox(-12.0F, 0.0F, -8.0F, 12.0F, 0.0F, 16.0F, new CubeDeformation(0.025F)).mirror(false), PartPose.offset(-0.5F, -0.25F, 0.25F));
+
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
