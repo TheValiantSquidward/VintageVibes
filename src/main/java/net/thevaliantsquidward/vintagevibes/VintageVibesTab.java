@@ -263,6 +263,8 @@ public class VintageVibesTab {
                         pOutput.accept(VVBlocks.QUARTZ_TILE_SLAB.get());
                         pOutput.accept(VVBlocks.QUARTZ_TILE_WALL.get());
 
+                        pOutput.accept(VVBlocks.CALCITE_PILLAR.get());
+                        pOutput.accept(VVBlocks.CHISELED_CALCITE.get());
                         // calcite tiles
                         pOutput.accept(VVBlocks.CALCITE_TILES.get());
                         pOutput.accept(VVBlocks.CALCITE_TILE_STAIRS.get());
