@@ -2,11 +2,13 @@ package net.thevaliantsquidward.vintagevibes.events;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.SectionPos;
+import net.minecraft.network.protocol.game.ClientboundSoundPacket;
 import net.minecraft.server.TickTask;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.TicketType;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -33,7 +35,7 @@ public class VVServerEvents {
         LivingEntity entity = event.getEntity();
 
         if (!event.getSource().is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
-            if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() == VVItems.RUBY_SLIPPER.get()) {
+            if (entity.getItemBySlot(EquipmentSlot.FEET).getItem() == VVItems.RUBY_SLIPPERS.get()) {
                 entity.setHealth(1.0F);
                 entity.clearFire();
                 entity.fallDistance = 0F;

@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-06T15:47:15.3583008	Item Models: vintagevibes
+// 1.20.1	2025-08-07T11:46:51.9632736	Item Models: vintagevibes
 7dc44ffc8b87b94994a63dba59a07a0625a2195a assets/vintagevibes/models/item/amberized_critter.json
 214e8a20ab7932bb572c53a16cecc53a72f75c52 assets/vintagevibes/models/item/ancient_figurine.json
 61b37186ec1a2e86345438aa15eea6129535b2df assets/vintagevibes/models/item/antique_key.json
@@ -61,7 +61,7 @@ ac6abc3c768572d4fe51be3cfc129e94b508af31 assets/vintagevibes/models/item/osseous
 7d59f06da21c4b8921e51ab5497c5a82476e8fc0 assets/vintagevibes/models/item/pocket_mirror.json
 84fbed6fd65a7ab4e71ee42ee02a875900756903 assets/vintagevibes/models/item/priceless_coin.json
 ce9f8bcf4d00c3e639bf50d375cc0dae6b64fcaa assets/vintagevibes/models/item/relucent_grail.json
-7dad02b8052eee59dd0ad4cde94ae39a9d7be8ae assets/vintagevibes/models/item/ruby_slipper.json
+876c3278e1fe7d7614d2e95b86254f17d2b65638 assets/vintagevibes/models/item/ruby_slippers.json
 23dabe34e96fc6ed02f607af6dfde7db69dca555 assets/vintagevibes/models/item/rusted_spearhead.json
 466499888d3a482d887ddc0ea9087a89f9cd51c3 assets/vintagevibes/models/item/rustic_mask.json
 6e68ce9c0f63c368c678a14354739b25811fc844 assets/vintagevibes/models/item/shattered_dagger.json

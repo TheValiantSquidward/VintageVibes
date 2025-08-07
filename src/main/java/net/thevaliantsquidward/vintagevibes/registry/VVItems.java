@@ -97,7 +97,7 @@ public class VVItems {
     public static final RegistryObject<Item> PEARLESCENT_FACE = registerItem("pearlescent_face", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> PRICELESS_COIN = registerItem("priceless_coin", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> RELUCENT_GRAIL = registerItem("relucent_grail", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
-    public static final RegistryObject<Item> RUBY_SLIPPER = registerItem("ruby_slipper", () -> new RubySlipperItem(new Item.Properties().rarity(VVItemProperties.TRINKET).stacksTo(1)));
+    public static final RegistryObject<Item> RUBY_SLIPPERS = registerItem("ruby_slippers", () -> new RubySlipperItem(new Item.Properties().rarity(VVItemProperties.TRINKET).stacksTo(1)));
     public static final RegistryObject<Item> RUSTED_SPEARHEAD = registerItem("rusted_spearhead", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> TONGUE_STONE = registerItem("tongue_stone", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> SHATTERED_DAGGER = registerItem("shattered_dagger", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));

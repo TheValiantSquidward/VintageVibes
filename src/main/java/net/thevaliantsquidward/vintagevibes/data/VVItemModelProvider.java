@@ -72,7 +72,7 @@ public class VVItemModelProvider extends ItemModelProvider {
         item(PEARLESCENT_FACE);
         item(PRICELESS_COIN);
         item(RELUCENT_GRAIL);
-        item(RUBY_SLIPPER);
+        item(RUBY_SLIPPERS);
         item(SPLIT_MASK);
         item(WEATHERED_COIN);
         item(WHIMSICAL_BUNDLE);

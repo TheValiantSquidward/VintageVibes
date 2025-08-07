@@ -107,7 +107,7 @@ public class VintageVibesTab {
                         pOutput.accept(VVItems.POCKET_MIRROR.get());
                         pOutput.accept(VVItems.PRICELESS_COIN.get());
                         pOutput.accept(VVItems.RELUCENT_GRAIL.get());
-                        pOutput.accept(VVItems.RUBY_SLIPPER.get());
+                        pOutput.accept(VVItems.RUBY_SLIPPERS.get());
                         pOutput.accept(VVItems.RUSTED_SPEARHEAD.get());
                         pOutput.accept(VVItems.RUSTIC_MASK.get());
                         pOutput.accept(VVItems.SHATTERED_DAGGER.get());

@@ -32,7 +32,7 @@ public class ClientPacketListenerMixin {
         if (entity != null) {
             if (packet.getEventId() == 117) {
                 if (entity == this.minecraft.player) {
-                    this.minecraft.gameRenderer.displayItemActivation(VVItems.RUBY_SLIPPER.get().getDefaultInstance());
+                    this.minecraft.gameRenderer.displayItemActivation(VVItems.RUBY_SLIPPERS.get().getDefaultInstance());
                 }
             } else {
                 entity.handleEntityEvent(packet.getEventId());
