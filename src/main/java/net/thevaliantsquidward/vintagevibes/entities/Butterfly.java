@@ -123,6 +123,14 @@ public class Butterfly extends Animal implements Bucketable, FlyingAnimal {
             case 14 -> "atala";
             case 15 -> "red_admiral";
             case 16 -> "queen_alexandra_birdwing";
+            case 17 -> "rusty_tip_page";
+            case 18 -> "tailed_jay";
+            case 19 -> "emerald_swallowtail";
+            case 20 -> "great_eggfly";
+            case 21 -> "rose_pink";
+            case 22 -> "one_spotted_prepona";
+            case 23 -> "giant_glasswing";
+
             default -> "monarch";
         };
     }
@@ -189,50 +197,71 @@ public class Butterfly extends Animal implements Bucketable, FlyingAnimal {
         if (reason == MobSpawnType.BUCKET && dataTag != null) {
             this.setVariant(dataTag.getInt("Variant"));
         } else
-        if (variantChange <= 6) {
+        if (variantChange <= 4) {
             this.setVariant(1);
         }
-        else if (variantChange <= 12) {
+        else if (variantChange <= 8) {
             this.setVariant(2);
         }
-        else if (variantChange <= 18) {
+        else if (variantChange <= 12) {
             this.setVariant(3);
         }
-        else if (variantChange <= 24) {
+        else if (variantChange <= 16) {
             this.setVariant(4);
         }
-        else if (variantChange <= 30) {
+        else if (variantChange <= 20) {
             this.setVariant(5);
         }
-        else if (variantChange <= 36) {
+        else if (variantChange <= 24) {
             this.setVariant(6);
         }
-        else if (variantChange <= 42) {
+        else if (variantChange <= 28) {
             this.setVariant(7);
         }
-        else if (variantChange <= 48) {
+        else if (variantChange <= 32) {
             this.setVariant(9);
         }
-        else if (variantChange <= 54) {
+        else if (variantChange <= 36) {
             this.setVariant(10);
         }
-        else if (variantChange <= 60) {
+        else if (variantChange <= 40) {
             this.setVariant(11);
         }
-        else if (variantChange <= 66) {
+        else if (variantChange <= 44) {
             this.setVariant(12);
         }
-        else if (variantChange <= 72) {
+        else if (variantChange <= 48) {
             this.setVariant(13);
         }
-        else if (variantChange <= 78) {
+        else if (variantChange <= 52) {
             this.setVariant(14);
         }
-        else if (variantChange <= 84) {
+        else if (variantChange <= 56) {
             this.setVariant(15);
         }
-        else if (variantChange <= 90) {
+        else if (variantChange <= 60) {
             this.setVariant(16);
+        }
+        else if (variantChange <= 64) {
+            this.setVariant(17);
+        }
+        else if (variantChange <= 68) {
+            this.setVariant(18);
+        }
+        else if (variantChange <= 72) {
+            this.setVariant(19);
+        }
+        else if (variantChange <= 76) {
+            this.setVariant(20);
+        }
+        else if (variantChange <= 80) {
+            this.setVariant(21);
+        }
+        else if (variantChange <= 84) {
+            this.setVariant(22);
+        }
+        else if (variantChange <= 88) {
+            this.setVariant(23);
         } else {
             this.setVariant(0);
         }

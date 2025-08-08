@@ -33,6 +33,13 @@ public class ButterflyRenderer extends MobRenderer<Butterfly, ButterflyModel<But
     private static final ResourceLocation ATALA = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/atala.png");
     private static final ResourceLocation RED_ADMIRAL = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/red_admiral.png");
     private static final ResourceLocation QUEEN_ALEXANDRA_BIRDWING = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/queen_alexandra_birdwing.png");
+    private static final ResourceLocation RUSTY_TIP_PAGE = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/rusty_tip_page.png");
+    private static final ResourceLocation TAILED_JAY = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/tailed_jay.png");
+    private static final ResourceLocation EMERALD_SWALLOWTAIL = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/emerald_swallowtail.png");
+    private static final ResourceLocation GREAT_EGGFLY = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/great_eggfly.png");
+    private static final ResourceLocation PINK_ROSE = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/pink_rose.png");
+    private static final ResourceLocation ONE_SPOTTED_PREPONA = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/one_spotted_prepona.png");
+    private static final ResourceLocation GIANT_GLASSWING = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/giant_glasswing.png");
 
     @Override
     public ResourceLocation getTextureLocation(Butterfly butter) {
@@ -53,6 +60,14 @@ public class ButterflyRenderer extends MobRenderer<Butterfly, ButterflyModel<But
             case 14 -> ATALA;
             case 15 -> RED_ADMIRAL;
             case 16 -> QUEEN_ALEXANDRA_BIRDWING;
+            case 17 -> RUSTY_TIP_PAGE;
+            case 18 -> TAILED_JAY;
+            case 19 -> EMERALD_SWALLOWTAIL;
+            case 20 -> GREAT_EGGFLY;
+            case 21 -> PINK_ROSE;
+            case 22 -> ONE_SPOTTED_PREPONA;
+            case 23 -> GIANT_GLASSWING;
+
             default -> MONARCH;
         };
     }
