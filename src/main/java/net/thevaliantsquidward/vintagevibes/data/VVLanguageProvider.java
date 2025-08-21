@@ -193,14 +193,32 @@ public class VVLanguageProvider extends LanguageProvider {
         add("item.vintagevibes.coral_beads.desc", "Colorful beads from an island nation long since swallowed by the sea. The necklace is much lighter than it seems, due to the beads being hollow.");
         add("item.vintagevibes.glimmering_skull.desc", "This artifact was carved from many varieties of sparkling quartz. When sunlight hits the skull, rainbow light is scattered everywhere.");
         add("item.vintagevibes.luxurious_bowl.desc", "A rare bowl made of lapis and gold, once used in religious rites. Its surface is smooth and cracked.");
-        add("item.vintagevibes.merchants_amulet.desc", "Used as a seal by ancient merchants to recognize their fellow tradesmen. It has been said to bring good luck.");
+        add("item.vintagevibes.merchants_amulet.desc", "Used as a seal by ancient merchants to recognize their fellow tradesmen.");
         add("item.vintagevibes.obsidian_blade.desc", "An unbreakable blade, used in times of war long gone. Said to be one of a set of two.");
         add("item.vintagevibes.obsidian_tool.desc", "An unbreakable tool, used to harvest resources in a long forgotten nation. Said to be one of a set of two.");
         add("item.vintagevibes.oceanic_pendant.desc", "Said to contain the will of an ancient fish god. When you wear it and close your eyes, you can hear the ocean.");
         add("item.vintagevibes.rusted_spearhead.desc", "This spearhead is so old that it could easily be mistaken for a simple pebble. Despite its venerable age, it is still sharp enough to cut your hand.");
         add("item.vintagevibes.shattered_dagger.desc", "This terrible dagger was used in ancient blood sacrifices. Looking at the runes inscribed on the handle sends shivers down your spine");
         add("item.vintagevibes.amberized_critter.desc", "A large ant, frozen in amber. Its tiny face is frozen in a state of confusion.");
-        //add("item.vintagevibes.amberized_critter.desc", "");
+        add("item.vintagevibes.ancient_figurine.", "This strange vase-shaped figurine is formed almost entirely from hardened mud. Its head is vaguely skull shaped.");
+        add("item.vintagevibes.aqua_porcelain.desc", "A beautiful faded azure piece of pottery, said to be part of a set of three. Despite being cracked, its surface still shines.");
+        add("item.vintagevibes.olive_porcelain.desc", "A beautiful chartreuse piece of pottery, said to be part of a set of three. Its shape is esoteric and confusing.");
+        add("item.vintagevibes.silver_porcelain.desc", "A beautiful silvery piece of pottery, said to be part of a set of three. The material it is made of is completely unidentifiable.");
+        add("item.vintagevibes.blossom_necklace.desc", "A beautifully detailed porcelain replica of a spore blossom adorns this old and worn necklace.");
+        add("item.vintagevibes.jade_figurine.desc", "A solid jade figure depicting some kind of strange unidentifiable animal. A warm and cheerful aura exudes from its surface.");
+        add("item.vintagevibes.pocket_mirror.desc", "This mirror’s shiny surface is cracked, yet oddly clean. The gold plaque under it has strange text in another language etched into it.");
+        add("item.vintagevibes.citrine_diamond.desc", "While it is called a diamond, it appears to actually be some kind of lemon-yellow quartz.");
+        add("item.vintagevibes.comedy_mask.desc", "A beautiful and elegant stone mask, carved from calcite. Its surface has been polished so much that you can see your reflection in it.");
+        add("item.vintagevibes.crystallized_shell.desc", "A strange fossil from an inland sea, seemingly turned to crystal during its creation.");
+        add("item.vintagevibes.fools_fossil.desc", "Appears gold, but is actually just a similarly shiny metal. When it was alive, it dwelled in a shining inland sea. ");
+        add("item.vintagevibes.obsidian_mask.desc", "A horrifying mask twisted to resemble a screaming face. You feel a sense of dread just from holding it.");
+        add("item.vintagevibes.split_mask.desc", "Two halves of a theatrical mask, forged with bronze. Created to serve some kind of deity of theatre.");
+        add("item.vintagevibes.odd_coin.desc", "A strange coin from a faraway land, or perhaps even another world, made of an unknown material.");
+        add("item.vintagevibes.embedded_fossil.desc", "A small arthropod fossil, embedded inside a rock. It appears to have lost some of its legs before fossilizing.");
+        add("item.vintagevibes.elongated_skull.desc", "The unusually long skull of some ghoulish creature. It is said to originate from a land inhabited by similarly lengthy arachnids.");
+        add("item.vintagevibes.ruby_slippers.desc", "This brilliant pair of shoes sparkle under the sun. Legends tell of a pair of these owned by a very famous witch.");
+        add("item.vintagevibes.crystal_eye.desc", "Older than time itself, and filled with multicolored veins. A faint breathing sound trickles forth from its pores.");
+
 
         this.addAdvancement("root", "Vintage Vibes");
         this.addAdvancementDesc("root", "Utilize new vintage themed decor and more");
