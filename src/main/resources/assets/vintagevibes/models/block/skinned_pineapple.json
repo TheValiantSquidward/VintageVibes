@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "vintagevibes:block/pineapple/skinned_pineapple_top",
+    "side": "vintagevibes:block/pineapple/skinned_pineapple"
+  }
+}

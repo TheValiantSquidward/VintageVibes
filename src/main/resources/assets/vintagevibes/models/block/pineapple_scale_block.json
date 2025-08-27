@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "vintagevibes:block/pineapple/pineapple_block"
+    "all": "vintagevibes:block/pineapple/pineapple"
   }
 }

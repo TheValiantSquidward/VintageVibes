@@ -41,7 +41,9 @@ public class VVItems {
     public static final RegistryObject<Item> TOPAZ = registerItem("topaz", () -> new Item(new Item.Properties()));
 
     // pineapple
-    public static final RegistryObject<Item> PINEAPPLE_SLICE = registerItem("pineapple_slice", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
+    public static final RegistryObject<Item> PINEAPPLE_SLICE = registerItem("pineapple_slice", () -> new Item(foodItem(VVFoodValues.PINEAPPLE_SLICE)));
+    public static final RegistryObject<Item> PINEAPPLE_CHUNKS = registerItem("pineapple_chunks", () -> new Item(foodItem(VVFoodValues.PINEAPPLE_CHUNKS)));
+
     public static final RegistryObject<Item> PINEAPPLE_SEEDS = registerItem("pineapple_seeds", () -> new ItemNameBlockItem(VVBlocks.PINEAPPLE_STEM.get(), new Item.Properties()) {
         @Override
         public void registerBlocks(Map<Block, Item> blockItemMap, Item item) {
@@ -54,6 +56,12 @@ public class VVItems {
             blockItemMap.remove(VVBlocks.PINEAPPLE_STEM.get());
         }
     });
+
+    public static final RegistryObject<Item> GRAPEFRUIT = registerItem("grapefruit", () -> new Item(foodItem(VVFoodValues.GRAPEFRUIT)));
+    public static final RegistryObject<Item> LEMON = registerItem("lemon", () -> new Item(foodItem(VVFoodValues.LEMON)));
+    public static final RegistryObject<Item> LIME = registerItem("lime", () -> new Item(foodItem(VVFoodValues.LIME)));
+    public static final RegistryObject<Item> MANGO = registerItem("mango", () -> new Item(foodItem(VVFoodValues.MANGO)));
+    public static final RegistryObject<Item> ORANGE = registerItem("orange", () -> new Item(foodItem(VVFoodValues.ORANGE)));
 
     // discs
     public static final RegistryObject<Item> VIBE_DISC = registerItemNoLang("vibe_disc", () -> new RecordItem(6, VVSoundEvents.VIBE_DISC, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1360));
@@ -88,7 +96,7 @@ public class VVItems {
     public static final RegistryObject<Item> METAL_COIN = registerItem("metal_coin", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> MUD_TOTEM = registerItem("mud_totem", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> OBSIDIAN_BLADE = registerItem("obsidian_blade", () -> new ObsidianBladeItem(VVItemTiers.OBSIDIAN, 3, -2.4F, new Item.Properties().rarity(VVItemProperties.TRINKET).stacksTo(1)));
-    public static final RegistryObject<Item> OBSIDIAN_TOOL = registerItem("obsidian_tool", () -> new ObsidianToolItem(1, -2.8F, VVItemTiers.OBSIDIAN, new Item.Properties().rarity(VVItemProperties.TRINKET).stacksTo(1)));
+    public static final RegistryObject<Item> OBSIDIAN_TOOL = registerItem("obsidian_tool", () -> new ObsidianToolItem(1.5F, -2.8F, VVItemTiers.OBSIDIAN, new Item.Properties().rarity(VVItemProperties.TRINKET).stacksTo(1)));
     public static final RegistryObject<Item> OBSIDIAN_MASK = registerItem("obsidian_mask", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> OCEANIC_PENDANT = registerItem("oceanic_pendant", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> ODD_COIN = registerItem("odd_coin", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
@@ -154,5 +162,9 @@ public class VVItems {
 
     private static RegistryObject<Item> registerSpawnEggItem(String name, RegistryObject type, int baseColor, int spotColor) {
         return registerItem(name + "_spawn_egg", () -> new ForgeSpawnEggItem(type, baseColor, spotColor, new Item.Properties()));
+    }
+
+    public static Item.Properties foodItem(FoodProperties food) {
+        return new Item.Properties().food(food);
     }
 }

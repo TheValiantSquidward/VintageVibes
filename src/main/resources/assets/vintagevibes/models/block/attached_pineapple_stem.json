@@ -2,7 +2,7 @@
 	"ambientocclusion": false,
 	"render_type": "minecraft:cutout",
 	"textures": {
-		"cross": "vintagevibes:block/pineapple_stem_stage3",
+		"cross": "vintagevibes:block/pineapple/pineapple_stem_stage6",
 		"particle": "#cross"
 	},
 	"elements": [

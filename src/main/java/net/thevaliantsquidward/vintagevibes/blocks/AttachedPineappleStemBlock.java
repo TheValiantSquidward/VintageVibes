@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.thevaliantsquidward.vintagevibes.registry.VVBlocks;
 import net.thevaliantsquidward.vintagevibes.registry.VVItems;
+import net.thevaliantsquidward.vintagevibes.registry.tags.VVBlockTags;
 
 public class AttachedPineappleStemBlock extends BushBlock {
 
@@ -29,6 +30,6 @@ public class AttachedPineappleStemBlock extends BushBlock {
 
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState state1, LevelAccessor level, BlockPos pos, BlockPos pos1) {
-        return !level.getBlockState(pos.above()).is(VVBlocks.PINEAPPLE.get()) ? VVBlocks.PINEAPPLE_STEM.get().defaultBlockState().setValue(PineappleStemBlock.AGE, 3) : super.updateShape(state, direction, state1, level, pos, pos1);
+        return !level.getBlockState(pos.above()).is(VVBlockTags.PINEAPPLES) ? VVBlocks.PINEAPPLE_STEM.get().defaultBlockState().setValue(PineappleStemBlock.AGE, 4) : super.updateShape(state, direction, state1, level, pos, pos1);
     }
 }

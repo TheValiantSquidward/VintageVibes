@@ -220,8 +220,18 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         );
 
         this.tag(BlockTags.MINEABLE_WITH_AXE).add(
+                GREEN_PINEAPPLE.get(),
+                GREEN_PINEAPPLE_SCALE_BLOCK.get(),
+                SPOTTED_PINEAPPLE.get(),
+                SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
                 PINEAPPLE.get(),
                 PINEAPPLE_SCALE_BLOCK.get(),
+                WAXED_GREEN_PINEAPPLE.get(),
+                WAXED_GREEN_PINEAPPLE_SCALE_BLOCK.get(),
+                WAXED_SPOTTED_PINEAPPLE.get(),
+                WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
+                WAXED_PINEAPPLE.get(),
+                WAXED_PINEAPPLE_SCALE_BLOCK.get(),
                 PINEAPPLE_STEM.get(),
                 ATTACHED_PINEAPPLE_STEM.get(),
                 OAK_PAPER_LANTERN.get(),
@@ -237,6 +247,11 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 BAMBOO_PAPER_LANTERN.get()
         );
 
+        this.tag(BlockTags.MINEABLE_WITH_HOE).add(
+                SKINNED_PINEAPPLE.get(),
+                PINEAPPLE_FLESH_BLOCK.get()
+        );
+
         this.tag(BlockTags.CROPS).add(
                 PINEAPPLE_STEM.get(),
                 ATTACHED_PINEAPPLE_STEM.get()
@@ -248,13 +263,31 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         );
 
         this.tag(BlockTags.SWORD_EFFICIENT).add(
+                GREEN_PINEAPPLE.get(),
+                GREEN_PINEAPPLE_SCALE_BLOCK.get(),
+                SPOTTED_PINEAPPLE.get(),
+                SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
                 PINEAPPLE.get(),
-                PINEAPPLE_SCALE_BLOCK.get()
+                PINEAPPLE_SCALE_BLOCK.get(),
+                WAXED_GREEN_PINEAPPLE.get(),
+                WAXED_GREEN_PINEAPPLE_SCALE_BLOCK.get(),
+                WAXED_SPOTTED_PINEAPPLE.get(),
+                WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
+                WAXED_PINEAPPLE.get(),
+                WAXED_PINEAPPLE_SCALE_BLOCK.get(),
+                SKINNED_PINEAPPLE.get(),
+                PINEAPPLE_FLESH_BLOCK.get()
         );
 
         this.tag(BlockTags.ENDERMAN_HOLDABLE).add(
+                GREEN_PINEAPPLE.get(),
+                GREEN_PINEAPPLE_SCALE_BLOCK.get(),
+                SPOTTED_PINEAPPLE.get(),
+                SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
                 PINEAPPLE.get(),
-                PINEAPPLE_SCALE_BLOCK.get()
+                PINEAPPLE_SCALE_BLOCK.get(),
+                SKINNED_PINEAPPLE.get(),
+                PINEAPPLE_FLESH_BLOCK.get()
         );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL);
@@ -326,6 +359,22 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 .addTag(BlockTags.MINEABLE_WITH_AXE)
                 .addTag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .addTag(BlockTags.MINEABLE_WITH_HOE);
+
+        this.tag(VVBlockTags.PINEAPPLES).add(
+                GREEN_PINEAPPLE.get(),
+                SPOTTED_PINEAPPLE.get(),
+                PINEAPPLE.get(),
+                GREEN_PINEAPPLE_SCALE_BLOCK.get(),
+                SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
+                PINEAPPLE_SCALE_BLOCK.get(),
+                SKINNED_PINEAPPLE.get(),
+                PINEAPPLE_FLESH_BLOCK.get()
+        );
+
+        this.tag(VVBlockTags.SKINNED_PINEAPPLES).add(
+                SKINNED_PINEAPPLE.get(),
+                PINEAPPLE_FLESH_BLOCK.get()
+        );
 
         // vintage vibes forge tags
         this.tag(VVBlockTags.ORES_BEJEWELED).addTag(VVBlockTags.BEJEWELED_ORES);

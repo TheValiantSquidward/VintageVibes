@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public enum VVItemTiers implements Tier {
 
-    OBSIDIAN(2, 0, 5.5F, 2, 16, ()-> Ingredient.of(Tags.Items.OBSIDIAN));
+    OBSIDIAN(2, 0, 1.5F, 2F, 8, ()-> Ingredient.of(Tags.Items.OBSIDIAN));
 
     private final int level;
     private final int durability;

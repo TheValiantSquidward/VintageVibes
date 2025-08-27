@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-04T13:05:41.010185	vintagevibes Block Tags
+// 1.20.1	2025-08-27T10:54:31.1393325	vintagevibes Block Tags
 b7e27c556735dd185734435b7653ea379fca3e54 data/forge/tags/blocks/ores.json
 467c8b3f765caa03671a01f5874ee98bca0359f5 data/forge/tags/blocks/ores/bejeweled.json
 584d2832c97d1d231120b789e05064cdad5f9e79 data/forge/tags/blocks/ores_in_ground/deepslate.json
@@ -24,9 +24,10 @@ c93a1b9ba40248482d458cb038ed545472422c79 data/forge/tags/blocks/storage_blocks/p
 6dc78762339d5993cca985bbdad71f80e68845b8 data/forge/tags/blocks/storage_blocks/topaz.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/beacon_base_blocks.json
 bde3a3936c9fe24bf67406dfaf8469a2682126ec data/minecraft/tags/blocks/crops.json
-2068a40d4f1cef349a42752cbf100d68a4c57fb6 data/minecraft/tags/blocks/enderman_holdable.json
+b6969074aad01c16ce860c11bccfdb1276acc87a data/minecraft/tags/blocks/enderman_holdable.json
 bde3a3936c9fe24bf67406dfaf8469a2682126ec data/minecraft/tags/blocks/maintains_farmland.json
-634478027732e3881b286fe1837aeeb21c5cd9e2 data/minecraft/tags/blocks/mineable/axe.json
+5be9f36d6a0cab4de27e7bf9d5cbb871e56f0b76 data/minecraft/tags/blocks/mineable/axe.json
+f167b256bddb0338be0900cf67bd00e7a9ca42ae data/minecraft/tags/blocks/mineable/hoe.json
 028c4cc2681a9964a3fa3f547790d081a7d84279 data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
 f13a8b8d758adeb7fc0b2cf5404db60a06ec1263 data/minecraft/tags/blocks/needs_iron_tool.json
@@ -34,8 +35,10 @@ f13a8b8d758adeb7fc0b2cf5404db60a06ec1263 data/minecraft/tags/blocks/needs_iron_t
 8c4a57a37f211efe0e145bd775577183c9b70e5d data/minecraft/tags/blocks/slabs.json
 d38b0b08619a04083301b8e1897aa24b6f318559 data/minecraft/tags/blocks/small_flowers.json
 52936281cb5d459380cba7530ebc6b4902d75660 data/minecraft/tags/blocks/stairs.json
-2068a40d4f1cef349a42752cbf100d68a4c57fb6 data/minecraft/tags/blocks/sword_efficient.json
+6cf419f7a7a75d7f679367d9532ce825b87720a9 data/minecraft/tags/blocks/sword_efficient.json
 95ed6ac154710b860c3ed9e9b2d3610886920f32 data/minecraft/tags/blocks/tall_flowers.json
 f7c9c95e0d4eab7aaa03b6c2c32712b0a7bd9054 data/minecraft/tags/blocks/walls.json
 b7e27c556735dd185734435b7653ea379fca3e54 data/vintagevibes/tags/blocks/bejeweled_ores.json
 984a835f12c583514b244703d6bad1afa79b3402 data/vintagevibes/tags/blocks/mineable/obsidian_tool.json
+c60715d3ab5ecb85f28f8079a55fa1bd29819792 data/vintagevibes/tags/blocks/pineapples.json
+f167b256bddb0338be0900cf67bd00e7a9ca42ae data/vintagevibes/tags/blocks/skinned_pineapples.json

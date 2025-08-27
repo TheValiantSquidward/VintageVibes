@@ -413,9 +413,19 @@ public class VVRecipeProvider extends RecipeProvider implements IConditionBuilde
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, EMERALD_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', Tags.Items.GEMS_EMERALD).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_emerald", has(Tags.Items.GEMS_EMERALD)).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, QUARTZ_STAND.get(), 1).define('#', ItemTags.WOODEN_SLABS).define('X', Tags.Items.GEMS_QUARTZ).pattern(" X ").pattern(" X ").pattern(" # ").unlockedBy("has_quartz", has(Tags.Items.GEMS_QUARTZ)).save(consumer);
 
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, GREEN_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', GREEN_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_green_pineapple", has(GREEN_PINEAPPLE.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SPOTTED_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', SPOTTED_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_spotted_pineapple", has(SPOTTED_PINEAPPLE.get())).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_pineapple", has(PINEAPPLE.get())).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE.get(), 1).define('#', VVItems.PINEAPPLE_SLICE.get()).pattern("###").pattern("###").pattern("###").unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);
-        ShapelessRecipeBuilder.shapeless(MISC, VVItems.PINEAPPLE_SEEDS.get()).requires(VVItems.PINEAPPLE_SLICE.get()).unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);
+
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, WAXED_GREEN_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', WAXED_GREEN_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_green_pineapple", has(GREEN_PINEAPPLE.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', WAXED_SPOTTED_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_spotted_pineapple", has(SPOTTED_PINEAPPLE.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, WAXED_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', WAXED_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_pineapple", has(PINEAPPLE.get())).save(consumer);
+
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE_FLESH_BLOCK.get(), 3).define('#', SKINNED_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_pineapple", has(PINEAPPLE.get())).save(consumer);
+
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SKINNED_PINEAPPLE.get(), 1).define('#', VVItems.PINEAPPLE_SLICE.get()).pattern("###").pattern("###").pattern("###").unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(MISC, VVItems.PINEAPPLE_CHUNKS.get(), 2).requires(VVItems.PINEAPPLE_SLICE.get()).unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(MISC, VVItems.PINEAPPLE_SEEDS.get()).requires(VVItems.PINEAPPLE_CHUNKS.get()).unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);
 
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, HONEYCOMB_BEJEWELED_LAMP.get(), 1).define('#', Items.HONEYCOMB).define('X', VVItemTags.GEMS).define('Y', Blocks.GLOWSTONE).pattern("#X#").pattern("XYX").pattern("#X#").unlockedBy("has_gems", has(VVItemTags.GEMS)).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, FLORAL_BEJEWELED_LAMP.get(), 1).define('#', ItemTags.FLOWERS).define('X', VVItemTags.GEMS).define('Y', Blocks.GLOWSTONE).pattern("#X#").pattern("XYX").pattern("#X#").unlockedBy("has_gems", has(VVItemTags.GEMS)).save(consumer);

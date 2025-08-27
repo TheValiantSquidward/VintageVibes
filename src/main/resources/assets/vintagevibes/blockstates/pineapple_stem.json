@@ -11,6 +11,12 @@
     },
     "age=3": {
       "model": "vintagevibes:block/pineapple_stem_stage3"
+    },
+    "age=4": {
+      "model": "vintagevibes:block/pineapple_stem_stage4"
+    },
+    "age=5": {
+      "model": "vintagevibes:block/pineapple_stem_stage5"
     }
   }
 }

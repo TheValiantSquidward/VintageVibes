@@ -23,6 +23,16 @@ public class VVItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        item(GRAPEFRUIT);
+        item(LEMON);
+        item(LIME);
+        item(MANGO);
+        item(ORANGE);
+
+        item(PINEAPPLE_SLICE);
+        item(PINEAPPLE_CHUNKS);
+        item(PINEAPPLE_SEEDS);
+
         item(CELESTIAL_MASK);
         item(DEITY_MASK);
         item(FESTIVE_MASK);

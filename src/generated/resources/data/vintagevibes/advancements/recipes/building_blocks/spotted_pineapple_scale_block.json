@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spotted_pineapple": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:spotted_pineapple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vintagevibes:spotted_pineapple_scale_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_spotted_pineapple",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vintagevibes:spotted_pineapple_scale_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

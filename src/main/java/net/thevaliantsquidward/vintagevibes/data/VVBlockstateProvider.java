@@ -296,6 +296,8 @@ public class VVBlockstateProvider extends BlockStateProvider {
 
         this.pottedPlant(TORCH_GINGER, POTTED_TORCH_GINGER);
 
+        this.pottedPlant(PINEAPPLE_CROWN, POTTED_PINEAPPLE_CROWN);
+
         this.tallPlant(TALL_PINK_HIBISCUS);
         this.tallPlant(TALL_PURPLE_HIBISCUS);
         this.tallPlant(TALL_ORANGE_HIBISCUS);

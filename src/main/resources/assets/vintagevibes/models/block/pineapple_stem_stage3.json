@@ -2,6 +2,6 @@
   "parent": "vintagevibes:block/crop_cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "vintagevibes:block/pineapple_stem_stage2"
+    "cross": "vintagevibes:block/pineapple/pineapple_stem_stage3"
   }
 }

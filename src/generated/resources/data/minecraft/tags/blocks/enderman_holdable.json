@@ -1,6 +1,12 @@
 {
   "values": [
+    "vintagevibes:green_pineapple",
+    "vintagevibes:green_pineapple_scale_block",
+    "vintagevibes:spotted_pineapple",
+    "vintagevibes:spotted_pineapple_scale_block",
     "vintagevibes:pineapple",
-    "vintagevibes:pineapple_scale_block"
+    "vintagevibes:pineapple_scale_block",
+    "vintagevibes:skinned_pineapple",
+    "vintagevibes:pineapple_flesh_block"
   ]
 }

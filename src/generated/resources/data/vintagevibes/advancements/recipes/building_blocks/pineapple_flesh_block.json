@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pineapple_slice": {
+    "has_pineapple": {
       "conditions": {
         "items": [
           {
             "items": [
-              "vintagevibes:pineapple_slice"
+              "vintagevibes:pineapple"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "vintagevibes:pineapple"
+        "recipe": "vintagevibes:pineapple_flesh_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pineapple_slice",
+      "has_pineapple",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "vintagevibes:pineapple"
+      "vintagevibes:pineapple_flesh_block"
     ]
   },
   "sends_telemetry_event": false

@@ -1,6 +1,7 @@
 package net.thevaliantsquidward.vintagevibes.blocks;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -16,15 +17,18 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.ForgeHooks;
+import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.common.PlantType;
 import net.thevaliantsquidward.vintagevibes.registry.VVBlocks;
 import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 
 public class PineappleStemBlock extends BushBlock implements BonemealableBlock {
 
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
+    public static final IntegerProperty AGE = BlockStateProperties.AGE_5;
 
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D),
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D),
@@ -43,13 +47,13 @@ public class PineappleStemBlock extends BushBlock implements BonemealableBlock {
             float growthSpeed = getGrowthSpeed(this, level, pos);
             if (ForgeHooks.onCropsGrowPre(level, pos, state, random.nextInt((int) (25.0F / growthSpeed) + 1) == 0)) {
                 int age = state.getValue(AGE);
-                if (age < 3) {
+                if (age < 5) {
                     level.setBlock(pos, state.setValue(AGE, age + 1), 2);
                 } else {
                     BlockPos blockpos = pos.above();
                     BlockPos blockpos1 = pos.above(2);
                     if (level.isEmptyBlock(blockpos) && level.isEmptyBlock(blockpos1)) {
-                        level.setBlockAndUpdate(blockpos, VVBlocks.PINEAPPLE.get().defaultBlockState());
+                        level.setBlockAndUpdate(blockpos, VVBlocks.GREEN_PINEAPPLE.get().defaultBlockState());
                         level.setBlockAndUpdate(blockpos1, VVBlocks.PINEAPPLE_CROWN.get().defaultBlockState());
                         level.setBlockAndUpdate(pos, VVBlocks.ATTACHED_PINEAPPLE_STEM.get().defaultBlockState());
                     }
@@ -84,7 +88,7 @@ public class PineappleStemBlock extends BushBlock implements BonemealableBlock {
             for (int j = -1; j <= 1; ++j) {
                 float f1 = 0.0F;
                 BlockState blockstate = blockGetter.getBlockState(blockpos.offset(i, 0, j));
-                if (blockstate.canSustainPlant(blockGetter, blockpos.offset(i, 0, j), net.minecraft.core.Direction.UP, (net.minecraftforge.common.IPlantable) block)) {
+                if (blockstate.canSustainPlant(blockGetter, blockpos.offset(i, 0, j), Direction.UP, (IPlantable) block)) {
                     f1 = 1.0F;
                     if (blockstate.isFertile(blockGetter, pos.offset(i, 0, j))) {
                         f1 = 3.0F;
@@ -125,7 +129,7 @@ public class PineappleStemBlock extends BushBlock implements BonemealableBlock {
 
     @Override
     public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state, boolean valid) {
-        return state.getValue(AGE) != 3;
+        return state.getValue(AGE) != 5;
     }
 
     @Override
@@ -135,10 +139,10 @@ public class PineappleStemBlock extends BushBlock implements BonemealableBlock {
 
     @Override
     public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
-        int i = Math.min(3, state.getValue(AGE) + Mth.nextInt(level.random, 1, 2));
+        int i = Math.min(5, state.getValue(AGE) + Mth.nextInt(level.random, 1, 2));
         BlockState blockstate = state.setValue(AGE, i);
         level.setBlock(pos, blockstate, 2);
-        if (i == 3) {
+        if (i == 5) {
             blockstate.randomTick(level, pos, level.random);
         }
     }

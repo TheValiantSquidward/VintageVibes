@@ -21,6 +21,7 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.thevaliantsquidward.vintagevibes.registry.VVBlocks;
+import net.thevaliantsquidward.vintagevibes.registry.tags.VVBlockTags;
 
 import javax.annotation.Nullable;
 
@@ -35,8 +36,8 @@ public class PineappleCrownBlock extends BushBlock implements SimpleWaterloggedB
     }
 
     @Override
-    protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return pState.is(BlockTags.DIRT) || pState.is(Blocks.FARMLAND) || pState.is(VVBlocks.PINEAPPLE.get());
+    protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
+        return state.is(BlockTags.DIRT) || state.is(Blocks.FARMLAND) || state.is(VVBlockTags.PINEAPPLES);
     }
 
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {

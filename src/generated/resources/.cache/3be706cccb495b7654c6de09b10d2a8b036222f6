@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-07T13:18:05.6002516	Item Models: vintagevibes
+// 1.20.1	2025-08-27T11:10:13.4459529	Item Models: vintagevibes
 7dc44ffc8b87b94994a63dba59a07a0625a2195a assets/vintagevibes/models/item/amberized_critter.json
 214e8a20ab7932bb572c53a16cecc53a72f75c52 assets/vintagevibes/models/item/ancient_figurine.json
 61b37186ec1a2e86345438aa15eea6129535b2df assets/vintagevibes/models/item/antique_key.json
@@ -34,9 +34,13 @@ aecce6583f33b671a2835c52afafe9d54a37cac8 assets/vintagevibes/models/item/fragile
 0fc755b0121cc1ac2a0be5f0579de00864025a5a assets/vintagevibes/models/item/frond_mask.json
 f369b57fe4e8f486d261c5aefef49321ca2ab1bc assets/vintagevibes/models/item/glimmering_skull.json
 337137a36100d19fad8fb0109dd867bf2db64ab9 assets/vintagevibes/models/item/golden_symbol.json
+12da4b91f881e8812d097b4937ba25623863530c assets/vintagevibes/models/item/grapefruit.json
 4121b36a6bb2bf18aab814dc34afbf2b71e5f187 assets/vintagevibes/models/item/jade_figurine.json
+2a9b20aa76ea78d981256a29f2b6a43ddd45fd87 assets/vintagevibes/models/item/lemon.json
+b100ef05b568d8a2f86ff3209ed7441ce09d21f4 assets/vintagevibes/models/item/lime.json
 fefa4d9b9fccb37f6b99047db8fe181539cf0886 assets/vintagevibes/models/item/luxurious_bowl.json
 c9f0ca5e0a53392dad076e439a42ef4fd6cd4863 assets/vintagevibes/models/item/luxurious_masonry.json
+7a2be439a83844141c3a6bd940edf7dda87c91d8 assets/vintagevibes/models/item/mango.json
 f55ee2aeb9320aba96325a65ad6232bb60b3f477 assets/vintagevibes/models/item/marble_cross.json
 f21fbe2d87eef6d735d781213e234d34923f5e02 assets/vintagevibes/models/item/merchants_amulet.json
 d723a0b708fd71ee90b6670226dcdf530f2d204c assets/vintagevibes/models/item/metal_coin.json
@@ -51,12 +55,16 @@ f69f99de75a915eaa5590d8fd7eb30392ef055a8 assets/vintagevibes/models/item/obsidia
 24c62499ecfe4d94d0084d2106abab8e9ae7b0c8 assets/vintagevibes/models/item/old_token.json
 514b083e859d5345b82b7ead6463513b6719d03c assets/vintagevibes/models/item/olive_porcelain.json
 d4fc026442198c00d5d4676aa996d1cca3f02a88 assets/vintagevibes/models/item/onyx_figurine.json
+4afc67040e05d552890973688096731791b3e7a6 assets/vintagevibes/models/item/orange.json
 83310024f494294bb37ede3cb4f6ee1d0f59c71c assets/vintagevibes/models/item/osseous_axe.json
 3f3faa4aee7107b32ccc53af79dc353d44f31c97 assets/vintagevibes/models/item/osseous_pickaxe.json
 ac6abc3c768572d4fe51be3cfc129e94b508af31 assets/vintagevibes/models/item/osseous_shovel.json
 8d160bca86c7df6cda3f4d00de81468d50697c47 assets/vintagevibes/models/item/osseous_sword.json
 6ef44c0b8ae897d5dc575ebd6624a14dadffad78 assets/vintagevibes/models/item/pearlescent_face.json
 6bdb53396f91aa1f076296581c2b6388cbbffd73 assets/vintagevibes/models/item/petrified_mask.json
+500bae4cee45a0dc19267fb00d08cca1ccd872cb assets/vintagevibes/models/item/pineapple_chunks.json
+c97c50089e2ebd2722429c4e6ded95e3bbc76853 assets/vintagevibes/models/item/pineapple_seeds.json
+157d54bcad5bf3e3c9dc786e6eaa4f598115e80f assets/vintagevibes/models/item/pineapple_slice.json
 7d59f06da21c4b8921e51ab5497c5a82476e8fc0 assets/vintagevibes/models/item/pocket_mirror.json
 84fbed6fd65a7ab4e71ee42ee02a875900756903 assets/vintagevibes/models/item/priceless_coin.json
 ce9f8bcf4d00c3e639bf50d375cc0dae6b64fcaa assets/vintagevibes/models/item/relucent_grail.json

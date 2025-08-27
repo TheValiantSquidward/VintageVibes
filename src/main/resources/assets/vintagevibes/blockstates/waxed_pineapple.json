@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "vintagevibes:block/pineapple"
+    },
+    "facing=down": {
+      "model": "vintagevibes:block/pineapple",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/pineapple",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/pineapple",
+      "x": 90,
+      "y": 180
+    },
+    "facing=east": {
+      "model": "vintagevibes:block/pineapple",
+      "x": 90,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/pineapple",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

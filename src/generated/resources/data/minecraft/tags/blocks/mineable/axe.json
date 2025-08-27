@@ -1,7 +1,17 @@
 {
   "values": [
+    "vintagevibes:green_pineapple",
+    "vintagevibes:green_pineapple_scale_block",
+    "vintagevibes:spotted_pineapple",
+    "vintagevibes:spotted_pineapple_scale_block",
     "vintagevibes:pineapple",
     "vintagevibes:pineapple_scale_block",
+    "vintagevibes:waxed_green_pineapple",
+    "vintagevibes:waxed_green_pineapple_scale_block",
+    "vintagevibes:waxed_spotted_pineapple",
+    "vintagevibes:waxed_spotted_pineapple_scale_block",
+    "vintagevibes:waxed_pineapple",
+    "vintagevibes:waxed_pineapple_scale_block",
     "vintagevibes:pineapple_stem",
     "vintagevibes:attached_pineapple_stem",
     "vintagevibes:oak_paper_lantern",

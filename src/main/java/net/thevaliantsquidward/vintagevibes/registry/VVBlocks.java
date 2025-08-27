@@ -15,6 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.blocks.*;
+import net.thevaliantsquidward.vintagevibes.blocks.interfaces.RipeningPineapple;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -372,9 +373,26 @@ public class VVBlocks {
     public static final RegistryObject<Block> RED_CARVED_SANDSTONE_MESSAGE = registerTooltipBlock("red_carved_sandstone_message", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
 
     // pineapple
-    public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
-    public static final RegistryObject<Block> PINEAPPLE_SCALE_BLOCK = registerBlock("pineapple_scale_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> GREEN_PINEAPPLE = registerBlock("green_pineapple", () -> new PineappleBlock(RipeningPineapple.RipenState.GREEN, PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> GREEN_PINEAPPLE_SCALE_BLOCK = registerBlock("green_pineapple_scale_block", () -> new PineappleBlock(RipeningPineapple.RipenState.GREEN, PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> SPOTTED_PINEAPPLE = registerBlock("spotted_pineapple", () -> new PineappleBlock(RipeningPineapple.RipenState.SPOTTED, PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> SPOTTED_PINEAPPLE_SCALE_BLOCK = registerBlock("spotted_pineapple_scale_block", () -> new PineappleBlock(RipeningPineapple.RipenState.SPOTTED, PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple", () -> new PineappleBlock(RipeningPineapple.RipenState.YELLOW, PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> PINEAPPLE_SCALE_BLOCK = registerBlock("pineapple_scale_block", () -> new PineappleBlock(RipeningPineapple.RipenState.YELLOW, PINEAPPLE_PROPERTIES));
+
+    // evil waxed variants, could be a blockstate but this makes building easier ig
+    public static final RegistryObject<Block> WAXED_GREEN_PINEAPPLE = registerBlock("waxed_green_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> WAXED_GREEN_PINEAPPLE_SCALE_BLOCK = registerBlock("waxed_green_pineapple_scale_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> WAXED_SPOTTED_PINEAPPLE = registerBlock("waxed_spotted_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK = registerBlock("waxed_spotted_pineapple_scale_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> WAXED_PINEAPPLE = registerBlock("waxed_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> WAXED_PINEAPPLE_SCALE_BLOCK = registerBlock("waxed_pineapple_scale_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+
+    public static final RegistryObject<Block> SKINNED_PINEAPPLE = registerBlock("skinned_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> PINEAPPLE_FLESH_BLOCK = registerBlock("pineapple_flesh_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+
     public static final RegistryObject<Block> PINEAPPLE_CROWN = registerBlock("pineapple_crown", () -> new PineappleCrownBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak().sound(SoundType.SMALL_DRIPLEAF).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> POTTED_PINEAPPLE_CROWN = registerBlockWithoutItem("potted_pineapple_crown", () -> new FlowerPotBlock(VVBlocks.PINEAPPLE_CROWN.get(), registerFlowerPot()));
 
     public static final RegistryObject<Block> PINEAPPLE_STEM = registerBlockWithoutItem("pineapple_stem", () -> new PineappleStemBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> ATTACHED_PINEAPPLE_STEM = registerBlockWithoutItem("attached_pineapple_stem", () -> new AttachedPineappleStemBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));

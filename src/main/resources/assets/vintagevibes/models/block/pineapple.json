@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "vintagevibes:block/pineapple/pineapple_block_top_bottom",
-    "side": "vintagevibes:block/pineapple/pineapple_block"
+    "end": "vintagevibes:block/pineapple/pineapple_top",
+    "side": "vintagevibes:block/pineapple/pineapple"
   }
 }

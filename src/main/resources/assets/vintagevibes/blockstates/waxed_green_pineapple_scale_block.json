@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "vintagevibes:block/green_pineapple_scale_block"
+    },
+    "facing=down": {
+      "model": "vintagevibes:block/green_pineapple_scale_block",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "vintagevibes:block/green_pineapple_scale_block",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "vintagevibes:block/green_pineapple_scale_block",
+      "x": 90,
+      "y": 180
+    },
+    "facing=east": {
+      "model": "vintagevibes:block/green_pineapple_scale_block",
+      "x": 90,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "vintagevibes:block/green_pineapple_scale_block",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
