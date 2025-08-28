@@ -17,6 +17,8 @@ public class VVBlockLootTableProvider extends BlockLootSubProvider {
 
     private final Set<Block> knownBlocks = new HashSet<>();
 
+    private static final float[] LEAVES_SAPLING_CHANCES = new float[] {0.05F, 0.0625F, 0.083333336F, 0.1F};
+
     public VVBlockLootTableProvider() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
@@ -29,6 +31,26 @@ public class VVBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+
+        this.add(GRAPEFRUIT_LEAVES.get(), (block) -> createLeavesDrops(block, GRAPEFRUIT_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FLOWERING_GRAPEFRUIT_LEAVES.get(), (block) -> createLeavesDrops(block, GRAPEFRUIT_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FRUITFUL_GRAPEFRUIT_LEAVES.get(), (block) -> createLeavesDrops(block, GRAPEFRUIT_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+
+        this.add(LEMON_LEAVES.get(), (block) -> createLeavesDrops(block, LEMON_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FLOWERING_LEMON_LEAVES.get(), (block) -> createLeavesDrops(block, LEMON_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FRUITFUL_LEMON_LEAVES.get(), (block) -> createLeavesDrops(block, LEMON_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+
+        this.add(LIME_LEAVES.get(), (block) -> createLeavesDrops(block, LIME_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FLOWERING_LIME_LEAVES.get(), (block) -> createLeavesDrops(block, LIME_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FRUITFUL_LIME_LEAVES.get(), (block) -> createLeavesDrops(block, LIME_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+
+        this.add(MANGO_LEAVES.get(), (block) -> createLeavesDrops(block, LIME_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FLOWERING_MANGO_LEAVES.get(), (block) -> createLeavesDrops(block, LIME_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FRUITFUL_MANGO_LEAVES.get(), (block) -> createLeavesDrops(block, LIME_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+
+        this.add(ORANGE_LEAVES.get(), (block) -> createLeavesDrops(block, ORANGE_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FLOWERING_ORANGE_LEAVES.get(), (block) -> createLeavesDrops(block, ORANGE_SAPLING.get(), LEAVES_SAPLING_CHANCES));
+        this.add(FRUITFUL_ORANGE_LEAVES.get(), (block) -> createLeavesDrops(block, ORANGE_SAPLING.get(), LEAVES_SAPLING_CHANCES));
 
         this.dropSelf(PINK_HIBISCUS.get());
         this.dropPottedContents(POTTED_PINK_HIBISCUS.get());

@@ -390,6 +390,16 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 PINEAPPLE_FLESH_BLOCK.get()
         );
 
+        this.tag(VVBlockTags.FLOWERING_LEAVES).add(
+                FLOWERING_GRAPEFRUIT_LEAVES.get(),
+                FLOWERING_LEMON_LEAVES.get(),
+                FLOWERING_LIME_LEAVES.get(),
+                FLOWERING_MANGO_LEAVES.get(),
+                FLOWERING_ORANGE_LEAVES.get()
+        );
+
+        this.tag(VVBlockTags.BEES_POLLINATE).addTag(VVBlockTags.FLOWERING_LEAVES);
+
         // vintage vibes forge tags
         this.tag(VVBlockTags.ORES_BEJEWELED).addTag(VVBlockTags.BEJEWELED_ORES);
 

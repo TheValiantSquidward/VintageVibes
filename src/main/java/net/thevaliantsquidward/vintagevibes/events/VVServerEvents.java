@@ -2,21 +2,23 @@ package net.thevaliantsquidward.vintagevibes.events;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.SectionPos;
-import net.minecraft.network.protocol.game.ClientboundSoundPacket;
 import net.minecraft.server.TickTask;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.TicketType;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.animal.Bee;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -60,8 +62,6 @@ public class VVServerEvents {
                         player.teleportTo(spawn, spawnpoint.x(), spawnpoint.y(), spawnpoint.z(), 5.0F, 5.0F);
                     });
                     entity.level().getServer().tell(teleport);
-                    // temporary solution, could interfere with other mods
-                    entity.level().broadcastEntityEvent(entity, (byte) 117);
                     VVCriterion.USE_RUBY_SLIPPER.trigger(player);
                 }
                 event.setCanceled(true);
