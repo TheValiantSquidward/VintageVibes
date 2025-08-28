@@ -30,6 +30,6 @@ public class AttachedPineappleStemBlock extends BushBlock {
 
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState state1, LevelAccessor level, BlockPos pos, BlockPos pos1) {
-        return !level.getBlockState(pos.above()).is(VVBlockTags.PINEAPPLES) ? VVBlocks.PINEAPPLE_STEM.get().defaultBlockState().setValue(PineappleStemBlock.AGE, 4) : super.updateShape(state, direction, state1, level, pos, pos1);
+        return !level.getBlockState(pos.above()).is(VVBlockTags.PINEAPPLES) ? VVBlocks.PINEAPPLE_STEM.get().defaultBlockState().setValue(PineappleStemBlock.PINEAPPLE_AGE, 4) : super.updateShape(state, direction, state1, level, pos, pos1);
     }
 }

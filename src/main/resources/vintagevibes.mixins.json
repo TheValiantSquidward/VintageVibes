@@ -5,9 +5,10 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "vintagevibes.refmap.json",
   "mixins": [
+    "BeeMixin",
+    "BeeMixin$BeePollinateGoalMixin"
   ],
   "client": [
-    "ClientPacketListenerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

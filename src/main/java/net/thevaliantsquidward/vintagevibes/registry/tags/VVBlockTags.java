@@ -13,6 +13,10 @@ public class VVBlockTags {
     public static final TagKey<Block> PINEAPPLES = modBlockTag("pineapples");
     public static final TagKey<Block> SKINNED_PINEAPPLES = modBlockTag("skinned_pineapples");
 
+    public static final TagKey<Block> FLOWERING_LEAVES = modBlockTag("flowering_leaves");
+
+    public static final TagKey<Block> BEES_POLLINATE = modBlockTag("bees_pollinate");
+
     public static final TagKey<Block> ORES_BEJEWELED = forgeBlockTag("ores/bejeweled");
 
     public static final TagKey<Block> STORAGE_BLOCKS_AMBER  = forgeBlockTag("storage_blocks/amber");
