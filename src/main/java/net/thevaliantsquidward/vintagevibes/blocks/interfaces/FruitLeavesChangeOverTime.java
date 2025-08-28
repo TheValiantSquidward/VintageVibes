@@ -13,12 +13,6 @@ public interface FruitLeavesChangeOverTime<T extends Enum<T>> {
 
     default void onRandomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (random.nextFloat() < 0.05688889F) {
-            this.applyChangeOverTime(state, level, pos, random);
-        }
-    }
-
-    default void applyChangeOverTime(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        if (random.nextFloat() < 1) {
             this.getNext(state).ifPresent((state1) -> level.setBlockAndUpdate(pos, state1));
         }
     }
