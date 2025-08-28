@@ -15,7 +15,8 @@ public interface RipeningPineapple extends PineappleChangeOverTime<RipeningPinea
     Supplier<BiMap<Block, Block>> NEXT_BY_BLOCK = Suppliers.memoize(() ->
             ImmutableBiMap.<Block, Block>builder()
                     .put(VVBlocks.GREEN_PINEAPPLE.get(), VVBlocks.SPOTTED_PINEAPPLE.get())
-                    .put(VVBlocks.SPOTTED_PINEAPPLE.get(), VVBlocks.PINEAPPLE.get()).build()
+                    .put(VVBlocks.SPOTTED_PINEAPPLE.get(), VVBlocks.PINEAPPLE.get())
+                    .build()
     );
 
     static Optional<Block> getNext(Block block) {
