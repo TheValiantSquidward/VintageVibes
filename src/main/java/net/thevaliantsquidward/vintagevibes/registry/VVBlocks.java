@@ -35,6 +35,7 @@ public class VVBlocks {
     public static final BlockBehaviour.Properties CALCITE_BLOCK_PROPERTIES = BlockBehaviour.Properties.of().strength(0.75F).requiresCorrectToolForDrops().sound(SoundType.CALCITE).instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_WHITE);
     public static final BlockBehaviour.Properties CARVED_SANDSTONE_PROPERTIES = BlockBehaviour.Properties.of().mapColor(MapColor.SAND).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(0.8F);
     public static final BlockBehaviour.Properties PINEAPPLE_PROPERTIES = BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).instrument(NoteBlockInstrument.BANJO).sound(SoundType.WOOD).strength(1.5F, 2.0F);
+    public static final BlockBehaviour.Properties PINEAPPLE_FLESH_PROPERTIES = BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).instrument(NoteBlockInstrument.BANJO).sound(SoundType.CORAL_BLOCK).strength(1.5F, 2.0F);
     public static final BlockBehaviour.Properties BEJEWELED_LAMP_PROPERTIES = BlockBehaviour.Properties.of().strength(1.5F, 2.0F).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).instrument(NoteBlockInstrument.HARP).lightLevel((state) -> 15);
 
     // bejeweled ore
@@ -383,8 +384,8 @@ public class VVBlocks {
     public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple", () -> new PineappleBlock(RipeningPineapple.RipenState.YELLOW, PINEAPPLE_PROPERTIES));
     public static final RegistryObject<Block> PINEAPPLE_SCALE_BLOCK = registerBlock("pineapple_scale_block", () -> new PineappleBlock(RipeningPineapple.RipenState.YELLOW, PINEAPPLE_PROPERTIES));
 
-    public static final RegistryObject<Block> SKINNED_PINEAPPLE = registerBlock("skinned_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
-    public static final RegistryObject<Block> PINEAPPLE_FLESH_BLOCK = registerBlock("pineapple_flesh_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
+    public static final RegistryObject<Block> SKINNED_PINEAPPLE = registerBlock("skinned_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_FLESH_PROPERTIES));
+    public static final RegistryObject<Block> PINEAPPLE_FLESH_BLOCK = registerBlock("pineapple_flesh_block", () -> new VVDirectionalBlock(PINEAPPLE_FLESH_PROPERTIES));
 
     public static final RegistryObject<Block> PINEAPPLE_CROWN = registerBlock("pineapple_crown", () -> new PineappleCrownBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak().sound(SoundType.SMALL_DRIPLEAF).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission()));
     public static final RegistryObject<Block> POTTED_PINEAPPLE_CROWN = registerBlockWithoutItem("potted_pineapple_crown", () -> new FlowerPotBlock(VVBlocks.PINEAPPLE_CROWN.get(), registerFlowerPot()));
