@@ -29,6 +29,8 @@ public class VVItemTagProvider extends ItemTagsProvider {
         this.copy(BlockTags.WALLS, ItemTags.WALLS);
         this.copy(BlockTags.SMALL_FLOWERS, ItemTags.SMALL_FLOWERS);
         this.copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
+        this.copy(BlockTags.LEAVES, ItemTags.LEAVES);
+        this.copy(BlockTags.SAPLINGS, ItemTags.SAPLINGS);
 
         this.tag(VVItemTags.GEMS_AMBER).add(
                 AMBER.get()

@@ -226,12 +226,6 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
                 PINEAPPLE.get(),
                 PINEAPPLE_SCALE_BLOCK.get(),
-                WAXED_GREEN_PINEAPPLE.get(),
-                WAXED_GREEN_PINEAPPLE_SCALE_BLOCK.get(),
-                WAXED_SPOTTED_PINEAPPLE.get(),
-                WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
-                WAXED_PINEAPPLE.get(),
-                WAXED_PINEAPPLE_SCALE_BLOCK.get(),
                 PINEAPPLE_STEM.get(),
                 ATTACHED_PINEAPPLE_STEM.get(),
                 OAK_PAPER_LANTERN.get(),
@@ -269,12 +263,6 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
                 PINEAPPLE.get(),
                 PINEAPPLE_SCALE_BLOCK.get(),
-                WAXED_GREEN_PINEAPPLE.get(),
-                WAXED_GREEN_PINEAPPLE_SCALE_BLOCK.get(),
-                WAXED_SPOTTED_PINEAPPLE.get(),
-                WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK.get(),
-                WAXED_PINEAPPLE.get(),
-                WAXED_PINEAPPLE_SCALE_BLOCK.get(),
                 SKINNED_PINEAPPLE.get(),
                 PINEAPPLE_FLESH_BLOCK.get()
         );
@@ -313,6 +301,32 @@ public class VVBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.TALL_FLOWERS).add(
                 TALL_WHITE_HIBISCUS.get(), TALL_RED_HIBISCUS.get(), TALL_ORANGE_HIBISCUS.get(), TALL_PURPLE_HIBISCUS.get(), TALL_PINK_HIBISCUS.get(),
                 BIRD_OF_PARADISE.get(), CANNA_LILY.get(), TALL_LACELEAF.get()
+        );
+
+        this.tag(BlockTags.SAPLINGS).add(
+                GRAPEFRUIT_SAPLING.get(),
+                LEMON_SAPLING.get(),
+                LIME_SAPLING.get(),
+                MANGO_SAPLING.get(),
+                ORANGE_SAPLING.get()
+        );
+
+        this.tag(BlockTags.LEAVES).add(
+                GRAPEFRUIT_LEAVES.get(),
+                LEMON_LEAVES.get(),
+                LIME_LEAVES.get(),
+                MANGO_LEAVES.get(),
+                ORANGE_LEAVES.get(),
+                FLOWERING_GRAPEFRUIT_LEAVES.get(),
+                FLOWERING_LEMON_LEAVES.get(),
+                FLOWERING_LIME_LEAVES.get(),
+                FLOWERING_MANGO_LEAVES.get(),
+                FLOWERING_ORANGE_LEAVES.get(),
+                FRUITFUL_GRAPEFRUIT_LEAVES.get(),
+                FRUITFUL_LEMON_LEAVES.get(),
+                FRUITFUL_LIME_LEAVES.get(),
+                FRUITFUL_MANGO_LEAVES.get(),
+                FRUITFUL_ORANGE_LEAVES.get()
         );
 
         // forge tags

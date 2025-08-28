@@ -14,7 +14,7 @@ public class VVCompat {
     public static void registerCompat() {
         registerCompostables();
         registerFlammables();
-        registerWaxables();
+//        registerWaxables();
     }
 
     public static void registerCompostables() {
@@ -64,6 +64,31 @@ public class VVCompat {
         registerCompostable(VVBlocks.LACELEAF.get(), 0.65F);
         registerCompostable(VVBlocks.TALL_LACELEAF.get(), 0.65F);
         registerCompostable(VVBlocks.TORCH_GINGER.get(), 0.65F);
+
+        registerCompostable(VVBlocks.GRAPEFRUIT_SAPLING.get(), 0.3F);
+        registerCompostable(VVBlocks.LEMON_SAPLING.get(), 0.3F);
+        registerCompostable(VVBlocks.LIME_SAPLING.get(), 0.3F);
+        registerCompostable(VVBlocks.MANGO_SAPLING.get(), 0.3F);
+        registerCompostable(VVBlocks.ORANGE_SAPLING.get(), 0.3F);
+
+        registerCompostable(VVBlocks.GRAPEFRUIT_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.LEMON_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.LIME_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.MANGO_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.ORANGE_LEAVES.get(), 0.3F);
+
+        registerCompostable(VVBlocks.FLOWERING_GRAPEFRUIT_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.FLOWERING_LEMON_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.FLOWERING_LIME_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.FLOWERING_MANGO_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.FLOWERING_ORANGE_LEAVES.get(), 0.3F);
+
+        registerCompostable(VVBlocks.FRUITFUL_GRAPEFRUIT_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.FRUITFUL_LEMON_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.FRUITFUL_LIME_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.FRUITFUL_MANGO_LEAVES.get(), 0.3F);
+        registerCompostable(VVBlocks.FRUITFUL_ORANGE_LEAVES.get(), 0.3F);
+
     }
 
     public static void registerFlammables() {
@@ -103,17 +128,29 @@ public class VVCompat {
         registerFlammable(VVBlocks.LACELEAF.get(), 60, 100);
         registerFlammable(VVBlocks.TALL_LACELEAF.get(), 60, 100);
         registerFlammable(VVBlocks.TORCH_GINGER.get(), 60, 100);
+
+        registerFlammable(VVBlocks.GRAPEFRUIT_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.LEMON_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.LIME_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.MANGO_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.ORANGE_LEAVES.get(), 30, 60);
+
+        registerFlammable(VVBlocks.FLOWERING_GRAPEFRUIT_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.FLOWERING_LEMON_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.FLOWERING_LIME_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.FLOWERING_MANGO_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.FLOWERING_ORANGE_LEAVES.get(), 30, 60);
+
+        registerFlammable(VVBlocks.FRUITFUL_GRAPEFRUIT_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.FRUITFUL_LEMON_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.FRUITFUL_LIME_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.FRUITFUL_MANGO_LEAVES.get(), 30, 60);
+        registerFlammable(VVBlocks.FRUITFUL_ORANGE_LEAVES.get(), 30, 60);
     }
 
     public static void registerWaxables() {
         ImmutableBiMap.Builder<Block, Block> builder = ImmutableBiMap.builder();
         HoneycombItem.WAXABLES.get().forEach(builder::put);
-        builder.put(VVBlocks.GREEN_PINEAPPLE.get(), VVBlocks.WAXED_GREEN_PINEAPPLE.get());
-        builder.put(VVBlocks.GREEN_PINEAPPLE_SCALE_BLOCK.get(), VVBlocks.WAXED_GREEN_PINEAPPLE_SCALE_BLOCK.get());
-        builder.put(VVBlocks.SPOTTED_PINEAPPLE.get(), VVBlocks.WAXED_SPOTTED_PINEAPPLE.get());
-        builder.put(VVBlocks.SPOTTED_PINEAPPLE_SCALE_BLOCK.get(), VVBlocks.WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK.get());
-        builder.put(VVBlocks.PINEAPPLE.get(), VVBlocks.WAXED_PINEAPPLE.get());
-        builder.put(VVBlocks.PINEAPPLE_SCALE_BLOCK.get(), VVBlocks.WAXED_PINEAPPLE_SCALE_BLOCK.get());
         HoneycombItem.WAXABLES = Suppliers.memoize(builder::build);
     }
 

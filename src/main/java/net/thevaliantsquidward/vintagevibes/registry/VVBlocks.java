@@ -6,6 +6,7 @@ import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -15,6 +16,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
 import net.thevaliantsquidward.vintagevibes.blocks.*;
+import net.thevaliantsquidward.vintagevibes.blocks.interfaces.FruitLeaves;
 import net.thevaliantsquidward.vintagevibes.blocks.interfaces.RipeningPineapple;
 
 import java.util.ArrayList;
@@ -380,14 +382,6 @@ public class VVBlocks {
     public static final RegistryObject<Block> PINEAPPLE = registerBlock("pineapple", () -> new PineappleBlock(RipeningPineapple.RipenState.YELLOW, PINEAPPLE_PROPERTIES));
     public static final RegistryObject<Block> PINEAPPLE_SCALE_BLOCK = registerBlock("pineapple_scale_block", () -> new PineappleBlock(RipeningPineapple.RipenState.YELLOW, PINEAPPLE_PROPERTIES));
 
-    // evil waxed variants, could be a blockstate but this makes building easier ig
-    public static final RegistryObject<Block> WAXED_GREEN_PINEAPPLE = registerBlock("waxed_green_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
-    public static final RegistryObject<Block> WAXED_GREEN_PINEAPPLE_SCALE_BLOCK = registerBlock("waxed_green_pineapple_scale_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
-    public static final RegistryObject<Block> WAXED_SPOTTED_PINEAPPLE = registerBlock("waxed_spotted_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
-    public static final RegistryObject<Block> WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK = registerBlock("waxed_spotted_pineapple_scale_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
-    public static final RegistryObject<Block> WAXED_PINEAPPLE = registerBlock("waxed_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
-    public static final RegistryObject<Block> WAXED_PINEAPPLE_SCALE_BLOCK = registerBlock("waxed_pineapple_scale_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
-
     public static final RegistryObject<Block> SKINNED_PINEAPPLE = registerBlock("skinned_pineapple", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
     public static final RegistryObject<Block> PINEAPPLE_FLESH_BLOCK = registerBlock("pineapple_flesh_block", () -> new VVDirectionalBlock(PINEAPPLE_PROPERTIES));
 
@@ -513,6 +507,40 @@ public class VVBlocks {
 
     public static final RegistryObject<Block> GOLDEN_HEAD = registerTooltipBlock("golden_head", () -> new GoldenHeadBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
 
+    public static final RegistryObject<Block> GRAPEFRUIT_SAPLING = registerBlock("grapefruit_sapling", () -> new SaplingBlock(new OakTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
+    public static final RegistryObject<Block> POTTED_GRAPEFRUIT_SAPLING = registerBlockWithoutItem("potted_grapefruit_sapling", () -> new FlowerPotBlock(GRAPEFRUIT_SAPLING.get(), registerFlowerPot()));
+
+    public static final RegistryObject<Block> GRAPEFRUIT_LEAVES = registerBlock("grapefruit_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
+    public static final RegistryObject<Block> FLOWERING_GRAPEFRUIT_LEAVES = registerBlock("flowering_grapefruit_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
+    public static final RegistryObject<Block> FRUITFUL_GRAPEFRUIT_LEAVES = registerBlock("fruitful_grapefruit_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.GRAPEFRUIT, VVBlocks.GRAPEFRUIT_LEAVES));
+
+    public static final RegistryObject<Block> LEMON_SAPLING = registerBlock("lemon_sapling", () -> new SaplingBlock(new OakTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
+    public static final RegistryObject<Block> POTTED_LEMON_SAPLING = registerBlockWithoutItem("potted_lemon_sapling", () -> new FlowerPotBlock(LEMON_SAPLING.get(), registerFlowerPot()));
+
+    public static final RegistryObject<Block> LEMON_LEAVES = registerBlock("lemon_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
+    public static final RegistryObject<Block> FLOWERING_LEMON_LEAVES = registerBlock("flowering_lemon_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
+    public static final RegistryObject<Block> FRUITFUL_LEMON_LEAVES = registerBlock("fruitful_lemon_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.LEMON, VVBlocks.LEMON_LEAVES));
+
+    public static final RegistryObject<Block> LIME_SAPLING = registerBlock("lime_sapling", () -> new SaplingBlock(new OakTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
+    public static final RegistryObject<Block> POTTED_LIME_SAPLING = registerBlockWithoutItem("potted_lime_sapling", () -> new FlowerPotBlock(LIME_SAPLING.get(), registerFlowerPot()));
+
+    public static final RegistryObject<Block> LIME_LEAVES = registerBlock("lime_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
+    public static final RegistryObject<Block> FLOWERING_LIME_LEAVES = registerBlock("flowering_lime_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
+    public static final RegistryObject<Block> FRUITFUL_LIME_LEAVES = registerBlock("fruitful_lime_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.LIME, VVBlocks.LIME_LEAVES));
+
+    public static final RegistryObject<Block> MANGO_SAPLING = registerBlock("mango_sapling", () -> new SaplingBlock(new OakTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
+    public static final RegistryObject<Block> POTTED_MANGO_SAPLING = registerBlockWithoutItem("potted_mango_sapling", () -> new FlowerPotBlock(MANGO_SAPLING.get(), registerFlowerPot()));
+
+    public static final RegistryObject<Block> MANGO_LEAVES = registerBlock("mango_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
+    public static final RegistryObject<Block> FLOWERING_MANGO_LEAVES = registerBlock("flowering_mango_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
+    public static final RegistryObject<Block> FRUITFUL_MANGO_LEAVES = registerBlock("fruitful_mango_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.MANGO, VVBlocks.MANGO_LEAVES));
+
+    public static final RegistryObject<Block> ORANGE_SAPLING = registerBlock("orange_sapling", () -> new SaplingBlock(new OakTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
+    public static final RegistryObject<Block> POTTED_ORANGE_SAPLING = registerBlockWithoutItem("potted_orange_sapling", () -> new FlowerPotBlock(ORANGE_SAPLING.get(), registerFlowerPot()));
+
+    public static final RegistryObject<Block> ORANGE_LEAVES = registerBlock("orange_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
+    public static final RegistryObject<Block> FLOWERING_ORANGE_LEAVES = registerBlock("flowering_orange_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
+    public static final RegistryObject<Block> FRUITFUL_ORANGE_LEAVES = registerBlock("fruitful_orange_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.ORANGE, VVBlocks.ORANGE_LEAVES));
 
     private static <B extends Block> RegistryObject<B> registerBlock(String name, Supplier<? extends B> supplier) {
         RegistryObject<B> block = BLOCKS.register(name, supplier);

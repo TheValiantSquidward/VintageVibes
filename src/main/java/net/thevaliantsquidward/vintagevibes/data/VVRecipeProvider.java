@@ -417,10 +417,6 @@ public class VVRecipeProvider extends RecipeProvider implements IConditionBuilde
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SPOTTED_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', SPOTTED_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_spotted_pineapple", has(SPOTTED_PINEAPPLE.get())).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_pineapple", has(PINEAPPLE.get())).save(consumer);
 
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, WAXED_GREEN_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', WAXED_GREEN_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_green_pineapple", has(GREEN_PINEAPPLE.get())).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, WAXED_SPOTTED_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', WAXED_SPOTTED_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_spotted_pineapple", has(SPOTTED_PINEAPPLE.get())).save(consumer);
-        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, WAXED_PINEAPPLE_SCALE_BLOCK.get(), 3).define('#', WAXED_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_pineapple", has(PINEAPPLE.get())).save(consumer);
-
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINEAPPLE_FLESH_BLOCK.get(), 3).define('#', SKINNED_PINEAPPLE.get()).pattern("##").pattern("##").unlockedBy("has_pineapple", has(PINEAPPLE.get())).save(consumer);
 
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, SKINNED_PINEAPPLE.get(), 1).define('#', VVItems.PINEAPPLE_SLICE.get()).pattern("###").pattern("###").pattern("###").unlockedBy("has_pineapple_slice", has(VVItems.PINEAPPLE_SLICE.get())).save(consumer);

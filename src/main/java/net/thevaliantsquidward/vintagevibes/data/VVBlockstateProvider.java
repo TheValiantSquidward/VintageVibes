@@ -312,6 +312,30 @@ public class VVBlockstateProvider extends BlockStateProvider {
 
         this.cubeAllBlock(CRACKED_CALCITE_BRICKS);
         this.cubeAllBlock(CRACKED_CALCITE_TILES);
+
+        this.pottedPlant(GRAPEFRUIT_SAPLING, POTTED_GRAPEFRUIT_SAPLING);
+        this.pottedPlant(LEMON_SAPLING, POTTED_LEMON_SAPLING);
+        this.pottedPlant(LIME_SAPLING, POTTED_LIME_SAPLING);
+        this.pottedPlant(MANGO_SAPLING, POTTED_MANGO_SAPLING);
+        this.pottedPlant(ORANGE_SAPLING, POTTED_ORANGE_SAPLING);
+
+        this.leaves(GRAPEFRUIT_LEAVES);
+        this.leaves(LEMON_LEAVES);
+        this.leaves(LIME_LEAVES);
+        this.leaves(MANGO_LEAVES);
+        this.leaves(ORANGE_LEAVES);
+
+        this.leaves(FLOWERING_GRAPEFRUIT_LEAVES);
+        this.leaves(FLOWERING_LEMON_LEAVES);
+        this.leaves(FLOWERING_LIME_LEAVES);
+        this.leaves(FLOWERING_MANGO_LEAVES);
+        this.leaves(FLOWERING_ORANGE_LEAVES);
+
+        this.leaves(FRUITFUL_GRAPEFRUIT_LEAVES);
+        this.leaves(FRUITFUL_LEMON_LEAVES);
+        this.leaves(FRUITFUL_LIME_LEAVES);
+        this.leaves(FRUITFUL_MANGO_LEAVES);
+        this.leaves(FRUITFUL_ORANGE_LEAVES);
     }
 
     // item
@@ -347,6 +371,11 @@ public class VVBlockstateProvider extends BlockStateProvider {
 
     private void simpleCross(RegistryObject<Block> block) {
         this.simpleBlock(block.get(), this.models().cross(getItemName(block.get()), this.blockTexture(block.get())).renderType("cutout"));
+    }
+
+    private void leaves(RegistryObject<Block> leaves) {
+        this.simpleBlock(leaves.get(), this.models().withExistingParent(getItemName(leaves.get()), "block/leaves").texture("all", this.blockTexture(leaves.get())));
+        this.itemModel(leaves);
     }
 
     private void tallPlant(RegistryObject<Block> flower) {
