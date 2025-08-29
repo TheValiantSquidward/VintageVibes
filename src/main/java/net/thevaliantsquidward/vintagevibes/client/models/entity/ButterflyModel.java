@@ -55,6 +55,14 @@ public class ButterflyModel<T extends Butterfly> extends HierarchicalModel<T> {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.animate(entity.flyingAnimationState, ButterflyAnimations.FLIGHT_OF_THE_BEAST, ageInTicks);
 		this.animate(entity.idleAnimationState, ButterflyAnimations.IDLE, ageInTicks);
+
+		float partialTicks = ageInTicks - entity.tickCount;
+		float flyProgress = entity.getFlyProgress(partialTicks);
+		float rollAmount = entity.getFlightRoll(partialTicks) / 57.295776F * flyProgress;
+		float flightPitchAmount = entity.getFlightPitch(partialTicks) / 57.295776F * flyProgress;
+
+		root.xRot += flightPitchAmount;
+		root.zRot += rollAmount / 2;
 	}
 
 
