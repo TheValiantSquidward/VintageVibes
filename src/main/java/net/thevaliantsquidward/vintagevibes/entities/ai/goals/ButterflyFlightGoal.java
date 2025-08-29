@@ -28,7 +28,7 @@ public class ButterflyFlightGoal extends Goal {
         if (butterfly.isVehicle() || (butterfly.getTarget() != null && butterfly.getTarget().isAlive()) || butterfly.isPassenger()) {
             return false;
         }
-        if (!butterfly.isFlying() && butterfly.getRandom().nextInt(50) != 0) {
+        if (!butterfly.isFlying() && butterfly.getRandom().nextInt(80) != 0) {
             return false;
         }
         Vec3 target = this.getPosition();
