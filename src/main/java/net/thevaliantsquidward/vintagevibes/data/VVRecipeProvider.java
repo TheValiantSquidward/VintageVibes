@@ -13,7 +13,6 @@ import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.thevaliantsquidward.vintagevibes.VintageVibes;
-import net.thevaliantsquidward.vintagevibes.registry.VVBlocks;
 import net.thevaliantsquidward.vintagevibes.registry.VVItems;
 import net.thevaliantsquidward.vintagevibes.registry.tags.VVItemTags;
 
