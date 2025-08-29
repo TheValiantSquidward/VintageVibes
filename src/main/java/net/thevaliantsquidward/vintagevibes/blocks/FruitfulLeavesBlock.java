@@ -30,7 +30,8 @@ public class FruitfulLeavesBlock extends LeavesBlock implements FruitLeaves {
 
     @Override
     public InteractionResult use(BlockState blockState, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        popResource(level, pos, new ItemStack(fruit.get(), 1));
+        int amount = 1 + level.random.nextInt(3);
+        popResource(level, pos, new ItemStack(fruit.get(), amount));
         level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
         level.setBlock(pos, leaves.get().defaultBlockState().setValue(LeavesBlock.PERSISTENT, blockState.getValue(LeavesBlock.PERSISTENT)).setValue(LeavesBlock.DISTANCE, blockState.getValue(LeavesBlock.DISTANCE)), 2);
         return InteractionResult.sidedSuccess(level.isClientSide);
