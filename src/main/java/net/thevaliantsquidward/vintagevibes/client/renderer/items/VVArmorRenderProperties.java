@@ -18,7 +18,7 @@ public class VVArmorRenderProperties implements IClientItemExtensions {
 
     public static void initializeModels() {
         init = true;
-        TIKI_MASK = new MaskModel(Minecraft.getInstance().getEntityModels().bakeLayer(VVModelLayers.TIKI_MASK_LAYER));
+        TIKI_MASK = new MaskModel(Minecraft.getInstance().getEntityModels().bakeLayer(VVModelLayers.BIG_MASK));
     }
 
     @Override

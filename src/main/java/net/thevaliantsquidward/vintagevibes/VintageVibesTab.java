@@ -53,7 +53,7 @@ public class VintageVibesTab {
                         output.accept(VVItems.FOOLS_FOSSIL.get());
                         output.accept(VVItems.FRAGILE_POT.get());
                         output.accept(VVItems.GLIMMERING_SKULL.get());
-                        output.accept(VVBlocks.GOLDEN_HEAD.get());
+                        output.accept(VVItems.GOLDEN_HEAD.get());
                         output.accept(VVItems.GOLDEN_SYMBOL.get());
                         output.accept(VVItems.JADE_FIGURINE.get());
                         output.accept(VVItems.MARBLE_CROSS.get());
@@ -143,6 +143,9 @@ public class VintageVibesTab {
                         output.accept(VVBlocks.TALL_LACELEAF.get());
 
                         output.accept(VVBlocks.TORCH_GINGER.get());
+
+                        output.accept(VVBlocks.GREEN_FLOWERING_GRASS.get());
+                        output.accept(VVBlocks.PINK_FLOWERING_GRASS.get());
 
                         output.accept(VVItems.GRAPEFRUIT.get());
                         output.accept(VVBlocks.GRAPEFRUIT_SAPLING.get());

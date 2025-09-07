@@ -109,6 +109,12 @@ public class VVBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(TORCH_GINGER.get());
         this.dropPottedContents(POTTED_TORCH_GINGER.get());
 
+        this.dropSelf(GREEN_FLOWERING_GRASS.get());
+        this.dropPottedContents(POTTED_GREEN_FLOWERING_GRASS.get());
+
+        this.dropSelf(PINK_FLOWERING_GRASS.get());
+        this.dropPottedContents(POTTED_PINK_FLOWERING_GRASS.get());
+
         this.tallFlower(TALL_LACELEAF.get());
         this.tallFlower(BIRD_OF_PARADISE.get());
         this.tallFlower(CANNA_LILY.get());

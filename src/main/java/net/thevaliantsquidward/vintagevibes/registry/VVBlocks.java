@@ -1,12 +1,12 @@
 package net.thevaliantsquidward.vintagevibes.registry;
 
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -356,25 +356,25 @@ public class VVBlocks {
     public static final RegistryObject<Block> BAMBOO_PAPER_LANTERN = registerBlock("bamboo_paper_lantern", () -> new VVDirectionalBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS).strength(0.5F).lightLevel((state) -> 15)));
 
     // carved sandstone
-    public static final RegistryObject<Block> CARVED_SANDSTONE_CONCERNED = registerTooltipBlock("carved_sandstone_concerned", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_DISAPPOINTED = registerTooltipBlock("carved_sandstone_disappointed", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_FISHEYE = registerTooltipBlock("carved_sandstone_fisheye", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_GRIN = registerTooltipBlock("carved_sandstone_grin", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_JOYOUS = registerTooltipBlock("carved_sandstone_joyous", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_LAZYBONES = registerTooltipBlock("carved_sandstone_lazybones", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_NOSE = registerTooltipBlock("carved_sandstone_nose", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_OPEN = registerTooltipBlock("carved_sandstone_open", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> CARVED_SANDSTONE_SPIRAL = registerTooltipBlock("carved_sandstone_spiral", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_CONCERNED = registerTooltipBlockNoLang("carved_sandstone_concerned", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_DISAPPOINTED = registerTooltipBlockNoLang("carved_sandstone_disappointed", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_FISHEYE = registerTooltipBlockNoLang("carved_sandstone_fisheye", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_GRIN = registerTooltipBlockNoLang("carved_sandstone_grin", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_JOYOUS = registerTooltipBlockNoLang("carved_sandstone_joyous", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_LAZYBONES = registerTooltipBlockNoLang("carved_sandstone_lazybones", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_NOSE = registerTooltipBlockNoLang("carved_sandstone_nose", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_OPEN = registerTooltipBlockNoLang("carved_sandstone_open", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> CARVED_SANDSTONE_SPIRAL = registerTooltipBlockNoLang("carved_sandstone_spiral", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
 
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_BOLD_AND_BRASH = registerTooltipBlock("red_carved_sandstone_bold_and_brash", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_CLOSED = registerTooltipBlock("red_carved_sandstone_closed", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_EXCITED = registerTooltipBlock("red_carved_sandstone_excited", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_FROWN = registerTooltipBlock("red_carved_sandstone_frown", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_HAPPY = registerTooltipBlock("red_carved_sandstone_happy", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_LIPS = registerTooltipBlock("red_carved_sandstone_lips", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_SAD = registerTooltipBlock("red_carved_sandstone_sad", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_TOUCH = registerTooltipBlock("red_carved_sandstone_touch", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
-    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_MESSAGE = registerTooltipBlock("red_carved_sandstone_message", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_BOLD_AND_BRASH = registerTooltipBlockNoLang("red_carved_sandstone_bold_and_brash", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_CLOSED = registerTooltipBlockNoLang("red_carved_sandstone_closed", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_EXCITED = registerTooltipBlockNoLang("red_carved_sandstone_excited", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_FROWN = registerTooltipBlockNoLang("red_carved_sandstone_frown", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_HAPPY = registerTooltipBlockNoLang("red_carved_sandstone_happy", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_LIPS = registerTooltipBlockNoLang("red_carved_sandstone_lips", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_SAD = registerTooltipBlockNoLang("red_carved_sandstone_sad", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_TOUCH = registerTooltipBlockNoLang("red_carved_sandstone_touch", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
+    public static final RegistryObject<Block> RED_CARVED_SANDSTONE_MESSAGE = registerTooltipBlockNoLang("red_carved_sandstone_message", () -> new Block(CARVED_SANDSTONE_PROPERTIES));
 
     // pineapple
     public static final RegistryObject<Block> GREEN_PINEAPPLE = registerBlock("green_pineapple", () -> new PineappleBlock(RipeningPineapple.RipenState.GREEN, PINEAPPLE_PROPERTIES));
@@ -388,68 +388,74 @@ public class VVBlocks {
     public static final RegistryObject<Block> PINEAPPLE_FLESH_BLOCK = registerBlock("pineapple_flesh_block", () -> new VVDirectionalBlock(PINEAPPLE_FLESH_PROPERTIES));
 
     public static final RegistryObject<Block> PINEAPPLE_CROWN = registerBlock("pineapple_crown", () -> new PineappleCrownBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak().sound(SoundType.SMALL_DRIPLEAF).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> POTTED_PINEAPPLE_CROWN = registerBlockWithoutItem("potted_pineapple_crown", () -> new FlowerPotBlock(VVBlocks.PINEAPPLE_CROWN.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> POTTED_PINEAPPLE_CROWN = registerBlockWithoutItemNoLang("potted_pineapple_crown", () -> new FlowerPotBlock(VVBlocks.PINEAPPLE_CROWN.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> PINEAPPLE_STEM = registerBlockWithoutItem("pineapple_stem", () -> new PineappleStemBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
-    public static final RegistryObject<Block> ATTACHED_PINEAPPLE_STEM = registerBlockWithoutItem("attached_pineapple_stem", () -> new AttachedPineappleStemBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PINEAPPLE_STEM = registerBlockWithoutItemNoLang("pineapple_stem", () -> new PineappleStemBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> ATTACHED_PINEAPPLE_STEM = registerBlockWithoutItemNoLang("attached_pineapple_stem", () -> new AttachedPineappleStemBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
 
     // flowers
-    public static final RegistryObject<Block> PINK_HIBISCUS = registerBlock("pink_hibiscus", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_PINK_HIBISCUS = registerBlockWithoutItem("potted_pink_hibiscus", () -> new FlowerPotBlock(VVBlocks.PINK_HIBISCUS.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> PINK_HIBISCUS = registerBlock("pink_hibiscus", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> POTTED_PINK_HIBISCUS = registerBlockWithoutItemNoLang("potted_pink_hibiscus", () -> new FlowerPotBlock(VVBlocks.PINK_HIBISCUS.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> PURPLE_HIBISCUS = registerBlock("purple_hibiscus", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_PURPLE_HIBISCUS = registerBlockWithoutItem("potted_purple_hibiscus", () -> new FlowerPotBlock(VVBlocks.PURPLE_HIBISCUS.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> PURPLE_HIBISCUS = registerBlock("purple_hibiscus", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> POTTED_PURPLE_HIBISCUS = registerBlockWithoutItemNoLang("potted_purple_hibiscus", () -> new FlowerPotBlock(VVBlocks.PURPLE_HIBISCUS.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> ORANGE_HIBISCUS = registerBlock("orange_hibiscus", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_ORANGE_HIBISCUS = registerBlockWithoutItem("potted_orange_hibiscus", () -> new FlowerPotBlock(VVBlocks.ORANGE_HIBISCUS.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> ORANGE_HIBISCUS = registerBlock("orange_hibiscus", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_ORANGE)));
+    public static final RegistryObject<Block> POTTED_ORANGE_HIBISCUS = registerBlockWithoutItemNoLang("potted_orange_hibiscus", () -> new FlowerPotBlock(VVBlocks.ORANGE_HIBISCUS.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> RED_HIBISCUS = registerBlock("red_hibiscus", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_RED_HIBISCUS = registerBlockWithoutItem("potted_red_hibiscus", () -> new FlowerPotBlock(VVBlocks.RED_HIBISCUS.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> RED_HIBISCUS = registerBlock("red_hibiscus", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_RED)));
+    public static final RegistryObject<Block> POTTED_RED_HIBISCUS = registerBlockWithoutItemNoLang("potted_red_hibiscus", () -> new FlowerPotBlock(VVBlocks.RED_HIBISCUS.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> WHITE_HIBISCUS = registerBlock("white_hibiscus", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_WHITE_HIBISCUS = registerBlockWithoutItem("potted_white_hibiscus", () -> new FlowerPotBlock(VVBlocks.WHITE_HIBISCUS.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> WHITE_HIBISCUS = registerBlock("white_hibiscus", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.SNOW)));
+    public static final RegistryObject<Block> POTTED_WHITE_HIBISCUS = registerBlockWithoutItemNoLang("potted_white_hibiscus", () -> new FlowerPotBlock(VVBlocks.WHITE_HIBISCUS.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> BLACK_CALLA = registerBlock("black_calla", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_BLACK_CALLA = registerBlockWithoutItem("potted_black_calla", () -> new FlowerPotBlock(VVBlocks.BLACK_CALLA.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> BLACK_CALLA = registerBlock("black_calla", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_BLACK)));
+    public static final RegistryObject<Block> POTTED_BLACK_CALLA = registerBlockWithoutItemNoLang("potted_black_calla", () -> new FlowerPotBlock(VVBlocks.BLACK_CALLA.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> ORANGE_CALLA = registerBlock("orange_calla", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_ORANGE_CALLA = registerBlockWithoutItem("potted_orange_calla", () -> new FlowerPotBlock(VVBlocks.ORANGE_CALLA.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> ORANGE_CALLA = registerBlock("orange_calla", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_ORANGE)));
+    public static final RegistryObject<Block> POTTED_ORANGE_CALLA = registerBlockWithoutItemNoLang("potted_orange_calla", () -> new FlowerPotBlock(VVBlocks.ORANGE_CALLA.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> YELLOW_CALLA = registerBlock("yellow_calla", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_YELLOW_CALLA = registerBlockWithoutItem("potted_yellow_calla", () -> new FlowerPotBlock(VVBlocks.YELLOW_CALLA.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> YELLOW_CALLA = registerBlock("yellow_calla", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_YELLOW)));
+    public static final RegistryObject<Block> POTTED_YELLOW_CALLA = registerBlockWithoutItemNoLang("potted_yellow_calla", () -> new FlowerPotBlock(VVBlocks.YELLOW_CALLA.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> WHITE_CALLA = registerBlock("white_calla", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_WHITE_CALLA = registerBlockWithoutItem("potted_white_calla", () -> new FlowerPotBlock(VVBlocks.WHITE_CALLA.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> WHITE_CALLA = registerBlock("white_calla", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.SNOW)));
+    public static final RegistryObject<Block> POTTED_WHITE_CALLA = registerBlockWithoutItemNoLang("potted_white_calla", () -> new FlowerPotBlock(VVBlocks.WHITE_CALLA.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> ORANGE_ORCHID = registerBlock("orange_orchid", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_ORANGE_ORCHID = registerBlockWithoutItem("potted_orange_orchid", () -> new FlowerPotBlock(VVBlocks.ORANGE_ORCHID.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> ORANGE_ORCHID = registerBlock("orange_orchid", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_ORANGE)));
+    public static final RegistryObject<Block> POTTED_ORANGE_ORCHID = registerBlockWithoutItemNoLang("potted_orange_orchid", () -> new FlowerPotBlock(VVBlocks.ORANGE_ORCHID.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> PINK_ORCHID = registerBlock("pink_orchid", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_PINK_ORCHID = registerBlockWithoutItem("potted_pink_orchid", () -> new FlowerPotBlock(VVBlocks.PINK_ORCHID.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> PINK_ORCHID = registerBlock("pink_orchid", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> POTTED_PINK_ORCHID = registerBlockWithoutItemNoLang("potted_pink_orchid", () -> new FlowerPotBlock(VVBlocks.PINK_ORCHID.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> WHITE_ORCHID = registerBlock("white_orchid", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_WHITE_ORCHID = registerBlockWithoutItem("potted_white_orchid", () -> new FlowerPotBlock(VVBlocks.WHITE_ORCHID.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> WHITE_ORCHID = registerBlock("white_orchid", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.SNOW)));
+    public static final RegistryObject<Block> POTTED_WHITE_ORCHID = registerBlockWithoutItemNoLang("potted_white_orchid", () -> new FlowerPotBlock(VVBlocks.WHITE_ORCHID.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> YELLOW_ORCHID = registerBlock("yellow_orchid", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_YELLOW_ORCHID = registerBlockWithoutItem("potted_yellow_orchid", () -> new FlowerPotBlock(VVBlocks.YELLOW_ORCHID.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> YELLOW_ORCHID = registerBlock("yellow_orchid", () -> new VVFlowerBlock(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_YELLOW)));
+    public static final RegistryObject<Block> POTTED_YELLOW_ORCHID = registerBlockWithoutItemNoLang("potted_yellow_orchid", () -> new FlowerPotBlock(VVBlocks.YELLOW_ORCHID.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> ORANGE_BROMELIAD = registerBlock("orange_bromeliad", () -> new BromeliadFlower(() -> MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_ORANGE_BROMELIAD = registerBlockWithoutItem("potted_orange_bromelia", () -> new FlowerPotBlock(VVBlocks.ORANGE_BROMELIAD.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> ORANGE_BROMELIAD = registerBlock("orange_bromeliad", () -> new BromeliadFlower(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_ORANGE)));
+    public static final RegistryObject<Block> POTTED_ORANGE_BROMELIAD = registerBlockWithoutItemNoLang("potted_orange_bromelia", () -> new FlowerPotBlock(VVBlocks.ORANGE_BROMELIAD.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> PINK_BROMELIAD = registerBlock("pink_bromeliad", () -> new BromeliadFlower(() -> MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_PINK_BROMELIAD = registerBlockWithoutItem("potted_pink_bromelia", () -> new FlowerPotBlock(VVBlocks.PINK_BROMELIAD.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> PINK_BROMELIAD = registerBlock("pink_bromeliad", () -> new BromeliadFlower(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> POTTED_PINK_BROMELIAD = registerBlockWithoutItemNoLang("potted_pink_bromelia", () -> new FlowerPotBlock(VVBlocks.PINK_BROMELIAD.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> PURPLE_BROMELIAD = registerBlock("purple_bromeliad", () -> new BromeliadFlower(() -> MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_PURPLE_BROMELIAD = registerBlockWithoutItem("potted_purple_bromelia", () -> new FlowerPotBlock(VVBlocks.PURPLE_BROMELIAD.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> PURPLE_BROMELIAD = registerBlock("purple_bromeliad", () -> new BromeliadFlower(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> POTTED_PURPLE_BROMELIAD = registerBlockWithoutItemNoLang("potted_purple_bromelia", () -> new FlowerPotBlock(VVBlocks.PURPLE_BROMELIAD.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> YELLOW_BROMELIAD = registerBlock("yellow_bromeliad", () -> new BromeliadFlower(() -> MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_YELLOW_BROMELIAD = registerBlockWithoutItem("potted_yellow_bromelia", () -> new FlowerPotBlock(VVBlocks.YELLOW_BROMELIAD.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> YELLOW_BROMELIAD = registerBlock("yellow_bromeliad", () -> new BromeliadFlower(() -> MobEffects.ABSORPTION, 8, VVBlockProperties.flower(MapColor.COLOR_YELLOW)));
+    public static final RegistryObject<Block> POTTED_YELLOW_BROMELIAD = registerBlockWithoutItemNoLang("potted_yellow_bromelia", () -> new FlowerPotBlock(VVBlocks.YELLOW_BROMELIAD.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> LACELEAF = registerBlock("laceleaf", () -> new FlowerBlock(MobEffects.ABSORPTION, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_LACELEAF = registerBlockWithoutItem("potted_laceleaf", () -> new FlowerPotBlock(VVBlocks.LACELEAF.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> LACELEAF = registerBlock("laceleaf", () -> new VVFlowerBlock(() -> MobEffects.CONFUSION, 8, VVBlockProperties.flower(MapColor.COLOR_RED)));
+    public static final RegistryObject<Block> POTTED_LACELEAF = registerBlockWithoutItemNoLang("potted_laceleaf", () -> new FlowerPotBlock(VVBlocks.LACELEAF.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> TORCH_GINGER = registerBlock("torch_ginger", () -> new FlowerBlock(MobEffects.GLOWING, 8, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion()));
-    public static final RegistryObject<Block> POTTED_TORCH_GINGER = registerBlockWithoutItem("potted_torch_ginger", () -> new FlowerPotBlock(VVBlocks.TORCH_GINGER.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> TORCH_GINGER = registerBlock("torch_ginger", () -> new VVFlowerBlock(() -> MobEffects.GLOWING, 8, VVBlockProperties.flower(MapColor.COLOR_MAGENTA)));
+    public static final RegistryObject<Block> POTTED_TORCH_GINGER = registerBlockWithoutItemNoLang("potted_torch_ginger", () -> new FlowerPotBlock(VVBlocks.TORCH_GINGER.get(), registerFlowerPot()));
+
+    public static final RegistryObject<Block> GREEN_FLOWERING_GRASS = registerBlock("green_flowering_grass", () -> new VVFlowerBlock(() -> MobEffects.POISON, 8, VVBlockProperties.flower(MapColor.PLANT)));
+    public static final RegistryObject<Block> POTTED_GREEN_FLOWERING_GRASS = registerBlockWithoutItemNoLang("potted_green_flowering_grass", () -> new FlowerPotBlock(GREEN_FLOWERING_GRASS.get(), registerFlowerPot()));
+
+    public static final RegistryObject<Block> PINK_FLOWERING_GRASS = registerBlock("pink_flowering_grass", () -> new VVFlowerBlock(() -> MobEffects.POISON, 8, VVBlockProperties.flower(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> POTTED_PINK_FLOWERING_GRASS = registerBlockWithoutItemNoLang("potted_pink_flowering_grass", () -> new FlowerPotBlock(PINK_FLOWERING_GRASS.get(), registerFlowerPot()));
 
     // tall plants
     public static final RegistryObject<Block> TALL_LACELEAF = registerBlock("tall_laceleaf", () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion()));
@@ -507,39 +513,39 @@ public class VVBlocks {
 
     public static final RegistryObject<Block> DISPLAY_CASE = registerBlock("display_case", () -> new DisplayCaseBlock(BlockBehaviour.Properties.of().strength(2.0F, 6.0F).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.GLASS)));
 
-    public static final RegistryObject<Block> GOLDEN_HEAD = registerTooltipBlock("golden_head", () -> new GoldenHeadBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+    public static final Pair<RegistryObject<Block>, RegistryObject<Block>> GOLDEN_HEAD = registerSkullTrinket("golden_head", VVSkullBlock.Types.GOLDEN_HEAD);
 
     // fruit trees
     public static final RegistryObject<Block> GRAPEFRUIT_SAPLING = registerBlock("grapefruit_sapling", () -> new SaplingBlock(new GrapefruitTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
-    public static final RegistryObject<Block> POTTED_GRAPEFRUIT_SAPLING = registerBlockWithoutItem("potted_grapefruit_sapling", () -> new FlowerPotBlock(GRAPEFRUIT_SAPLING.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> POTTED_GRAPEFRUIT_SAPLING = registerBlockWithoutItemNoLang("potted_grapefruit_sapling", () -> new FlowerPotBlock(GRAPEFRUIT_SAPLING.get(), registerFlowerPot()));
 
     public static final RegistryObject<Block> GRAPEFRUIT_LEAVES = registerBlock("grapefruit_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
     public static final RegistryObject<Block> FLOWERING_GRAPEFRUIT_LEAVES = registerBlock("flowering_grapefruit_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
     public static final RegistryObject<Block> FRUITFUL_GRAPEFRUIT_LEAVES = registerBlock("fruitful_grapefruit_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.GRAPEFRUIT, VVBlocks.GRAPEFRUIT_LEAVES));
 
     public static final RegistryObject<Block> LEMON_SAPLING = registerBlock("lemon_sapling", () -> new SaplingBlock(new LemonTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
-    public static final RegistryObject<Block> POTTED_LEMON_SAPLING = registerBlockWithoutItem("potted_lemon_sapling", () -> new FlowerPotBlock(LEMON_SAPLING.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> POTTED_LEMON_SAPLING = registerBlockWithoutItemNoLang("potted_lemon_sapling", () -> new FlowerPotBlock(LEMON_SAPLING.get(), registerFlowerPot()));
 
     public static final RegistryObject<Block> LEMON_LEAVES = registerBlock("lemon_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
     public static final RegistryObject<Block> FLOWERING_LEMON_LEAVES = registerBlock("flowering_lemon_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
     public static final RegistryObject<Block> FRUITFUL_LEMON_LEAVES = registerBlock("fruitful_lemon_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.LEMON, VVBlocks.LEMON_LEAVES));
 
     public static final RegistryObject<Block> LIME_SAPLING = registerBlock("lime_sapling", () -> new SaplingBlock(new LimeTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
-    public static final RegistryObject<Block> POTTED_LIME_SAPLING = registerBlockWithoutItem("potted_lime_sapling", () -> new FlowerPotBlock(LIME_SAPLING.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> POTTED_LIME_SAPLING = registerBlockWithoutItemNoLang("potted_lime_sapling", () -> new FlowerPotBlock(LIME_SAPLING.get(), registerFlowerPot()));
 
     public static final RegistryObject<Block> LIME_LEAVES = registerBlock("lime_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
     public static final RegistryObject<Block> FLOWERING_LIME_LEAVES = registerBlock("flowering_lime_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
     public static final RegistryObject<Block> FRUITFUL_LIME_LEAVES = registerBlock("fruitful_lime_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.LIME, VVBlocks.LIME_LEAVES));
 
     public static final RegistryObject<Block> MANGO_SAPLING = registerBlock("mango_sapling", () -> new SaplingBlock(new MangoTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
-    public static final RegistryObject<Block> POTTED_MANGO_SAPLING = registerBlockWithoutItem("potted_mango_sapling", () -> new FlowerPotBlock(MANGO_SAPLING.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> POTTED_MANGO_SAPLING = registerBlockWithoutItemNoLang("potted_mango_sapling", () -> new FlowerPotBlock(MANGO_SAPLING.get(), registerFlowerPot()));
 
     public static final RegistryObject<Block> MANGO_LEAVES = registerBlock("mango_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
     public static final RegistryObject<Block> FLOWERING_MANGO_LEAVES = registerBlock("flowering_mango_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
     public static final RegistryObject<Block> FRUITFUL_MANGO_LEAVES = registerBlock("fruitful_mango_leaves", () -> new FruitfulLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), VVItems.MANGO, VVBlocks.MANGO_LEAVES));
 
     public static final RegistryObject<Block> ORANGE_SAPLING = registerBlock("orange_sapling", () -> new SaplingBlock(new OrangeTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));
-    public static final RegistryObject<Block> POTTED_ORANGE_SAPLING = registerBlockWithoutItem("potted_orange_sapling", () -> new FlowerPotBlock(ORANGE_SAPLING.get(), registerFlowerPot()));
+    public static final RegistryObject<Block> POTTED_ORANGE_SAPLING = registerBlockWithoutItemNoLang("potted_orange_sapling", () -> new FlowerPotBlock(ORANGE_SAPLING.get(), registerFlowerPot()));
 
     public static final RegistryObject<Block> ORANGE_LEAVES = registerBlock("orange_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FRUITLESS));
     public static final RegistryObject<Block> FLOWERING_ORANGE_LEAVES = registerBlock("flowering_orange_leaves", () -> new GrowingLeavesBlock(VVBlockProperties.leaves(MapColor.PLANT, SoundType.AZALEA_LEAVES), FruitLeaves.FruitState.FLOWERING));
@@ -558,15 +564,24 @@ public class VVBlocks {
         return block;
     }
 
-    private static <B extends Block> RegistryObject<B> registerBlockWithoutItem(String name, Supplier<B> block) {
+    private static <B extends Block> RegistryObject<B> registerBlockWithoutItemNoLang(String name, Supplier<B> block) {
         return BLOCKS.register(name, block);
     }
 
-    public static <B extends Block> RegistryObject<B> registerTooltipBlock(String name, Supplier<? extends B> supplier) {
+    public static <B extends Block> RegistryObject<B> registerTooltipBlockNoLang(String name, Supplier<? extends B> supplier) {
         RegistryObject<B> block = BLOCKS.register(name, supplier);
         VVItems.ITEMS.register(name, () -> new NondescriptTooltipBlockItem(block.get(), new Item.Properties()));
         return block;
     }
+
+    public static Pair<RegistryObject<Block>, RegistryObject<Block>> registerSkullTrinket(String name, VVSkullBlock.Types type) {
+        RegistryObject<Block> skull = registerBlockWithoutItemNoLang(name, () -> new VVSkullBlock(type, VVBlockProperties.SKULL));
+        RegistryObject<Block> wallSkull = registerBlockWithoutItemNoLang("wall_" + name, () -> new VVWallSkullBlock(type, VVBlockProperties.SKULL.lootFrom(skull)));
+        AUTO_TRANSLATE.add(skull);
+        return Pair.of(skull, wallSkull);
+    }
+
+
     public static <B extends Block> RegistryObject<B> registerAmphora(String name, Supplier<? extends B> supplier) {
         RegistryObject<B> block = BLOCKS.register(name, supplier);
         VVItems.ITEMS.register(name, () -> new AmphoraBlockItem(block.get(), new Item.Properties()));

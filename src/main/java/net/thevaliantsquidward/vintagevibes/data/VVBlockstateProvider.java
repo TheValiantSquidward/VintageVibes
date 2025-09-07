@@ -1,5 +1,6 @@
 package net.thevaliantsquidward.vintagevibes.data;
 
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -7,6 +8,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.*;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.ModelProvider;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -296,6 +298,9 @@ public class VVBlockstateProvider extends BlockStateProvider {
 
         this.pottedPlant(TORCH_GINGER, POTTED_TORCH_GINGER);
 
+        this.pottedPlant(GREEN_FLOWERING_GRASS, POTTED_GREEN_FLOWERING_GRASS);
+        this.pottedPlant(PINK_FLOWERING_GRASS, POTTED_PINK_FLOWERING_GRASS);
+
         this.pottedPlant(PINEAPPLE_CROWN, POTTED_PINEAPPLE_CROWN);
 
         this.tallPlant(TALL_PINK_HIBISCUS);
@@ -336,6 +341,8 @@ public class VVBlockstateProvider extends BlockStateProvider {
         this.leaves(FRUITFUL_LIME_LEAVES);
         this.leaves(FRUITFUL_MANGO_LEAVES);
         this.leaves(FRUITFUL_ORANGE_LEAVES);
+
+//        this.skull(GOLDEN_HEAD);
     }
 
     // item
@@ -397,6 +404,11 @@ public class VVBlockstateProvider extends BlockStateProvider {
         this.pot(pot, this.blockTexture(plant.get()));
         this.simpleCross(plant);
         this.generatedItem(plant.get(), TextureFolder.BLOCK);
+    }
+
+    private void skull(Pair<RegistryObject<Block>, RegistryObject<Block>> skull) {
+        getVariantBuilder(skull.getFirst().get()).forAllStatesExcept(blockstate -> ConfiguredModel.builder().modelFile(models().getExistingFile(new ResourceLocation(ModelProvider.BLOCK_FOLDER + "/" + "skull"))).build(), SkullBlock.ROTATION);
+        getVariantBuilder(skull.getSecond().get()).forAllStatesExcept(blockstate -> ConfiguredModel.builder().modelFile(models().getExistingFile(new ResourceLocation(ModelProvider.BLOCK_FOLDER + "/" + "skull"))).build(), WallSkullBlock.FACING);
     }
 
     // utils

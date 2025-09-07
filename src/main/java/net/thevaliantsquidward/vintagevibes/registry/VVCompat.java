@@ -64,6 +64,8 @@ public class VVCompat {
         registerCompostable(VVBlocks.LACELEAF.get(), 0.65F);
         registerCompostable(VVBlocks.TALL_LACELEAF.get(), 0.65F);
         registerCompostable(VVBlocks.TORCH_GINGER.get(), 0.65F);
+        registerCompostable(VVBlocks.GREEN_FLOWERING_GRASS.get(), 0.65F);
+        registerCompostable(VVBlocks.PINK_FLOWERING_GRASS.get(), 0.65F);
 
         registerCompostable(VVBlocks.GRAPEFRUIT_SAPLING.get(), 0.3F);
         registerCompostable(VVBlocks.LEMON_SAPLING.get(), 0.3F);
@@ -128,6 +130,8 @@ public class VVCompat {
         registerFlammable(VVBlocks.LACELEAF.get(), 60, 100);
         registerFlammable(VVBlocks.TALL_LACELEAF.get(), 60, 100);
         registerFlammable(VVBlocks.TORCH_GINGER.get(), 60, 100);
+        registerFlammable(VVBlocks.GREEN_FLOWERING_GRASS.get(), 60, 100);
+        registerFlammable(VVBlocks.PINK_FLOWERING_GRASS.get(), 60, 100);
 
         registerFlammable(VVBlocks.GRAPEFRUIT_LEAVES.get(), 30, 60);
         registerFlammable(VVBlocks.LEMON_LEAVES.get(), 30, 60);

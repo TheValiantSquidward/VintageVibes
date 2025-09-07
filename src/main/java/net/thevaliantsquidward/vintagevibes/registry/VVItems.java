@@ -1,5 +1,6 @@
 package net.thevaliantsquidward.vintagevibes.registry;
 
+import net.minecraft.core.Direction;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
@@ -89,7 +90,6 @@ public class VVItems {
     public static final RegistryObject<Item> ENDER_AMULET = registerItem("ender_amulet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> EYE_RING = registerItem("eye_ring", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> GLIMMERING_SKULL = registerItem("glimmering_skull", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
-    //public static final RegistryObject<Item> GOLDEN_HEAD = registerItem("golden_head", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> GOLDEN_SYMBOL = registerItem("golden_symbol", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> LUXURIOUS_BOWL = registerItem("luxurious_bowl", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> MERCHANTS_AMULET = registerItemNoLang("merchants_amulet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
@@ -105,7 +105,7 @@ public class VVItems {
     public static final RegistryObject<Item> PEARLESCENT_FACE = registerItem("pearlescent_face", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> PRICELESS_COIN = registerItem("priceless_coin", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> RELUCENT_GRAIL = registerItem("relucent_grail", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
-    public static final RegistryObject<Item> RUBY_SLIPPERS = registerItem("ruby_slippers", () -> new RubySlipperItem(new Item.Properties().rarity(VVItemProperties.TRINKET).stacksTo(1)));
+    public static final RegistryObject<Item> RUBY_SLIPPERS = registerItem("ruby_slippers", () -> new RubySlippersItem(new Item.Properties().rarity(VVItemProperties.TRINKET).stacksTo(1)));
     public static final RegistryObject<Item> RUSTED_SPEARHEAD = registerItem("rusted_spearhead", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> TONGUE_STONE = registerItem("tongue_stone", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> SHATTERED_DAGGER = registerItem("shattered_dagger", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
@@ -137,7 +137,6 @@ public class VVItems {
     public static final RegistryObject<Item> POCKET_MIRROR = registerItem("pocket_mirror", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> SILVER_PORCELAIN = registerItem("silver_porcelain", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
 
-
     public static final RegistryObject<Item> CELESTIAL_MASK = registerItem("celestial_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> DEITY_MASK = registerItem("deity_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> FESTIVE_MASK = registerItem("festive_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -148,6 +147,8 @@ public class VVItems {
     public static final RegistryObject<Item> SUNRISE_MASK = registerItem("sunrise_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> TIDAL_MASK = registerItem("tidal_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> VOLCANIC_MASK = registerItem("volcanic_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> GOLDEN_HEAD = registerItemNoLang("golden_head", () -> new StandingAndWallBlockItem(VVBlocks.GOLDEN_HEAD.getFirst().get(), VVBlocks.GOLDEN_HEAD.getSecond().get(), VVItemProperties.TRINKET_PROPERTIES, Direction.DOWN));
 
     private static <I extends Item> RegistryObject<I> registerItem(String name, Supplier<? extends I> supplier) {
         RegistryObject<I> item = ITEMS.register(name, supplier);

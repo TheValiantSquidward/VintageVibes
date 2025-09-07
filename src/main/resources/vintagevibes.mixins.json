@@ -9,6 +9,7 @@
     "BeeMixin$BeePollinateGoalMixin"
   ],
   "client": [
+    "client.CustomHeadLayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

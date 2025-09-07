@@ -295,7 +295,9 @@ public class VVBlockTagProvider extends BlockTagsProvider {
                 ORANGE_BROMELIAD.get(), YELLOW_BROMELIAD.get(), PURPLE_BROMELIAD.get(), PINK_BROMELIAD.get(),
                 WHITE_ORCHID.get(), ORANGE_ORCHID.get(), YELLOW_ORCHID.get(), PINK_ORCHID.get(),
                 LACELEAF.get(),
-                TORCH_GINGER.get()
+                TORCH_GINGER.get(),
+                GREEN_FLOWERING_GRASS.get(),
+                PINK_FLOWERING_GRASS.get()
         );
 
         this.tag(BlockTags.TALL_FLOWERS).add(

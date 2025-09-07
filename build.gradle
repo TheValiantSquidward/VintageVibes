@@ -99,11 +99,11 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : project.modName,
-                "Specification-Vendor"    : "TheValiantSquidward",
+                "Specification-Vendor"    : "ValiantEnvoy",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : project.modName,
                 "Implementation-Version"  : project.modVersion,
-                "Implementation-Vendor"   : "TheValiantSquidward",
+                "Implementation-Vendor"   : "ValiantEnvoy",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
                 "MixinConfigs"            : project.modId + ".mixins.json"
         ])

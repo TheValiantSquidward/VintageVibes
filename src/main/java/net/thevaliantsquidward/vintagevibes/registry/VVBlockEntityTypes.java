@@ -21,6 +21,7 @@ public class VVBlockEntityTypes {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, VintageVibes.MOD_ID);
 
     public static final RegistryObject<BlockEntityType<DisplayCaseBlockEntity>> DISPLAY_CASE = registerBlockEntity("display_case", DisplayCaseBlockEntity::new, DisplayCaseBlock.class);
+    public static final RegistryObject<BlockEntityType<VVSkullBlockEntity>> SKULL = registerBlockEntity("skull", VVSkullBlockEntity::new, () -> VVSkullBlockEntity.SKULLS);
 
     public static Block[] collectBlocks(Class<?> blockClass) {
         return ForgeRegistries.BLOCKS.getValues().stream().filter(blockClass::isInstance).toArray(Block[]::new);

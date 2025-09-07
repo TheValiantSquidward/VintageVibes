@@ -138,8 +138,6 @@ public class VVLanguageProvider extends LanguageProvider {
         addBlock(AMPHORA_PEGASUS, "Amphora");
         addBlock(AMPHORA_HARPY, "Amphora");
 
-        addBlock(GOLDEN_HEAD, "Golden Head");
-
         add("block.vintagevibes.amphora_blank.desc", "Blank");
         add("block.vintagevibes.amphora_medusa.desc", "Medusa");
         add("block.vintagevibes.amphora_chimera.desc", "Chimera");
@@ -154,7 +152,6 @@ public class VVLanguageProvider extends LanguageProvider {
         add("block.vintagevibes.amphora_sprouts.desc", "Sprouts");
         add("block.vintagevibes.amphora_pegasus.desc", "Pegasus");
         add("block.vintagevibes.amphora_harpy.desc", "Harpy");
-
 
         add("block.vintagevibes.carved_sandstone_concerned.desc", "Concerned");
         add("block.vintagevibes.carved_sandstone_disappointed.desc", "Disappointed");

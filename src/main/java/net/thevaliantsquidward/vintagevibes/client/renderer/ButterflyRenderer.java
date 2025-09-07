@@ -13,7 +13,7 @@ import net.thevaliantsquidward.vintagevibes.entities.Butterfly;
 public class ButterflyRenderer extends MobRenderer<Butterfly, ButterflyModel<Butterfly>> {
 
     public ButterflyRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new ButterflyModel<>(pContext.bakeLayer(VVModelLayers.BUTTERFLY_LAYER)), 0.2f);
+        super(pContext, new ButterflyModel<>(pContext.bakeLayer(VVModelLayers.BUTTERFLY)), 0.2f);
     }
 
     private static final ResourceLocation MONARCH = new ResourceLocation(VintageVibes.MOD_ID, "textures/entity/butterfly/monarch.png");
