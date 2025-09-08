@@ -514,6 +514,7 @@ public class VVBlocks {
     public static final RegistryObject<Block> DISPLAY_CASE = registerBlock("display_case", () -> new DisplayCaseBlock(BlockBehaviour.Properties.of().strength(2.0F, 6.0F).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.GLASS)));
 
     public static final Pair<RegistryObject<Block>, RegistryObject<Block>> GOLDEN_HEAD = registerSkullTrinket("golden_head", VVSkullBlock.Types.GOLDEN_HEAD);
+    public static final Pair<RegistryObject<Block>, RegistryObject<Block>> ELONGATED_SKULL = registerSkullTrinket("elongated_skull", VVSkullBlock.Types.ELONGATED_SKULL);
 
     // fruit trees
     public static final RegistryObject<Block> GRAPEFRUIT_SAPLING = registerBlock("grapefruit_sapling", () -> new SaplingBlock(new GrapefruitTreeGrower(), VVBlockProperties.sapling(MapColor.PLANT, SoundType.CHERRY_SAPLING)));

@@ -38,6 +38,7 @@ public class VVSkullBlock extends SkullBlock {
     }
 
     public enum Types implements SkullBlock.Type {
-        GOLDEN_HEAD
+        GOLDEN_HEAD,
+        ELONGATED_SKULL
     }
 }

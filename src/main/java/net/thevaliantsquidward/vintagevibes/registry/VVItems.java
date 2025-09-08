@@ -84,7 +84,6 @@ public class VVItems {
     public static final RegistryObject<Item> CROWNED_INSECT = registerItem("crowned_insect", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> CROWNED_JEWEL = registerItem("crowned_jewel", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> CRYSTAL_EYE = registerItem("crystal_eye", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
-    public static final RegistryObject<Item> ELONGATED_SKULL = registerItem("elongated_skull", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> EMBEDDED_FOSSIL = registerItem("embedded_fossil", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> ENCHANTED_TOME = registerItem("enchanted_tome", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> ENDER_AMULET = registerItem("ender_amulet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
@@ -148,7 +147,8 @@ public class VVItems {
     public static final RegistryObject<Item> TIDAL_MASK = registerItem("tidal_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> VOLCANIC_MASK = registerItem("volcanic_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));
 
-    public static final RegistryObject<Item> GOLDEN_HEAD = registerItemNoLang("golden_head", () -> new StandingAndWallBlockItem(VVBlocks.GOLDEN_HEAD.getFirst().get(), VVBlocks.GOLDEN_HEAD.getSecond().get(), VVItemProperties.TRINKET_PROPERTIES, Direction.DOWN));
+    public static final RegistryObject<Item> GOLDEN_HEAD = registerItemNoLang("golden_head", () -> new TrinketSkullItem(VVBlocks.GOLDEN_HEAD.getFirst().get(), VVBlocks.GOLDEN_HEAD.getSecond().get(), VVItemProperties.TRINKET_PROPERTIES, Direction.DOWN));
+    public static final RegistryObject<Item> ELONGATED_SKULL = registerItemNoLang("elongated_skull", () -> new TrinketSkullItem(VVBlocks.ELONGATED_SKULL.getFirst().get(), VVBlocks.ELONGATED_SKULL.getSecond().get(), VVItemProperties.TRINKET_PROPERTIES, Direction.DOWN));
 
     private static <I extends Item> RegistryObject<I> registerItem(String name, Supplier<? extends I> supplier) {
         RegistryObject<I> item = ITEMS.register(name, supplier);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/skull",
+  "textures": {
+    "particle": "vintagevibes:block/elongated_skull_particle"
+  }
+}

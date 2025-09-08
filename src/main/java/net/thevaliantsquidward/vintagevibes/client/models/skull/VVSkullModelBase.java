@@ -10,7 +10,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 @OnlyIn(Dist.CLIENT)
 public abstract class VVSkullModelBase extends SkullModelBase {
 
-    private final ModelPart head;
+    public ModelPart head;
 
     public VVSkullModelBase(ModelPart root) {
         this.head = root.getChild("head");

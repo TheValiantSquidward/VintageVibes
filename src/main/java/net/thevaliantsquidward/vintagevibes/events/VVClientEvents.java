@@ -39,6 +39,7 @@ public class VVClientEvents {
         event.registerLayerDefinition(VVModelLayers.BUTTERFLY, ButterflyModel::createBodyLayer);
         event.registerLayerDefinition(VVModelLayers.BIG_MASK, MaskModel::createArmorLayer);
         event.registerLayerDefinition(VVModelLayers.GOLDEN_HEAD, GoldenHeadModel::createSkullLayer);
+        event.registerLayerDefinition(VVModelLayers.ELONGATED_SKULL, ElongatedSkullModel::createSkullLayer);
     }
 
     @SubscribeEvent
@@ -56,5 +57,6 @@ public class VVClientEvents {
     @SubscribeEvent
     public static void onCreateSkullModels(EntityRenderersEvent.CreateSkullModels event) {
         event.registerSkullModel(VVSkullBlock.Types.GOLDEN_HEAD, new GoldenHeadModel(event.getEntityModelSet().bakeLayer(VVModelLayers.GOLDEN_HEAD)));
+        event.registerSkullModel(VVSkullBlock.Types.ELONGATED_SKULL, new ElongatedSkullModel(event.getEntityModelSet().bakeLayer(VVModelLayers.ELONGATED_SKULL)));
     }
 }

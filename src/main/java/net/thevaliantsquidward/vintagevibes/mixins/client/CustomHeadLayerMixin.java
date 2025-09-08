@@ -32,9 +32,9 @@ public abstract class CustomHeadLayerMixin {
         Item skull = entity.getItemBySlot(EquipmentSlot.HEAD).getItem();
         if (skull instanceof BlockItem blockItem && blockItem.getBlock() instanceof VVSkullBlock skullBlock) {
             SkullBlock.Type type = skullBlock.getType();
-            if (this.skullModels.get(type) instanceof VVSkullModelBase ancientSkullModel) {
-                poseStack.scale(ancientSkullModel.headRenderScale(), ancientSkullModel.headRenderScale(), ancientSkullModel.headRenderScale());
-                poseStack.translate(0, ancientSkullModel.headRenderHeight(), 0);
+            if (this.skullModels.get(type) instanceof VVSkullModelBase skullModel) {
+                poseStack.scale(skullModel.headRenderScale(), skullModel.headRenderScale(), skullModel.headRenderScale());
+                poseStack.translate(0, skullModel.headRenderHeight(), 0);
             }
         }
     }
