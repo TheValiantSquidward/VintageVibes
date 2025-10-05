@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/wall_inventory",
-  "textures": {
-    "wall": "vintagevibes:block/emerald_bejeweled_calcite_bricks"
-  }
-}

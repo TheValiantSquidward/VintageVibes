@@ -136,7 +136,7 @@ public class VVItems {
     public static final RegistryObject<Item> POCKET_MIRROR = registerItem("pocket_mirror", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> SILVER_PORCELAIN = registerItem("silver_porcelain", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
 
-    public static final RegistryObject<Item> ENERGY_SPEAR = registerItem("energy_spear", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> ENERGY_SPEAR = registerItem("energy_spear", () -> new EnergySpearItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> FADED_MASK = registerItem("faded_mask", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> SOUL_AMULET = registerItem("soul_amulet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
 

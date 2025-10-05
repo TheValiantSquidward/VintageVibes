@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "vintagevibes:item/energy_spear_inventory"
+  },
+  "base": {
+    "parent": "vintagevibes:item/energy_spear_handheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "vintagevibes:item/energy_spear_inventory"
+    },
+    "fixed": {
+      "parent": "vintagevibes:item/energy_spear_inventory"
+    }
+  }
+}

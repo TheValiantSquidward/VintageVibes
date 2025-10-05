@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "vintagevibes:block/amber_tiles",
-    "side": "vintagevibes:block/amber_tiles",
-    "top": "vintagevibes:block/amber_tiles"
-  }
-}

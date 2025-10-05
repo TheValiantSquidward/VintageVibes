@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "vintagevibes:block/diamond_tiles",
-    "side": "vintagevibes:block/diamond_tiles",
-    "top": "vintagevibes:block/diamond_tiles"
-  }
-}

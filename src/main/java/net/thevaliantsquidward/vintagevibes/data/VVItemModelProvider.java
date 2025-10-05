@@ -44,7 +44,6 @@ public class VVItemModelProvider extends ItemModelProvider {
         this.item(TIDAL_MASK);
         this.item(VOLCANIC_MASK);
 
-        this.item(ENERGY_SPEAR);
         this.item(FADED_MASK);
         this.item(SOUL_AMULET);
 

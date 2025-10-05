@@ -12,6 +12,7 @@ public class VVSoundEvents {
     public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, VintageVibes.MOD_ID);
 
     public static final RegistryObject<SoundEvent> VIBE_DISC = registerSoundEvents("vibe_disc");
+    public static final RegistryObject<SoundEvent> SPEAR_CHARGE = registerSoundEvents("spear_charge");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUNDS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(VintageVibes.MOD_ID, name)));

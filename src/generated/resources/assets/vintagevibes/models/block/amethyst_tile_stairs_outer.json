@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "vintagevibes:block/amethyst_tiles",
-    "side": "vintagevibes:block/amethyst_tiles",
-    "top": "vintagevibes:block/amethyst_tiles"
-  }
-}

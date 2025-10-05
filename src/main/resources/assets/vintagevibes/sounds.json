@@ -6,5 +6,12 @@
         "stream": true
       }
     ]
+  },
+  "spear_charge": {
+    "sounds": [
+      {
+        "name": "vintagevibes:item/spear"
+      }
+    ]
   }
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "vintagevibes:block/smoky_quartz_bejeweled_calcite_bricks",
-    "side": "vintagevibes:block/smoky_quartz_bejeweled_calcite_bricks",
-    "top": "vintagevibes:block/smoky_quartz_bejeweled_calcite_bricks"
-  }
-}

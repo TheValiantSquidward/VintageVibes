@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "vintagevibes:block/taaffeite_tiles",
-    "side": "vintagevibes:block/taaffeite_tiles",
-    "top": "vintagevibes:block/taaffeite_tiles"
-  }
-}

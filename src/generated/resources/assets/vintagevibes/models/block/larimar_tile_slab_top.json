@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "vintagevibes:block/larimar_tiles",
-    "side": "vintagevibes:block/larimar_tiles",
-    "top": "vintagevibes:block/larimar_tiles"
-  }
-}

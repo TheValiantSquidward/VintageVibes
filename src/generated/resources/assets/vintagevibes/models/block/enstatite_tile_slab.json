@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "vintagevibes:block/enstatite_tiles",
-    "side": "vintagevibes:block/enstatite_tiles",
-    "top": "vintagevibes:block/enstatite_tiles"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "vintagevibes:block/larimar_bejeweled_calcite_bricks",
-    "side": "vintagevibes:block/larimar_bejeweled_calcite_bricks",
-    "top": "vintagevibes:block/larimar_bejeweled_calcite_bricks"
-  }
-}
