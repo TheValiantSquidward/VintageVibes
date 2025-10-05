@@ -47,9 +47,10 @@ public class VintageVibesTab {
                         output.accept(VVItems.EMBEDDED_FOSSIL.get());
                         output.accept(VVItems.ENCHANTED_TOME.get());
                         output.accept(VVItems.ENDER_AMULET.get());
+                        output.accept(VVItems.ENERGY_SPEAR.get());
                         output.accept(VVItems.EYE_RING.get());
                         output.accept(VVItems.FACETED_AMETRINE.get());
-                        output.accept(VVItems.CITRINE_DIAMOND.get());
+                        output.accept(VVItems.FADED_MASK.get());
                         output.accept(VVItems.FOOLS_FOSSIL.get());
                         output.accept(VVItems.FRAGILE_POT.get());
                         output.accept(VVItems.GLIMMERING_SKULL.get());
@@ -85,6 +86,7 @@ public class VintageVibesTab {
                         output.accept(VVItems.SHATTERED_DAGGER.get());
                         output.accept(VVItems.SILVER_PORCELAIN.get());
                         output.accept(VVItems.SIRENS_PEARL.get());
+                        output.accept(VVItems.SOUL_AMULET.get());
                         output.accept(VVItems.SPLIT_MASK.get());
                         output.accept(VVItems.TONGUE_STONE.get());
                         output.accept(VVItems.WEATHERED_COIN.get());

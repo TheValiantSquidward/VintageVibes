@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-07T20:59:38.7507853	Item Models: vintagevibes
+// 1.20.1	2025-10-04T20:48:05.4541371	Item Models: vintagevibes
 7dc44ffc8b87b94994a63dba59a07a0625a2195a assets/vintagevibes/models/item/amberized_critter.json
 214e8a20ab7932bb572c53a16cecc53a72f75c52 assets/vintagevibes/models/item/ancient_figurine.json
 61b37186ec1a2e86345438aa15eea6129535b2df assets/vintagevibes/models/item/antique_key.json
@@ -25,8 +25,10 @@ a1b2ebd1eb2f656333a576b1871e3f22152d2112 assets/vintagevibes/models/item/crowned
 e3b2e3a0c72120e4a55abf70400c6503e68571d3 assets/vintagevibes/models/item/embedded_fossil.json
 d5d03767225224cac8dd17828bacab7cd53f2fcf assets/vintagevibes/models/item/enchanted_tome.json
 fc371dfb965ffef2bd1dc41e818de5a129cdbcbe assets/vintagevibes/models/item/ender_amulet.json
+0eb1de19432857088092cda0a59f8f79ac386150 assets/vintagevibes/models/item/energy_spear.json
 2432e0bf6c688654b3cee64f52450ba577b8b917 assets/vintagevibes/models/item/eye_ring.json
 a0b67c78558781516a83a5de6361d0cc1d62584a assets/vintagevibes/models/item/faceted_ametrine.json
+632454e770b9ec36744ea6c1a9b433b8973b68c3 assets/vintagevibes/models/item/faded_mask.json
 91a00b5ffd28c98823a6b68490b9ecb09921cc1e assets/vintagevibes/models/item/festive_mask.json
 1230e18ea0d718e6bef734a6f2ad2d9da63336e3 assets/vintagevibes/models/item/fools_fossil.json
 aecce6583f33b671a2835c52afafe9d54a37cac8 assets/vintagevibes/models/item/fragile_pot.json
@@ -73,6 +75,7 @@ ce9f8bcf4d00c3e639bf50d375cc0dae6b64fcaa assets/vintagevibes/models/item/relucen
 6e68ce9c0f63c368c678a14354739b25811fc844 assets/vintagevibes/models/item/shattered_dagger.json
 969b2e482031f0da7ec7b53379d313c9ea542f75 assets/vintagevibes/models/item/silver_porcelain.json
 1d2d565702a51b5b791f874bb07aad26581984a1 assets/vintagevibes/models/item/sirens_pearl.json
+0c8ad32bc534d8ebf56d2df14d66af1292d78124 assets/vintagevibes/models/item/soul_amulet.json
 2319181ea58799ee10b4399e40a804e317dd9f6b assets/vintagevibes/models/item/spirit_mask.json
 3cc0c17c2d711e08e994371c2e87875e0e163ec3 assets/vintagevibes/models/item/split_mask.json
 23ec456df07195a131f0f174e4ecc75c9c9b1b54 assets/vintagevibes/models/item/sunrise_mask.json

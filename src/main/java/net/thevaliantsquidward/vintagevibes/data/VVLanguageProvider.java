@@ -215,6 +215,9 @@ public class VVLanguageProvider extends LanguageProvider {
         add("item.vintagevibes.elongated_skull.desc", "The unusually long skull of some ghoulish creature. It is said to originate from a land inhabited by similarly lengthy arachnids.");
         add("item.vintagevibes.ruby_slippers.desc", "This brilliant pair of shoes sparkle under the sun. Legends tell of a pair of these owned by a very famous witch.");
         add("item.vintagevibes.crystal_eye.desc", "Older than time itself, and filled with multicolored veins. A faint breathing sound trickles forth from its pores.");
+        add("item.vintagevibes.faded_mask.desc", "This object's aura calls you towards it. The time of reckoning has begun.");
+        add("item.vintagevibes.soul_amulet.desc", "As you hold it, you feel its power radiate within your soul.");
+        add("item.vintagevibes.energy_spear.desc", "This strange weapon crackles with blue and red energy. An aura of hate permeates from it.");
 
 
         this.addAdvancement("root", "Vintage Vibes");
