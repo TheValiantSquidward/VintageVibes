@@ -3,6 +3,7 @@ package net.thevaliantsquidward.vintagevibes.data;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -445,6 +446,15 @@ public class VVRecipeProvider extends RecipeProvider implements IConditionBuilde
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, PINK_HIBISCUS_CARPET.get(), 3).define('#', PINK_HIBISCUS.get()).pattern("##").unlockedBy("has_pink_hibiscus", has(PINK_HIBISCUS.get())).save(consumer);
         ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, WHITE_HIBISCUS_CARPET.get(), 3).define('#', WHITE_HIBISCUS.get()).pattern("##").unlockedBy("has_white_hibiscus", has(WHITE_HIBISCUS.get())).save(consumer);
 
+
+        ShapedRecipeBuilder.shaped(BUILDING_BLOCKS, DISPLAY_CASE.get(), 1)
+                .define('#', Blocks.GLASS)
+                .define('-', Items.STICK)
+                .define('_', ItemTags.WOODEN_SLABS)
+                .pattern("###")
+                .pattern("#-#")
+                .pattern("___")
+                .unlockedBy("has_glass", has(Blocks.GLASS)).save(consumer);
     }
 
     public void storageRecipes(Consumer<FinishedRecipe> consumer, RecipeCategory itemCategory, ItemLike item, RecipeCategory storageCategory, ItemLike storage, String storageName, String storageGroup, String itemName, String itemGroup) {

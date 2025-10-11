@@ -13,7 +13,7 @@ import net.minecraft.world.item.Vanishable;
 import net.minecraft.world.level.Level;
 import net.thevaliantsquidward.vintagevibes.registry.VVSoundEvents;
 
-public class EnergySpearItem extends Item implements Vanishable {
+public class EnergySpearItem extends TrinketItem {
 
     public EnergySpearItem(Properties p_43381_) {
         super(p_43381_);
