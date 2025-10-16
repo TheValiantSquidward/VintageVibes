@@ -35,13 +35,16 @@ public class VintageVibesTab {
                         output.accept(VVItems.COMEDY_MASK.get());
                         output.accept(VVItems.COPPER_APPLE.get());
                         output.accept(VVItems.CORAL_BEADS.get());
+                        output.accept(VVItems.CORRODED_TOOL.get());
                         output.accept(VVItems.CREATURE_MASK.get());
                         output.accept(VVItems.CROWNED_INSECT.get());
                         output.accept(VVItems.CROWNED_JEWEL.get());
                         output.accept(VVItems.CRYSTAL_EYE.get());
                         output.accept(VVItems.CRYSTALLIZED_SHELL.get());
                         output.accept(VVItems.CUT_TULMARINE.get());
+                        output.accept(VVItems.DECAYING_BLADE.get());
                         output.accept(VVItems.DELICATE_BOWL.get());
+                        output.accept(VVItems.DISCARDED_HOOK.get());
                         output.accept(VVItems.DUSTY_SPHINX.get());
                         output.accept(VVItems.ELONGATED_SKULL.get());
                         output.accept(VVItems.EMBEDDED_FOSSIL.get());
@@ -52,6 +55,7 @@ public class VintageVibesTab {
                         output.accept(VVItems.FACETED_AMETRINE.get());
                         output.accept(VVItems.FADED_MASK.get());
                         output.accept(VVItems.FOOLS_FOSSIL.get());
+                        output.accept(VVItems.FRACTURED_BRACELET.get());
                         output.accept(VVItems.FRAGILE_POT.get());
                         output.accept(VVItems.GLIMMERING_SKULL.get());
                         output.accept(VVItems.GOLDEN_HEAD.get());
@@ -89,6 +93,7 @@ public class VintageVibesTab {
                         output.accept(VVItems.SOUL_AMULET.get());
                         output.accept(VVItems.SPLIT_MASK.get());
                         output.accept(VVItems.TONGUE_STONE.get());
+                        output.accept(VVItems.VINTAGE_BOBBER.get());
                         output.accept(VVItems.WEATHERED_COIN.get());
                         output.accept(VVItems.WHIMSICAL_BUNDLE.get());
 

@@ -110,6 +110,11 @@ public class VVItemModelProvider extends ItemModelProvider {
         this.item(OLIVE_PORCELAIN);
         this.item(POCKET_MIRROR);
         this.item(SILVER_PORCELAIN);
+        this.item(CORRODED_TOOL);
+        this.item(DECAYING_BLADE);
+        this.item(DISCARDED_HOOK);
+        this.item(FRACTURED_BRACELET);
+        this.item(VINTAGE_BOBBER);
 
         // spawn eggs
         for (Item item : BuiltInRegistries.ITEM) {

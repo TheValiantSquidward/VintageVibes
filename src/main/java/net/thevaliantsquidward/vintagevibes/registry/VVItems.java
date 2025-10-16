@@ -140,6 +140,13 @@ public class VVItems {
     public static final RegistryObject<Item> FADED_MASK = registerItem("faded_mask", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> SOUL_AMULET = registerItem("soul_amulet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
 
+    public static final RegistryObject<Item> CORRODED_TOOL = registerItem("corroded_tool", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> CRYSTALLINE_SWORD = registerItem("crystalline_sword", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> DECAYING_BLADE = registerItem("decaying_blade", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> DISCARDED_HOOK = registerItem("discarded_hook", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> FRACTURED_BRACELET = registerItem("fractured_bracelet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> VINTAGE_BOBBER = registerItem("vintage_bobber", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+
 
 
     public static final RegistryObject<Item> CELESTIAL_MASK = registerItem("celestial_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));

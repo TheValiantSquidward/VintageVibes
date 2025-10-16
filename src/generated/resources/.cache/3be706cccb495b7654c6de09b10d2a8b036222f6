@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-05T11:33:25.397304	Item Models: vintagevibes
+// 1.20.1	2025-10-13T21:10:18.6642587	Item Models: vintagevibes
 7dc44ffc8b87b94994a63dba59a07a0625a2195a assets/vintagevibes/models/item/amberized_critter.json
 214e8a20ab7932bb572c53a16cecc53a72f75c52 assets/vintagevibes/models/item/ancient_figurine.json
 61b37186ec1a2e86345438aa15eea6129535b2df assets/vintagevibes/models/item/antique_key.json
@@ -13,14 +13,17 @@ bfb90338357dd7f974df18ffecaee90487e550ff assets/vintagevibes/models/item/citrine
 76e08f4cf9e2324ebe545a7ea40337ee306426fd assets/vintagevibes/models/item/comedy_mask.json
 61f463cb9856955a2114effd86565faca388973a assets/vintagevibes/models/item/copper_apple.json
 81a580d34ce5c325bcc50723b24ed0bbd18091f5 assets/vintagevibes/models/item/coral_beads.json
+ec6a241859527a5a5aa46a3b671c42780474bc3d assets/vintagevibes/models/item/corroded_tool.json
 1ba24ba3575bfac200b1508d6b765230564eac61 assets/vintagevibes/models/item/creature_mask.json
 a1b2ebd1eb2f656333a576b1871e3f22152d2112 assets/vintagevibes/models/item/crowned_insect.json
 08d1109fc4c5a2a2272c3bbf32a6cd1984b035e3 assets/vintagevibes/models/item/crowned_jewel.json
 311e9d37d38b5372a5f7deae21e9625013401b41 assets/vintagevibes/models/item/crystallized_shell.json
 7f7b6a122c66bb48576c9d979b7220811af442ca assets/vintagevibes/models/item/crystal_eye.json
 26ec4e1c3c3d8377229582dfa5f82d9f64f4af1b assets/vintagevibes/models/item/cut_tulmarine.json
+04a8f2b41db69209698a1ae9d92c630039716c12 assets/vintagevibes/models/item/decaying_blade.json
 4098eace8520433eb41082ccc6735b444198996b assets/vintagevibes/models/item/deity_mask.json
 2ef0e37e800de115321388da49273bd3d7d30d21 assets/vintagevibes/models/item/delicate_bowl.json
+90b7dbadcfb5fd1efdb057d93968ccf3b62029ad assets/vintagevibes/models/item/discarded_hook.json
 5e1d18989e7ce843d3e29e34aa9dfc26da660bfc assets/vintagevibes/models/item/dusty_sphinx.json
 e3b2e3a0c72120e4a55abf70400c6503e68571d3 assets/vintagevibes/models/item/embedded_fossil.json
 d5d03767225224cac8dd17828bacab7cd53f2fcf assets/vintagevibes/models/item/enchanted_tome.json
@@ -30,6 +33,7 @@ a0b67c78558781516a83a5de6361d0cc1d62584a assets/vintagevibes/models/item/faceted
 632454e770b9ec36744ea6c1a9b433b8973b68c3 assets/vintagevibes/models/item/faded_mask.json
 91a00b5ffd28c98823a6b68490b9ecb09921cc1e assets/vintagevibes/models/item/festive_mask.json
 1230e18ea0d718e6bef734a6f2ad2d9da63336e3 assets/vintagevibes/models/item/fools_fossil.json
+8737a85cbebaaab7cfb6323f0045e1b78df6b27a assets/vintagevibes/models/item/fractured_bracelet.json
 aecce6583f33b671a2835c52afafe9d54a37cac8 assets/vintagevibes/models/item/fragile_pot.json
 0fc755b0121cc1ac2a0be5f0579de00864025a5a assets/vintagevibes/models/item/frond_mask.json
 f369b57fe4e8f486d261c5aefef49321ca2ab1bc assets/vintagevibes/models/item/glimmering_skull.json
@@ -80,6 +84,7 @@ ce9f8bcf4d00c3e639bf50d375cc0dae6b64fcaa assets/vintagevibes/models/item/relucen
 23ec456df07195a131f0f174e4ecc75c9c9b1b54 assets/vintagevibes/models/item/sunrise_mask.json
 127fa971ecd5461e3045bcda23b7c878629a4ea1 assets/vintagevibes/models/item/tidal_mask.json
 27eec60d9b6d855bf9e2478a2f3ae980f5f0e571 assets/vintagevibes/models/item/tongue_stone.json
+b11e0fb066751108062948e32e9861a5a4329d7c assets/vintagevibes/models/item/vintage_bobber.json
 9a6bf05e5e36a0ad353051faff5c66f309fbf70b assets/vintagevibes/models/item/volcanic_mask.json
 8e03ab1a85dfb9047122832270f132f7a4ed6e27 assets/vintagevibes/models/item/weathered_coin.json
 5fced522e44f88701b270ba219aae8892c9f5d29 assets/vintagevibes/models/item/whimsical_bundle.json
