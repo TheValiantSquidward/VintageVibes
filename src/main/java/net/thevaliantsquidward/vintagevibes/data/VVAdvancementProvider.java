@@ -50,6 +50,52 @@ public class VVAdvancementProvider implements AdvancementGenerator {
                 .addCriterion("pineapple_slice", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.PINEAPPLE_SLICE.get()))
                 .save(consumer, new ResourceLocation(VintageVibes.MOD_ID, "pineapple_slice"), helper);
 
+
+        Advancement loveIsBlind = Advancement.Builder.advancement()
+                .parent(root)
+                .display(VVItems.BEJEWELED_BROOCH.get(),
+                        Component.translatable("advancement.vintagevibes.loveisblind"),
+                        Component.translatable("advancement.vintagevibes.loveisblind.desc"),
+                        null,
+                        FrameType.TASK, true, true, false)
+                .addCriterion("loveisblind", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.BEJEWELED_BROOCH.get()))
+                .save(consumer, new ResourceLocation(VintageVibes.MOD_ID, "loveisblind"), helper);
+
+        Advancement iHateYou = Advancement.Builder.advancement()
+                .parent(root)
+                .display(VVItems.FADED_MASK.get(),
+                        Component.translatable("advancement.vintagevibes.ihateyou"),
+                        Component.translatable("advancement.vintagevibes.ihateyou.desc"),
+                        null,
+                        FrameType.TASK, true, true, false)
+                .requirements(RequirementsStrategy.AND)
+                .addCriterion("ihateyou", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.FADED_MASK.get()))
+                .addCriterion("ihateyou1", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.ENERGY_SPEAR.get()))
+                .addCriterion("ihateyou2", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.SOUL_AMULET.get()))
+                .save(consumer, new ResourceLocation(VintageVibes.MOD_ID, "ihateyou"), helper);
+
+        Advancement pissingMeOff = Advancement.Builder.advancement()
+                .parent(root)
+                .display(VVItems.JADE_FIGURINE.get(),
+                        Component.translatable("advancement.vintagevibes.pissingmeoff"),
+                        Component.translatable("advancement.vintagevibes.pissingmeoff.desc"),
+                        null,
+                        FrameType.TASK, true, true, false)
+                .addCriterion("pissingmeoff", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.ONYX_FIGURINE.get()))
+                .addCriterion("pissingmeoff1", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.JADE_FIGURINE.get()))
+                .save(consumer, new ResourceLocation(VintageVibes.MOD_ID, "pissingmeoff"), helper);
+
+        Advancement noPlaceLikeHome = Advancement.Builder.advancement()
+                .parent(root)
+                .display(VVItems.RUBY_SLIPPERS.get(),
+                        Component.translatable("advancement.vintagevibes.noplacelikehome"),
+                        Component.translatable("advancement.vintagevibes.noplacelikehome.desc"),
+                        null,
+                        FrameType.TASK, true, true, false)
+                .addCriterion("noplacelikehome", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.RUBY_SLIPPERS.get()))
+                .save(consumer, new ResourceLocation(VintageVibes.MOD_ID, "noplacelikehome"), helper);
+
+
         Advancement allMasks = Advancement.Builder.advancement()
                 .parent(root)
                 .display(VVItems.FESTIVE_MASK.get(),

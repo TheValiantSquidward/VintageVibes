@@ -235,6 +235,18 @@ public class VVLanguageProvider extends LanguageProvider {
         this.addAdvancement("bottle_butterfly", "Metamorphosis");
         this.addAdvancementDesc("bottle_butterfly", "Bottle a Butterfly");
 
+        this.addAdvancement("loveisblind", "Love is Blind");
+        this.addAdvancementDesc("loveisblind", "Discover certain surreal artifacts");
+
+        this.addAdvancement("ihateyou", "I Hate You");
+        this.addAdvancementDesc("ihateyou", "Discover certain hateful artifacts");
+
+        this.addAdvancement("pissingmeoff", "You're Pissing Me Off");
+        this.addAdvancementDesc("pissingmeoff", "Discover certain rage-fueled artifacts");
+
+        this.addAdvancement("noplacelikehome", "No Place Like Home");
+        this.addAdvancementDesc("noplacelikehome", "Discover the Ruby Slippers");
+
         // untranslated items
         musicDisc(VIBE_DISC, "TheValiantSquidward - vibe");
     }
