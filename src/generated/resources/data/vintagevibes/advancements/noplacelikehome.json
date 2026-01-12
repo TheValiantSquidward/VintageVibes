@@ -1,0 +1,39 @@
+{
+  "parent": "vintagevibes:root",
+  "criteria": {
+    "noplacelikehome": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:ruby_slippers"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.vintagevibes.noplacelikehome.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vintagevibes:ruby_slippers",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.vintagevibes.noplacelikehome"
+    }
+  },
+  "requirements": [
+    [
+      "noplacelikehome"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

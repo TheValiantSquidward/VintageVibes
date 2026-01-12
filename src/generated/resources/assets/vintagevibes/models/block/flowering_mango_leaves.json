@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "vintagevibes:block/flowering_mango_leaves"
+  }
+}

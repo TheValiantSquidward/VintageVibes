@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "vintagevibes:block/milky_quartz_bejeweled_calcite_bricks"
+  }
+}

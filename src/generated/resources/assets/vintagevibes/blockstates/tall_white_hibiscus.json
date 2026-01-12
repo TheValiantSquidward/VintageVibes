@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "vintagevibes:block/tall_white_hibiscus_bottom"
+    },
+    "half=upper": {
+      "model": "vintagevibes:block/tall_white_hibiscus_top"
+    }
+  }
+}

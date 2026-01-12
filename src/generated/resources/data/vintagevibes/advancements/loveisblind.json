@@ -1,0 +1,38 @@
+{
+  "parent": "vintagevibes:root",
+  "criteria": {
+    "loveisblind": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:bejeweled_brooch"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.vintagevibes.loveisblind.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vintagevibes:bejeweled_brooch"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.vintagevibes.loveisblind"
+    }
+  },
+  "requirements": [
+    [
+      "loveisblind"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

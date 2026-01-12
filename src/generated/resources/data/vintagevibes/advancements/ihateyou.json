@@ -1,0 +1,68 @@
+{
+  "parent": "vintagevibes:root",
+  "criteria": {
+    "ihateyou": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:faded_mask"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "ihateyou1": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:energy_spear"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "ihateyou2": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:soul_amulet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.vintagevibes.ihateyou.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vintagevibes:faded_mask"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.vintagevibes.ihateyou"
+    }
+  },
+  "requirements": [
+    [
+      "ihateyou"
+    ],
+    [
+      "ihateyou1"
+    ],
+    [
+      "ihateyou2"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

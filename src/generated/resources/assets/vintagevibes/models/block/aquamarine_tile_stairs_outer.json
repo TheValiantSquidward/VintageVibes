@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "vintagevibes:block/aquamarine_tiles",
+    "side": "vintagevibes:block/aquamarine_tiles",
+    "top": "vintagevibes:block/aquamarine_tiles"
+  }
+}

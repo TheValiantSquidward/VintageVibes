@@ -1,0 +1,53 @@
+{
+  "parent": "vintagevibes:root",
+  "criteria": {
+    "pissingmeoff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:onyx_figurine"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "pissingmeoff1": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vintagevibes:jade_figurine"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.vintagevibes.pissingmeoff.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "vintagevibes:jade_figurine"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.vintagevibes.pissingmeoff"
+    }
+  },
+  "requirements": [
+    [
+      "pissingmeoff"
+    ],
+    [
+      "pissingmeoff1"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
