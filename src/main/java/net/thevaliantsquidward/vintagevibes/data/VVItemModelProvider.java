@@ -115,6 +115,25 @@ public class VVItemModelProvider extends ItemModelProvider {
         this.item(DISCARDED_HOOK);
         this.item(FRACTURED_BRACELET);
         this.item(VINTAGE_BOBBER);
+        this.item(AMBER_FIGURINE);
+        this.item(ANCIENT_FOOTPRINT);
+        this.item(BAT_STAR);
+        this.item(ENCRUSTED_HEART);
+        this.item(GLASSY_DAGGER);
+        this.item(GOLDEN_LOCKET);
+        this.item(ICHOR_AMULET);
+        this.item(INTRIGUING_MARBLE);
+        this.item(JADE_TILE);
+        this.item(KUNZITE_FIGURINE);
+        this.item(LARIMAR_FIGURINE);
+        this.item(MOONSTONE_FIGURINE);
+        this.item(PEARLIZED_FISH);
+        this.item(PRINCESS_DIAMOND);
+        this.item(UMBER_SCARAB);
+        this.item(UNIDENTIFIED_CREATURE);
+        this.item(WITHERING_STAR);
+        this.item(CRYSTALLINE_HANDLE);
+        this.item(CRYSTALLINE_BLADE);
 
         // spawn eggs
         for (Item item : BuiltInRegistries.ITEM) {

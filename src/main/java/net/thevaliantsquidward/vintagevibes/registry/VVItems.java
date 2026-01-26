@@ -147,6 +147,29 @@ public class VVItems {
     public static final RegistryObject<Item> FRACTURED_BRACELET = registerItem("fractured_bracelet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
     public static final RegistryObject<Item> VINTAGE_BOBBER = registerItem("vintage_bobber", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
 
+    public static final RegistryObject<Item> AMBER_FIGURINE = registerItem("amber_figurine", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> ANCIENT_FOOTPRINT = registerItem("ancient_footprint", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> BAT_STAR = registerItem("bat_star", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> CRYSTALLINE_BLADE = registerItem("crystalline_blade", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> CRYSTALLINE_HANDLE = registerItem("crystalline_handle", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> ENCRUSTED_HEART = registerItem("encrusted_heart", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> GLASSY_DAGGER = registerItem("glassy_dagger", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> GOLDEN_LOCKET = registerItem("golden_locket", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> ICHOR_AMULET = registerItem("ichor_amulet", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> INTRIGUING_MARBLE = registerItem("intriguing_marble", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> JADE_TILE = registerItem("jade_tile", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> KUNZITE_FIGURINE = registerItem("kunzite_figurine", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> LARIMAR_FIGURINE = registerItem("larimar_figurine", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> MOONSTONE_FIGURINE = registerItem("moonstone_figurine", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> PEARLIZED_FISH = registerItem("pearlized_fish", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> PRINCESS_DIAMOND = registerItem("princess_diamond", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> UMBER_SCARAB = registerItem("umber_scarab", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> UNIDENTIFIED_CREATURE = registerItem("unidentified_creature", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> WITHERING_STAR = registerItem("withering_star", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> VERDIGREEN_BLADE = registerItem("verdigreen_blade", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> VERDIGREEN_HANDLE = registerItem("verdigreen_handle", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+    public static final RegistryObject<Item> VERDIGREEN_SWORD = registerItem("verdigreen_sword", () -> new TrinketItem(VVItemProperties.TRINKET_PROPERTIES));
+
 
 
     public static final RegistryObject<Item> CELESTIAL_MASK = registerItem("celestial_mask", ()-> new MaskItem(VVArmorMaterials.MASK, ArmorItem.Type.HELMET, new Item.Properties()));

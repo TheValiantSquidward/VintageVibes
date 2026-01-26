@@ -23,10 +23,14 @@ public class VintageVibesTab {
                         output.accept(VVItems.BUTTERFLY_BOTTLE.get());
 
                         output.accept(VVBlocks.DISPLAY_CASE.get());
+
+                        output.accept(VVItems.AMBER_FIGURINE.get());
                         output.accept(VVItems.AMBERIZED_CRITTER.get());
                         output.accept(VVItems.ANCIENT_FIGURINE.get());
+                        output.accept(VVItems.ANCIENT_FOOTPRINT.get());
                         output.accept(VVItems.ANTIQUE_KEY.get());
                         output.accept(VVItems.AQUA_PORCELAIN.get());
+                        output.accept(VVItems.BAT_STAR.get());
                         output.accept(VVItems.BEJEWELED_BROOCH.get());
                         output.accept(VVItems.BLOSSOM_NECKLACE.get());
                         output.accept(VVItems.BRITTLE_VASE.get());
@@ -49,6 +53,7 @@ public class VintageVibesTab {
                         output.accept(VVItems.ELONGATED_SKULL.get());
                         output.accept(VVItems.EMBEDDED_FOSSIL.get());
                         output.accept(VVItems.ENCHANTED_TOME.get());
+                        output.accept(VVItems.ENCRUSTED_HEART.get());
                         output.accept(VVItems.ENDER_AMULET.get());
                         output.accept(VVItems.ENERGY_SPEAR.get());
                         output.accept(VVItems.EYE_RING.get());
@@ -57,15 +62,22 @@ public class VintageVibesTab {
                         output.accept(VVItems.FOOLS_FOSSIL.get());
                         output.accept(VVItems.FRACTURED_BRACELET.get());
                         output.accept(VVItems.FRAGILE_POT.get());
+                        output.accept(VVItems.GLASSY_DAGGER.get());
                         output.accept(VVItems.GLIMMERING_SKULL.get());
                         output.accept(VVItems.GOLDEN_HEAD.get());
+                        output.accept(VVItems.GOLDEN_LOCKET.get());
                         output.accept(VVItems.GOLDEN_SYMBOL.get());
+                        output.accept(VVItems.ICHOR_AMULET.get());
+                        output.accept(VVItems.INTRIGUING_MARBLE.get());
                         output.accept(VVItems.JADE_FIGURINE.get());
+                        output.accept(VVItems.KUNZITE_FIGURINE.get());
+                        output.accept(VVItems.LARIMAR_FIGURINE.get());
                         output.accept(VVItems.MARBLE_CROSS.get());
                         output.accept(VVItems.LUXURIOUS_BOWL.get());
                         output.accept(VVItems.LUXURIOUS_MASONRY.get());
                         output.accept(VVItems.MERCHANTS_AMULET.get());
                         output.accept(VVItems.METAL_COIN.get());
+                        output.accept(VVItems.MOONSTONE_FIGURINE.get());
                         output.accept(VVItems.MUD_TOTEM.get());
                         output.accept(VVItems.OBSIDIAN_BLADE.get());
                         output.accept(VVItems.OBSIDIAN_TOOL.get());
@@ -81,8 +93,10 @@ public class VintageVibesTab {
                         output.accept(VVItems.OSSEOUS_SHOVEL.get());
                         output.accept(VVItems.OSSEOUS_SWORD.get());
                         output.accept(VVItems.PEARLESCENT_FACE.get());
+                        output.accept(VVItems.PEARLIZED_FISH.get());
                         output.accept(VVItems.POCKET_MIRROR.get());
                         output.accept(VVItems.PRICELESS_COIN.get());
+                        output.accept(VVItems.PRINCESS_DIAMOND.get());
                         output.accept(VVItems.RELUCENT_GRAIL.get());
                         output.accept(VVItems.RUBY_SLIPPERS.get());
                         output.accept(VVItems.RUSTED_SPEARHEAD.get());
@@ -93,9 +107,12 @@ public class VintageVibesTab {
                         output.accept(VVItems.SOUL_AMULET.get());
                         output.accept(VVItems.SPLIT_MASK.get());
                         output.accept(VVItems.TONGUE_STONE.get());
+                        output.accept(VVItems.UMBER_SCARAB.get());
+                        output.accept(VVItems.UNIDENTIFIED_CREATURE.get());
                         output.accept(VVItems.VINTAGE_BOBBER.get());
                         output.accept(VVItems.WEATHERED_COIN.get());
                         output.accept(VVItems.WHIMSICAL_BUNDLE.get());
+                        output.accept(VVItems.WITHERING_STAR.get());
 
                         output.accept(VVItems.CELESTIAL_MASK.get());
                         output.accept(VVItems.DEITY_MASK.get());
