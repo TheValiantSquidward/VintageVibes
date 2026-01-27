@@ -59,6 +59,7 @@ public class VVAdvancementProvider implements AdvancementGenerator {
                         null,
                         FrameType.TASK, true, true, false)
                 .addCriterion("loveisblind", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.BEJEWELED_BROOCH.get()))
+                .addCriterion("loveisblind1", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.GOLDEN_LOCKET.get()))
                 .save(consumer, new ResourceLocation(VintageVibes.MOD_ID, "loveisblind"), helper);
 
         Advancement iHateYou = Advancement.Builder.advancement()
@@ -77,13 +78,13 @@ public class VVAdvancementProvider implements AdvancementGenerator {
         Advancement pissingMeOff = Advancement.Builder.advancement()
                 .parent(root)
                 .display(VVItems.JADE_FIGURINE.get(),
-                        Component.translatable("advancement.vintagevibes.pissingmeoff"),
-                        Component.translatable("advancement.vintagevibes.pissingmeoff.desc"),
+                        Component.translatable("advancement.vintagevibes.mouth"),
+                        Component.translatable("advancement.vintagevibes.mouth.desc"),
                         null,
                         FrameType.TASK, true, true, false)
-                .addCriterion("pissingmeoff", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.ONYX_FIGURINE.get()))
-                .addCriterion("pissingmeoff1", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.JADE_FIGURINE.get()))
-                .save(consumer, new ResourceLocation(VintageVibes.MOD_ID, "pissingmeoff"), helper);
+                .addCriterion("mouth", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.ONYX_FIGURINE.get()))
+                .addCriterion("mouth1", InventoryChangeTrigger.TriggerInstance.hasItems(VVItems.JADE_FIGURINE.get()))
+                .save(consumer, new ResourceLocation(VintageVibes.MOD_ID, "mouth"), helper);
 
         Advancement noPlaceLikeHome = Advancement.Builder.advancement()
                 .parent(root)

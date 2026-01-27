@@ -1,7 +1,7 @@
 {
   "parent": "vintagevibes:root",
   "criteria": {
-    "pissingmeoff": {
+    "mouth": {
       "conditions": {
         "items": [
           {
@@ -13,7 +13,7 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "pissingmeoff1": {
+    "mouth1": {
       "conditions": {
         "items": [
           {
@@ -29,7 +29,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.vintagevibes.pissingmeoff.desc"
+      "translate": "advancement.vintagevibes.mouth.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -38,15 +38,15 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.vintagevibes.pissingmeoff"
+      "translate": "advancement.vintagevibes.mouth"
     }
   },
   "requirements": [
     [
-      "pissingmeoff"
+      "mouth"
     ],
     [
-      "pissingmeoff1"
+      "mouth1"
     ]
   ],
   "sends_telemetry_event": true
