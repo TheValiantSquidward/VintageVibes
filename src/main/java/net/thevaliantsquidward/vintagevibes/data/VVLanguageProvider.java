@@ -254,7 +254,6 @@ public class VVLanguageProvider extends LanguageProvider {
         add("item.vintagevibes.corroded_tool.desc", "An ancient and heavily worn tool, its original purpose is unclear.");
         add("item.vintagevibes.golden_symbol.desc", "An ancient symbol of life from a long-forgotten desert kingdom.");
         add("item.vintagevibes.whimsical_bundle.desc", "A bundle full of random junk. The string is drawn too tightly to get it open right now.");
-        add("item.vintagevibes.marble_cross.desc", ".");
 
         this.addAdvancement("root", "Vintage Vibes");
         this.addAdvancementDesc("root", "Utilize new vintage themed decor and more");
