@@ -1,73 +1,49 @@
-buildscript {
-    repositories {
-        maven { url = "https://files.minecraftforge.net/maven" }
-        maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
-    }
-    dependencies {
-        classpath group: "net.minecraftforge.gradle", name: "ForgeGradle", version: "5.1.+", changing: true
-        classpath group: "org.spongepowered", name: "mixingradle", version: "0.7-SNAPSHOT"
-    }
+plugins {
+    id "java-library"
+    id "eclipse"
+    id "idea"
+    id "maven-publish"
+    id "net.neoforged.gradle.userdev" version "7.0.183"
 }
 
-apply plugin: "net.minecraftforge.gradle"
-apply plugin: "eclipse"
-apply plugin: "idea"
-apply plugin: "maven-publish"
-apply plugin: "org.spongepowered.mixin"
-
-mixin {
-    add sourceSets.main, "${project.modId}.refmap.json"
-}
+// NeoGradle handles mixins itself; the SpongePowered mixingradle plugin and the
+// generated refmap are both gone. With official mappings the mixin targets already
+// carry their runtime names, so no refmap is needed or produced.
 
 version = "${project.minecraft}-${project.modVersion}"
 group = "net.thevaliantsquidward"
-archivesBaseName = "Vintage-Vibes"
+base {
+    archivesName = "Vintage-Vibes"
+}
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+// NeoForge 1.21.1 requires Java 21. This is a forced change from upstream's Java 17.
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 minecraft {
-    mappings channel: "official", version: project.minecraft
-    accessTransformer = file("src/main/resources/META-INF/accesstransformer.cfg")
-    runs {
-        client {
-            workingDirectory project.file("run")
-            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
-            property "forge.logging.console.level", "debug"
-            property "mixin.env.remapRefMap", "true"
-            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
-            arg "-mixin.config=" + project.modId + ".mixins.json"
-            mods {
-                vintagevibes {
-                    source sourceSets.main
-                }
-            }
-        }
-        server {
-            workingDirectory project.file("run")
-            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
-            property "forge.logging.console.level", "debug"
-            property "mixin.env.remapRefMap", "true"
-            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
-            arg "-mixin.config=" + project.modId + ".mixins.json"
-            mods {
-                vintagevibes {
-                    source sourceSets.main
-                }
-            }
-        }
-        data {
-            workingDirectory project.file("run")
-            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
-            property "forge.logging.console.level", "debug"
-            property "mixin.env.remapRefMap", "true"
-            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
-            args "--mod", project.modId, "--all", "--output", file("src/generated/resources/"), "--existing", file("src/main/resources")
-            mods {
-                vintagevibes {
-                    source sourceSets.main
-                }
-            }
-        }
+    accessTransformers.file("src/main/resources/META-INF/accesstransformer.cfg")
+}
+
+runs {
+    configureEach {
+        systemProperty "forge.logging.markers", "REGISTRIES"
+        systemProperty "forge.logging.console.level", "debug"
+        modSource project.sourceSets.main
+    }
+
+    client {
+        workingDirectory.set(project.file("run"))
+    }
+
+    server {
+        workingDirectory.set(project.file("run"))
+        programArgument "--nogui"
+    }
+
+    data {
+        workingDirectory.set(project.file("run"))
+        programArguments.addAll "--mod", project.modId, "--all",
+                "--output", file("src/generated/resources/").getAbsolutePath(),
+                "--existing", file("src/main/resources/").getAbsolutePath()
     }
 }
 
@@ -76,23 +52,29 @@ sourceSets.main.resources {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${project.minecraft}-${project.forge}"
+    implementation "net.neoforged:neoforge:${project.neoforge}"
 
-    compileOnly fg.deobf("mezz.jei:jei-${project.minecraft}-common-api:${project.jei}")
-    compileOnly fg.deobf("mezz.jei:jei-${project.minecraft}-forge-api:${project.jei}")
-    runtimeOnly fg.deobf("mezz.jei:jei-${project.minecraft}-forge:${project.jei}")
-
-    runtimeOnly fg.deobf("curse.maven:cyanide-541676:5778405")
-    runtimeOnly fg.deobf("curse.maven:commandstructures-565119:4711641")
-    runtimeOnly fg.deobf("curse.maven:structure-void-toggle-357304:4727098")
-    runtimeOnly fg.deobf("curse.maven:worldedit-225608:4586218")
-
-    annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
+    // JEI was a dev-time dependency only - nothing under src/ ever referenced it,
+    // so it is dropped for the duration of the port rather than bumped to JEI 19.
+    // The dev-only CurseForge mods (cyanide, commandstructures, structure-void-toggle,
+    // worldedit) are dropped for the same reason; none are needed to build or run.
 }
 
-repositories {
-    maven { url "https://www.cursemaven.com" }
-    maven { url "https://modmaven.k-4u.nl" }
+tasks.named("processResources", ProcessResources).configure {
+    var replaceProperties = [
+            minecraft      : minecraft,
+            minecraft_range: minecraft_range,
+            neoforge       : neoforge,
+            neoforge_range : neoforge_range,
+            loader_range   : loader_range,
+            modId          : modId,
+            modName        : modName,
+            modVersion     : modVersion
+    ]
+    inputs.properties replaceProperties
+    filesMatching(["META-INF/neoforge.mods.toml"]) {
+        expand replaceProperties
+    }
 }
 
 jar {
@@ -104,8 +86,7 @@ jar {
                 "Implementation-Title"    : project.modName,
                 "Implementation-Version"  : project.modVersion,
                 "Implementation-Vendor"   : "ValiantEnvoy",
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-                "MixinConfigs"            : project.modId + ".mixins.json"
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
 }

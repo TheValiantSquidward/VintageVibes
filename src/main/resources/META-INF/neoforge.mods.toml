@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "${loader_range}"
+license = "MIT"
+
+[[mods]]
+modId = "${modId}"
+version = "${modVersion}"
+logoFile = "vintagevibes.png"
+authors = "TheValiantSquidward, OmayPaty, platypushasnohat"
+displayName = "${modName}"
+description = '''Fun new decorations with a vintage and slight tropical theming!'''
+
+[[mixins]]
+config = "${modId}.mixins.json"
+
+[[dependencies.vintagevibes]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoforge_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.vintagevibes]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_range}"
+ordering = "NONE"
+side = "BOTH"

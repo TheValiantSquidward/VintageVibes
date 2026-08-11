@@ -1,9 +1,8 @@
 {
   "required": true,
-  "minVersion": "0.8",
+  "minVersion": "0.8.5",
   "package": "net.thevaliantsquidward.vintagevibes.mixins",
-  "compatibilityLevel": "JAVA_17",
-  "refmap": "vintagevibes.refmap.json",
+  "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BeeMixin",
     "BeeMixin$BeePollinateGoalMixin"
